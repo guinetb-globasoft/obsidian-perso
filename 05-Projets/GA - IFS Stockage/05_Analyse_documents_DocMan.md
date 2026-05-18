@@ -315,6 +315,22 @@ Citation directe :
 
 → Pour notre tenant Cloud déjà managé par IFS, la migration des 10 Go d'EDM existants se fait via le **Web Assistant `Transfer Documents`**, en mode "fully automatic".
 
+#### ⚠️ Prérequis technique : compatibilité avec les intégrations tierces (Ootary)
+
+Avant de basculer le stockage EDM vers Azure Blob, il faut **valider que les intégrations tierces qui consomment les pièces jointes continuent à fonctionner**. Cas connu chez nous : **Ootary** est utilisé pour la génération de mails qui doivent intégrer les PJ factures (envois clients/fournisseurs). Si Ootary ne peut plus accéder aux PJ après migration, le flux mail casse.
+
+Deux cas possibles selon la méthode d'accès Ootary aux PJ :
+
+| Méthode d'accès Ootary | Impact migration Azure Blob | Vérification |
+|------------------------|-----------------------------|--------------|
+| **API REST IFS standard** (`/projection/v1/.../DocReferenceObjectAttachmentHandling.svc/...` ou équivalent) | ✅ **Transparent** — le service Cloud File Storage abstrait le stockage. La doc IFS le précise : *"The service abstracts complexities in the underlying storage mode from the caller of the service."* | À confirmer côté config Ootary : quels endpoints IFS sont appelés ? |
+| **Requête SQL directe** sur `EDM_FILE_STORAGE_TAB.FILE_DATA` (via JDBC ou outil ETL) | ❌ **Cassant** — la table reste mais ne contient plus les nouveaux BLOB. Les anciens BLOB y restent tant qu'on ne les supprime pas, mais les nouveaux fichiers Talend iront sur Azure Blob. | Demander à l'équipe / éditeur Ootary la méthode d'accès. |
+
+**Action concrète à mener avant migration** :
+1. Documenter la méthode d'accès Ootary aux PJ (via éditeur, équipe interne, ou capture trafic).
+2. Si SQL direct : faire évoluer Ootary pour passer par l'API REST IFS standard (préférable de toute façon — découplage applicatif propre).
+3. Si API REST : valider que les endpoints utilisés sont supportés par le service File Storage (rien ne devrait casser, mais test à blanc à faire).
+
 #### Pourquoi c'est la bonne réponse pour nous
 
 | Aspect | Sans `Cloud File Storage` (état actuel) | Avec `Cloud File Storage` activé |
@@ -380,7 +396,8 @@ Les classes étant **custom** (créées chez nous), une confirmation par référ
 2. **Vérifier le statut de `Cloud File Storage` sur notre tenant et finaliser l'activation si besoin, puis migrer les 9,5 Go d'EDM existants vers Azure Blob**
    - **Solution standard IFS, déjà documentée et probablement provisionnée sur notre tenant Cloud** : voir §7.7bis pour les références doc IFS (`Cloud File Storage` + `Cloud File Storage Migration Tool`). La doc IFS précise que *"A storage account is provisioned automatically per environment"* — le storage Azure Blob est donc vraisemblablement déjà alloué côté tenant.
    - **Process** :
-     - **Étape 0 (validation)** — Vérifier dans l'admin IFS si un repository de type `File Storage` est configuré et si la property `REPOSITORY` du LU `MediaItem` vaut `FILE_STORAGE`. Si oui : la feature est active mais peut-être non sélectionnée comme default. Si non : passer aux étapes suivantes.
+     - **Étape 0 (validation tenant)** — Vérifier dans l'admin IFS si un repository de type `File Storage` est configuré et si la property `REPOSITORY` du LU `MediaItem` vaut `FILE_STORAGE`. Si oui : la feature est active mais peut-être non sélectionnée comme default. Si non : passer aux étapes suivantes.
+     - **Étape 0 bis (validation intégrations)** — Confirmer la méthode d'accès Ootary aux PJ (API REST IFS vs SQL direct). Cf. §7.7bis "Prérequis technique". Si SQL direct : faire évoluer Ootary avant migration.
      - Object Properties › LU `MediaItem` › property `REPOSITORY` = `FILE_STORAGE`
      - Document Management › Repositories : nouveau repository Type=`File Storage`, Status=`Generating`
      - Lancement du Web Assistant `Transfer Documents` (qualifié de *"fully automatic"* par IFS)

@@ -238,12 +238,14 @@ DROP TABLESPACE JASPER INCLUDING CONTENTS AND DATAFILES;
 **Contexte historique** : nous avions choisi de ne pas activer cette feature au provisionnement initial du tenant. Avec l'arrivée du flux Talend, ce choix est à reconsidérer.
 
 **Action** (priorité haute, court terme) :
-1. **Ouvrir un ticket IFS** demandant l'activation de `Cloud File Storage` sur notre tenant, ou la confirmation qu'on peut l'activer côté admin :
+0. **Prérequis impératif : valider la compatibilité Ootary** (outil de génération des mails avec PJ factures). Si Ootary accède aux PJ via l'API REST IFS standard → migration transparente. Si Ootary lit directement `EDM_FILE_STORAGE_TAB` en SQL → migration cassante, faire évoluer Ootary AVANT de migrer. Voir `05_Analyse_documents_DocMan.md` §7.7bis pour le détail.
+1. **Ouvrir un ticket IFS** demandant la vérification du statut de `Cloud File Storage` sur notre tenant, ou la confirmation qu'on peut l'activer côté admin :
    - **Media Item Setup** : Solution Manager › Object Properties › Object LU `MediaItem` › property `REPOSITORY` → valeur `FILE_STORAGE`
    - **Document Management Setup** : Solution Manager › Document Management › Repositories → ajouter un nouveau Repository, Type = `File Storage`, Document Class = `*` (ou cibler `DOC A GARDER`, `INVOICE` d'abord), Status = `Generating`
 2. **Migrer les 10 Go existants** via le Web Assistant intégré (selon la doc Migration Tool : *"For 'smaller' installations ... there are two IFS Cloud Web assistants for moving document files and media items to IFS Cloud File Storage: Transfer Documents / Transfer Media. **That option is fully automatic and is preferable to using this tool.**"*). On est dans ce cas (DB déjà en Cloud), pas dans le cas "FS Mig Tool externe" (réservé aux upgrades Apps 8/9/10 → Cloud).
 3. **Basculer l'ancien repository en `Usable`** (read-only) ou le supprimer une fois vide.
-4. **Pour les nouveaux dépôts** : Talend et NELGRA continuent de pousser via l'API standard IFS DocMan — le service `Cloud File Storage` intercepte transparentement et stocke sur Azure Blob (REST API abstrait le storage).
+4. **Tester le flux Ootary** sur une PJ migrée pour confirmer que la génération de mails fonctionne toujours.
+5. **Pour les nouveaux dépôts** : Talend et NELGRA continuent de pousser via l'API standard IFS DocMan — le service `Cloud File Storage` intercepte transparentement et stocke sur Azure Blob (REST API abstrait le storage).
 
 **Risque** : Faible. La doc IFS décrit la procédure comme *"Setting up IFS Cloud File Storage is an easy task."* et le Web Assistant de migration est *"fully automatic"*. Pas de perte fonctionnelle — les documents restent accessibles via les mêmes URLs/projections IFS.
 

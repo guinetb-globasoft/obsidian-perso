@@ -93,7 +93,7 @@ Cette confusion potentielle est en soi un argument de négociation : la méthode
 > 2. *Une revue de la rétention AWR et de l'espace UNDO alloué ;*
 > 3. *Une procédure officielle de purge sur `FND_MODEL_*`, `BPMN_DEBUG_*`, `IAM_LOGIN_EVENT_*` et `LANGUAGE_FILE_IMPORT_TAB` ;*
 > 4. *Une clarification de la base de calcul de la facturation : volume total alloué, volume utilisé tous schémas confondus, ou volume métier client uniquement ?*
-> 5. ***La vérification du statut de `Cloud File Storage` sur notre tenant** (la doc IFS précise qu'un storage Azure Blob est 'provisioned automatically per environment'), et si la feature n'est pas active, son activation + le lancement du Web Assistant `Transfer Documents` pour migrer les 9,5 Go d'EDM existants vers Azure Blob hors BDD Oracle."*
+> 5. ***La vérification du statut de `Cloud File Storage` sur notre tenant** (la doc IFS précise qu'un storage Azure Blob est 'provisioned automatically per environment'), et si la feature n'est pas active, son activation + le lancement du Web Assistant `Transfer Documents` pour migrer les 9,5 Go d'EDM existants vers Azure Blob hors BDD Oracle ; avec **garantie de continuité pour nos intégrations tierces** consommant les PJ (en particulier Ootary, génération de mails sortants avec PJ factures)."*
 
 ---
 

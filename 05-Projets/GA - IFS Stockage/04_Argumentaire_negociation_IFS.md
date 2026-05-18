@@ -148,6 +148,7 @@ Et pour la migration des fichiers existants (doc *"Cloud File Storage Migration 
 >    - *Object Properties › LU `MediaItem` › property `REPOSITORY` = `FILE_STORAGE`*
 >    - *Document Management › Repositories : nouveau repository Type=`File Storage`, Status=`Generating`*
 > *3. **Migration des 9,5 Go d'EDM existants** via le Web Assistant `Transfer Documents` que vous décrivez comme 'fully automatic'.*
+> *4. **Garantie de continuité pour nos intégrations tierces** qui consomment les pièces jointes — notamment Ootary, qui génère les mails sortants en y intégrant les PJ factures. Nous comprenons que votre service File Storage abstrait le storage sous-jacent via API REST (la doc le précise explicitement) ; nous demandons confirmation que les endpoints DocMan utilisés actuellement par nos intégrations continueront à renvoyer les PJ après migration.*
 >
 > *C'est une feature standard d'IFS Cloud, prête à l'emploi. Une fois opérationnelle, les ~37 Go/an de croissance documentaire iront sur Azure Blob plutôt qu'en BDD Oracle, et la question du dépassement de volume sur l'EDM disparaîtrait mécaniquement."*
 
