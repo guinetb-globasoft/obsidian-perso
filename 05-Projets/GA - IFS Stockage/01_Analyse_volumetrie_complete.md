@@ -173,7 +173,7 @@ Une fois la jointure faite entre segments et tables d'origine, voici la réparti
 | Catégorie | Volume | % de IFSAPP+IAMSYS | Notre contrôle ? |
 |-----------|--------|--------------------|--------------------|
 | Framework UI / Métadonnées Aurena | 11,7 Go | 24 % | ❌ Non |
-| Documents métier (DocMan/EDM) | 10,1 Go | 20 % | ✅ Oui (uploads utilisateurs) |
+| Documents métier (DocMan/EDM) | 10,1 Go | 20 % | ⚠️ Partiel — voir nuance ci-dessous |
 | Sécurité / Audit / IAM | 6,9 Go | 14 % | ⚠️ Partiel (rétention) |
 | Index et structures techniques | 6,4 Go | 13 % | ❌ Non |
 | Traductions / Multi-langues | 5,0 Go | 10 % | ❌ Non |
@@ -185,7 +185,7 @@ Une fois la jointure faite entre segments et tables d'origine, voici la réparti
 
 ### ⚠️ Constat majeur
 **Sur les ~50 Go de schémas applicatifs IFS, seuls ~13 Go (26 %) sont des données générées par notre activité métier** :
-- ~10 Go de documents uploadés (EDM)
+- ~10 Go de documents (EDM) — **dont ~78 % (≈7,4 Go) déposés automatiquement par le connecteur Talend depuis mars 2026** : archivage des PJ factures fournisseurs, processus inexistant auparavant. Justificatifs comptables sous obligation légale de conservation 10 ans → quasi-impurgeables. Voir `05_Analyse_documents_DocMan.md` section 7 pour le détail.
 - ~1,3 Go de transactions (factures, écritures comptables, etc.)
 - ~1,5 Go d'usage divers (configurations, lobby, archives PDF utiles)
 
@@ -223,12 +223,12 @@ Une fois la jointure faite entre segments et tables d'origine, voici la réparti
 ## 8. Annexe — Évolution potentielle
 
 ### Croissance attendue par catégorie (sans action)
-- Documents (EDM) : croissance linéaire avec l'activité utilisateur
+- **Documents (EDM) : ~3 Go / mois dominés par le flux Talend** (PJ factures fournisseurs, démarré 2026-03 à raison de ~80 docs/jour ouvré, 1,28 Mo en moyenne). Trajectoire : **+36 Go/an**, soit **+180 Go sur 5 ans** et **+360 Go sur 10 ans** (durée légale de conservation). Hors Talend, la croissance était négligeable (~25 docs/mois soit ~10 Mo/mois).
 - Logs IAM (`EVENT_ENTITY`, `IAM_LOGIN_EVENT_*`) : croissance forte si pas de rétention
 - BPMN debug : continuera de croître tant que le mode debug est actif
 - `WRI$_ADV_OBJECTS` : croissance illimitée (bug non corrigé)
 - Framework `FND_MODEL_*` : croissance par paliers à chaque mise à jour IFS
-- Données métier : croissance maîtrisée, faible
+- Données métier transactionnelles : croissance maîtrisée, faible
 
 ### Risque de dérive
-Sans action sur les éléments hors contrôle, la base peut atteindre **150 Go d'ici 6 à 12 mois** avec une part "données utiles" qui restera à ~13-15 Go (~10 % du total).
+Sans action sur les éléments hors contrôle, la base peut atteindre **150 Go d'ici 6 à 12 mois**, en grande partie du fait du flux Talend (~+36 Go/an sur l'EDM). La part "données métier transactionnelles" pure reste maîtrisée à ~3 Go, mais le **volume documentaire** explose avec un usage légitime mais coûteux : c'est précisément le cas où l'externalisation vers stockage objet (S3/Azure Blob) devient incontournable plutôt qu'optionnelle.

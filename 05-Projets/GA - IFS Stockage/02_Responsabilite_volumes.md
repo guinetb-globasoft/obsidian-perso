@@ -56,7 +56,7 @@ RESPONSABILITÉ IFS     →  ~109 Go (89 %)
 
 | Volume | Objet | Description | Levier |
 |--------|-------|-------------|--------|
-| ~10,0 Go | `EDM_FILE_STORAGE_TAB` | Documents uploadés via DocMan (PDF, Excel, images attachés aux objets métier) | Politique d'archivage / externalisation |
+| ~10,0 Go | `EDM_FILE_STORAGE_TAB` | Documents DocMan. **~78 % (≈7,4 Go) = PJ factures fournisseurs déposées automatiquement par Talend depuis mars 2026** (justificatifs comptables, obligation légale 10 ans, impurgeables). Les ~22 % restants (≈2,6 Go) incluent ~941 Mo de factures clients déposées **manuellement** par l'utilisatrice NELGRA depuis avril 2025 (classe `INVOICE`, ~100 docs/mois en rythme régulier), plus quelques centaines de Mo d'uploads divers par d'autres utilisateurs. | **Activer le service `Cloud File Storage` natif IFS** (stockage Azure Blob hors BDD Oracle, documenté par IFS, outil de migration officiel fourni). Voir `05_Analyse_documents_DocMan.md` §7.7bis. |
 | ~1,3 Go | Tables transactionnelles Finance/Commercial | Factures, vouchers, écritures (`GEN_LED_VOUCHER_ROW_TAB`, `INTERNAL_VOUCHER_ROW_TAB`, `INVOICE_TAB`, etc.) | Aucun (vraies données métier) |
 | ~0,6 Go | `PDF_ARCHIVE_TAB` | Archives de rapports PDF générés | Rétention |
 | ~0,5 Go | Autres petites tables de configuration métier | Listes de valeurs, paramétrages custom | Aucun (configuration nécessaire) |
@@ -64,8 +64,13 @@ RESPONSABILITÉ IFS     →  ~109 Go (89 %)
 | **~13 Go** | **TOTAL CLIENT** | | |
 
 ### ✅ Conclusion sur les données client
-**Notre usage métier réel représente ~13 Go**, dont 77 % sont des documents uploadés (qui ne nécessitent pas un stockage en BDD relationnelle — externalisation possible vers un stockage objet).
+**Notre usage métier réel représente ~13 Go**, dont 77 % sont des documents (qui ne nécessitent pas un stockage en BDD relationnelle — externalisation possible vers un stockage objet).
 **Hors documents, la base métier "transactionnelle" pure ne fait que ~3 Go.**
+
+**Nuance importante** : sur ces 10 Go de documents, **~78 % (7,4 Go) sont des PJ factures fournisseurs déposées automatiquement par Talend depuis mars 2026**, et **~10 % (941 Mo) sont des factures clients déposées manuellement par l'utilisatrice NELGRA depuis avril 2025**. Ces deux flux (un automatique + un humain dédié) cumulent **88 % du volume documentaire**. Ces documents :
+- Ne peuvent **pas être purgés** (obligation légale de conservation 10 ans pour les justificatifs comptables).
+- Suivent une trajectoire de croissance forte (dominée par Talend) : ~3 Go/mois en croisière, soit ~36 Go/an, +180 Go à 5 ans, +360 Go à 10 ans.
+- Sont donc le **principal moteur de la dérive de volume** sur la base IFS, et le seul levier réaliste est de **faire vérifier puis activer si nécessaire le service `Cloud File Storage` natif IFS** (stockage Azure Blob hors BDD Oracle). Cette feature **existe déjà dans IFS Cloud**, est documentée par IFS, et le storage Azure Blob associé est *"provisioned automatically per environment"* — il est donc probablement déjà alloué sur notre tenant mais non sélectionné comme repository par défaut. Un **outil de migration officiel** ("fully automatic" Web Assistant) est fourni pour basculer les fichiers existants. Nous avions fait le choix de ne pas l'activer à l'origine — ce choix est à reconsidérer compte tenu de l'évolution. Voir `05_Analyse_documents_DocMan.md` §7.7bis pour les références doc IFS.
 
 ---
 

@@ -54,6 +54,20 @@ Cette confusion potentielle est en soi un argument de négociation : la méthode
 
 ---
 
+## 📁 Nature des 13 Go de "données métier client"
+
+**~10 Go sont des documents EDM**, dont la composition réelle a été analysée (cf. `05_Analyse_documents_DocMan.md`) :
+
+| Source | Volume | Nature |
+|--------|--------|--------|
+| **Talend (TT, automatique)** | **7,4 Go (78 %)** | PJ factures fournisseurs déposées depuis mars 2026 dans le cadre d'un **archivage légal obligatoire** (conservation 10 ans, Code de Commerce L.123-22). **Impurgeable.** Croissance : ~36 Go/an. |
+| **NELGRA (manuel)** | 0,9 Go (10 %) | Factures clients déposées manuellement (~100/mois). |
+| Autres uploads humains | ~1,2 Go (12 %) | PJ commandes, BL, CRM, divers. |
+
+→ **88 % des "données client" sont en réalité de l'archivage légal automatisé qui ne devrait pas être en BDD Oracle.** La feature `Cloud File Storage` native d'IFS (stockage Azure Blob) répond exactement à ce besoin — voir point clé 7 ci-dessous.
+
+---
+
 ## 🔑 Points clés pour la négociation
 
 1. **Seuls 11 % du volume sont réellement nos données métier.** Le ratio "données utiles / volume facturé" est anormalement bas.
@@ -68,6 +82,8 @@ Cette confusion potentielle est en soi un argument de négociation : la méthode
 
 6. **Plan de purge identifié → gain potentiel de ~30 Go** sans toucher à aucune donnée métier (cf. document `03_Plan_purge.md`).
 
+7. **La feature `Cloud File Storage` d'IFS Cloud (standard, documentée) permet de stocker les documents sur Azure Blob hors BDD Oracle.** Son activation et la migration des 9,5 Go d'EDM existants (essentiellement archivage légal Talend) feraient disparaître mécaniquement le poste documentaire de la BDD et freineraient la dérive (+36 Go/an évités sur le stockage BDD). Setup décrit par IFS comme *"an easy task"* + Web Assistant de migration *"fully automatic"*.
+
 ---
 
 ## 🎯 Demande à formuler à IFS
@@ -76,7 +92,8 @@ Cette confusion potentielle est en soi un argument de négociation : la méthode
 > 1. *La purge de `WRI$_ADV_OBJECTS` (10,9 Go récupérables immédiatement) ;*
 > 2. *Une revue de la rétention AWR et de l'espace UNDO alloué ;*
 > 3. *Une procédure officielle de purge sur `FND_MODEL_*`, `BPMN_DEBUG_*`, `IAM_LOGIN_EVENT_*` et `LANGUAGE_FILE_IMPORT_TAB` ;*
-> 4. *Une clarification de la base de calcul de la facturation : volume total alloué, volume utilisé tous schémas confondus, ou volume métier client uniquement ?"*
+> 4. *Une clarification de la base de calcul de la facturation : volume total alloué, volume utilisé tous schémas confondus, ou volume métier client uniquement ?*
+> 5. ***La vérification du statut de `Cloud File Storage` sur notre tenant** (la doc IFS précise qu'un storage Azure Blob est 'provisioned automatically per environment'), et si la feature n'est pas active, son activation + le lancement du Web Assistant `Transfer Documents` pour migrer les 9,5 Go d'EDM existants vers Azure Blob hors BDD Oracle."*
 
 ---
 

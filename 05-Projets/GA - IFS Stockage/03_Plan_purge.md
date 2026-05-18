@@ -20,7 +20,7 @@
 | 🥉 P3 | `PURGE DBA_RECYCLEBIN` | Variable | DBA IFS Cloud | Aucun | Immédiat |
 | 🥉 P3 | Suppression tablespaces vides (`MAINTENIX`, `JASPER`) | ~2 Go | DBA IFS Cloud | Faible | À vérifier |
 | 🏅 P4 | Ticket IFS Support cleanup `FND_MODEL_*` | Variable | IFS Support | Faible | Selon retour IFS |
-| 🏅 P4 | Externalisation `EDM_FILE_STORAGE_TAB` | ~10 Go | Étude IFS | Moyen | Long terme |
+| 🥇 **P1** | **Activer `Cloud File Storage` IFS + migrer EDM via Web Assistant** (feature standard IFS Cloud, Azure Blob, doc officielle, outil de migration fourni) | **~10 Go immédiat + croissance évitée (~36 Go/an)** | Admin IFS | **Faible** | **Court terme** |
 
 ---
 
@@ -78,12 +78,14 @@ ALTER DATABASE DATAFILE '<path>/undotbs01.dbf' RESIZE 2G;
 
 ### 2.3 🥇 Désactivation du mode debug BPMN + purge des logs (gain ~3,9 Go)
 
-**Contexte** : La table `BPMN_DEBUG_ACTIVITY_LOG_TAB` contient 3,9 Go de logs de **debug** de workflows BPMN. Le mode debug est généralement activé à la mise en service puis oublié.
+**Contexte** : La table `BPMN_DEBUG_ACTIVITY_LOG_TAB` contient 3,9 Go de logs de **debug** de workflows BPMN. Le mode debug a probablement été activé à la mise en service puis oublié.
+
+**À clarifier d'abord avec IFS** : le paramètre de niveau de log BPMN se trouve-t-il côté admin client (Solution Manager › Background Processing / Workflow settings, accessible à nous) ou côté IFS Cloud Ops ? Si c'est côté client, c'est à nous de le désactiver — la purge effective des 3,9 Go reste à demander à IFS (privilèges DBA `IFSAPP`).
 
 **Action** :
-1. Vérifier le paramètre IFS de niveau de log BPMN (côté admin Workflow Designer / BPMN Engine).
-2. Désactiver le mode debug en production.
-3. Purger les logs existants :
+1. **Demander à IFS** le chemin exact pour vérifier/modifier le paramètre BPMN debug.
+2. **Désactiver le mode debug en production** (côté client si accessible, sinon ticket IFS).
+3. Purger les logs existants (requiert privilèges DBA IFS Cloud) :
 ```sql
 -- (À exécuter sous compte IFSAPP avec validation IFS)
 DELETE FROM IFSAPP.BPMN_DEBUG_ACTIVITY_LOG_TAB
@@ -223,17 +225,31 @@ DROP TABLESPACE JASPER INCLUDING CONTENTS AND DATAFILES;
 
 ---
 
-### 5.2 🏅 Externalisation `EDM_FILE_STORAGE_TAB` (gain ~10 Go)
+### 5.2 🥇 Activation `Cloud File Storage` IFS — repositionnée P1 court terme (gain ~10 Go + trajectoire évitée)
 
-**Contexte** : Stocker 10 Go de documents binaires dans une BDD relationnelle n'est pas optimal. IFS Cloud supporte le stockage externe (stockage objet type S3/Azure Blob).
+**⚠️ Contexte révisé (mai 2026)** : l'analyse documentaire détaillée (cf. `05_Analyse_documents_DocMan.md` section 7) a établi que **88 % des 10 Go d'EDM viennent de deux contributeurs principaux** : **Talend (78 %)** qui dépose automatiquement les PJ factures fournisseurs depuis mars 2026 (obligation légale 10 ans → impurgeable), et **NELGRA (10 %)** qui dépose manuellement les factures clients depuis avril 2025 (~100 docs/mois).
 
-**Action** :
-1. Étudier avec IFS la faisabilité d'externalisation du stockage DocMan.
-2. Migration progressive des documents anciens.
+**Trajectoire** : Talend ajoute ~3 Go/mois en croisière, soit **+36 Go/an, +180 Go sur 5 ans, +360 Go sur 10 ans**. Sans action, le poste EDM dominera l'évolution du stockage IFS.
 
-**Risque** : Moyen (impact applicatif à valider).
+**Solution standard IFS, déjà documentée et disponible** : le service `Cloud File Storage` (Solution Manager User Guide › Additional IFS Cloud Configuration › Cloud File Storage) permet de stocker les documents sur **Azure Blob Storage** au lieu de la BDD Oracle, **nativement en mode Cloud SaaS**. Citation directe de la doc IFS :
 
-**Gain économique** : Le stockage objet est typiquement 10x moins cher que le stockage BDD.
+> *"In the Cloud deployment model, the File Storage uses an Azure Blob Storage Account to store files. A storage account is provisioned automatically per environment."*
+
+**Contexte historique** : nous avions choisi de ne pas activer cette feature au provisionnement initial du tenant. Avec l'arrivée du flux Talend, ce choix est à reconsidérer.
+
+**Action** (priorité haute, court terme) :
+1. **Ouvrir un ticket IFS** demandant l'activation de `Cloud File Storage` sur notre tenant, ou la confirmation qu'on peut l'activer côté admin :
+   - **Media Item Setup** : Solution Manager › Object Properties › Object LU `MediaItem` › property `REPOSITORY` → valeur `FILE_STORAGE`
+   - **Document Management Setup** : Solution Manager › Document Management › Repositories → ajouter un nouveau Repository, Type = `File Storage`, Document Class = `*` (ou cibler `DOC A GARDER`, `INVOICE` d'abord), Status = `Generating`
+2. **Migrer les 10 Go existants** via le Web Assistant intégré (selon la doc Migration Tool : *"For 'smaller' installations ... there are two IFS Cloud Web assistants for moving document files and media items to IFS Cloud File Storage: Transfer Documents / Transfer Media. **That option is fully automatic and is preferable to using this tool.**"*). On est dans ce cas (DB déjà en Cloud), pas dans le cas "FS Mig Tool externe" (réservé aux upgrades Apps 8/9/10 → Cloud).
+3. **Basculer l'ancien repository en `Usable`** (read-only) ou le supprimer une fois vide.
+4. **Pour les nouveaux dépôts** : Talend et NELGRA continuent de pousser via l'API standard IFS DocMan — le service `Cloud File Storage` intercepte transparentement et stocke sur Azure Blob (REST API abstrait le storage).
+
+**Risque** : Faible. La doc IFS décrit la procédure comme *"Setting up IFS Cloud File Storage is an easy task."* et le Web Assistant de migration est *"fully automatic"*. Pas de perte fonctionnelle — les documents restent accessibles via les mêmes URLs/projections IFS.
+
+**Gain économique attendu** : Le stockage objet est typiquement **10× moins cher au Go** que le stockage BDD. Sur la trajectoire Talend, l'économie cumulée se chiffre rapidement en milliers d'euros par an.
+
+**Pourquoi ça remplace une purge** : la purge classique ne peut PAS s'appliquer aux PJ factures (obligation 10 ans). L'activation de `Cloud File Storage` est donc le **seul levier qui adresse réellement le volume documentaire** chez nous — et c'est une feature IFS standard, pas une demande exotique.
 
 ---
 
@@ -246,22 +262,24 @@ Semaine 1  ───────────────────────
   ▸ Réduction rétention AWR                   (gain 3 Go)
   ▸ Purge LANGUAGE_FILE_IMPORT_TAB            (gain 1 Go)
   ▸ Purge recyclebin                          (gain variable)
+  ▸ **Ticket IFS : activer Cloud File Storage + planifier migration EDM**
                                               ─────────────
-                                  GAIN W1 :    ~19 Go
+                                  GAIN W1 :    ~19 Go (+ activation FSS lancée)
 
 Semaine 2-3 ──────────────────────────────────
   ▸ Resize UNDOTBS1                           (gain 7 Go)
   ▸ Politique rétention IAM (90j)             (gain 4 Go)
   ▸ Purge EXT_FILE_TRANS_TAB                  (gain 1,5 Go)
   ▸ Validation/suppression MAINTENIX, JASPER  (gain 2 Go)
+  ▸ **Migration EDM via Transfer Documents Web Assistant** (gain ~10 Go)
                                               ─────────────
-                                 GAIN W2-3 :  ~14,5 Go
+                                 GAIN W2-3 :  ~24,5 Go
 
 Mois 2-3 ──────────────────────────────────────
   ▸ Ticket FND_MODEL_* cleanup
-  ▸ Étude externalisation EDM
+  ▸ Suivi : croissance EDM désormais sur Azure Blob (hors stockage BDD)
                                               ─────────────
-                                CIBLE 3 MOIS :  ~90 Go
+                                CIBLE 3 MOIS :  **~78 Go** (BDD Oracle) + Azure Blob pour EDM
 ```
 
 ---

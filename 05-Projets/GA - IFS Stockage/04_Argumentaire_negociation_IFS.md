@@ -62,12 +62,18 @@
 
 ---
 
-### 🎯 Axe 4 — Le mode debug en production est anormal
+### 🎯 Axe 4 — Le mode debug en production accumule 3,9 Go de logs (clarification à demander)
 
-**Argument** : La table `BPMN_DEBUG_ACTIVITY_LOG_TAB` contient **3,9 Go de logs de debug**. Le mode debug ne devrait jamais être actif en production.
+**Argument** : La table `BPMN_DEBUG_ACTIVITY_LOG_TAB` contient **3,9 Go de logs de debug**. Le mode debug ne devrait pas être actif en production. À clarifier avec IFS : le paramètre se trouve-t-il côté admin client (`Solution Manager › Background Processing` ou équivalent) ou côté IFS Cloud Ops ?
 
-**Formulation suggérée** :
-> *"Quatre giga-octets de logs de debug sont stockés alors que nous sommes en production. Soit le mode debug a été oublié activé lors du déploiement par les équipes IFS, soit la purge automatique n'est pas paramétrée correctement. Dans les deux cas, c'est une situation de configuration à corriger côté IFS."*
+**Formulation suggérée (mode coopératif, sans accusation)** :
+> *"La table `BPMN_DEBUG_ACTIVITY_LOG_TAB` contient 3,9 Go de logs de debug, ce qui suggère que le mode debug BPMN est actif sur l'environnement de production.*
+>
+> *Nous souhaitons clarifier deux points avec vous :*
+> *1. **Côté configuration** : ce paramètre se trouve-t-il côté admin client (et dans ce cas, nous le désactivons immédiatement) ou côté IFS Cloud Ops ? Indiquez-nous le chemin exact dans l'UI pour le vérifier.*
+> *2. **Côté purge** : les 3,9 Go déjà accumulés ne peuvent être supprimés que par une opération DBA (privilèges sur le schéma `IFSAPP`). Nous demandons cette purge dès que possible, indépendamment de la responsabilité de l'activation initiale."*
+
+**Pourquoi cette formulation** : ne pas se positionner en accusation tant qu'on n'a pas la certitude que le paramètre est hors de notre portée. Si IFS confirme que la config est côté client, on l'aura désactivée et la purge IFS sera quand même nécessaire. Si IFS confirme que c'est côté Ops, l'argument original revient en force.
 
 ---
 
@@ -92,6 +98,62 @@
 
 **Formulation suggérée** :
 > *"Environ neuf giga-octets sont occupés par le code source et compilé des packages PL/SQL d'IFS dans le dictionnaire Oracle. Il s'agit du code de votre application, pas de nos données. Facturer le stockage du propre code applicatif d'IFS à son client est difficilement défendable."*
+
+---
+
+### 🎯 Axe 7 — Valider le statut de `Cloud File Storage` et corriger le routage si besoin
+
+**Argument** : IFS Cloud expose nativement la feature **`Cloud File Storage`** (stockage des documents sur Azure Blob hors BDD Oracle). Cette feature est probablement déjà provisionnée sur notre tenant (la doc IFS dit *"A storage account is provisioned automatically per environment"*). Pourtant **les 9,5 Go d'EDM mesurés sont aujourd'hui en BDD Oracle**, ce qui suggère que la feature n'est pas active ou pas paramétrée correctement (repository File Storage absent ou non sélectionné comme default).
+
+Ce n'est donc pas une demande d'activation d'une feature inexistante — c'est une demande de **validation du paramétrage actuel** et de **correction si nécessaire**.
+
+**Citations directes de la doc IFS officielle** (Solution Manager User Guide › Additional IFS Cloud Configuration › Cloud File Storage) :
+
+> *"IFS Cloud File Storage is a platform service which can be used to store and retrieve documents from different storage locations. The service abstracts complexities in the underlying storage mode from the caller of the service."*
+
+> *"**In the Cloud deployment model, the File Storage uses an Azure Blob Storage Account to store files.** A storage account is provisioned automatically per environment."*
+
+> *"Setting up IFS Cloud File Storage is an easy task."*
+
+Et pour la migration des fichiers existants (doc *"Cloud File Storage Migration Tool"*) :
+
+> *"For 'smaller' installations, where the full source database can be moved into the managed cloud environment as is, there are two IFS Cloud Web assistants for moving document files and media items to IFS Cloud File Storage: Transfer Documents / Transfer Media. **That option is fully automatic and is preferable to using this tool.**"*
+
+→ On est exactement dans ce cas (déjà en IFS Cloud, base déjà gérée par IFS) : la migration des 9,5 Go existants se ferait via un **Web Assistant intégré, "fully automatic"**, sans recourir au FS Mig Tool externe.
+
+**Volumétrie EDM mesurée (mai 2026, PROD)** :
+
+| Source | Documents | Volume Mo | % volume | Nature |
+|--------|-----------|-----------|----------|--------|
+| **TT (Talend, automatique)** | 5 774 | 7 368 | **78 %** | PJ factures fournisseurs depuis mars 2026 (obligation légale 10 ans) |
+| **NELGRA (manuel)** | 1 494 | 941 | 10 % | Factures clients depuis avril 2025 (~100 docs/mois) |
+| Autres utilisateurs (70 comptes) | 2 472 | 1 162 | 12 % | Uploads manuels divers (PJ commandes, BL, CRM, etc.) |
+| **TOTAL EDM** | **9 740** | **9 471 Mo** | **100 %** | |
+
+**Trajectoire** : ~+36 Go/an pour Talend, ~+0,8 Go/an pour NELGRA, marginal pour les autres. Soit **~37 Go/an de croissance documentaire** dont 97 % adressables par Cloud File Storage.
+
+**Notre choix initial** : nous avions fait le choix de ne pas activer cette feature au provisionnement initial du tenant. Avec l'évolution du volume documentaire (×6 sur 12 mois grâce à Talend + NELGRA), ce choix est à reconsidérer.
+
+**Formulation suggérée** :
+> *"Notre volume documentaire EDM atteint 9,5 Go aujourd'hui en PROD, avec une trajectoire de croissance de ~37 Go/an dominée par le flux d'archivage légal des factures fournisseurs (Talend, démarré mars 2026). Vos propres tables `EDM_FILE_STORAGE_TAB` montrent que ces documents sont actuellement stockés en BDD Oracle.*
+>
+> *Votre documentation Solution Manager (`Cloud File Storage` et `Cloud File Storage Migration Tool`) décrit exactement la feature qui adresse ce cas : stockage des documents sur Azure Blob hors BDD Oracle, avec un Web Assistant 'fully automatic' pour migrer les fichiers existants. La doc précise par ailleurs que 'A storage account is provisioned automatically per environment' — donc le storage Azure Blob est probablement déjà alloué côté notre tenant.*
+>
+> *Nous demandons :*
+> *1. **Vérification du statut actuel** de `Cloud File Storage` sur notre tenant :*
+>    - *Le storage account Azure Blob est-il bien provisionné ?*
+>    - *Un repository de type `File Storage` est-il configuré dans Document Management › Repositories ?*
+>    - *Sinon, quel est le blocage technique ?*
+> *2. **Si la feature n'est pas active**, son activation conformément à votre doc :*
+>    - *Object Properties › LU `MediaItem` › property `REPOSITORY` = `FILE_STORAGE`*
+>    - *Document Management › Repositories : nouveau repository Type=`File Storage`, Status=`Generating`*
+> *3. **Migration des 9,5 Go d'EDM existants** via le Web Assistant `Transfer Documents` que vous décrivez comme 'fully automatic'.*
+>
+> *C'est une feature standard d'IFS Cloud, prête à l'emploi. Une fois opérationnelle, les ~37 Go/an de croissance documentaire iront sur Azure Blob plutôt qu'en BDD Oracle, et la question du dépassement de volume sur l'EDM disparaîtrait mécaniquement."*
+
+**Bénéfice mutuel** :
+- Pour nous : maîtrise du coût stockage BDD sur le long terme malgré l'archivage légal des PJ factures.
+- Pour IFS : déchargement de la BDD Oracle (plus performante), promotion d'une de leurs features récentes, argument commercial pour les autres clients.
 
 ---
 
@@ -133,6 +195,21 @@
 
 ---
 
+## 3 bis. Anticipation d'une attaque IFS : *"Votre flux Talend gonfle le volume, c'est de votre fait"*
+
+**Risque** : IFS pourrait répondre que **nous** sommes à l'origine de la croissance documentaire (Talend dépose 3 Go/mois), et que c'est donc à nous de payer.
+
+**Notre réponse** :
+> *"Effectivement, depuis mars 2026, nous archivons les PJ factures fournisseurs dans IFS via Talend. C'est un processus légitime et nécessaire (obligation légale 10 ans). Nous ne contestons pas le fait de stocker ce volume.*
+>
+> *Ce que nous contestons, c'est de devoir le faire en **stockage BDD Oracle**, alors qu'**IFS Cloud propose nativement la feature `Cloud File Storage`** qui stocke les documents sur Azure Blob hors BDD relationnelle. Cette feature est **documentée dans votre propre Solution Manager User Guide** ('Cloud File Storage' et 'Cloud File Storage Migration Tool'), et votre doc précise même que 'A storage account is provisioned automatically per environment' — donc le storage Azure Blob est probablement déjà provisionné côté notre tenant. Nous demandons une **vérification du paramétrage actuel** et, si besoin, la finalisation de l'activation + migration via les Web Assistants 'fully automatic' Transfer Documents / Transfer Media.*
+>
+> *Nous avions fait le choix de ne pas activer cette feature au provisionnement initial. Avec l'évolution de notre usage (archivage légal des factures fournisseurs depuis mars 2026), ce choix est à reconsidérer — et c'est précisément le scénario que votre doc anticipe."*
+
+→ Ce point est crucial : il évite le piège *"c'est votre faute, payez"* et déplace le débat sur **l'activation d'une feature standard IFS existante**, pas sur une demande exotique. Voir aussi l'**Axe 7** (section 2).
+
+---
+
 ## 4. Anticipation des contre-arguments IFS
 
 ### "Le volume facturé correspond à la base totale, c'est notre standard contractuel"
@@ -152,7 +229,9 @@
 ### "Vous pouvez nettoyer vos documents et vos données"
 
 **Réponse** :
-> *"Nos documents font 10 Go sur 122 Go. Même en les supprimant tous, nous serions à 112 Go — toujours au-dessus du quota. Le problème n'est pas notre usage, c'est la structure IFS."*
+> *"Nos documents font 10 Go sur 122 Go. Même en les supprimant tous, nous serions à 112 Go — toujours au-dessus du quota. Le problème n'est pas notre usage, c'est la structure IFS.*
+>
+> *Par ailleurs, ~78 % de ces 10 Go (soit 7,4 Go) sont des **pièces justificatives de factures fournisseurs** déposées automatiquement par notre connecteur Talend depuis mars 2026, dans le cadre d'une politique d'archivage légale obligatoire. Elles sont soumises à une **obligation de conservation de 10 ans** (Code de Commerce L.123-22). Toute suggestion de les purger expose notre entreprise à un risque fiscal et juridique majeur — ce n'est donc pas une option."*
 
 ---
 
