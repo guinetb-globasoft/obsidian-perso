@@ -52,7 +52,7 @@ Analyse réalisée à partir de requêtes SQL directes sur les vues système Ora
 
 | Tablespace | Alloué | Utilisé | Libre | Description |
 |------------|--------|---------|-------|-------------|
-| `IFSAPP_LOB` | 30,2 Go | 28,7 Go | 1,5 Go | Fichiers binaires IFS (DocMan, LOB) |
+| `IFSAPP_LOB` | 30,2 Go | 28,7 Go | 1,5 Go | Tous les LOB IFSAPP (mix client + framework + logs) |
 | `SYSAUX` | 15,5 Go | 14,8 Go | 0,8 Go | Oracle système (AWR, stats annexes) |
 | `IFSAPP_DATA` | 13,0 Go | 12,4 Go | 0,7 Go | Tables IFS |
 | `SYSTEM` | 12,7 Go | 12,7 Go | 0,0 Go | Dictionnaire Oracle, code PL/SQL |
@@ -67,6 +67,57 @@ Analyse réalisée à partir de requêtes SQL directes sur les vues système Ora
 ### Observations notables
 - **20 Go d'espace alloué vide** dans les datafiles, dont 8,3 Go d'UNDO presque vide et 6,4 Go d'audit non utilisés.
 - Deux tablespaces complets (`MAINTENIX`, `JASPER`) de 1 Go chacun sont vides — modules non utilisés.
+
+### ⚠️ Limite de la lecture par tablespace
+
+**Un tablespace est un conteneur Oracle, pas une catégorie fonctionnelle de données.** Le nom du tablespace peut induire en erreur :
+
+- `IFSAPP_LOB` ne contient pas que "nos fichiers" — il regroupe **tous** les LOBSEGMENT du schéma IFSAPP, quel que soit le contenu (documents client, modèles UI, logs de debug, traductions...).
+- `IFSAPP_DATA` contient nos tables transactionnelles **et** les tables internes du framework IFS.
+- `SYSAUX` mélange l'AWR Oracle, le dictionnaire annexe et les statistiques.
+
+Pour comprendre **ce qui occupe réellement la place**, il faut joindre `DBA_SEGMENTS` avec `ALL_LOBS` afin de remonter chaque LOBSEGMENT à sa **table métier d'origine**. C'est l'objet de la section suivante.
+
+---
+
+## 3 bis. Décomposition réelle par contenu (au-delà du tablespace)
+
+### 3 bis.1 Détail du tablespace `IFSAPP_LOB` (28,7 Go)
+
+C'est le tablespace le plus volumineux (24 % du total). Sa décomposition par **propriétaire fonctionnel du contenu** :
+
+| Origine | Volume | Part du tablespace | Détail |
+|---------|--------|---------------------|--------|
+| 👤 **Client — Documents DocMan** | 10,1 Go | 34 % | `EDM_FILE_STORAGE_TAB.FILE_DATA` |
+| 👤 **Client — Archives PDF** | 0,6 Go | 2 % | `PDF_ARCHIVE_TAB.PDF` |
+| 🏢 **IFS-APP — Framework UI Aurena** | 11,1 Go | 38 % | `FND_MODEL_DESIGN_TAB.TEMPLATE`, `FND_MODEL_API_DOC_TAB.TEMPLATE`, `FND_MODEL_DESIGN_DATA_TAB.CONTENT` |
+| 🏢 **IFS-APP — Traductions** | 1,0 Go | 4 % | `LANGUAGE_FILE_IMPORT_TAB.IMPORT_FILE` |
+| 🏢 **IFS-APP — Profils clients** | 0,8 Go | 3 % | `CLIENT_PROFILE_HANDLING_XML_VIRTUAL_VRT.FILE_DATA` |
+| 🏢 **IFS-OPS — Debug BPMN** | 3,9 Go | 14 % | `BPMN_DEBUG_ACTIVITY_LOG_TAB.VARIABLES` |
+| 🏢 **IFS-OPS — Lobby / Reporting** | 0,25 Go | 1 % | `XLR_META_DATA_ARCHIVE_TAB.META_FILE`, etc. |
+| 🏢 **IFS-OPS — IFS Connect** | 0,2 Go | 1 % | `FNDCN_MESSAGE_BODY_TAB.MESSAGE_VALUE` |
+| 🏢 **IFS-OPS — Imports/transferts** | 0,06 Go | <1 % | `EXT_FILE_TRANS_TAB` (LOB) |
+| 🏢 **Autres petits LOB IFS** | ~0,8 Go | 3 % | Templates rapports, libs Java, permission sets, configs |
+| **TOTAL** | **28,7 Go** | 100 % | |
+
+**Constat clé** : sur le tablespace nommé `IFSAPP_LOB`, **seulement 37 % du contenu (10,7 Go) sont des données générées par notre activité client**. **63 % (~18 Go) sont du contenu IFS** (framework ou logs).
+
+### 3 bis.2 Synthèse — Volume réel par propriétaire fonctionnel (tous tablespaces confondus)
+
+Une fois la jointure faite entre segments et tables d'origine, voici la répartition globale par **responsabilité de génération** plutôt que par tablespace :
+
+| Origine | Volume | Part du total (122 Go) |
+|---------|--------|------------------------|
+| 👤 **Client** (documents + transactions + configs) | ~13 Go | 11 % |
+| 🏢 **IFS-APP** (framework, code, modèles, traductions) | ~21 Go | 17 % |
+| 🏢 **IFS-OPS** (logs, audits, debug) | ~14 Go | 12 % |
+| 🔧 **Oracle système** (SYS, AUDSYS, etc.) | ~30 Go | 25 % |
+| 🔧 **Espace alloué vide** | ~20 Go | 16 % |
+| 🔧 **TEMP / UNDO / redo** (estimation) | ~22 Go | 18 % |
+| Autres schémas Oracle | ~2 Go | 1 % |
+| **TOTAL** | **122 Go** | 100 % |
+
+➡️ **Cette vue par propriétaire fonctionnel est la seule représentative pour discuter de facturation.** Le détail complet est dans `02_Responsabilite_volumes.md`.
 
 ---
 

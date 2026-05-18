@@ -9,28 +9,48 @@
 
 ## 🎯 Le chiffre clé
 
-> **Sur les 122 Go facturés par IFS, seulement ~13 Go correspondent à des données métiers réellement générées par notre activité.**
+> **Sur les 122 Go facturés par IFS, seulement ~13 Go correspondent à des données métier réellement générées par notre activité.**
 > **Soit ~11 % du volume total.**
 
 Le reste (~109 Go) correspond à du framework IFS, du code applicatif IFS, des logs techniques IFS, du système Oracle géré par IFS et de l'espace alloué vide.
 
 ---
 
+## ⚠️ Point méthodologique important : tablespace ≠ propriétaire du contenu
+
+Une lecture rapide des tablespaces Oracle peut induire en erreur. Le tablespace **`IFSAPP_LOB`** (28,7 Go) **n'est PAS la mesure de "nos fichiers"**. C'est un conteneur Oracle qui regroupe **tous les LOBSEGMENT du schéma IFSAPP**, qu'ils appartiennent à des tables métier (DocMan) ou à des tables internes du framework IFS (modèles UI, logs de debug, traductions...).
+
+**Décomposition réelle de `IFSAPP_LOB`** :
+
+| Origine du contenu | Volume dans IFSAPP_LOB | Part |
+|---------------------|-------------------------|------|
+| 👤 Documents client (EDM + PDF archive) | 10,6 Go | **37 %** |
+| 🏢 Framework IFS (FND_MODEL_*, langues, profils) | 13,0 Go | 45 % |
+| 🏢 Logs IFS (BPMN debug, IFS Connect, lobby) | 4,4 Go | 15 % |
+| 🏢 Autres petits LOB IFS (templates, libs, permission sets) | 0,7 Go | 3 % |
+| **TOTAL** | **28,7 Go** | 100 % |
+
+➡️ **Sur le tablespace nommé "IFSAPP_LOB", seulement 37 % du contenu est à nous.** Le nom du tablespace ne reflète pas la propriété fonctionnelle du contenu.
+
+Cette confusion potentielle est en soi un argument de négociation : la méthode de mesure par tablespace n'est pas adaptée pour distinguer les données générées par le client de celles générées par IFS.
+
+---
+
 ## 📊 Décomposition synthétique
 
-| Catégorie | Volume | % | Responsable |
-|-----------|--------|---|-------------|
-| **Données métier client** (transactions, documents uploadés) | ~13 Go | 11 % | 👤 Nous |
-| **Framework et métadonnées IFS** (UI Aurena, modèles, doc API) | ~12 Go | 10 % | 🏢 IFS |
-| **Logs et audit IFS** (BPMN debug, IAM, événements) | ~10 Go | 8 % | 🏢 IFS |
-| **Code PL/SQL IFS compilé** dans schéma SYS | ~9 Go | 7 % | 🏢 IFS |
-| **Bug Oracle non purgé** (`WRI$_ADV_OBJECTS`) | ~11 Go | 9 % | 🏢 IFS (DBA) |
-| **AWR / stats / dictionnaire Oracle** | ~7 Go | 6 % | 🏢 IFS (DBA) |
-| **Traductions, profils, archives diverses IFS** | ~8 Go | 7 % | 🏢 IFS |
-| **Espace alloué vide** (datafiles non remplis) | ~20 Go | 16 % | 🏢 IFS (DBA) |
-| **TEMP / UNDO / redo logs** (estimation) | ~22 Go | 18 % | 🏢 IFS (DBA) |
-| **Autres petits schémas Oracle** | ~10 Go | 8 % | 🏢 IFS |
-| **TOTAL** | **122 Go** | 100 % | |
+| Catégorie                                                      | Volume     | %     | Responsable  |
+| -------------------------------------------------------------- | ---------- | ----- | ------------ |
+| **Données métier client** (transactions, documents uploadés)   | ~13 Go     | 11 %  | 👤 Nous      |
+| **Framework et métadonnées IFS** (UI Aurena, modèles, doc API) | ~12 Go     | 10 %  | 🏢 IFS       |
+| **Logs et audit IFS** (BPMN debug, IAM, événements)            | ~10 Go     | 8 %   | 🏢 IFS       |
+| **Code PL/SQL IFS compilé** dans schéma SYS                    | ~9 Go      | 7 %   | 🏢 IFS       |
+| **Bug Oracle non purgé** (`WRI$_ADV_OBJECTS`)                  | ~11 Go     | 9 %   | 🏢 IFS (DBA) |
+| **AWR / stats / dictionnaire Oracle**                          | ~7 Go      | 6 %   | 🏢 IFS (DBA) |
+| **Traductions, profils, archives diverses IFS**                | ~8 Go      | 7 %   | 🏢 IFS       |
+| **Espace alloué vide** (datafiles non remplis)                 | ~20 Go     | 16 %  | 🏢 IFS (DBA) |
+| **TEMP / UNDO / redo logs** (estimation)                       | ~22 Go     | 18 %  | 🏢 IFS (DBA) |
+| **Autres petits schémas Oracle**                               | ~10 Go     | 8 %   | 🏢 IFS       |
+| **TOTAL**                                                      | **122 Go** | 100 % |              |
 
 ---
 
