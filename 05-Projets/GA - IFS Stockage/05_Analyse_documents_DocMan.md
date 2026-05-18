@@ -333,6 +333,8 @@ Deux cas possibles selon la méthode d'accès Ootary aux PJ :
 
 #### Pourquoi c'est la bonne réponse pour nous
 
+**Schéma d'architecture comparatif (Excalidraw)** : [Externalisation EDM — Avant / Après](https://excalidraw.com/#json=q38rUtTN6xMLnJdz3lX_E,H8fLA54AAOyYQNRzdRqZRg) — vue côte-à-côte montrant le flux actuel (sources → API IFS → BDD Oracle, Ootary en accès incertain) vs le flux cible (sources → API IFS → Cloud File Storage Service → Azure Blob, Ootary OK via API REST).
+
 | Aspect | Sans `Cloud File Storage` (état actuel) | Avec `Cloud File Storage` activé |
 |---|---|---|
 | Stockage Talend | BDD Oracle (cher au Go) | Azure Blob (~10× moins cher au Go) |
