@@ -1,7 +1,7 @@
 ---
 tags: ["elevo", "nibelis", "mapping", "GA", "import-utilisateurs", "sftp"]
 created: 2026-05-29
-updated: 2026-05-29
+updated: 2026-06-02
 ---
 
 ---
@@ -10,8 +10,9 @@ type: mapping
 cible: Elevo — Synchronisation des utilisateurs (SFTP)
 source: API Nibelis
 created: 2026-05-29
-updated: 2026-05-29
+updated: 2026-06-02
 sources_elevo: ["Synchroniser les utilisateurs via SFTP – Elevo.pdf", "Elevo - Fichier type synchronisation SFTP (FR).xlsx", "Fichier d'import Elevo x Simbel.xlsx"]
+doc_elevo_url: "https://docs.elevo.fr/hc/fr/articles/4403024287249-Ajouter-importer-ou-mettre-%C3%A0-jour-des-utilisateurs"
 ---
 
 
@@ -114,7 +115,7 @@ Le fichier CSV Elevo SFTP attend **21 colonnes** (5 obligatoires + 16 optionnell
 | Colonne CSV Elevo | Obligatoire | Champ Nibelis | Transformation | Notes |
 |---|---|---|---|---|
 | `uniq_identifier` | ✅ | `id_nibelis` | `str(id_nibelis)` | **Clé maître**. Doit être constant et unique. Conversion int→str obligatoire (note Elevo : "1" ≠ "001") |
-| `email` | ✅ (si username vide) | `mail_01` | `lower()` (Elevo convertit déjà) | Elevo convertit auto en minuscules |
+| `email` | ✅ (si username vide) | `mail_conge` | `lower()` | ⚠️ **`mail_conge` = email pro `@ga.fr`** (vérifié 10/10 RH + ADODO). `mail_01` est souvent perso/vide chez GA → fallback seulement |
 | `username` | ✅ (si email vide) | `matricule` | aucune | Alphanum + `.`, `-`, `_`. Fallback si pas d'email pro |
 | `first_name` | ✅ | `prenom` | aucune (Elevo Proper Case auto) | |
 | `last_name` | ✅ | `nom` | aucune (Elevo Proper Case auto) | |
@@ -252,7 +253,12 @@ Le tab "Mapping" du fichier Simbel montre qu'on peut **livrer un CSV avec d'autr
 
 ## Mapping détaillé (Mode A — Import ponctuel)
 
-Si on utilise le fichier `Elevo - Import ou mise à jour des utilisateurs.xlsx` (template Import), voici les **21 colonnes attendues** et leur mapping Nibelis :
+Si on utilise le fichier `Elevo - Import ou mise à jour des utilisateurs.xlsx` (template Import), voici le mapping Nibelis.
+
+> ✅ **Template officiel vérifié** (2026-06-02, fichier `Elevo - Import ou mise à jour des utilisateurs.xlsx`, onglet *Liste des utilisateurs*) : **20 colonnes de données** (la colonne A est un simple marqueur « ligne à supprimer/conserver », pas un champ). **`organization_admin` n'existe pas** dans ce template. Ordre et noms machine exacts (ligne à conserver) :
+> ```
+> registration_number; first_name; last_name; email; username; manager_email; manager_username; job_title; team_name; work_start_date; level; department; service; gender; region; entity; locale; content_locale; working_time_ratio; use_sso
+> ```
 
 ### ✅ Récupérables directement (13)
 
@@ -261,7 +267,7 @@ Si on utilise le fichier `Elevo - Import ou mise à jour des utilisateurs.xlsx` 
 | `registration_number` | optionnel | `matricule` | aucune |
 | `first_name` | recommandé | `prenom` | aucune |
 | `last_name` | recommandé | `nom` | aucune |
-| `email` | ✅ (si username vide) | `mail_01` | aucune |
+| `email` | ✅ (si username vide) | `mail_conge` | ⚠️ email pro `@ga.fr` (fallback `mail_01`) |
 | `username` | ✅ (si email vide) | `matricule` | aucune (alphanum + `.`, `-`, `_`) |
 | `manager_username` | recommandé | `resp_hier_matricule` | aucune |
 | `job_title` | optionnel | `emploi_libelle` | aucune |
@@ -280,7 +286,7 @@ Si on utilise le fichier `Elevo - Import ou mise à jour des utilisateurs.xlsx` 
 | `region` | À arbitrer : commune / établissement / champ Localisation Nibelis ⏳ |
 | `working_time_ratio` | `round(horaire_mensuel / 151.67 * 100)`, défaut 100 pour forfait jours |
 
-### Spécifiques au Mode A — ❌ Non disponibles (5)
+### Spécifiques au Mode A — ❌ Non disponibles (4)
 
 | Colonne CSV Elevo | Solution |
 |---|---|
@@ -288,7 +294,8 @@ Si on utilise le fichier `Elevo - Import ou mise à jour des utilisateurs.xlsx` 
 | `locale` | Constante "fr" |
 | **`content_locale`** (langue des contenus) | Constante "fr" (spécifique Mode A — absent du SFTP) |
 | `use_sso` | Vide ou "false" |
-| ~~`organization_admin`~~ | Géré manuellement côté Elevo, pas via fichier |
+
+> ~~`organization_admin`~~ : **n'existe pas** dans le template Import officiel (vérifié). Droits admin gérés manuellement côté Elevo.
 
 ### Différences clés Mapping A vs B
 
@@ -301,11 +308,12 @@ Si on utilise le fichier `Elevo - Import ou mise à jour des utilisateurs.xlsx` 
 | Pas de mapping (constante "fr") | ✅ `content_locale` à remplir | ❌ champ absent |
 | Pas de mapping (booléen) | ❌ champ absent | ✅ `skip` (exclusion ligne) |
 
-→ **En Mode A** : 13 directs + 3 avec traitement + 5 indisponibles = 21 colonnes
-→ **En Mode B** : 14 directs + 3 avec traitement + 4 indisponibles = 21 colonnes
+→ **En Mode A** : 13 directs + 3 avec traitement + 4 indisponibles = **20 colonnes** (template officiel vérifié)
+→ **En Mode B (SFTP)** : 14 directs + 3 avec traitement + 4 indisponibles = 21 colonnes
 
 ## Liens
 
+- 📖 [Doc officielle Elevo — Ajouter, importer ou mettre à jour des utilisateurs (Mode A)](https://docs.elevo.fr/hc/fr/articles/4403024287249-Ajouter-importer-ou-mettre-%C3%A0-jour-des-utilisateurs)
 - [[01-API-Nibelis-Reference]] — Détail des champs Nibelis source
 - [[03-Mapping-Elevo-Parcours-Professionnel]] — Import parcours pro (prérequis : ce mapping users doit tourner avant)
 - [[04-Architecture-SFTP-Elevo]] — Archi SFTP, GPG, sécurité, ops
