@@ -1,11 +1,7 @@
 ---
-tags: ["comptabilité", "exercice-2025", "guinet-digital-group", "plan-action"]
-created: 2026-05-08
----
-
----
 tags: ["comptabilité", "guinet-digital-group", "exercice-2025", "plan-action"]
 created: 2026-05-08
+updated: 2026-05-21
 société: Guinet Digital Group
 company_id: 4
 ---
@@ -13,7 +9,24 @@ company_id: 4
 # Plan d'action — Clôture exercice 2025 Guinet Digital Group
 
 > Document vivant — alimenté au fil de l'analyse de l'état de la situation.
-> Démarré le 08/05/2026.
+> Démarré le 08/05/2026. Refresh 21/05/2026 : les chiffres de phase et de volumétrie ci-dessous reflètent le diagnostic initial (08/05) ; pour l'état actuel **voir [[00-Etat-de-la-situation#📸 Snapshot Odoo 21/05/2026 — chiffres-clés à jour]]**.
+
+## 🔄 Avancement réel au 21/05/2026 (résumé)
+
+- ✅ **Phase 0 Diagnostic** : terminé (CA, trésorerie, lettrage)
+- ✅ **Rapprochements bancaires BNK1/BNK2** : 13/13 statements 2025 (10/05/2026)
+- ✅ **Lettrage 471000 BNK1/BNK2** : ~99% (1 + 3 lignes résiduelles 2025)
+- ✅ **Drafts Up France** : tous postés (sauf BNK2/2025/00255 résiduel + OD VAT Juin)
+- 🟡 **Lettrage 401** : 115 lignes ouvertes — désormais surtout des NDF Guinet Benoit 2026 à apurer via OD vers 455010 (gros chantier 08/05 réglé, nouveau chantier NDF émergé)
+- ✅ **Lettrage 411 Map Tech** : à faire (bug TVA encore présent — FAC/2025/00007 toujours `not_paid`)
+- ✅ **Interco 451000** : flux 2025 majoritairement reclassés (Phase L.1 du 10/05/2026)
+- 🔴 **Phase 2.2 ODs de paie 2025** : 12 ODs toujours à créer
+- 🔴 **Phase 4.2 Bilan Bepmale GDG 2024** : non récupéré
+- 🔴 **Amortissement Citroën C5 2025** : non saisi
+
+> Le plan détaillé ci-dessous (rédigé le 08/05) reste pertinent comme méthode ; seuls les volumes ont changé.
+
+---
 
 ---
 

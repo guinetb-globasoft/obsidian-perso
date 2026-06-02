@@ -359,6 +359,36 @@ Stratégie validée : reconstruction complète identique à Guinet Group. Voir [
 | 5 | ✅ | Map Technologies FAC/2025/00007 | **Découvert 09/05/2026 : la facture EST PAYÉE** (BNK1/2025/00293 du 09/04/2025, 5 280 €). Le statut `not_paid` dans Odoo est dû au bug TVA (point #7) qui empêche le lettrage automatique. Pas de recouvrement à faire. |
 | 6 | ✅ | Reconstruction Odoo 2024 | Phases 1-5 GDG terminées + bilan miroir GG 09/05/2026 — voir [[Exercice 2024/07-OD-A-Nouveau-31122024-GDG]] et [[Brief-Compta-GuinetGroup#Statut interco GG ↔ GDG au 31/12/2024 (09/05/2026)]] |
 | 7 | ⏸️ | Bug TVA Map Technologies (lettrage) | Investigué 09/05/2026 — la facture FAC/2025/00007 a été **payée** par BNK1/2025/00293 le 09/04/2025. Lettrage bloqué par contrôle multi-société d'Odoo : tax_repartition_line 566 corrigé en 258, tax_line_id forcé à 60, tax_ids réécrit, mais erreur "tax_ids: '20% S', '20% S' appartient à une autre société" persiste. **Décision** : laisser le bug ouvert. Map Tech reste `not_paid` dans Odoo mais factuellement payé. À résorber par OD de compensation 411 si besoin de cleaner les rapports. |
+| 8 | ✅ | Reclassement restaurants compte d'attente 2025 | 21/05/2026 — 41 lignes BNK2 reclassées de 471000 vers 625600 (37 / 3 124,50€), 625700 (1 / 15€), 455010 (3 / 78,20€). Total 3 217,70€. Détail ↓ |
+| 9 | ✅ | Reclassement résiduel 471000 GDG 2025 | 21/05/2026 — 80 lignes restantes (6 310,68 €) reclassées par catégorie : 615600 Maintenance (34 / 1 791€), 613200 Coworking (5 / 1 649,82€), 615500 Entretien véh. (2 / 1 044,90€), 625600 Missions (8 / 620,20€), 625100 Frais dépl. (22 / 555,51€), 606100 Énergies (4 / 325,75€), 606400 Fournitures (3 / 202,60€), 627000 Frais bancaires (2 / 120,90€). 4 lignes laissées sur 471 pour 20,74€ (libellés obscurs). Risque de doubles assumé avec factures fournisseur Etincelle (11 fact. 7 806€ + paiements 1 407€ reclassés). |
+
+---
+
+## Reclassement restaurants compte d'attente 471000 — 2025 (21/05/2026)
+
+**Contexte** : Sur les 125 lignes BNK2 (paiements CB GLOBASOFT XX7328) imputées au 471000 en 2025 pour un total de 9 549,12€ TTC, 41 ont été identifiées comme dépenses restaurant ou personnelles et reclassées sur leur compte définitif.
+
+**Règle de classement** :
+- Par défaut, restaurant non lettré (donc sans information sur le nombre de couverts) → **625600 Missions** (hypothèse repas seul du gérant).
+- Restaurant explicitement avec un client (Karting Montaud) → **625700 Réceptions**.
+- Dépenses personnelles identifiées par Benoit → **455010 C/C Benoit Guinet** (ID 3172) avec partner_id 263 (Guinet Benoit personne physique).
+
+**Récap**
+
+| Destination | Compte | ID | Lignes | TTC |
+|---|---|---:|---:|---:|
+| 625600 Missions | 1378 | 37 | 3 124,50 € |
+| 625700 Réceptions | 1379 | 1 | 15,00 € |
+| 455010 C/C Benoit Guinet | 3172 | 3 | 78,20 € |
+| **Total reclassé** | | | **41** | **3 217,70 €** |
+
+**Lignes exclues** (restent sur 471000 — à arbitrer plus tard) :
+- ID 10183 — SUMUP *ESB LES TOULOUSE — 102,00 € (sans tiers, 25/07/2025)
+- ID 10279 — TLSE LES MAOURI — 250,00 € (sans tiers, libellé tronqué, 01/12/2025)
+
+**Note technique MCP** : `odoo:update_record` sur `account.move.line` (modification `account_id` de lignes posted rattachées à un statement bancaire) **timeout en batch ≥ 5 lignes** (4 min côté MCP, opération non appliquée). Procéder en **mini-batchs de 1 à 3 lignes maximum** pour ce type d'opération.
+
+> Le contenu complet 625600/625700 2025 GDG après reclassement : Missions 4 658,80€ HT (factures FACTU) + 3 124,50€ TTC (BNK2 reclassées) ; Réceptions 6 213,77€ HT (factures FACTU) + 15€ TTC.
 
 
 

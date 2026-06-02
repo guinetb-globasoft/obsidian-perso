@@ -106,3 +106,6 @@ Cette confusion potentielle est en soi un argument de négociation : la méthode
 | `02_Responsabilite_volumes.md` | **⭐ Document clé** — Qui génère quoi (nous vs IFS vs Oracle) |
 | `03_Plan_purge.md` | Plan d'action de purge — gains estimés ~30 Go |
 | `04_Argumentaire_negociation_IFS.md` | Arguments structurés pour la négociation |
+| `05_Analyse_documents_DocMan.md` | Analyse fine des documents EDM (PJ factures Talend/NELGRA) |
+| `06_Referentiel_SQL.md` | Référentiel des requêtes SQL pour audit Quick Report |
+| `07_Database_Tasks_purge_IFS.md` | **⭐ Phase autonome** — 17 Database Tasks de purge IFS lançables sans DBA (gain ~10-15 Go) |

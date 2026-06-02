@@ -1,9 +1,13 @@
 ---
 tags: ["comptabilité", "guinet-digital-group", "exercice-2025", "lettrage", "à-valider"]
 created: 2026-05-09
+updated: 2026-05-21
 ---
 
 # Proposition — Écritures sans justificatif tiers (BNK1 / GDG 2025)
+
+> **✅ Largement appliqué (Phase F du 11/05/2026) — proposition conservée à valeur de référence catégories.**
+> Au 21/05/2026, BNK1 471000 ne contient plus qu'**1 ligne 2025** (PRLV SARL GD 6 €, oct 2025). Les catégories Niveau 1 (frais bancaires → 627), Niveau 2 (intérêts → 661), Niveau 4a (RCP/IARD → 616), Niveau 4b (Prêt BPCE → 164), Niveau 6 (DGFIP), Niveau 7 (DRFIP/Factor) ont été traitées. Niveau 5 (URSSAF/Klesia) reste à reconciler avec les ODs de paie quand elles seront postées. Voir [[00-Etat-de-la-situation#📸 Snapshot Odoo 21/05/2026 — chiffres-clés à jour]].
 
 > Toutes les lignes ci-dessous sont issues des extraits BPCE déjà importés dans Odoo (BNK1 journal id=27, company_id=4).  
 > **Action attendue** : valider ou rejeter chaque catégorie. Pour celles validées, le script peut générer les OD correspondantes.

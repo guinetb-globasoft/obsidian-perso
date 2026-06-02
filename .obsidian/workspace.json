@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "05-Projets/_Methodologie-Plan-Classement/Prompt CANVA.md",
+                "file": "05-Projets/GA - API Nibelis/02-Mapping-Elevo-Nibelis.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Prompt CANVA"
+              "title": "02-Mapping-Elevo-Nibelis"
+            }
+          },
+          {
+            "id": "bdbd82c38d568054",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "05-Projets/GA - API Nibelis/02-Mapping-Elevo-Nibelis.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "02-Mapping-Elevo-Nibelis"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,7 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 369.5
   },
   "right": {
     "id": "3e8eccad672d3bdb",
@@ -183,44 +198,44 @@
       "bases:Créer une nouvelle base": false
     }
   },
-  "active": "3a1418a7369fa25f",
+  "active": "bdbd82c38d568054",
   "lastOpenFiles": [
-    "_Archives/05-Projets/_Methodologie-Plan-Classement/11-Glossaire.md",
-    "_Archives/05-Projets/_Methodologie-Plan-Classement/10-Normes-references.md",
-    "05-Projets/_Methodologie-Plan-Classement/12-Glossaire.md",
-    "05-Projets/_Methodologie-Plan-Classement/11-Normes-references.md",
-    "05-Projets/_Methodologie-Plan-Classement/10-Completude-structurelle.md",
-    "05-Projets/_Methodologie-Plan-Classement/01-Logique-structurante.md",
-    "05-Projets/_Methodologie-Plan-Classement/Prompt CANVA.md",
-    "05-Projets/_Methodologie-Plan-Classement/09-Livrabilite-cloture-projet.md",
-    "05-Projets/_Methodologie-Plan-Classement/04-Calendrier-conservation-DUA.md",
-    "_Archives/05-Projets/_Methodologie-Plan-Classement/10-Glossaire.md",
-    "_Archives/05-Projets/_Methodologie-Plan-Classement/09-Normes-references.md",
-    "_Archives/05-Projets/_Methodologie-Plan-Classement",
-    "_Archives/05-Projets",
-    "05-Projets/_Methodologie-Plan-Classement/11-Glossaire.md",
-    "05-Projets/_Methodologie-Plan-Classement/10-Normes-references.md",
-    "05-Projets/_Methodologie-Plan-Classement/03-Exhaustivite-exclusivite.md",
-    "2026/AREC-Occitanie - Impl ERP Gestion Affaires/03-BPU.md",
-    "2026/AREC-Occitanie - Impl ERP Gestion Affaires/02-Propale-source.md",
-    "05-Projets/DWH-Aerotec/Sprint-MEP2-Factures-Achats/00-Index.md",
-    "05-Projets/_Methodologie-Plan-Classement/Template-Audit-Projet.md",
-    "05-Projets/_Methodologie-Plan-Classement/10-Glossaire.md",
-    "05-Projets/_Methodologie-Plan-Classement/09-Normes-references.md",
-    "05-Projets/_Methodologie-Plan-Classement/08-Conformite-reglementaire.md",
-    "05-Projets/_Methodologie-Plan-Classement/07-Adequation-usages.md",
-    "05-Projets/_Methodologie-Plan-Classement/06-Metadonnees.md",
-    "05-Projets/_Methodologie-Plan-Classement/05-Stabilite-evolutivite.md",
-    "05-Projets/_Methodologie-Plan-Classement/02-Profondeur-hierarchie.md",
-    "05-Projets/_Methodologie-Plan-Classement/00-Index.md",
-    "05-Projets/_Methodologie-Plan-Classement",
-    "04-Comptabilité/Exercice 2025/00-Etat-de-la-situation.md.tmp.22936.0548f2df3269",
-    "_Archives/04-Comptabilité/Exercice 2024",
-    "_Archives/04-Comptabilité",
-    "_Archives",
-    "04-Comptabilité/Exercice 2024",
-    "04-Comptabilité/Exercice 2025",
-    "2026/AREC-Occitanie - Impl ERP Gestion Affaires",
+    "05-Projets/GA - API Nibelis/04-Architecture-SFTP-Elevo.md",
+    "05-Projets/GA - API Nibelis/02-Mapping-Elevo-Nibelis.md",
+    "05-Projets/GA - API Nibelis/01-API-Nibelis-Reference.md",
+    "06-Commercial/Contenu LinkedIn IFS/tips/Tip - ISO-20022 structured vs address lines.md",
+    "06-Commercial/Contenu LinkedIn IFS/tips/Tip - Punchout catalog trim at HOOK_URL.md",
+    "06-Commercial/Contenu LinkedIn IFS/tips/Tip - Release a blocked Customer Order.md",
+    "06-Commercial/Contenu LinkedIn IFS/tips/Tip - Intercompany flows skip the PR by design.md",
+    "06-Commercial/Contenu LinkedIn IFS/tips/Tip - Convert rental asset to company owned.md",
+    "06-Commercial/Contenu LinkedIn IFS/tips/Tip - IFS to Power BI via Fabric Lakehouse.md",
+    "06-Commercial/Contenu LinkedIn IFS/tips/Tip - IAL is discouraged for new reporting.md",
+    "06-Commercial/Contenu LinkedIn IFS/tips/Tip - Business Report Excel-PDF needs Execution Server.md",
+    "06-Commercial/Contenu LinkedIn IFS/tips/Tip - MWO shift data lives in ResourceLogonStatusHist.md",
+    "06-Commercial/Contenu LinkedIn IFS/tips/Tip - MWO measurement error set sync to Batch.md",
+    "06-Commercial/Contenu LinkedIn IFS/tips/Tip - SLA not created check Fulfillment Entity.md",
+    "06-Commercial/Contenu LinkedIn IFS/tips/Tip - Missing maintenance vouchers are errored transactions.md",
+    "06-Commercial/Contenu LinkedIn IFS/tips/Tip - PSO appointment window follows the calendar.md",
+    "06-Commercial/Contenu LinkedIn IFS/tips/Tip - Schedule a migration job from a file.md",
+    "06-Commercial/Contenu LinkedIn IFS/tips/Tip - REP tables empty after 25R2 (EBR).md",
+    "06-Commercial/Contenu LinkedIn IFS/tips/Tip - Oracle SE2 deprecated in 25R2.md",
+    "06-Commercial/Contenu LinkedIn IFS/tips/Tip - Aurena nav arrows are responsive not a bug.md",
+    "06-Commercial/Contenu LinkedIn IFS/tips/Tip - Crystal Report server check main_config.md",
+    "06-Commercial/Contenu LinkedIn IFS/tips/Tip - Event Action conditions not evaluated is a known defect.md",
+    "06-Commercial/Contenu LinkedIn IFS/tips/Tip - Lobby page parameters order is fixed at definition.md",
+    "06-Commercial/Contenu LinkedIn IFS/tips/Tip - IAL Live Data vs Copy All Data.md",
+    "06-Commercial/Contenu LinkedIn IFS/_Brief IA - Génération tips.md",
+    "06-Commercial/Contenu LinkedIn IFS/_Index & Stratégie.md",
+    "_Archives/06-Commercial/Contenu LinkedIn IFS",
+    "06-Commercial/Contenu LinkedIn IFS/tips",
+    "_Archives/06-Commercial",
+    "05-Projets/GA - API Nibelis/02-Mapping-Elevo-Nibelis.md.tmp.16052.d7a744671826",
+    "05-Projets/GA - API Nibelis/02-Mapping-Elevo-Nibelis.md.tmp.15420.cbc7c7c118b6",
+    "05-Projets/GA - API Nibelis",
+    "04-Comptabilite/Preparation-Declaration-Impots-2025-Perso.md.tmp.13072.7cb1f0047f3f",
+    "04-Comptabilité/Exercice 2025/01-Audit-Journaux-Bancaires-2025-GDG.md.tmp.5896.28e2661deee4",
+    "04-Comptabilité/Exercice 2025/01-Plan-d-action.md.tmp.5896.4aef6500018e",
+    "04-Comptabilité/Exercice 2025/00-Diagnostic-GDG-2025.md.tmp.5896.89a141d03a8a",
     "00-Inbox/exports/sohoft-template/logo-sohoft.png",
     "00-Inbox/exports/sohoft-template/extracted/word/media/image9.png",
     "00-Inbox/exports/sohoft-template/extracted/word/media/image8.png",

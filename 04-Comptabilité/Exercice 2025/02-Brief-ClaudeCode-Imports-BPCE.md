@@ -1,15 +1,13 @@
 ---
-tags: ["comptabilité", "guinet-digital-group", "exercice-2025", "claude-code", "brief"]
+tags: ["comptabilité", "guinet-digital-group", "exercice-2025", "claude-code", "brief", "obsolete"]
 created: 2026-05-09
----
-
----
-tags: ["comptabilité", "guinet-digital-group", "exercice-2025", "claude-code", "brief"]
-created: 2026-05-09
-updated: 2026-05-09
+updated: 2026-05-21
 ---
 
 # Brief Claude Code — Imports relevés BPCE 2025 GDG
+
+> **✅ Travail réalisé — brief conservé à valeur de référence méthodologique.**
+> Les imports BNK1/BNK2/BNK3 2025 ont été complétés au 10/05/2026 ; les 13/13 statements BNK1 et BNK2 sont équilibrés. Voir [[01-Audit-Journaux-Bancaires-2025-GDG]] et [[00-Etat-de-la-situation#📸 Snapshot Odoo 21/05/2026 — chiffres-clés à jour]].
 
 > Brief autonome à donner à Claude Code. Tâche : extraire les transactions des PDF BPCE et les injecter dans Odoo via XML-RPC, en évitant les doublons avec ce qui existe déjà.
 

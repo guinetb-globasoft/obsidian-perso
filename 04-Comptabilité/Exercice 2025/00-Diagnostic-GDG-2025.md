@@ -1,15 +1,12 @@
 ---
 tags: ["comptabilité", "guinet-digital-group", "exercice-2025", "diagnostic"]
 created: 2026-05-09
----
-
----
-tags: ["comptabilité", "guinet-digital-group", "exercice-2025", "diagnostic"]
-created: 2026-05-09
-updated: 2026-05-09
+updated: 2026-05-21
 ---
 
 # Diagnostic exercice 2025 GDG (état au 09/05/2026)
+
+> **⚠️ Document snapshot au 09/05/2026** — Ce fichier conserve le diagnostic initial à valeur historique. Pour les chiffres actuels (21/05/2026), voir [[00-Etat-de-la-situation#📸 Snapshot Odoo 21/05/2026 — chiffres-clés à jour]].
 
 > Premier exercice de 12 mois (01/01/2025 → 31/12/2025) après l'exercice court 2024 (01/02→31/12, 11 mois).
 

@@ -1,21 +1,16 @@
 ---
 tags: ["comptabilité", "guinet-digital-group", "exercice-2025", "audit-bancaire"]
 created: 2026-05-09
----
-
----
-tags: ["comptabilité", "guinet-digital-group", "exercice-2025", "audit-bancaire"]
-created: 2026-05-09
-updated: 2026-05-09
+updated: 2026-05-21
 ---
 
 # Audit complétude des journaux bancaires GDG 2025
 
 > Vérifier la couverture de chaque journal avant de continuer la clôture 2025.
 
-> 🎯 **Tableau de bord clôture 2025** : voir [[00-Etat-de-la-situation#🎯 Synthèse exécutive — où en est-on ? (10/05/2026)]]
+> 🎯 **Tableau de bord clôture 2025** : voir [[00-Etat-de-la-situation#📸 Snapshot Odoo 21/05/2026 — chiffres-clés à jour]]
 >
-> **État BNK 10/05/2026** : statements BNK1 + BNK2 = 100% complets (13/13 chacun). Lettrage BNK2 471000 = ~30% (62 lignes lettrées sur ~310, ~21 K€ encore en suspense). Lettrage BNK1 471000 = 0% (~50 lignes 2025 à classer en frais bancaires/cotisations sociales/virements internes).
+> **État BNK au 21/05/2026** : statements BNK1 + BNK2 = 100% complets (13/13 chacun, inchangé depuis 10/05). Lettrage BNK1 471000 sur 2025 = **~99% (1 ligne 6 € résiduelle)**. Lettrage BNK2 471000 sur 2025 = **~99% (3 lignes 14,74 € résiduelles)**. Le gros chantier de lettrage BNK est donc essentiellement clos.
 
 ## Configuration
 

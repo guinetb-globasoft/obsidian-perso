@@ -355,3 +355,196 @@ Ne pas confondre avec des entrées.
 | Tiphaine Porcher Labreuille | 625353 Musicothérapie |
 | Aubineau Ezra | 625354 Éducatrice spécialisée |
 | Breton Emma PSY | 625300 Santé (à créer) |
+
+
+---
+
+
+## ✅ Addendum 28/05/2026 — Journal BNK4 (Compte joint BP 15519952511)
+
+### Découverte initiale
+
+Le compte joint BP **15519952511** (Mme GUINET KWANCHANOK OU M GUINET BENOIT, IBAN FR76 1780 7000 7615 5199 5251 158, agence Toulouse Dupuy) n'était pas dans Odoo perso. C'est un compte distinct de BNK1 (= 65519354452). Il porte notamment :
+- les **loyers perçus de l'appartement Limoges** (locataire MARTINEZ QUENTIN, agence Human Immobilier, ~550 €/mois)
+- les **2 contrats d'assurance habitation BPCE** (Toulouse 016561859 + Limoges 016561995)
+- le **PAS** prélevé en novembre 2025 (financé par virement BNK1)
+- les charges **syndic Limoges** (4T2025)
+- les virements vers le compte **CE Auvergne** qui alimente le prêt immo Limoges
+- diverses sorties vers BNK1 ("Virement vers Compte De Depot")
+
+→ **Compte critique pour la déclaration de revenus** (revenus fonciers 2044).
+
+### Nouveau journal
+
+| Code | ID | Nom | Type | Compte | IBAN |
+|------|-----|-----|------|--------|------|
+| **BNK4** | 19 | Bank (Banque Populaire — Compte Joint) | bank | 512006 | FR76 1780 7000 7615 5199 5251 158 |
+
+### Nouveaux comptes créés (28/05/2026)
+
+| Code | ID | Nom | Type |
+|------|-----|-----|------|
+| 512006 | 749 | Bank — Compte joint BP 15519952511 | asset_current |
+| 512007 | 750 | Caisse d'Épargne — Compte appartement Limoges (transit prêt) | asset_current |
+| 752200 | 751 | Loyers perçus appartement Limoges (Human Immobilier) | income |
+| 616111 | 752 | Assurance habitation Toulouse (BPCE MRH 016561859) | expense |
+| 616112 | 753 | Assurance habitation Limoges (BPCE MRH 016561995) | expense |
+| 455110 | 756 | C/C associé — SAS Le Petit Cerf | liability_current |
+| 455200 | 755 | C/C associé — SAS Guinet Group | liability_current |
+
+> Note collision : 455100 voulait être utilisé pour Le Petit Cerf mais collision avec compte PCG standard (id 344 "Partners/associates - Current accounts - Principal"). 455110 utilisé comme sous-compte.
+
+### Règles de ventilation BNK4 (libellé bancaire → compte)
+
+| Mot-clé dans le libellé | Compte cible | Sûreté |
+|---|---|---|
+| VIR HUMAN IMMOBILIER / Virement proprietaire | 752200 (Loyers Limoges) | ✅ |
+| PRLV SEPA BPCE ASSURANCE HABITATION 016561859 | 616111 (Toulouse) | ✅ |
+| PRLV SEPA BPCE ASSURANCE HABITATION 016561995 | 616112 (Limoges) | ✅ |
+| EUROVIR Syndic Appt Limo | 614100 (Charges copro Limoges) | ✅ |
+| PRLV SEPA DIRECTION GENE | 442110 (PAS) | ✅ |
+| FRAIS AUTO DECOUVERT / FRAIS COM INTERVENTION / FRAIS SUR SAISIE ADMIN / FRAIS NOTIF INTERDIC BDF / INT ARRETE DE COMPT / ARRETE DE COMPT MINIMUM FORFAITAIRE | 627300 (Frais bancaires) | ✅ |
+| VIREMENT SAS LE PETIT CERF | 455110 | ✅ |
+| VIREMENT SAS GUINET GROUP | 455200 | ✅ |
+| **VIR M GUINET BENOIT OU / Virement vers Compte De Depot** | 471000 (compte d'attente) | ⚠️ Vir internes Joint↔BNK1 — à clarifier au rapprochement BNK1 |
+| **VIR INST CE COMPTE APPAR / EUROVIR Ce Compte Appart** | 471000 (compte d'attente) | ⚠️ Vir vers CE Auvergne — à clarifier quand relevés CE importés |
+| **VIR M GUINET BENOIT OU / Virement vers Compte Charges** | 471000 (compte d'attente) | ⚠️ 1 ligne 26/12/2025 — libellé inhabituel |
+
+### Import 2025 réalisé le 28/05/2026
+
+- **65 lignes** importées (jan→déc 2025), source : 13 PDFs (12 relevés mensuels 2025 + relevé n°12 2026 pour les jours 06-31/12/2025)
+- **46 lignes ventilées** :
+  - 12 loyers Human Immo → 752200 = **+6 591,18 €**
+  - 11 BPCE Habit Toulouse → 616111 = -291,77 €
+  - 11 BPCE Habit Limoges → 616112 = -137,78 €
+  - 8 frais bancaires → 627300 = -221,81 €
+  - 1 PAS → 442110 = -1 172 €
+  - 1 Syndic → 614100 = -495 €
+  - 1 vir SAS Le Petit Cerf → 455110 = -60 €
+  - 1 vir SAS Guinet Group → 455200 = -90 €
+- **19 lignes en attente sur 471000** :
+  - 1 entrée mystère ref 0EJWHYT (01/01) +236,29 €
+  - 12 virements internes "Vir vers Compte De Depot" (9 sorties + 3 entrants)
+  - 5 virements "CE COMPTE APPAR" -2 100 €
+  - 1 "Vir vers Compte Charges" 26/12 -125 €
+
+### Source de référence
+Dry-run détaillé (parsing des 12 PDFs) conservé dans : [[Import-15519952511-DryRun]]
+
+### Période manquante
+3 lignes du 05/01/2026 (BPCE 27,92 + 59,70 + débit 62 €) sont sur l'exercice 2026 et seront importées dans une future session.
+
+### Points de vigilance fiscaux pour la déclaration 2025
+
+| Sujet | Donnée | Action |
+|---|---|---|
+| **Loyers Limoges 2025** | 6 591,18 € (12 vir Human Immo encaissés) — **Human Immobilier** (gérant Limoges) annonce 5 923 € de loyers bruts | **Décision retenue : 5 923 €** en ligne 211 de la 2044 (chiffre engagé par Human Immo, plus avantageux fiscalement de ~315 € au TMI 30 %). Les 668 € d'écart représentent vraisemblablement un loyer 2024 perçu en janv 2025 + régul, à laisser hors 2025. |
+| **Charges déductibles 2044** | Assur Limoges 137,78 € + Syndic 495 € + frais gestion Human Immobilier 672 € (652 admin + 20 autres) + intérêts CE Auvergne (à récupérer) + taxe foncière (à récupérer) | Compléter le dossier 2044 avec les justificatifs externes. |
+| **Dons Croix-Rouge 165 €** | Reçu fiscal art. 200 CGI | Case **7UD** (réduction 75%, plafond 1 000 €) |
+| **Don 15 € (asso non identifiée n°donateur 4144135)** | Reçu fiscal cumul 2025 | Case 7UD ou 7UF selon nature à identifier |
+| **Don 10 € Diocèse Toulouse** | Daté **06/02/2026** | ⚠️ **Pas pour la déclaration 2025** — pour la 2026 (déposée en 2027) |
+| **PAS prélevé sur compte joint** | 1 172 € le 03/11/2025 | À rapprocher du PAS BNK1 pour éviter double comptage |
+| **Compte CE Auvergne (512007)** | 2 100 € envoyés en 2025 depuis le joint | Compte non importé dans Odoo — solde 512007 unilatéral pour l'instant |
+| **Lignes BDF / OCF / saisie admin** | -100 € saisie + 2×30 € notif BDF | Situation Banque de France notifiée 24/09/2025 — à suivre avec conseiller |
+
+---
+
+## ✅ Addendum 28/05/2026 (suite) — Clarifications BNK1 + Import T1 2025 + nouveaux comptes utilisés
+
+### Renommage BNK1 → "Compte Charges - BP"
+
+Le journal **BNK1 (id 13)** a été renommé `Bank` → `Compte Charges - BP`. Conséquence du fait que le compte BP 65519354452 (Benoit titulaire principal, Kwanchanok co-titulaire) sert principalement à payer les charges récurrentes du ménage (loyer Foncia Toulouse, prêt CE Auvergne, énergie, télécom, assurances, crèche…).
+
+### Cartographie complète des 2 comptes joints BP (au 28/05/2026)
+
+| Compte BP | Titulaire principal | Co-titulaire | Journal Odoo | IBAN | Rôle |
+|---|---|---|---|---|---|
+| **65519354452** | M GUINET BENOIT | MME GUINET KWANCHANOK | **BNK1 (id 13)** "Compte Charges - BP" | FR76 1780 7000 7665 5193 5445 267 | Compte principal du ménage — charges récurrentes, revenus Globasoft + Guinet Group |
+| **15519952511** | MME GUINET KWANCHANOK | M GUINET BENOIT | **BNK4 (id 19)** "Bank (Banque Populaire — Compte Joint)" | FR76 1780 7000 7615 5199 5251 158 | Compte secondaire — loyers Limoges (Human Immobilier) + 2 assurances habitation BPCE + virements vers CE Auvergne (prêt Limoges) |
+
+### Comptes annexes BP (épargne / dépôt — pas de journal opérationnel)
+
+| Compte BP | Type | IBAN | Notes |
+|---|---|---|---|
+| 85519952533 | Compte de dépôt secondaire Benoit | FR76 1780 7000 7685 5199 5253 330 | Très peu d'activité, ~12 € au 02/04/2025 |
+| 85583952624 | **LDDS** Benoit | — | Solde ~10 €, intérêts exonérés |
+| 95597988234 | **Livret A** Benoit | — | Solde ~10 €, intérêts exonérés |
+| 75555354804 | **PEA / Compte titres** | — | Relevé annuel séparé, IFU à intégrer pour déclaration |
+
+Ces comptes ne sont **pas importés** dans Odoo perso comme journaux opérationnels (volumes trop faibles). À tracer comme actifs au 31/12 si nécessaire.
+
+### Import T1 2025 BNK1 — 28/05/2026
+
+- **62 lignes** importées sur la période 01/01/2025 → 04/03/2025 (3 PDFs Banque Populaire)
+- Source détaillée : [[Import-65519354452-T1-2025-DryRun]]
+- **Couverture BNK1 désormais complète** sur 2025 (T1 + avr→déc) ✅
+
+### 🎯 Prélèvements crèche Mini Crèche du Grand Rond identifiés sur BNK1
+
+| Période | Nb prélèvements | Cumul € | Source |
+|---|---:|---:|---|
+| T1 2025 (janv-fév) | 2 | 556,00 € | Import T1 28/05/2026 |
+| Avr→Déc 2025 | 8 | 2 883,91 € | BNK1 historique |
+| **Total annuel 2025 (Noah)** | **10** | **3 439,91 €** | → Crédit 7GA estimé **1 720 €** |
+
+### Règles de ventilation BNK1 (mise à jour)
+
+Ajouts par rapport à la version v2 initiale :
+- **PRLV SEPA ASS MINI CRECH** (Crèche Mini Crèche du Grand Rond) → **625800** Crèche / garde enfant (id 716) — utilisé en 2025 pour Noah
+- **EUROVIR Mme Fraga Adela** → **625352** Psychomotricité Vincent (id 745) — paiement direct à la psychomotricienne (vs prestations Foncia Toulouse)
+- **VIR SAS GUINET GROUP** (entrant ~997 €/mois) → **758120** Salaire Kwanchanok (id 748) — distinguer de 758110 Salaire Globasoft (Benoit)
+- **PRLV SEPA SAS MULTI IMPA** → **616120** Assurance vie/prévoyance (à confirmer — assurance prêt ou autre)
+- **PRLV SEPA MEDECINS DU MO** → **623810** Dons (= Médecins du Monde, n° donateur C4144135 vu sur les reçus fiscaux 2025)
+
+### Lignes laissées en 471000 (Suspense) sur BNK1 T1
+
+| Libellé | Montant | Motif |
+|---|---|---|
+| PRLV SEPA CA CONSUMER FI | -15,00 € | Origine du contrat à identifier |
+| PRLV SEPA CREATIS | -1 029,52 € | Crédit conso à identifier (probablement Cofidis/Sofinco) |
+
+→ À clarifier ultérieurement avec le user.
+
+### IDs comptes Odoo perso utiles (récap)
+
+| Code | Libellé | ID Odoo |
+|---|---|---|
+| 164100 | Prêt immobilier (CE Auvergne) | 709 |
+| 442110 | Impôt sur le revenu (PAS) | 725 |
+| 471000 | Suspense accounts | 362 |
+| 511110 | Carte bancaire - transit | 727 |
+| 580100 | Virements internes | 728 |
+| 580110 | Transferts Wise (devises) | 737 |
+| 580120 | Virements famille entrants | 738 |
+| 580200 | Retraits espèces | 723 |
+| 606110 | Électricité/gaz (TotalEnergies) | 710 |
+| 613100 | Loyer habitation principale | 708 |
+| 616110 | Assurance habitation (BPCE MRH) | 713 |
+| 616120 | Assurance vie/prévoyance (SwissLife) | 714 |
+| 618200 | Abonnements | 715 |
+| 623810 | Dons et œuvres | 721 |
+| 624600 | Péages autoroute | 717 |
+| 625351 | Équithérapie Vincent | 744 |
+| 625352 | Psychomotricité Vincent | 745 |
+| 625353 | Musicothérapie Vincent | 746 |
+| 625354 | Éducatrice spécialisée Vincent | 747 |
+| 625800 | Crèche / garde enfant | 716 |
+| 626100 | Téléphone mobile (SFR) | 711 |
+| 626200 | Internet/box (SFR) | 712 |
+| 627300 | Frais bancaires | 718 |
+| 658110 | Stockage (Stockinvest/Locabox) | 720 |
+| 752100 | Remboursement SNC Diamant | 740 |
+| 758110 | Salaire/revenus Globasoft (Benoit) | 730 |
+| 758120 | Salaire Kwanchanok (Guinet Group) | 748 |
+| 758210 | CAF / prestations sociales | 732 |
+| 758310 | Crédit impôt / remb fiscal | 733 |
+| 758910 | Autres recettes | 734 |
+
+### Découvertes parallèles (28/05/2026)
+
+- **Crèche actuelle = Mini Crèche du Grand Rond** (Toulouse), pas Pomme de Reinette (= contrat W4711 dans `A classer\`, probablement ancien)
+- **Pas de prélèvement Pajemploi/URSSAF en 2025** sur Odoo perso → pas de garde à domicile active → pas de case 7DB pour la déclaration 2025
+- **Bulletins Kwang 2025** : 12/12 disponibles → net imposable annuel **14 496,36 €** (case 1BJ)
+- **Décisions MDPH Vincent** : taux 50-80 %, **pas de demi-part fiscale supplémentaire** (nécessiterait ≥ 80 %)
+- **Attestations CAF 2025** : AEEH + Alloc Fam + PAJE → **aucune prestation imposable**
+- **Reçus fiscaux dons 2025** : Croix-Rouge 165 € + Médecins du Monde 15 € (case 7UD)

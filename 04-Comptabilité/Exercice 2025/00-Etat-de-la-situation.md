@@ -1,7 +1,7 @@
 ---
 tags: ["comptabilité", "guinet-digital-group", "exercice-2025", "etat-des-lieux"]
 created: 2026-05-08
-updated: 2026-05-14 (Session NDF scan 2 — 6 BILLs + PDFs attachés)
+updated: 2026-05-21 (refresh chiffres contre Odoo — pas de session journal)
 société: Guinet Digital Group
 company_id: 4
 exercice: 2025-01-01 → 2025-12-31
@@ -10,7 +10,87 @@ exercice: 2025-01-01 → 2025-12-31
 # État de la situation comptable — Guinet Digital Group · Exercice 2025
 
 > Document vivant — mis à jour au fil de l'analyse.
-> Démarré le 08/05/2026. Dernière mise à jour : 14/05/2026 (session NDF scan 2 — 6 nouvelles BILLs créées, PDFs attachés).
+> Démarré le 08/05/2026. Dernière mise à jour : 21/05/2026 (refresh chiffres contre Odoo — voir bloc "Snapshot 21/05/2026" ci-dessous ; sections historiques préservées).
+
+---
+
+## 📸 Snapshot Odoo 21/05/2026 — chiffres-clés à jour
+
+> Refresh complet contre Odoo le 21/05/2026 (instance `guinet`, company_id=4). Les sections historiques en dessous reflètent l'état antérieur (11→14/05) et restent utiles comme trace ; les chiffres ci-dessous **priment** en cas de divergence.
+
+### KPIs métier (snapshot global Odoo)
+
+| Métrique | 14/05/2026 | **21/05/2026** | Δ |
+|---|---:|---:|---|
+| Trésorerie GDG | -8 989 € ⚠️ | **-8 989 €** ⚠️ | = |
+| Créances clients (total) | — | **29 148 €** dont 17 052 € échu | — |
+| Dettes fournisseurs (échu) | 74 684 € | **8 026 €** | **-66 658 €** ✅ massif lettrage |
+| CA exercice 2025 | 201 204 € | **201 178 €** | -26 € (arrondi) |
+
+### Comptes d'attente & non lettrés (recompte 21/05/2026)
+
+| Compte | ID | Au 12/05 (note) | **Au 21/05** | Δ |
+|---|---:|---:|---:|---|
+| **471000 BNK1** (lignes 2025) | 1235 | 2 lignes / 256 € | **1 ligne / 6 €** (PRLV SARL GD seul) | ✅ Maouri 250 € lettrée |
+| **471000 BNK2** (lignes 2025) | 1235 | 125 lignes / ~9 285 € | **3 lignes / 14,74 €** | ✅ -122 lignes |
+| **471000 BNK2** (toutes périodes) | 1235 | 146 lignes | **24 lignes** (21 sur 2024 résiduel + 3 sur 2025) | ✅ -122 lignes |
+| **401100** (lignes non lettrées) | 1134 | 48 lignes / -10 286 € | **115 lignes** (dont ~50 NDF 2026 Guinet Benoit) | ⚠️ +67 lignes mais ce sont des NDF récentes |
+| **411100** (lignes non lettrées) | 1149 | 4 lignes / 29 148 € | **4 lignes / 29 148 €** (idem) | = |
+| **4671 BPCE Factor** | 3151 | 48 lignes / -7 612 € | **48 lignes / ~-7 622 €** | ≈ stable |
+| **451000 Groupe** | 1215 | 49 lignes / 171 953 € db | (sondage : à-nouveau 89 352 € présent, ID 12624) | stable |
+| **455010 C/C Benoit** | 3172 | 73 lignes / ~4 344 € db | (sondage : à-nouveau 43 810 € cr ID 12642 présent) | stable |
+
+> **Lecture du saut 401100** : la session NDF du 13/05 a créé 44 BILLs + 6 BILLs le 14/05, principalement Guinet Benoit (NDF), majoritairement datées 2026. Ces lignes augmentent le compte de lignes ouvertes mais représentent des dettes récentes (8j de retard) à apurer par OD vers 455010.
+
+### Pièces 2025 (posted)
+
+| Journal | Au 11/05 (note) | **Au 21/05** | Δ |
+|---|---:|---:|---|
+| FAC 2025 (clients) | 39 | **39** (séquence 00001→00039 intacte) | = |
+| FACTU 2025 (fournisseurs) | 240 | **394** | **+154** (paquets SaaS finalisés + NDF scannés) |
+| OD journal 24 (Miscellaneous) | 25 | **7** (note : 12 régul + 12 compl Factor sont passées via journal **FACTO**) | écart de classification |
+| FACTO journal 61 | 12 | **29** | +17 (régul Factor finalisées) |
+| **Drafts 2025** | 2 | **2** (OD 5277 VAT Juin 62 € + BNK2 5005 Up France 208 €) | = |
+
+### Créances échues détaillées (21/05/2026)
+
+| Réf | Partenaire | Montant | Échéance | Retard |
+|---|---|---:|---|---:|
+| FAC/2026/00003 | ONE PINK | 576 € | 01/03/2026 | 81 j ⚠️ |
+| FAC/2026/00010 | AEROTEC & CONCEPT | 16 476 € | 02/05/2026 | 19 j |
+| FAC/2026/00011 | Sohoft Toulouse | 9 828 € | 12/06/2026 | À échoir |
+| FAC/2026/00012 | Sohoft Toulouse | 2 268 € | 12/06/2026 | À échoir |
+
+### Dettes échues détaillées (21/05/2026) — total 8 026 €
+
+- **Up France** FACTU/2025/12/0001 — 216 € (170 j retard)
+- **Banque Populaire Occitane** FACTU/2025/12/0008 — 0 €
+- **Etincelle Coworking** FACTU/2025/10/0025 — 660 €
+- **Super Compteur** ×4 (F1383 + F1319 + F167 + F329 + F83) — ~2 281 €
+- **Notion** FACTU/2025/05/0025 — 50 €
+- **Google Cloud France SARL** FACTU/2025/10/0031 — 193 €
+- **Etincelle Coworking** FACTU/2025/01/0006 — 504 €
+- **Guinet Benoit** (NDF refacturées GDG) — ~50 lignes totalisant ~4 100 €
+
+> ⚠️ La quasi-totalité des dettes "Guinet Benoit" sont les BILLs NDF des sessions 13/05 + 14/05 — à apurer via OD vers 455010 C/C Benoit.
+
+### Statut chantiers (refresh 21/05/2026)
+
+- 🟢 **Statements BNK1 + BNK2** : 100% (13/13 chacun) — inchangé
+- 🟢 **Lettrage BNK2 471000** : **~99%** (3 lignes 2025 résiduelles vs 125 le 12/05) — quasi terminé
+- 🟢 **Lettrage BNK1 471000** : **~99%** (1 ligne 6 € vs 2 lignes 256 €) — Maouri lettrée
+- 🟡 **Lettrage 401100** : à apurer par OD NDF (~50 lignes Guinet Benoit récentes → 455010)
+- 🟢 **Lettrage 411100** : 4 lignes 29 148 € — toutes 2026, hors exercice, encaissement normal en cours
+- 🟡 **Lettrage 4671 Factor** : ~-7 622 € net créditeur, 48 lignes — stable
+- 🔴 **ODs paie 2025** : 0/12 — toujours à faire
+- 🔴 **Affectation résultat 2024** : 120000 → 110000 — toujours à faire
+- 🔴 **Amortissement Citroën C5 2025** : 12 × 500 € — toujours à faire
+- 🟡 **CCA inventaire 2025** : toujours à faire
+- 🔴 **Bug TVA Map Tech** FAC/2025/00007 — toujours à faire
+
+> **Effort restant estimé** : ~10-12 h (vs 17,5 h le 11/05) — l'essentiel du lettrage BNK est fait, restent les chantiers de clôture (paie, amort, AG, CCA, Map Tech).
+
+---
 
 ## 📅 Journal des sessions
 
