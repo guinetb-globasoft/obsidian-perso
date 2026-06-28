@@ -269,3 +269,15 @@ Décomposition côté GG :
 ### Charges/Produits constatés d'avance (page 12)
 - 486000 CCA : 1 680 €
 - 487000 PCA : 733 €
+
+---
+
+## Mise à jour 26/06/2026 (session import/catégorisation banque)
+
+> Détail du chantier de clôture : [[Exercice 2024-2025 GG/00-Situation-de-depart]].
+
+- **BNK1 (journal 6, 101401) purgé et archivé** : c'était un doublon partiel de BNK2 (56 lignes avr→juin 2024). Ne plus l'utiliser.
+- **Import bancaire complet déc 2024 → nov 2025** sur **BNK2** (journal 8, compte réel BP 512110) et **BNK3 / CB 8343** (journal 14) : 24 relevés `account.bank.statement` (`BP-Main-AAAA-MM` id 98-109, `CB-8343-AAAA-MM` id 110-121), soldes équilibrés au centime, **PDF du relevé attaché** sur chaque (modèle Globasoft). Sources : dossiers `docs BP Guinet Group 2024/2025` (racine du repo `scripts-divers-autres`). **Solde BP au 31/03/2025 = 118,42 €**. Chaque cycle CB = le « CARTE FACTURETTES CB » du compte principal (contrôle croisé).
+- **Catégorisation partenaire** des lignes bancaires faite (~855 lignes, 26 partenaires créés). Restent ~106 sans tiers : transferts internes « CARTE FACTURETTES CB », 7 lignes déjà lettrées (verrouillées), achats one-off 2024. ⚠️ Modifier le tiers d'une ligne **lettrée** échoue (« écriture validée ») → un lot batch contenant une ligne lettrée est rejeté en entier ; isoler les lettrées (filtrer `is_reconciled`).
+- **Compte 706000 « Prestations de services »** : Guinet Group n'en avait pas. Compte créé (id **3189**) mais **bloqué au code 706999** : le code 706000 est verrouillé sur tout l'arbre de branches {company 1 + branches « Globasoft branche » (2) + « Le Petit Cerf Branche » (3)}, et la société fantôme **« Globasoft branche » (company 2) est inaccessible à l'utilisateur API** → impossible de libérer 706000 par RPC. À régler en nettoyant les sociétés fantômes ou via l'UI admin. Utilisé sur la facture client `INV/2026/00001` (mgmt fees 2 000 € présidence + 300 € TMA, move id 6501).
+- Compte client de **GLOBASOFT** (partner 500) recâblé sur **411100** (id 3149) / fournisseur **401100** (id 825).

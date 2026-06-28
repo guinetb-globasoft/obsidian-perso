@@ -116,17 +116,31 @@ BNK1 (Banque Populaire)
 - 511100 déjà pris → **511110**
 - 758100 déjà pris → **758110**
 - 758200 déjà pris → **758210**
+- 625500 déjà pris (« Relocation costs ») → **625900** (Loisirs)
+- 624700 déjà pris (« Collective staff transport ») → **624650** (Transports urbains)
 
 ---
 
-## Comptes à créer (proposés, non encore validés)
+## Comptes catégories dépenses — créés le 24/06/2026
 
-| Code | Nom | Type | Justification |
-|------|-----|------|---------------|
-| 625300 | Santé / pharmacie / médecin | expense | Dr Guillemette Pierr, pharmacies, psy Breton Emma — vu sur BNK1 et BNK2 |
-| 625400 | Shopping / achats divers | expense | Amazon, Fnac, La Grande Recre, Rituals, Centrakor, Gifi, Calzedonia, Dpam, Moulin Roty, H&M, Shein, Stradivarius |
-| 625500 | Loisirs / sorties | expense | Fun Parc, Europark, Lumys Photo, Photomaton, Wecandoo |
-| 624700 | Transports urbains | expense | Smtc Tisseo, futurs Uber trajet |
+| Code | Nom | Type | ID Odoo | Justification |
+|------|-----|------|---------|---------------|
+| 625300 | Santé / pharmacie / médecin | expense | 759 | Dr Guillemette Pierr, pharmacies, médecins (hors soins Vincent) — BNK1/BNK2/CB |
+| 625400 | Shopping / achats divers | expense | 760 | Amazon, Fnac, La Grande Recre, Rituals, Centrakor, Gifi, Calzedonia, Dpam, Moulin Roty, H&M, Shein, Stradivarius |
+| 625900 | Loisirs / sorties | expense | 761 | Fun Parc, Europark, Lumys Photo, Photomaton, Wecandoo (625500 PCG « Relocation » déjà pris) |
+| 624650 | Transports urbains (Tisséo) | expense | 762 | Smtc/Tisséo, futurs Uber trajet (624700 PCG déjà pris) |
+| 625810 | Garde à domicile (CESU) | expense | 764 | PRLV URSSAF CNCESU — emploi à domicile, crédit d'impôt 7DB (apparu en 2026) |
+| 606150 | Carburant & entretien véhicule | expense | 765 | Stations ESSO/AVIA/SHELL/DYNEFF/CERTAS + lavage auto (Elephant Bleu, Hypromat, Washouse) |
+| 471100 | Frais pro à refacturer / à clarifier (société) | asset_current | 766 | Compte d'isolement : coworking (Regus, Multiburo, Etincelle), Gandi, PayPlug, timbre fiscal — à arbitrer avec la compta société |
+
+### Mapping CB (CBK/CBB) — ajouts au 24/06/2026 (en plus du mapping BNK2 réutilisé)
+| Mot-clé | Compte |
+|---|---|
+| Stations-service (ESSO, AVIA, SHELL, DYNEFF, CERTAS) + lavage (Elephant Bleu, Hypromat, Washouse) | 606150 (id 765) |
+| Airbnb, hôtels, SNCF/sncf Connect, Air France, Booking | 625100 Travels (id 497) |
+| Locabox, Leader Box, Stockinvest | 658110 (id 720) |
+| Coworking (Regus/NYA, Multiburo, Etincelle), Gandi, PayPlug, Timbre fiscal | 471100 (id 766) — frais pro à arbitrer |
+| ⚠️ Thaïlande (2C2P, Allianz Ayudhya, Omise), PayPal, libellés illisibles, CREATIS, BIOLANE, Alma, Vélo Toulouse, Uber Trip | laissés sur 471000 — à clarifier |
 
 ---
 
@@ -138,12 +152,13 @@ BNK1 (Banque Populaire)
 | FONCIA TOULOUSE                                     | 613100       |
 | CE AUVERGNE                                         | 164100       |
 | TotalEnergies (PRLV)                                | 606110       |
-| SFR + mobile                                        | 626100       |
-| SFR + box                                           | 626200       |
+| SFR PRLV ~74 €/mois (mobile)                        | 626100       |
+| SFR PRLV 31,97 €/mois (box)                          | 626200       |
 | BPCE Assurance                                      | 616110       |
 | SWISSLIFE                                           | 616120       |
 | FNAC DARTY (PRLV)                                   | 618200       |
 | CRECHE / MINI CRECH                                 | 625800       |
+| URSSAF + CNCESU (emploi à domicile)                 | 625810       |
 | Autoroutes du                                       | 624600       |
 | FRAIS COM / FAMILLE PREMIUM / COTIS FAMILLE PREMIUM | 627300       |
 | STOCKINVEST / LOCABOX                               | 658110       |
@@ -151,7 +166,7 @@ BNK1 (Banque Populaire)
 | UBER EATS                                           | 625200       |
 | CASH SERVICES / CB LCL retrait                      | 580200       |
 | DIRECTION GENE / PAS                                | 442110       |
-| CARTE FACTURETTES CB                                | 511110       |
+| CARTE FACTURETTES CB (= CB à débit différé, solde mensuel qui tombe sur le compte ; à rapprocher des journaux CBK/CBB via le transit 511110/511111/511112 — NE PAS ventiler en charge) | 511110 |
 | Virement vers / EUROVIR Virement                    | 580100       |
 | VIR M BENOIT GUINET (entrant depuis Revolut)        | 580100       |
 | VIR INST Kwanchanok & Be (sortant vers BNK2)        | 580100       |
@@ -163,26 +178,30 @@ BNK1 (Banque Populaire)
 | VIR INST JEAN GUINET / EUROVIR Jean Guinet          | 580120       |
 | VIR INST MAMAN                                      | 580120       |
 | LIMOGES SYNDICA                                     | 614100       |
-| EUROVIR Snc Diamant / VIR INST SNC DIAMANT          | 752100       |
+| EUROVIR Snc Diamant / VIR INST SNC DIAMANT / To SNC diamant | **164300** (Dette ancien appartement SNC Diamant, id 772) ⚠️ reclassé le 26/06/2026 — ce sont des **remboursements de dette** (échéancier ~27 890 €), pas une recette. 752100 (income, id 740) vidé de ses 15 lignes janv 2025→mai 2026. |
 
-### BNK2 (Revolut Compte Joint)
+### BNK2 (Revolut Compte Joint) — mapping enrichi le 24/06/2026 (sert aussi de référence pour les CB CBK/CBB)
 | Mot-clé dans le libellé | Compte cible |
 |--------------------------|--------------|
-| From Benoît G | 580100 (entrant BNK3→BNK2) |
-| To BENOIT FRANCOIS MICHEL GUINET | 580100 (sortant BNK2→BNK1) |
-| Sent from Revolut To M Benoit et Mme Guinet | 580100 (sortant BNK2→BNK1) |
+| From Benoît G (entrant BNK3→BNK2) / Sent from Revolut To M (Ou Mme) Benoit (et Mme) Guinet / To BENOIT FRANCOIS MICHEL GUINET / Payment from M Guinet Benoit Ou | 580100 |
+| **From Kwanchanok G / To KWANCHANOK THONGMAI** (transferts compte perso Kwanchanok) | **580100** ✅ (tranché 24/06 : virements internes) |
 | Benoit Guinet To SNC diamant | 752100 |
-| netflix.com / Amazon Music / Uber *one Membership | 618200 |
-| Carrefour* / Grand Frais / Monoprix / La Mie Caline / Chez Domi / Boulangerie / Le Rotisseur / Mc Donald's / Starbucks / Upone / Sushi Bea / La Brioche Doree / Black Pig / Distrib Alim / Intermarche / Perlette / Lpalc / Alain Cauquil / carrefour.fr | 625200 |
+| **Guinet Group Payment from Sas Guinet Group** (entrant ~990-1042 €/mois) | **758120** Salaire Kwanchanok (id 748) ✅ |
 | Envoyé depuis Revolut To Jean Guinet | 580120 |
-| Vinted Payment from Mangopay | 758910 |
-| Dr Guillemette Pierr / Pharmacie* / Phcie* / Pharm* | 625300 (à créer) |
-| Amazon Payments / Fnac / Rituals / La Grande Recre / Moulin Roty / Centrakor / Gifi / Dpam / Calzedonia / Normal Toulouse / Jeff De Bruges / Mignon / Yoursurprisefr / Midica / Benel / Stephan / Lili-Leone | 625400 (à créer) |
-| Sarl Fun Parc / Europark Indoor / Lumys Photo / Photomaton / Wecandoo | 625500 (à créer) |
-| Smtc Tisseo | 624700 (à créer) |
-| From Kwanchanok G / To KWANCHANOK THONGMAI | ⚠️ à clarifier |
-| Kwang Payment from Sas Guinet Group | ⚠️ à clarifier (salaire Kwanchanok ?) |
-| Authie Clement | ⚠️ à clarifier |
+| IPFONCIA / To FONCIA TOULOUSE GERANCE | 613100 Loyer (id 708) |
+| netflix.com / Amazon Music / Uber *one Membership / Amz Digital Fra / Tzpseesantv | 618200 Abonnements (id 715) |
+| Carrefour* / carrefour.fr / Grand Frais / Monoprix / Auchan / Intermarche* / Le Rotisseur / Chez Domi / La Mie Caline / Boulangerie / Mc Donald's / Aor*mcdo / Burger King / Flunch / Starbucks / Maxicoffee / Upone / Lpalc / Sushi Bea / Nekomai / Black Pig / La Brioche Doree / Pat.chocfornara / Distrib Alim / Alimentation Ho / Perlette / Alain Cauquil / Cesaro / Pizza Time / O Boudu Pont / Palomano / Chez Ingalls / Cher Monsieur / Fruitas Jaime / Matefaim / Exki / 7-11 Kr Mansion / Zettle*c & Wine | 625200 Alimentation/resto (id 722) |
+| **Uber *Eats / Uber Eats / Deliveroo (livraison de repas)** | **625210 Livraison de repas (id 768)** ✅ sous-catégorie alimentation |
+| Amazon Payments / Fnac / Rituals / La Grande Recre / Moulin Roty / Centrakor / Gifi / Dpam / Calzedonia / Normal Toulouse / Jeff De Bruges / Mignon / Yoursurprisefr / Midica / Benel / Stephan / Lili-Leone / Hema / Sephora / Sp Pimkie.fr / Yves Rocher / Mango / Hetm (H&M) / C Mon Etiquette / Mgp*vinted (achat) | 625400 Shopping (id 760) |
+| Dr Guillemette Pierr / Pharmacie* / Phcie* / Pharm* / SELAS MEDIPATH (labo) / iherb.com | 625300 Santé (id 759) |
+| Sarl Fun Parc / Europark Indoor / Lumys Photo / Photomaton / Wecandoo / Fever* Candlelight / instant-gaming.com / Atelier De Mado | 625900 Loisirs (id 761) |
+| Smtc Tisseo / Tisseo Open Pay / Effia / Lw*sncf Connect | 624650 Transports (id 762) |
+| Vinted Payment from Mangopay (vente, entrant) | 758910 Autres recettes (id 734) |
+| Sent from GUINET To Tiphaine Porcher Labreuille | 625353 Musicothérapie Vincent (id 746) |
+| (Sent from Mme) Guinet To Adela Fraga | 625352 Psychomotricité Vincent (id 745) |
+| Vincent Guinet adhésion To AUTISME 31 | 625350 Soins Vincent global (id 743) |
+| Denier Eglise | 623810 Dons (id 721) |
+| Authie Clement / Octobre Novembre To Elsa LAGARDE / Cord St Sauveur / Washouse / Tabac Le Franca / Sumup*blazes / Sumup*pinquet Tess / Relay / Picto Connexions / Qpf Toulousebs / Lfc Montaudran / Nyx*regusiwg / Commune De Toulouse | ⚠️ à clarifier |
 
 ### BNK3 (Revolut Perso Ben)
 | Mot-clé dans le libellé | Compte cible |
@@ -190,7 +209,7 @@ BNK1 (Banque Populaire)
 | *Payment from Sarl Globasoft / Virement de SARL GLOBASOFT* | 758110 |
 | To BENOIT FRANCOIS MICHEL GUINET & KWANCHANOK THONGMAI | 580100 (BNK3→BNK2) |
 | From BENOIT FRANCOIS MICHEL GUINET & KWANCHANOK THONGMAI | 580100 (BNK2→BNK3) |
-| Wecandoo | 625500 (à créer) |
+| Wecandoo | 625900 (id 761) |
 
 ---
 
@@ -346,6 +365,7 @@ Ne pas confondre avec des entrées.
 | 625352 | Psychomotricité | expense | 745 |
 | 625353 | Musicothérapie | expense | 746 |
 | 625354 | Éducatrice spécialisée | expense | 747 |
+| 625355 | Suivi psychologique (Emma Breton) | expense | 763 |
 
 ### Mapping prestataires → comptes (au 15/04/2026)
 | Prestataire | Compte |
@@ -354,7 +374,7 @@ Ne pas confondre avec des entrées.
 | Mme Fraga Adela | 625352 Psychomotricité |
 | Tiphaine Porcher Labreuille | 625353 Musicothérapie |
 | Aubineau Ezra | 625354 Éducatrice spécialisée |
-| Breton Emma PSY | 625300 Santé (à créer) |
+| Breton Emma PSY | 625355 Suivi psychologique Vincent (id 763) |
 
 
 ---
@@ -409,6 +429,7 @@ Le compte joint BP **15519952511** (Mme GUINET KWANCHANOK OU M GUINET BENOIT, IB
 | **VIR M GUINET BENOIT OU / Virement vers Compte De Depot** | 471000 (compte d'attente) | ⚠️ Vir internes Joint↔BNK1 — à clarifier au rapprochement BNK1 |
 | **VIR INST CE COMPTE APPAR / EUROVIR Ce Compte Appart** | 471000 (compte d'attente) | ⚠️ Vir vers CE Auvergne — à clarifier quand relevés CE importés |
 | **VIR M GUINET BENOIT OU / Virement vers Compte Charges** | 471000 (compte d'attente) | ⚠️ 1 ligne 26/12/2025 — libellé inhabituel |
+| **EUROVIR Virement vers M (réf 6178845)** | 471000 (compte d'attente) | ⚠️ Bénéficiaire « M » tronqué dans le PDF. La réf **6178845** circule dans les 2 sens avec un compte **non tracké dans Odoo** (entrées « VIR MME GUINET KWANCHANO 6178845 » sur BNK1 + sortie -800 € le 03/04/2026 sur BNK1). Aucune contrepartie +500/501 trouvée sur les autres journaux → à clarifier avec le user (compte épargne / proche ?) |
 
 ### Import 2025 réalisé le 28/05/2026
 
@@ -431,8 +452,20 @@ Le compte joint BP **15519952511** (Mme GUINET KWANCHANOK OU M GUINET BENOIT, IB
 ### Source de référence
 Dry-run détaillé (parsing des 12 PDFs) conservé dans : [[Import-15519952511-DryRun]]
 
-### Période manquante
-3 lignes du 05/01/2026 (BPCE 27,92 + 59,70 + débit 62 €) sont sur l'exercice 2026 et seront importées dans une future session.
+### Import 2026 réalisé le 26/06/2026
+
+- **34 lignes** importées (05/01 → 05/06/2026), source : 6 relevés mensuels du dossier `docs banque populaire\Compte Appart\` (parseur pdfplumber `scratchpad/parse_bnk4.py` : table opérations p.1, regex 1 date début + 2 dates milieu + montant, année déduite). Cohérence validée (solde 05/01 85,99 − mvts janv = 5,79 = solde 05/02). Couverture BNK4 : **2025 complet + 2026 jusqu'au 05/06** (2024 volontairement non importé — sans intérêt pour le user).
+- **32 lignes ventilées** :
+  - 5 loyers Human Immobilier → 752200 = **+2 785,05 €** (loyer indexé 550,76 → 558,94 €/mois)
+  - 6 BPCE Habit Limoges (016561995) → 616112 = -97,72 €
+  - 5 BPCE Habit Toulouse (016561859) → 616111 = -208,95 €
+  - 6 frais bancaires / saisie / blocage → 627300 = -243,67 €
+  - 10 virements internes « VIR M GUINET BENOIT OU » → 580100 = -1 235 € net
+- **2 lignes en attente sur 471000** : EUROVIR « Virement vers M » réf 6178845 (501 € le 31/03 + 500 € le 01/06) — cf. règle de ventilation ci-dessus.
+
+⚠️ Le compte subit en 2026 une **procédure de saisie** (VIR BLOCAGE SAISIE, FRAIS SUR SAISIE ADMIN, FRAIS SAISIE ATTRIBUTION) — suite de la situation Banque de France notifiée en 2025.
+
+> Note correction 26/06/2026 : les lignes BPCE assurance avaient d'abord été ventilées par erreur sur le générique 616110 (id 713) puis re-ventilées sur 616111/616112 selon le n° de contrat, conformément à la convention BNK4 (l'assurance Limoges est déductible des revenus fonciers 2044).
 
 ### Points de vigilance fiscaux pour la déclaration 2025
 
