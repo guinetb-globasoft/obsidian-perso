@@ -1,0 +1,7 @@
+Ok, alors je dois faire une slide pour un comité de direction pour le projet et factures point. L'idée, c'est qu'on va avoir des interfaces entre IFS et la PA Esquerre. Esquerre e s k e r. qui vont me permettre de transmettre les factures ou de les recevoir ou transmettre les factures à nos clients ou recevoir les factures de nos fournisseurs. Dans Yaffex, il y a, non. Avant ça, donc on transmet à travers des fichiers x m l, format u b l, qui sont des fichiers qu'on va venir transformer avec rajouter de l'information à l'intérieur, la modifier, et caetera. Aujourd'hui on a plusieurs bugs à l'intérieur dont des bugs qui sont notifiés à IFS, car ça vient de la solution IFS. Et on veut, on ne leur demande du coup de les corriger. La question étant, est-ce qu'on attend leur correction ou pas ? Si on attend leur correction, les cases ont été ouvertes très récemment, on échange dessus le plus tôt possible serait une mise à disposition du correctif par IFS le 16 juillet.
+La décision à prendre est de savoir si on développe nous-mêmes les correctifs ou on attend leur retour. Les différents correctifs ont des coûts qui vont de 2 heures à 1/2 journée ou 1 journée.
+Sachant qu'on compte tout ça entre 5 et 10k de coût supplémentaire (à la louche)
+
+L'alternative si nous repoussions serait d'accepter de prendre un retard de 1 à 2 mois sur la partie client.
+
+LA deuxième prise de décision est le fait de chsoir les rapprot fournisseur
