@@ -3,3 +3,11 @@ Thumbs.db
 ehthumbs.db
 Desktop.ini
 .DS_Store
+
+# Obsidian — état d'interface local et éphémère (source de conflits de merge)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/graph.json
+
+# Fichiers temporaires d'écriture Obsidian
+*.tmp.*
