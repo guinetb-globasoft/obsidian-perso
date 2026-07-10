@@ -32,6 +32,8 @@ updated: 2026-05-10 (synthèse clôture)
 
 > ℹ️ Le compte bancaire `512002 GLOBASOFT XX7328` et les bordereaux BPCE Factor portent encore l'ancien nom — ce n'est PAS une erreur.
 >
+> ⚠️ **NE PAS CONFONDRE avec Globasoft ESN** : société distincte (JV 50 % Guinet Group + 50 % ZM Consulting), instance `globasoft`. GDG s'appelait Globasoft avant août 2025 mais ce sont deux personnes morales différentes. Voir [[Brief-Compta-Globasoft]].
+>
 > ⚠️ Ne pas confondre avec **Globasoft branche (company_id=2)** dans Odoo — doublon, pas la même entité.
 
 ### Premier exercice (Super Compteur)

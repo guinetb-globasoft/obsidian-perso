@@ -15,27 +15,31 @@ updated: 2026-05-08
 
 ---
 
-## Instance Odoo
+## Instances Odoo
 
-| Élément | Valeur |
-|---|---|
-| Instance | `guinet` |
-| URL | https://guinet-group.odoo.com |
-| Version | Odoo 19 |
+| Instance | URL | Version | Usage |
+|---|---|---|---|
+| `guinet` | https://guinet-group.odoo.com | Odoo 19 | Comptabilité consolidée groupe (Guinet Group + GDG + Le Petit Cerf) |
+| `globasoft` | https://globasoft.odoo.com | Odoo 17 | Comptabilité opérationnelle Globasoft ESN — cabinet VP CONSEIL |
 
 ---
 
 ## Sociétés du groupe
 
-| Société | company_id | SIREN | Activité | Fiche |
-|---|---|---|---|---|
-| Guinet Group (holding) | **1** | 983 391 079 | Holding · détient 100 % de GDG | [[Brief-Compta-GuinetGroup]] |
-| Guinet Digital Group (ex-Globasoft) | **4** | 985 298 900 | ESN — services numériques, affacturage BPCE Factor | [[Brief-Comptable-Odoo]] |
-| Le Petit Cerf | **7** | 929 808 921 | Restaurant / commerce | [[Brief-Compta-LePetitCerf]] |
+| Société | company_id | SIREN | Détention | Activité | Fiche |
+|---|---|---|---|---|---|
+| Guinet Group (holding) | **1** | 983 391 079 | — | Holding | [[Brief-Compta-GuinetGroup]] |
+| Guinet Digital Group | **4** | 985 298 900 | 100 % Guinet Group | ESN — services numériques, affacturage BPCE Factor | [[Brief-Compta-GDG]] |
+| Le Petit Cerf | **7** | 929 808 921 | Guinet Group | Restaurant / commerce | [[Brief-Compta-LePetitCerf]] |
+| Globasoft ESN | hors périmètre `guinet` | — | **50 % Guinet Group + 50 % ZM Consulting** | ESN — instance `globasoft` | [[Brief-Compta-Globasoft]] |
 
-### Historique de noms et filiation
-- **GDG = ex-Globasoft** : même personne morale (SIREN 985 298 900), renommage légal en **août 2025**. Bordereaux BPCE Factor, compte bancaire `512002 GLOBASOFT XX7328` et liasse fiscale 2024 (établie en 2025) portent encore le nom historique → c'est normal.
-- **Filiation** : Guinet Group (SAS, holding) détient **100 %** de GDG (SARL). Tous les flux interco passent par 451 (groupe) côté GDG et doivent avoir une contrepartie miroir côté GG.
+> ⚠️ **NE PAS CONFONDRE** :
+> - **Guinet Digital Group (GDG)** = anciennement appelée Globasoft, renommée en août 2025. SIREN 985 298 900. 100 % Guinet Group. Instance `guinet`, company_id=4.
+> - **Globasoft ESN** = société DISTINCTE, toujours nommée Globasoft. JV 50/50 avec ZM Consulting. Instance `globasoft` (globasoft.odoo.com). Hors périmètre consolidé `guinet`.
+
+### Filiation
+- Guinet Group (SAS, holding) détient **100 %** de GDG (SARL). Tous les flux interco passent par 451 (groupe) côté GDG et doivent avoir une contrepartie miroir côté GG.
+- Guinet Group détient **50 %** de Globasoft ESN (co-détenu avec ZM Consulting). Voir [[Brief-Compta-Globasoft]].
 - **Le Petit Cerf** : non documenté dans la liasse Bepmale Guinet Group 2024 → probablement acquis ou créé après le 31/03/2024. À confirmer.
 
 ### Sociétés fantômes Odoo (hors périmètre)
