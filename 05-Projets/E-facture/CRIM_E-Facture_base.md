@@ -1,6 +1,6 @@
 # CRIM E-Facture — Base de travail
 
-*Source : Redmine POP + GLPI. Généré le 20/07/2026. Temps passés actualisés depuis Odoo le 20/07/2026.*
+*Source : Redmine POP + GLPI. Généré le 21/07/2026. Temps passés actualisés depuis Odoo le 22/07/2026.*
 
 ## Légende
 
@@ -22,7 +22,7 @@
 | CRIM | Lot | Description | Redmine | Ticket externe |
 |---|---|---|---|---|
 | **#1** | L2 | Mise à disposition des factures au format UBL pour l | [20007](https://redmine.ga.fr/issues/20007) | [GLPI 25365](https://support.ga.fr/front/ticket.form.php?id=25365) |
-| **#2** | L3 | Mise à disposition des factures éligibles à la démat | [20017](https://redmine.ga.fr/issues/20017) | — |
+| **#2** | L3 | Mise à disposition des factures éligibles à la démat | [20017](https://redmine.ga.fr/issues/20017) | [GLPI 26716](https://support.ga.fr/front/ticket.form.php?id=26716) |
 | **#3** | L3 | Mise à disposition vers ESKER du e-reporting de tran | [20018](https://redmine.ga.fr/issues/20018) | [GLPI 25369](https://support.ga.fr/front/ticket.form.php?id=25369) |
 | **#5** | L2 | Fiche « client » - Automatiser la définition d’une f | [20013](https://redmine.ga.fr/issues/20013) | — |
 | **#6** | L2 | Fiche « Client », rendre obligatoire la saisie de «  | [20014](https://redmine.ga.fr/issues/20014) | — |
@@ -58,7 +58,7 @@
 | 31 | Changer l'encodage du fichier .csv ref fournis | Validé — — | - | - | - | - | - | - | 01/07 | 01/07 |
 | 16 | Mise a disposition des factures fournisseurs e | Validé RSI — RSI (Justine Navarro) | 5 | - | - | 19/06 | 07/07 | 07/07 | 20/07 | 26/06 (-24j) |
 | 24 | Gestion des lisibles factures fournisseurs dan | Validé RSI — RSI (Justine Navarro) | 0 | - | - | 06/07 | 07/07 | 07/07 | 20/07 | 15/07 (-5j) |
-| 22 | Interdire le rejet technique de la facture fou | En cours — GA | - | - | 3 | - | 08/07 | 08/07 | 17/07 | 17/07 |
+| 22 | Interdire le rejet technique de la facture fou | En cours — GA | - | - | 4 | - | 08/07 | 08/07 | 17/07 | 17/07 |
 | 28 | Mise à disposition des factures fournisseurs " | En cours — Globasoft | - | - | - | 22/06 | 07/07 | 07/07 | 20/07 | 22/07 (+2j) |
 | 29 | Gestion des lisibles factures fournisseurs dan | En cours — Globasoft | - | - | - | 09/07 | 07/07 | 07/07 | 20/07 | 22/07 (+2j) |
 | 26 | Personnaliser le bon de commande (Edition Armo | Prêt — Ootary | - | - | - | 09/07 | 08/07 | 08/07 | 16/07 | - |
@@ -140,8 +140,8 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 | 1 | Mise à disposition des factures au format UBL  | Livré — Globasoft | - | - | - | 01/06 | 22/06 | 22/06 | 15/07 | 23/07 (+8j) |
 | 9 | Integrer l'editique Armony de la facture comme | En cours — Globasoft | - | - | - | 16/07 | 08/07 | 08/07 | 17/07 | 28/07 (+11j) |
 | 10 | Integrer l'editique Armony de la facture comme | Prêt — Globasoft | - | - | - | 16/07 | 08/07 | 08/07 | 30/07 | 30/07 |
-| 8 | Fiche « Client », rendre obligatoire la saisie | En spécification — Anaëlle Van | - | 7 (valid.) | 10 | - | 10/07 | 13/07 (+3j) | 10/07 | 10/07 |
-| 27 | Récupérer les PJ additionnelles (hors lisible  | En spécification — Justine Navarro | - | - | - | 17/07 | - | - | 20/07 | 20/07 |
+| 8 | Fiche « Client », rendre obligatoire la saisie | En spécification — Anaëlle Van | - | 8 | - | - | 10/07 | 13/07 (+3j) | 10/07 | - |
+| 27 | Récupérer les PJ additionnelles (hors lisible  | En spécification — Justine Navarro | - | - | 1 | 17/07 | - | - | 20/07 | 20/07 |
 
 ### ⏱️ Durées du cycle *(jours ouvrés)*
 
@@ -205,7 +205,7 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 
 | # | Description | Statut | A/R RSI | Retard spec | Retard dev | Créé GLPI | Spec initiale | Livr. spec | Dev initiale | Livr. dev |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2 | Mise à disposition des factures éligibles à la | En spécification — Justine Navarro | - | 12 | - | - | 08/07 | 08/07 | 28/08 | 28/08 |
+| 2 | Mise à disposition des factures éligibles à la | En spécification — Justine Navarro | - | 13 | - | 20/07 | 08/07 | 08/07 | 28/08 | 28/08 |
 | 3 | Mise à disposition vers ESKER du e-reporting d | En spécification — - | - | - | - | 01/06 | - | - | - | - |
 
 ### ⏱️ Durées du cycle *(jours ouvrés)*
@@ -214,8 +214,10 @@ De l'ouverture du ticket à la validation RSI. **D1 mesure la qualification inte
 
 | # | Créé ticket | Arrivée presta | Prise en compte | Livr. dev | Validé RSI | D1 créa→presta | D2 presta→prise | D3 prise→dev | D4 dev→RSI | Total |
 |---|---|---|---|---|---|---|---|---|---|---|
+| 2 | 20/07 | 20/07 | 20/07 | - | - | 0 | 0 | - | - | - |
 | 3 | 01/06 | 01/06 | - | - | - | 0 | - | - | - | - |
 
+- **#2** (GLPI 26716) — **D1** création ticket 20/07 → arrivée presta 20/07 = **0 j** *(qualification interne)* · **D2** arrivée presta 20/07 → prise en compte 20/07 = **0 j**
 - **#3** (GLPI 25369) — **D1** création ticket 01/06 → arrivée presta 01/06 = **0 j** *(qualification interne)* — ⚠️ pas de message de prise en compte dans le fil GLPI
 
 ### 💰 Charges *(jours)*
