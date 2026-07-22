@@ -1,6 +1,6 @@
 # CRIM E-Facture — Base de travail
 
-*Source : Redmine POP + GLPI. Généré le 20/07/2026.*
+*Source : Redmine POP + GLPI. Généré le 20/07/2026. Temps passés actualisés depuis Odoo le 20/07/2026.*
 
 ## Légende
 
@@ -165,16 +165,16 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 
 | # | Statut | Chiffrage init. | Consommé | Écart |
 |---|---|---|---|---|
-| 1 | Livré | 22,5 j | 14,1 j | -8,4 j (-37 %) |
+| 1 | Livré | 22,5 j | 15 j | -7,5 j (-33 %) |
 | 8 | En spécification | 1 j | - | - |
 | 9 | En cours | 3 j | 0 j | -3 j (-100 %) |
 | 10 | Prêt | - | 0 j | - |
 | 12 | En spécification | 3 j | - | - |
 | 25 | Validé RSI | 1 j | - | - |
 | 27 | En spécification | 3 j | 1,75 j | -1,25 j (-42 %) |
-| **Total lot** | | **33,5 j** | **15,85 j** | |
+| **Total lot** | | **33,5 j** | **16,75 j** | |
 
-- **#1** — chiffré **22,5 j**, consommé **14,1 j** → **-8,4 j (-37 %)** *(sous le budget)*.
+- **#1** — chiffré **22,5 j**, consommé **15 j** → **-7,5 j (-33 %)** *(sous le budget)*.
 - **#8** — chiffré **1 j**, *aucun temps passé saisi à ce jour*.
 - **#9** — chiffré **3 j**, consommé **0 j** → **-3 j (-100 %)** *(sous le budget)*.
 - **#10** — consommé **0 j**, *pas de chiffrage initial pour comparer*.
@@ -186,9 +186,9 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 
 | # | Total | Avant arrivée presta | Attente prise en compte | Développement | A/R RSI | Après validation RSI |
 |---|---|---|---|---|---|---|
-| 1 | **14,12 j** | — | — | 14,12 j | — | — |
+| 1 | **15 j** | — | — | 15 j | — | — |
 | 27 | **1,75 j** | 0,88 j | — | 0,88 j | — | — |
-| **Total lot** | **15,88 j** | **0,88 j** (6 %) | **—** | **15 j** (94 %) | **—** | **—** |
+| **Total lot** | **16,75 j** | **0,88 j** (5 %) | **—** | **15,88 j** (95 %) | **—** | **—** |
 
 ### 🟢 P1
 
@@ -245,9 +245,9 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 | Lot | CRIM chiffrées | Chiffrage init. | Consommé | Écart |
 |---|---|---|---|---|
 | Lot 1 — Fournisseur (eInvoicing) | 9 | 18,5 j | 21,12 j | +2,62 j (+14 %) |
-| Lot 2 — Client invoicing | 6 | 33,5 j | 15,85 j | -17,65 j (-53 %) |
+| Lot 2 — Client invoicing | 6 | 33,5 j | 16,75 j | -16,75 j (-50 %) |
 | Lot 3 — Client reporting | 2 | 45 j | 6 j | -39 j (-87 %) |
-| **Total** | | **97 j** | **42,98 j** | **-54,02 j (-56 %)** |
+| **Total** | | **97 j** | **43,87 j** | **-53,13 j (-55 %)** |
 
 > ⚠️ Cet écart global n'est **pas** une performance : la majorité des CRIM ne sont pas terminées, donc leur consommé est mécaniquement inférieur au budget. Seul le tableau des CRIM terminées ci-dessous est interprétable.
 
@@ -255,17 +255,17 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 
 | # | Lot | Statut | Chiffrage init. | Consommé | Écart |
 |---|---|---|---|---|---|
-| 1 | L2 | Livré | 22,5 j | 14,1 j | -8,4 j (-37 %) |
+| 1 | L2 | Livré | 22,5 j | 15 j | -7,5 j (-33 %) |
 | 14 | L1 | Validé | 1,5 j | 3,75 j | +2,25 j (+150 %) |
 | 16 | L1 | Validé RSI | 1,5 j | 6 j | +4,5 j (+300 %) |
 | 24 | L1 | Validé RSI | 6 j | 7,75 j | +1,75 j (+29 %) |
-| **Total terminé** | | | **31,5 j** | **31,6 j** | **+0,1 j (+0 %)** |
+| **Total terminé** | | | **31,5 j** | **32,5 j** | **+1 j (+3 %)** |
 
 ### Répartition de la charge par phase, tous lots *(jours)*
 
 | Phase | Charge | Part |
 |---|---|---|
 | Avant arrivée presta | 2,25 j | 5 % |
-| Développement | 35,91 j | 83 % |
+| Développement | 36,79 j | 84 % |
 | A/R RSI | 4,88 j | 11 % |
-| **Total** | **43,03 j** | **100 %** |
+| **Total** | **43,92 j** | **100 %** |
