@@ -165,16 +165,16 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 
 | # | Statut | Chiffrage init. | Consommé | Écart |
 |---|---|---|---|---|
-| 1 | Livré | 22,5 j | 14,1 j | -8,4 j (-37 %) |
+| 1 | Livré | 22,5 j | 15 j | -7,5 j (-33 %) |
 | 8 | En spécification | 1 j | - | - |
 | 9 | En cours | 3 j | 0 j | -3 j (-100 %) |
 | 10 | Prêt | 3 j | 0 j | -3 j (-100 %) |
 | 12 | En spécification | 3 j | - | - |
 | 25 | Validé RSI | 1 j | - | - |
 | 27 | Livré | 3 j | 3,5 j | +0,5 j (+17 %) |
-| **Total lot** | | **36,5 j** | **17,6 j** | |
+| **Total lot** | | **36,5 j** | **18,5 j** | |
 
-- **#1** — chiffré **22,5 j**, consommé **14,1 j** → **-8,4 j (-37 %)** *(sous le budget)*.
+- **#1** — chiffré **22,5 j**, consommé **15 j** → **-7,5 j (-33 %)** *(sous le budget)*.
 - **#8** — chiffré **1 j**, *aucun temps passé saisi à ce jour*.
 - **#9** — chiffré **3 j**, consommé **0 j** → **-3 j (-100 %)** *(sous le budget)*.
 - **#10** — chiffré **3 j**, consommé **0 j** → **-3 j (-100 %)** *(sous le budget)*.
@@ -226,12 +226,12 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 
 | # | Statut | Chiffrage init. | Consommé | Écart |
 |---|---|---|---|---|
-| 2 | En spécification | 22,5 j | - | - |
-| 3 | En attente | 22,5 j | 6 j | -16,5 j (-73 %) |
-| **Total lot** | | **45 j** | **6 j** | |
+| 2 | En spécification | 22,5 j | 0 j | -22,5 j (-100 %) |
+| 3 | En attente | 22,5 j | 6,03 j | -16,47 j (-73 %) |
+| **Total lot** | | **45 j** | **6,03 j** | |
 
-- **#2** — chiffré **22,5 j**, *aucun temps passé saisi à ce jour*.
-- **#3** — chiffré **22,5 j**, consommé **6 j** → **-16,5 j (-73 %)** *(sous le budget)*.
+- **#2** — chiffré **22,5 j**, consommé **0 j** → **-22,5 j (-100 %)** *(sous le budget)*.
+- **#3** — chiffré **22,5 j**, consommé **6,03 j** → **-16,47 j (-73 %)** *(sous le budget)*.
 
 **Répartition de la charge par phase** *(jours, 8 h = 1 j)* — à quelle étape du cycle le temps a été consommé :
 
@@ -247,9 +247,9 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 | Lot | CRIM chiffrées | Chiffrage init. | Consommé | Écart |
 |---|---|---|---|---|
 | Lot 1 — Fournisseur (eInvoicing) | 9 | 18,5 j | 21,12 j | +2,62 j (+14 %) |
-| Lot 2 — Client invoicing | 7 | 36,5 j | 17,6 j | -18,9 j (-52 %) |
-| Lot 3 — Client reporting | 2 | 45 j | 6 j | -39 j (-87 %) |
-| **Total** | | **100 j** | **44,73 j** | **-55,27 j (-55 %)** |
+| Lot 2 — Client invoicing | 7 | 36,5 j | 18,5 j | -18 j (-49 %) |
+| Lot 3 — Client reporting | 2 | 45 j | 6,03 j | -38,97 j (-87 %) |
+| **Total** | | **100 j** | **45,66 j** | **-54,34 j (-54 %)** |
 
 > ⚠️ Cet écart global n'est **pas** une performance : la majorité des CRIM ne sont pas terminées, donc leur consommé est mécaniquement inférieur au budget. Seul le tableau des CRIM terminées ci-dessous est interprétable.
 
@@ -257,12 +257,12 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 
 | # | Lot | Statut | Chiffrage init. | Consommé | Écart |
 |---|---|---|---|---|---|
-| 1 | L2 | Livré | 22,5 j | 14,1 j | -8,4 j (-37 %) |
+| 1 | L2 | Livré | 22,5 j | 15 j | -7,5 j (-33 %) |
 | 14 | L1 | Validé | 1,5 j | 3,75 j | +2,25 j (+150 %) |
 | 16 | L1 | A recetter | 1,5 j | 6 j | +4,5 j (+300 %) |
 | 24 | L1 | A recetter | 6 j | 7,75 j | +1,75 j (+29 %) |
 | 27 | L2 | Livré | 3 j | 3,5 j | +0,5 j (+17 %) |
-| **Total terminé** | | | **34,5 j** | **35,1 j** | **+0,6 j (+2 %)** |
+| **Total terminé** | | | **34,5 j** | **36 j** | **+1,5 j (+4 %)** |
 
 ### Répartition de la charge par phase, tous lots *(jours)*
 
