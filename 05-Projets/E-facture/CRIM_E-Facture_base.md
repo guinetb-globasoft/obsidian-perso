@@ -141,7 +141,7 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 | 27 | Récupérer les PJ additionnelles (hors lisible  | Livré — Globasoft | - | - | - | 17/07 | - | - | 20/07 | 23/07 (+3j) |
 | 9 | Integrer l'editique Armony de la facture comme | En cours — Globasoft | - | - | - | 16/07 | 08/07 | 08/07 | 17/07 | 28/07 (+11j) |
 | 10 | Integrer l'editique Armony de la facture comme | Prêt — Globasoft | - | - | - | 16/07 | 08/07 | 08/07 | 30/07 | 30/07 |
-| 8 | Fiche « Client », rendre obligatoire la saisie | En spécification — Anaëlle Van | - | 10 | - | - | 10/07 | 13/07 (+3j) | 10/07 | - |
+| 8 | Fiche « Client », rendre obligatoire la saisie | En spécification — Anaëlle Van | - | - | - | - | 10/07 | 28/07 (+18j) | 10/07 | - |
 
 ### ⏱️ Durées du cycle *(jours ouvrés)*
 
