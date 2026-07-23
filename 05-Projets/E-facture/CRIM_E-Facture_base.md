@@ -59,7 +59,7 @@
 | 16 | Mise a disposition des factures fournisseurs e | A recetter — Métier (recette) | 5 | - | - | 19/06 | 07/07 | 07/07 | 20/07 | 26/06 (-24j) |
 | 24 | Gestion des lisibles factures fournisseurs dan | A recetter — Métier (recette) | 0 | - | - | 06/07 | 07/07 | 07/07 | 20/07 | 15/07 (-5j) |
 | 22 | Interdire le rejet technique de la facture fou | En cours — GA | - | - | 6 | - | 08/07 | 08/07 | 17/07 | 17/07 |
-| 26 | Personnaliser le bon de commande (Edition Armo | En cours — Ootary | - | - | - | 09/07 | 08/07 | 08/07 | 16/07 | - |
+| 26 | Personnaliser le bon de commande (Edition Armo | En cours — Ootary | - | - | - | 09/07 | 08/07 | 08/07 | 16/07 | 24/07 (+8j) |
 | 28 | Mise à disposition des factures fournisseurs " | En cours — Globasoft | - | - | - | 22/06 | 07/07 | 07/07 | 20/07 | 27/07 (+7j) |
 | 29 | Gestion des lisibles factures fournisseurs dan | En cours — Globasoft | - | - | - | 09/07 | 07/07 | 07/07 | 20/07 | 27/07 (+7j) |
 
@@ -205,8 +205,8 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 
 | # | Description | Statut | A/R RSI | Retard spec | Retard dev | Créé GLPI | Spec initiale | Livr. spec | Dev initiale | Livr. dev |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2 | Mise à disposition des factures éligibles à la | En spécification — Justine Navarro | - | 15 | - | 20/07 | 08/07 | 08/07 | 28/08 | 28/08 |
-| 3 | Mise à disposition vers ESKER du e-reporting d | En spécification — - | - | - | - | 01/06 | - | - | - | - |
+| 2 | Mise à disposition des factures éligibles à la | En spécification — Justine Navarro | - | - | - | 20/07 | 08/07 | 31/07 (+23j) | 28/08 | 28/08 |
+| 3 | Mise à disposition vers ESKER du e-reporting d | En attente — - | - | - | - | 01/06 | - | - | - | - |
 
 ### ⏱️ Durées du cycle *(jours ouvrés)*
 
@@ -227,7 +227,7 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 | # | Statut | Chiffrage init. | Consommé | Écart |
 |---|---|---|---|---|
 | 2 | En spécification | 22,5 j | - | - |
-| 3 | En spécification | 22,5 j | 6 j | -16,5 j (-73 %) |
+| 3 | En attente | 22,5 j | 6 j | -16,5 j (-73 %) |
 | **Total lot** | | **45 j** | **6 j** | |
 
 - **#2** — chiffré **22,5 j**, *aucun temps passé saisi à ce jour*.
