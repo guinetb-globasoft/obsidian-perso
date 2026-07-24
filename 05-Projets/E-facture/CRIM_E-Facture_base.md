@@ -1,6 +1,6 @@
 # CRIM E-Facture — Base de travail
 
-*Source : Redmine POP + GLPI. Généré le 23/07/2026.*
+*Source : Redmine POP + GLPI. Généré le 24/07/2026.*
 
 ## Légende
 
@@ -58,8 +58,8 @@
 | 31 | Changer l'encodage du fichier .csv ref fournis | Validé — — | - | - | - | - | - | - | 01/07 | 01/07 |
 | 16 | Mise a disposition des factures fournisseurs e | A recetter — Métier (recette) | 5 | - | - | 19/06 | 07/07 | 07/07 | 20/07 | 26/06 (-24j) |
 | 24 | Gestion des lisibles factures fournisseurs dan | A recetter — Métier (recette) | 0 | - | - | 06/07 | 07/07 | 07/07 | 20/07 | 15/07 (-5j) |
-| 22 | Interdire le rejet technique de la facture fou | En cours — GA | - | - | 6 | - | 08/07 | 08/07 | 17/07 | 17/07 |
-| 26 | Personnaliser le bon de commande (Edition Armo | En cours — Ootary | - | - | - | 09/07 | 08/07 | 08/07 | 16/07 | 24/07 (+8j) |
+| 26 | Personnaliser le bon de commande (Edition Armo | Livré — Ootary | - | - | - | 09/07 | 08/07 | 08/07 | 16/07 | 24/07 (+8j) |
+| 22 | Interdire le rejet technique de la facture fou | En cours — GA | - | - | 7 | - | 08/07 | 08/07 | 17/07 | 17/07 |
 | 28 | Mise à disposition des factures fournisseurs " | En cours — Globasoft | - | - | - | 22/06 | 07/07 | 07/07 | 20/07 | 27/07 (+7j) |
 | 29 | Gestion des lisibles factures fournisseurs dan | En cours — Globasoft | - | - | - | 09/07 | 07/07 | 07/07 | 20/07 | 27/07 (+7j) |
 
@@ -72,14 +72,14 @@ De l'ouverture du ticket à la validation RSI. **D1 mesure la qualification inte
 | 14 | 17/04 | 15/06 | - | 04/07 | 07/07 | 37 | - | - | 2 | 16 |
 | 16 | 19/06 | 22/06 | 23/06 | 26/06 | 20/07 | 1 | 1 | 3 | 14 | 18 |
 | 24 | 06/07 | 06/07 | - | 15/07 | 20/07 | 0 | - | - | 3 | 8 |
-| 26 | 09/07 | 09/07 | 09/07 | - | - | 0 | 0 | - | - | - |
+| 26 | 09/07 | 09/07 | 09/07 | 24/07 | - | 0 | 0 | 10 | - | - |
 | 28 | 22/06 | 22/06 | 29/06 | - | - | 0 | 5 | - | - | - |
 | 29 | 09/07 | 10/07 | - | - | - | 1 | - | - | - | - |
 
 - **#14** (GLPI 24386) — **D1** création ticket 17/04 → arrivée presta 15/06 = **37 j** *(qualification interne)* · **D4** livraison dev 04/07 → Validé RSI 07/07 = **2 j** · **Cycle presta (escalade→RSI) 16 j** — ⚠️ pas de message de prise en compte dans le fil GLPI
 - **#16** (GLPI 25884) — **D1** création ticket 19/06 → arrivée presta 22/06 = **1 j** *(qualification interne)* · **D2** arrivée presta 22/06 → prise en compte 23/06 = **1 j** · **D3** prise en compte 23/06 → livraison dev 26/06 = **3 j** · **D4** livraison dev 26/06 → Validé RSI 20/07 = **14 j** · **Cycle presta (escalade→RSI) 18 j**
 - **#24** (GLPI 26399) — **D1** création ticket 06/07 → arrivée presta 06/07 = **0 j** *(qualification interne)* · **D4** livraison dev 15/07 → Validé RSI 20/07 = **3 j** · **Cycle presta (escalade→RSI) 8 j** — ⚠️ pas de message de prise en compte dans le fil GLPI
-- **#26** (Ootary TI26003547) — **D1** création ticket 09/07 → arrivée presta 09/07 = **0 j** *(qualification interne)* · **D2** arrivée presta 09/07 → prise en compte 09/07 = **0 j**
+- **#26** (Ootary TI26003547) — **D1** création ticket 09/07 → arrivée presta 09/07 = **0 j** *(qualification interne)* · **D2** arrivée presta 09/07 → prise en compte 09/07 = **0 j** · **D3** prise en compte 09/07 → livraison dev 24/07 = **10 j**
 - **#28** (GLPI 25936) — **D1** création ticket 22/06 → arrivée presta 22/06 = **0 j** *(qualification interne)* · **D2** arrivée presta 22/06 → prise en compte 29/06 = **5 j**
 - **#29** (GLPI 26560) — **D1** création ticket 09/07 → arrivée presta 10/07 = **1 j** *(qualification interne)* — ⚠️ pas de message de prise en compte dans le fil GLPI
 
@@ -93,7 +93,7 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 | 16 | A recetter | 1,5 j | 6 j | +4,5 j (+300 %) |
 | 22 | En cours | 0,5 j | - | - |
 | 24 | A recetter | 6 j | 7,75 j | +1,75 j (+29 %) |
-| 26 | En cours | 4 j | - | - |
+| 26 | Livré | 4 j | - | - |
 | 28 | En cours | 1 j | 2,25 j | +1,25 j (+125 %) |
 | 29 | En cours | 3 j | 1,375 j | -1,625 j (-54 %) |
 | 30 | Validé | 0,5 j | - | - |
