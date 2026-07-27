@@ -60,7 +60,7 @@
 | 24 | Gestion des lisibles factures fournisseurs dan | A recetter — Métier (recette) | 0 | - | - | 06/07 | 07/07 | 07/07 | 20/07 | 15/07 (-5j) |
 | 26 | Personnaliser le bon de commande (Edition Armo | Livré — Ootary | - | - | - | 09/07 | 08/07 | 08/07 | 16/07 | 24/07 (+8j) |
 | 28 | Mise à disposition des factures fournisseurs " | Livré — Globasoft | - | - | - | 22/06 | 07/07 | 07/07 | 20/07 | 27/07 (+7j) |
-| 29 | Gestion des lisibles factures fournisseurs dan | Livré — Globasoft | - | - | - | 09/07 | 07/07 | 07/07 | 20/07 | 27/07 (+7j) |
+| 29 | Gestion des lisibles factures fournisseurs dan | Livré — Globasoft | 1 | - | - | 09/07 | 07/07 | 07/07 | 20/07 | 27/07 (+7j) |
 | 22 | Interdire le rejet technique de la facture fou | En cours — GA | - | - | 10 | - | 08/07 | 08/07 | 17/07 | 17/07 |
 
 ### ⏱️ Durées du cycle *(jours ouvrés)*
