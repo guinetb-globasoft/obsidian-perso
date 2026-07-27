@@ -58,10 +58,10 @@
 | 31 | Changer l'encodage du fichier .csv ref fournis | Validé — — | - | - | - | - | - | - | 01/07 | 01/07 |
 | 16 | Mise a disposition des factures fournisseurs e | A recetter — Métier (recette) | 5 | - | - | 19/06 | 07/07 | 07/07 | 20/07 | 26/06 (-24j) |
 | 24 | Gestion des lisibles factures fournisseurs dan | A recetter — Métier (recette) | 0 | - | - | 06/07 | 07/07 | 07/07 | 20/07 | 15/07 (-5j) |
+| 22 | Interdire le rejet technique de la facture fou | Livré — GA | - | - | - | - | 08/07 | 08/07 | 17/07 | 27/07 (+10j) |
 | 26 | Personnaliser le bon de commande (Edition Armo | Livré — Ootary | - | - | - | 09/07 | 08/07 | 08/07 | 16/07 | 24/07 (+8j) |
 | 28 | Mise à disposition des factures fournisseurs " | Livré — Globasoft | - | - | - | 22/06 | 07/07 | 07/07 | 20/07 | 27/07 (+7j) |
 | 29 | Gestion des lisibles factures fournisseurs dan | Livré — Globasoft | 1 | - | - | 09/07 | 07/07 | 07/07 | 20/07 | 27/07 (+7j) |
-| 22 | Interdire le rejet technique de la facture fou | En cours — GA | - | - | 10 | - | 08/07 | 08/07 | 17/07 | 17/07 |
 
 ### ⏱️ Durées du cycle *(jours ouvrés)*
 
@@ -91,7 +91,7 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 |---|---|---|---|---|
 | 14 | Validé | 1,5 j | 3,75 j | +2,25 j (+150 %) |
 | 16 | A recetter | 1,5 j | 6 j | +4,5 j (+300 %) |
-| 22 | En cours | 0,5 j | - | - |
+| 22 | Livré | 0,5 j | - | - |
 | 24 | A recetter | 6 j | 7,75 j | +1,75 j (+29 %) |
 | 26 | Livré | 4 j | - | - |
 | 28 | Livré | 1 j | 2,25 j | +1,25 j (+125 %) |
