@@ -91,18 +91,18 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 |---|---|---|---|---|
 | 14 | Validé | 1,5 j | 3,75 j | +2,25 j (+150 %) |
 | 16 | A recetter | 1,5 j | 6 j | +4,5 j (+300 %) |
-| 22 | Livré | 0,5 j | - | - |
+| 22 | Livré | 0,5 j | 0,02 j | -0,48 j (-96 %) |
 | 24 | A recetter | 6 j | 7,75 j | +1,75 j (+29 %) |
 | 26 | Livré | 4 j | - | - |
 | 28 | Livré | 1 j | 2,25 j | +1,25 j (+125 %) |
 | 29 | Livré | 3 j | 1,375 j | -1,625 j (-54 %) |
 | 30 | Validé | 0,5 j | - | - |
 | 31 | Validé | 0,5 j | - | - |
-| **Total lot** | | **18,5 j** | **21,12 j** | |
+| **Total lot** | | **18,5 j** | **21,14 j** | |
 
 - **#14** — chiffré **1,5 j**, consommé **3,75 j** → **+2,25 j (+150 %)** *(dépassement)*.
 - **#16** — chiffré **1,5 j**, consommé **6 j** → **+4,5 j (+300 %)** *(dépassement)*.
-- **#22** — chiffré **0,5 j**, *aucun temps passé saisi à ce jour*.
+- **#22** — chiffré **0,5 j**, consommé **0,02 j** → **-0,48 j (-96 %)** *(sous le budget)*.
 - **#24** — chiffré **6 j**, consommé **7,75 j** → **+1,75 j (+29 %)** *(dépassement)*.
 - **#26** — chiffré **4 j**, *aucun temps passé saisi à ce jour*.
 - **#28** — chiffré **1 j**, consommé **2,25 j** → **+1,25 j (+125 %)** *(dépassement)*.
@@ -246,10 +246,10 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 
 | Lot | CRIM chiffrées | Chiffrage init. | Consommé | Écart |
 |---|---|---|---|---|
-| Lot 1 — Fournisseur (eInvoicing) | 9 | 18,5 j | 21,12 j | +2,62 j (+14 %) |
+| Lot 1 — Fournisseur (eInvoicing) | 9 | 18,5 j | 21,14 j | +2,64 j (+14 %) |
 | Lot 2 — Client invoicing | 7 | 36,5 j | 18,5 j | -18 j (-49 %) |
 | Lot 3 — Client reporting | 2 | 45 j | 6,03 j | -38,97 j (-87 %) |
-| **Total** | | **100 j** | **45,66 j** | **-54,34 j (-54 %)** |
+| **Total** | | **100 j** | **45,67 j** | **-54,33 j (-54 %)** |
 
 > ⚠️ Cet écart global n'est **pas** une performance : la majorité des CRIM ne sont pas terminées, donc leur consommé est mécaniquement inférieur au budget. Seul le tableau des CRIM terminées ci-dessous est interprétable.
 
@@ -260,11 +260,12 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 | 1 | L2 | Livré | 22,5 j | 15 j | -7,5 j (-33 %) |
 | 14 | L1 | Validé | 1,5 j | 3,75 j | +2,25 j (+150 %) |
 | 16 | L1 | A recetter | 1,5 j | 6 j | +4,5 j (+300 %) |
+| 22 | L1 | Livré | 0,5 j | 0,02 j | -0,48 j (-96 %) |
 | 24 | L1 | A recetter | 6 j | 7,75 j | +1,75 j (+29 %) |
 | 27 | L2 | Livré | 3 j | 3,5 j | +0,5 j (+17 %) |
 | 28 | L1 | Livré | 1 j | 2,25 j | +1,25 j (+125 %) |
 | 29 | L1 | Livré | 3 j | 1,375 j | -1,62 j (-54 %) |
-| **Total terminé** | | | **38,5 j** | **39,62 j** | **+1,12 j (+3 %)** |
+| **Total terminé** | | | **39 j** | **39,64 j** | **+0,64 j (+2 %)** |
 
 ### Répartition de la charge par phase, tous lots *(jours)*
 
