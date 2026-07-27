@@ -46,6 +46,8 @@
 | **#29** | L1 | Gestion des lisibles factures fournisseurs dans le c | [19999](https://redmine.ga.fr/issues/19999) | [GLPI 26560](https://support.ga.fr/front/ticket.form.php?id=26560) |
 | **#30** | L1 | Changer l'encodage du fichier .csv ref fournisseur I | [20000](https://redmine.ga.fr/issues/20000) | — |
 | **#31** | L1 | Changer l'encodage du fichier .csv ref fournisseur I | [20001](https://redmine.ga.fr/issues/20001) | — |
+| **#32** | L1 | Automatiser le fait d’annuler après un refus de fact | [20006](https://redmine.ga.fr/issues/20006) | — |
+| **FACTORY** | L2 | Modification du template facture FACTORY pour GAE (e | [20024](https://redmine.ga.fr/issues/20024) | [GLPI 26882](https://support.ga.fr/front/ticket.form.php?id=26882) |
 
 ## Lot 1 — Fournisseur (eInvoicing)
 
@@ -129,6 +131,7 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 | 20 | Fiche « fournisseur » - Automatiser la définit | En spécification — Justine Navarro | - | - | - | - | - | - | - | - |
 | 21 | Fiche « fournisseur », rendre obligatoire la s | En spécification — Justine Navarro | - | - | - | - | - | - | - | - |
 | 23 | Automatiser l’envoi des factures électroniques | En spécification — Justine Navarro | - | - | - | - | - | - | - | - |
+| 32 | Automatiser le fait d’annuler après un refus d | En spécification — Justine Navarro | - | - | - | - | - | - | - | - |
 
 ## Lot 2 — Client invoicing
 
@@ -142,6 +145,7 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 | 9 | Integrer l'editique Armony de la facture comme | En cours — Globasoft | - | - | - | 16/07 | 08/07 | 08/07 | 17/07 | 28/07 (+11j) |
 | 10 | Integrer l'editique Armony de la facture comme | Prêt — Globasoft | - | - | - | 16/07 | 08/07 | 08/07 | 30/07 | 30/07 |
 | 8 | Fiche « Client », rendre obligatoire la saisie | En spécification — Anaëlle Van | - | - | - | - | 10/07 | 28/07 (+18j) | 10/07 | - |
+| FACTORY | Modification du template facture FACTORY pour  | Nouveau — ISIA | - | - | - | 27/07 | - | - | - | - |
 
 ### ⏱️ Durées du cycle *(jours ouvrés)*
 
@@ -153,11 +157,13 @@ De l'ouverture du ticket à la validation RSI. **D1 mesure la qualification inte
 | 9 | 16/07 | 17/07 | - | - | - | 1 | - | - | - | - |
 | 10 | 16/07 | 17/07 | - | - | - | 1 | - | - | - | - |
 | 27 | 17/07 | 17/07 | 17/07 | 23/07 | - | 0 | 0 | 4 | - | - |
+| FACTORY | 27/07 | - | - | - | - | - | - | - | - | - |
 
 - **#1** (GLPI 25365) — **D1** création ticket 01/06 → arrivée presta 01/06 = **0 j** *(qualification interne)* · **D2** arrivée presta 01/06 → prise en compte 22/06 = **15 j**
 - **#9** (GLPI 26668) — **D1** création ticket 16/07 → arrivée presta 17/07 = **1 j** *(qualification interne)* — ⚠️ pas de message de prise en compte dans le fil GLPI
 - **#10** (GLPI 26669) — **D1** création ticket 16/07 → arrivée presta 17/07 = **1 j** *(qualification interne)* — ⚠️ pas de message de prise en compte dans le fil GLPI
 - **#27** (GLPI 26675) — **D1** création ticket 17/07 → arrivée presta 17/07 = **0 j** *(qualification interne)* · **D2** arrivée presta 17/07 → prise en compte 17/07 = **0 j** · **D3** prise en compte 17/07 → livraison dev 23/07 = **4 j**
+- **#FACTORY** (GLPI 26882) — cycle non encore mesurable — ⚠️ pas de message de prise en compte dans le fil GLPI
 
 ### 💰 Charges *(jours)*
 
