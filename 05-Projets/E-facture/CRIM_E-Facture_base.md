@@ -23,7 +23,6 @@
 |---|---|---|---|---|
 | **#1** | L2 | Mise à disposition des factures au format UBL pour l | [20007](https://redmine.ga.fr/issues/20007) | [GLPI 25365](https://support.ga.fr/front/ticket.form.php?id=25365) |
 | **#2** | L3 | Mise à disposition des factures éligibles à la démat | [20017](https://redmine.ga.fr/issues/20017) | [GLPI 26716](https://support.ga.fr/front/ticket.form.php?id=26716) |
-| **#3** | L3 | Mise à disposition vers ESKER du e-reporting de tran | [20018](https://redmine.ga.fr/issues/20018) | [GLPI 25369](https://support.ga.fr/front/ticket.form.php?id=25369) |
 | **#5** | L2 | Fiche « client » - Automatiser la définition d’une f | [20013](https://redmine.ga.fr/issues/20013) | — |
 | **#6** | L2 | Fiche « Client », rendre obligatoire la saisie de «  | [20014](https://redmine.ga.fr/issues/20014) | — |
 | **#7** | L2 | Fiche « Société », rendre obligatoire la saisie de « | [20015](https://redmine.ga.fr/issues/20015) | — |
@@ -143,8 +142,8 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 | 1 | Mise à disposition des factures au format UBL  | Livré — Globasoft | - | - | - | 01/06 | 22/06 | 22/06 | 15/07 | 31/07 (+16j) |
 | 27 | Récupérer les PJ additionnelles (hors lisible  | Livré — Globasoft | - | - | - | 17/07 | - | - | 20/07 | 23/07 (+3j) |
 | 9 | Integrer l'editique Armony de la facture comme | En cours — Globasoft | - | - | - | 16/07 | 08/07 | 08/07 | 17/07 | 28/07 (+11j) |
+| 8 | Fiche « Client », rendre obligatoire la saisie | Prêt — Concret | - | - | - | - | 10/07 | 28/07 (+18j) | 10/07 | 31/07 (+21j) |
 | 10 | Integrer l'editique Armony de la facture comme | Prêt — Globasoft | - | - | - | 16/07 | 08/07 | 08/07 | 30/07 | 30/07 |
-| 8 | Fiche « Client », rendre obligatoire la saisie | En spécification — Anaëlle Van | - | - | - | - | 10/07 | 28/07 (+18j) | 10/07 | - |
 | FACTORY | Modification du template facture FACTORY pour  | Nouveau — ISIA | - | - | - | 27/07 | - | - | - | - |
 
 ### ⏱️ Durées du cycle *(jours ouvrés)*
@@ -172,7 +171,7 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 | # | Statut | Chiffrage init. | Consommé | Écart |
 |---|---|---|---|---|
 | 1 | Livré | 22,5 j | 15 j | -7,5 j (-33 %) |
-| 8 | En spécification | 1 j | - | - |
+| 8 | Prêt | 1 j | - | - |
 | 9 | En cours | 3 j | 0 j | -3 j (-100 %) |
 | 10 | Prêt | 3 j | 0 j | -3 j (-100 %) |
 | 12 | En spécification | 3 j | - | - |
@@ -212,7 +211,6 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 | # | Description | Statut | A/R RSI | Retard spec | Retard dev | Créé GLPI | Spec initiale | Livr. spec | Dev initiale | Livr. dev |
 |---|---|---|---|---|---|---|---|---|---|---|
 | 2 | Mise à disposition des factures éligibles à la | En spécification — Justine Navarro | - | - | - | 20/07 | 08/07 | 31/07 (+23j) | 28/08 | 28/08 |
-| 3 | Mise à disposition vers ESKER du e-reporting d | En attente — - | - | - | - | 01/06 | - | - | - | - |
 
 ### ⏱️ Durées du cycle *(jours ouvrés)*
 
@@ -221,10 +219,8 @@ De l'ouverture du ticket à la validation RSI. **D1 mesure la qualification inte
 | # | Créé ticket | Arrivée presta | Prise en compte | Livr. dev | Validé RSI | D1 créa→presta | D2 presta→prise | D3 prise→dev | D4 dev→RSI | Total |
 |---|---|---|---|---|---|---|---|---|---|---|
 | 2 | 20/07 | 20/07 | 20/07 | - | - | 0 | 0 | - | - | - |
-| 3 | 01/06 | 01/06 | - | - | - | 0 | - | - | - | - |
 
 - **#2** (GLPI 26716) — **D1** création ticket 20/07 → arrivée presta 20/07 = **0 j** *(qualification interne)* · **D2** arrivée presta 20/07 → prise en compte 20/07 = **0 j**
-- **#3** (GLPI 25369) — **D1** création ticket 01/06 → arrivée presta 01/06 = **0 j** *(qualification interne)* — ⚠️ pas de message de prise en compte dans le fil GLPI
 
 ### 💰 Charges *(jours)*
 
@@ -233,18 +229,9 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 | # | Statut | Chiffrage init. | Consommé | Écart |
 |---|---|---|---|---|
 | 2 | En spécification | 22,5 j | 0 j | -22,5 j (-100 %) |
-| 3 | En attente | 22,5 j | 6,03 j | -16,47 j (-73 %) |
-| **Total lot** | | **45 j** | **6,03 j** | |
+| **Total lot** | | **22,5 j** | **0 j** | |
 
 - **#2** — chiffré **22,5 j**, consommé **0 j** → **-22,5 j (-100 %)** *(sous le budget)*.
-- **#3** — chiffré **22,5 j**, consommé **6,03 j** → **-16,47 j (-73 %)** *(sous le budget)*.
-
-**Répartition de la charge par phase** *(jours, 8 h = 1 j)* — à quelle étape du cycle le temps a été consommé :
-
-| # | Total | Avant arrivée presta | Attente prise en compte | Développement | A/R RSI | Après validation RSI |
-|---|---|---|---|---|---|---|
-| 3 | **6,03 j** | — | — | 6,03 j | — | — |
-| **Total lot** | **6,03 j** | **—** | **—** | **6,03 j** (100 %) | **—** | **—** |
 
 ## 📊 Synthèse consolidée — budget vs consommé
 
@@ -254,8 +241,8 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 |---|---|---|---|---|
 | Lot 1 — Fournisseur (eInvoicing) | 9 | 18,5 j | 21,14 j | +2,64 j (+14 %) |
 | Lot 2 — Client invoicing | 7 | 36,5 j | 18,5 j | -18 j (-49 %) |
-| Lot 3 — Client reporting | 2 | 45 j | 6,03 j | -38,97 j (-87 %) |
-| **Total** | | **100 j** | **45,67 j** | **-54,33 j (-54 %)** |
+| Lot 3 — Client reporting | 1 | 22,5 j | 0 j | -22,5 j (-100 %) |
+| **Total** | | **77,5 j** | **39,64 j** | **-37,86 j (-49 %)** |
 
 > ⚠️ Cet écart global n'est **pas** une performance : la majorité des CRIM ne sont pas terminées, donc leur consommé est mécaniquement inférieur au budget. Seul le tableau des CRIM terminées ci-dessous est interprétable.
 
@@ -277,7 +264,7 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 
 | Phase | Charge | Part |
 |---|---|---|
-| Avant arrivée presta | 2,25 j | 5 % |
-| Développement | 35,91 j | 83 % |
-| A/R RSI | 4,88 j | 11 % |
-| **Total** | **43,03 j** | **100 %** |
+| Avant arrivée presta | 2,25 j | 6 % |
+| Développement | 29,88 j | 81 % |
+| A/R RSI | 4,88 j | 13 % |
+| **Total** | **37 j** | **100 %** |
