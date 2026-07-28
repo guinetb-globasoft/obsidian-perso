@@ -1,6 +1,6 @@
 # CRIM E-Facture — Base de travail
 
-*Source : Redmine POP + GLPI. Généré le 27/07/2026.*
+*Source : Redmine POP + GLPI. Généré le 28/07/2026.*
 
 ## Légende
 
@@ -56,10 +56,10 @@
 | # | Description | Statut | A/R RSI | Retard spec | Retard dev | Créé GLPI | Spec initiale | Livr. spec | Dev initiale | Livr. dev |
 |---|---|---|---|---|---|---|---|---|---|---|
 | 14 | Ajuster la mise à disposition du référentiel f | Validé — — | - | - | - | 17/04 | - | - | 04/07 | 04/07 |
+| 16 | Mise a disposition des factures fournisseurs e | Validé — — | 5 | - | - | 19/06 | 07/07 | 07/07 | 20/07 | 26/06 (-24j) |
+| 24 | Gestion des lisibles factures fournisseurs dan | Validé — — | 0 | - | - | 06/07 | 07/07 | 07/07 | 20/07 | 15/07 (-5j) |
 | 30 | Changer l'encodage du fichier .csv ref fournis | Validé — — | - | - | - | - | - | - | 04/07 | 04/07 |
 | 31 | Changer l'encodage du fichier .csv ref fournis | Validé — — | - | - | - | - | - | - | 01/07 | 01/07 |
-| 16 | Mise a disposition des factures fournisseurs e | A recetter — Métier (recette) | 5 | - | - | 19/06 | 07/07 | 07/07 | 20/07 | 26/06 (-24j) |
-| 24 | Gestion des lisibles factures fournisseurs dan | A recetter — Métier (recette) | 0 | - | - | 06/07 | 07/07 | 07/07 | 20/07 | 15/07 (-5j) |
 | 22 | Interdire le rejet technique de la facture fou | Livré — GA | - | - | - | - | 08/07 | 08/07 | 17/07 | 27/07 (+10j) |
 | 26 | Personnaliser le bon de commande (Edition Armo | Livré — Ootary | - | - | - | 09/07 | 08/07 | 08/07 | 16/07 | 24/07 (+8j) |
 | 28 | Mise à disposition des factures fournisseurs " | Livré — Globasoft | - | - | - | 22/06 | 07/07 | 07/07 | 20/07 | 27/07 (+7j) |
@@ -92,9 +92,9 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 | # | Statut | Chiffrage init. | Consommé | Écart |
 |---|---|---|---|---|
 | 14 | Validé | 1,5 j | 3,75 j | +2,25 j (+150 %) |
-| 16 | A recetter | 1,5 j | 6 j | +4,5 j (+300 %) |
+| 16 | Validé | 1,5 j | 6 j | +4,5 j (+300 %) |
 | 22 | Livré | 0,5 j | 0,02 j | -0,48 j (-96 %) |
-| 24 | A recetter | 6 j | 7,75 j | +1,75 j (+29 %) |
+| 24 | Validé | 6 j | 7,75 j | +1,75 j (+29 %) |
 | 26 | Livré | 4 j | - | - |
 | 28 | Livré | 1 j | 2,25 j | +1,25 j (+125 %) |
 | 29 | Livré | 3 j | 1,375 j | -1,625 j (-54 %) |
@@ -265,9 +265,9 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 |---|---|---|---|---|---|
 | 1 | L2 | Livré | 22,5 j | 15 j | -7,5 j (-33 %) |
 | 14 | L1 | Validé | 1,5 j | 3,75 j | +2,25 j (+150 %) |
-| 16 | L1 | A recetter | 1,5 j | 6 j | +4,5 j (+300 %) |
+| 16 | L1 | Validé | 1,5 j | 6 j | +4,5 j (+300 %) |
 | 22 | L1 | Livré | 0,5 j | 0,02 j | -0,48 j (-96 %) |
-| 24 | L1 | A recetter | 6 j | 7,75 j | +1,75 j (+29 %) |
+| 24 | L1 | Validé | 6 j | 7,75 j | +1,75 j (+29 %) |
 | 27 | L2 | Livré | 3 j | 3,5 j | +0,5 j (+17 %) |
 | 28 | L1 | Livré | 1 j | 2,25 j | +1,25 j (+125 %) |
 | 29 | L1 | Livré | 3 j | 1,375 j | -1,62 j (-54 %) |
