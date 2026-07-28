@@ -62,7 +62,7 @@
 | 31 | Changer l'encodage du fichier .csv ref fournis | Validé — — | - | - | - | - | - | - | 01/07 | 01/07 |
 | 28 | Mise à disposition des factures fournisseurs " | Validé RSI — RSI (Justine Navarro) | - | - | - | 22/06 | 07/07 | 07/07 | 20/07 | 27/07 (+7j) |
 | 22 | Interdire le rejet technique de la facture fou | Livré — GA | - | - | - | - | 08/07 | 08/07 | 17/07 | 27/07 (+10j) |
-| 26 | Personnaliser le bon de commande (Edition Armo | Livré — Ootary | - | - | - | 09/07 | 08/07 | 08/07 | 16/07 | 24/07 (+8j) |
+| 26 | Personnaliser le bon de commande (Edition Armo | Livré — Ootary | 1 | - | - | 09/07 | 08/07 | 08/07 | 16/07 | 24/07 (+8j) |
 | 29 | Gestion des lisibles factures fournisseurs dan | Livré — Globasoft | 1 | - | - | 09/07 | 07/07 | 07/07 | 20/07 | 27/07 (+7j) |
 
 ### ⏱️ Durées du cycle *(jours ouvrés)*
