@@ -143,7 +143,7 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 | 9 | Integrer l'editique Armony de la facture comme | Livré — Globasoft | - | - | - | 16/07 | 08/07 | 08/07 | 17/07 | 30/07 (+13j) |
 | 27 | Récupérer les PJ additionnelles (hors lisible  | Livré — Globasoft | - | - | - | 17/07 | - | - | 20/07 | 23/07 (+3j) |
 | 8 | Fiche « Client », rendre obligatoire la saisie | En cours — Concret | - | - | - | - | 10/07 | 28/07 (+18j) | 10/07 | 31/07 (+21j) |
-| 10 | Integrer l'editique Armony de la facture comme | Prêt — Globasoft | - | - | - | 16/07 | 08/07 | 08/07 | 30/07 | 30/07 |
+| 10 | Integrer l'editique Armony de la facture comme | En cours — Globasoft | - | - | - | 16/07 | 08/07 | 08/07 | 30/07 | 30/07 |
 | 33 | Modification du template facture FACTORY pour  | Prêt — ISIA | - | - | - | 27/07 | - | - | - | - |
 
 ### ⏱️ Durées du cycle *(jours ouvrés)*
@@ -173,7 +173,7 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 | 1 | Livré | 22,5 j | 15 j | -7,5 j (-33 %) |
 | 8 | En cours | 1 j | - | - |
 | 9 | Livré | 3 j | 1,75 j | -1,25 j (-42 %) |
-| 10 | Prêt | 3 j | 0 j | -3 j (-100 %) |
+| 10 | En cours | 3 j | 0 j | -3 j (-100 %) |
 | 12 | En spécification | 3 j | - | - |
 | 25 | Validé RSI | 1 j | - | - |
 | 27 | Livré | 3 j | 3,5 j | +0,5 j (+17 %) |
