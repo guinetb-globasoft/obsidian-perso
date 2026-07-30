@@ -46,7 +46,7 @@
 | **#30** | L1 | Changer l'encodage du fichier .csv ref fournisseur I | [20000](https://redmine.ga.fr/issues/20000) | — |
 | **#31** | L1 | Changer l'encodage du fichier .csv ref fournisseur I | [20001](https://redmine.ga.fr/issues/20001) | — |
 | **#32** | L1 | Automatiser le fait d’annuler après un refus de fact | [20006](https://redmine.ga.fr/issues/20006) | — |
-| **FACTORY** | L2 | Modification du template facture FACTORY pour GAE (e | [20024](https://redmine.ga.fr/issues/20024) | [GLPI 26882](https://support.ga.fr/front/ticket.form.php?id=26882) |
+| **#33** | L2 | Modification du template facture FACTORY pour GAE (e | [20024](https://redmine.ga.fr/issues/20024) | [GLPI 26882](https://support.ga.fr/front/ticket.form.php?id=26882) |
 
 ## Lot 1 — Fournisseur (eInvoicing)
 
@@ -140,11 +140,11 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 |---|---|---|---|---|---|---|---|---|---|---|
 | 25 | Lobby pour valider les factures préliminaires  | Validé RSI — RSI (Justine Navarro) | - | - | - | - | 10/07 | 09/07 (-1j) | 16/07 | 10/07 (-6j) |
 | 1 | Mise à disposition des factures au format UBL  | Livré — Globasoft | - | - | - | 01/06 | 22/06 | 22/06 | 15/07 | 31/07 (+16j) |
-| 9 | Integrer l'editique Armony de la facture comme | Livré — Globasoft | - | - | - | 16/07 | 08/07 | 08/07 | 17/07 | 28/07 (+11j) |
+| 9 | Integrer l'editique Armony de la facture comme | Livré — Globasoft | - | - | - | 16/07 | 08/07 | 08/07 | 17/07 | 30/07 (+13j) |
 | 27 | Récupérer les PJ additionnelles (hors lisible  | Livré — Globasoft | - | - | - | 17/07 | - | - | 20/07 | 23/07 (+3j) |
-| 8 | Fiche « Client », rendre obligatoire la saisie | Prêt — Concret | - | - | - | - | 10/07 | 28/07 (+18j) | 10/07 | 31/07 (+21j) |
+| 8 | Fiche « Client », rendre obligatoire la saisie | En cours — Concret | - | - | - | - | 10/07 | 28/07 (+18j) | 10/07 | 31/07 (+21j) |
 | 10 | Integrer l'editique Armony de la facture comme | Prêt — Globasoft | - | - | - | 16/07 | 08/07 | 08/07 | 30/07 | 30/07 |
-| FACTORY | Modification du template facture FACTORY pour  | Nouveau — ISIA | - | - | - | 27/07 | - | - | - | - |
+| 33 | Modification du template facture FACTORY pour  | Prêt — ISIA | - | - | - | 27/07 | - | - | - | - |
 
 ### ⏱️ Durées du cycle *(jours ouvrés)*
 
@@ -153,16 +153,16 @@ De l'ouverture du ticket à la validation RSI. **D1 mesure la qualification inte
 | # | Créé ticket | Arrivée presta | Prise en compte | Livr. dev | Validé RSI | D1 créa→presta | D2 presta→prise | D3 prise→dev | D4 dev→RSI | Total |
 |---|---|---|---|---|---|---|---|---|---|---|
 | 1 | 01/06 | 01/06 | 22/06 | - | - | 0 | 15 | - | - | - |
-| 9 | 16/07 | 17/07 | - | 28/07 | - | 1 | - | - | - | - |
+| 9 | 16/07 | 17/07 | - | 30/07 | - | 1 | - | - | - | - |
 | 10 | 16/07 | 17/07 | - | - | - | 1 | - | - | - | - |
 | 27 | 17/07 | 17/07 | 17/07 | 23/07 | - | 0 | 0 | 4 | - | - |
-| FACTORY | 27/07 | - | - | - | - | - | - | - | - | - |
+| 33 | 27/07 | - | - | - | - | - | - | - | - | - |
 
 - **#1** (GLPI 25365) — **D1** création ticket 01/06 → arrivée presta 01/06 = **0 j** *(qualification interne)* · **D2** arrivée presta 01/06 → prise en compte 22/06 = **15 j**
 - **#9** (GLPI 26668) — **D1** création ticket 16/07 → arrivée presta 17/07 = **1 j** *(qualification interne)* — ⚠️ pas de message de prise en compte dans le fil GLPI
 - **#10** (GLPI 26669) — **D1** création ticket 16/07 → arrivée presta 17/07 = **1 j** *(qualification interne)* — ⚠️ pas de message de prise en compte dans le fil GLPI
 - **#27** (GLPI 26675) — **D1** création ticket 17/07 → arrivée presta 17/07 = **0 j** *(qualification interne)* · **D2** arrivée presta 17/07 → prise en compte 17/07 = **0 j** · **D3** prise en compte 17/07 → livraison dev 23/07 = **4 j**
-- **#FACTORY** (GLPI 26882) — cycle non encore mesurable — ⚠️ pas de message de prise en compte dans le fil GLPI
+- **#33** (GLPI 26882) — cycle non encore mesurable — ⚠️ pas de message de prise en compte dans le fil GLPI
 
 ### 💰 Charges *(jours)*
 
@@ -171,13 +171,13 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 | # | Statut | Chiffrage init. | Consommé | Écart |
 |---|---|---|---|---|
 | 1 | Livré | 22,5 j | 15 j | -7,5 j (-33 %) |
-| 8 | Prêt | 1 j | - | - |
+| 8 | En cours | 1 j | - | - |
 | 9 | Livré | 3 j | 1,75 j | -1,25 j (-42 %) |
 | 10 | Prêt | 3 j | 0 j | -3 j (-100 %) |
 | 12 | En spécification | 3 j | - | - |
 | 25 | Validé RSI | 1 j | - | - |
 | 27 | Livré | 3 j | 3,5 j | +0,5 j (+17 %) |
-| FACTORY | Nouveau | 4 j | - | - |
+| 33 | Prêt | 4 j | - | - |
 | **Total lot** | | **40,5 j** | **20,25 j** | |
 
 - **#1** — chiffré **22,5 j**, consommé **15 j** → **-7,5 j (-33 %)** *(sous le budget)*.
@@ -187,7 +187,7 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 - **#12** — chiffré **3 j**, *aucun temps passé saisi à ce jour*.
 - **#25** — chiffré **1 j**, *aucun temps passé saisi à ce jour*.
 - **#27** — chiffré **3 j**, consommé **3,5 j** → **+0,5 j (+17 %)** *(dépassement)*.
-- **#FACTORY** — chiffré **4 j**, *aucun temps passé saisi à ce jour*.
+- **#33** — chiffré **4 j**, *aucun temps passé saisi à ce jour*.
 
 **Répartition de la charge par phase** *(jours, 8 h = 1 j)* — à quelle étape du cycle le temps a été consommé :
 
