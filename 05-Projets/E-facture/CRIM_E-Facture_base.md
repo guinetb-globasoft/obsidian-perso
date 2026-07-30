@@ -55,14 +55,14 @@
 | # | Description | Statut | A/R RSI | Retard spec | Retard dev | Créé GLPI | Spec initiale | Livr. spec | Dev initiale | Livr. dev |
 |---|---|---|---|---|---|---|---|---|---|---|
 | 14 | Ajuster la mise à disposition du référentiel f | Validé — — | - | - | - | 17/04 | - | - | 04/07 | 04/07 |
-| 16 | Mise a disposition des factures fournisseurs e | Validé — — | 5 | - | - | 19/06 | 07/07 | 07/07 | 20/07 | 26/06 (-24j) |
-| 24 | Gestion des lisibles factures fournisseurs dan | Validé — — | 0 | - | - | 06/07 | 07/07 | 07/07 | 20/07 | 15/07 (-5j) |
+| 16 | Mise a disposition des factures fournisseurs e | Validé — — | 5 | - | - | 19/06 | 07/07 | 07/07 | 20/07 | 26/06 (-14j) |
+| 24 | Gestion des lisibles factures fournisseurs dan | Validé — — | 0 | - | - | 06/07 | 07/07 | 07/07 | 20/07 | 15/07 (-3j) |
 | 30 | Changer l'encodage du fichier .csv ref fournis | Validé — — | - | - | - | - | - | - | 04/07 | 04/07 |
 | 31 | Changer l'encodage du fichier .csv ref fournis | Validé — — | - | - | - | - | - | - | 01/07 | 01/07 |
-| 28 | Mise à disposition des factures fournisseurs " | Validé RSI — RSI (Justine Navarro) | - | - | - | 22/06 | 07/07 | 07/07 | 20/07 | 27/07 (+7j) |
-| 22 | Interdire le rejet technique de la facture fou | Livré — GA | - | - | - | - | 08/07 | 08/07 | 17/07 | 27/07 (+10j) |
-| 26 | Personnaliser le bon de commande (Edition Armo | Livré — Ootary | 1 | - | - | 09/07 | 08/07 | 08/07 | 16/07 | 24/07 (+8j) |
-| 29 | Gestion des lisibles factures fournisseurs dan | Livré — Globasoft | 2 | - | - | 09/07 | 07/07 | 07/07 | 20/07 | 27/07 (+7j) |
+| 28 | Mise à disposition des factures fournisseurs " | Validé RSI — RSI (Justine Navarro) | - | - | - | 22/06 | 07/07 | 07/07 | 20/07 | 27/07 (+5j) |
+| 22 | Interdire le rejet technique de la facture fou | Livré — GA | - | - | - | - | 08/07 | 08/07 | 17/07 | 27/07 (+6j) |
+| 26 | Personnaliser le bon de commande (Edition Armo | Livré — Ootary | 1 | - | - | 09/07 | 08/07 | 08/07 | 16/07 | 24/07 (+6j) |
+| 29 | Gestion des lisibles factures fournisseurs dan | Livré — Globasoft | 2 | - | - | 09/07 | 07/07 | 07/07 | 20/07 | 27/07 (+5j) |
 
 ### ⏱️ Durées du cycle *(jours ouvrés)*
 
@@ -138,12 +138,12 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 
 | # | Description | Statut | A/R RSI | Retard spec | Retard dev | Créé GLPI | Spec initiale | Livr. spec | Dev initiale | Livr. dev |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 25 | Lobby pour valider les factures préliminaires  | Validé RSI — RSI (Justine Navarro) | - | - | - | - | 10/07 | 09/07 (-1j) | 16/07 | 10/07 (-6j) |
-| 1 | Mise à disposition des factures au format UBL  | Livré — Globasoft | - | - | - | 01/06 | 22/06 | 22/06 | 15/07 | 03/08 (+19j) |
-| 9 | Integrer l'editique Armony de la facture comme | Livré — Globasoft | - | - | - | 16/07 | 08/07 | 08/07 | 17/07 | 30/07 (+13j) |
+| 25 | Lobby pour valider les factures préliminaires  | Validé RSI — RSI (Justine Navarro) | - | - | - | - | 10/07 | 09/07 (-1j) | 16/07 | 10/07 (-3j) |
+| 1 | Mise à disposition des factures au format UBL  | Livré — Globasoft | - | - | - | 01/06 | 22/06 | 22/06 | 15/07 | 03/08 (+13j) |
+| 9 | Integrer l'editique Armony de la facture comme | Livré — Globasoft | - | - | - | 16/07 | 08/07 | 08/07 | 17/07 | 30/07 (+9j) |
 | 27 | Récupérer les PJ additionnelles (hors lisible  | Livré — Globasoft | - | - | - | 17/07 | - | - | 20/07 | 23/07 (+3j) |
-| 8 | Fiche « Client », rendre obligatoire la saisie | En cours — Concret | - | - | - | - | 10/07 | 28/07 (+18j) | 10/07 | 31/07 (+21j) |
-| 10 | Integrer l'editique Armony de la facture comme | En cours — Globasoft | - | - | - | 16/07 | 08/07 | 08/07 | 30/07 | 03/08 (+4j) |
+| 8 | Fiche « Client », rendre obligatoire la saisie | En cours — Concret | - | - | - | - | 10/07 | 28/07 (+11j) | 10/07 | 31/07 (+14j) |
+| 10 | Integrer l'editique Armony de la facture comme | En cours — Globasoft | - | - | - | 16/07 | 08/07 | 08/07 | 30/07 | 03/08 (+2j) |
 | 33 | Modification du template facture FACTORY pour  | Prêt — ISIA | - | - | - | 27/07 | - | - | - | - |
 
 ### ⏱️ Durées du cycle *(jours ouvrés)*
@@ -212,7 +212,7 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 
 | # | Description | Statut | A/R RSI | Retard spec | Retard dev | Créé GLPI | Spec initiale | Livr. spec | Dev initiale | Livr. dev |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2 | Mise à disposition des factures éligibles à la | En spécification — Justine Navarro | - | - | - | 20/07 | 08/07 | 31/07 (+23j) | 28/08 | 28/08 |
+| 2 | Mise à disposition des factures éligibles à la | En spécification — Justine Navarro | - | - | - | 20/07 | 08/07 | 31/07 (+15j) | 28/08 | 28/08 |
 
 ### ⏱️ Durées du cycle *(jours ouvrés)*
 
