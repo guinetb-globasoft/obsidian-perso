@@ -142,7 +142,7 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 | 1 | Mise à disposition des factures au format UBL  | Livré — Globasoft | - | - | - | 01/06 | 22/06 | 22/06 | 15/07 | 03/08 (+13j) |
 | 9 | Integrer l'editique Armony de la facture comme | Livré — Globasoft | - | - | - | 16/07 | 08/07 | 08/07 | 17/07 | 30/07 (+9j) |
 | 27 | Récupérer les PJ additionnelles (hors lisible  | Livré — Globasoft | - | - | - | 17/07 | - | - | 20/07 | 23/07 (+3j) |
-| 8 | Fiche « Client », rendre obligatoire la saisie | En cours — Concret | - | - | - | - | 10/07 | 28/07 (+11j) | 10/07 | 31/07 (+14j) |
+| 8 | Fiche « Client », rendre obligatoire la saisie | En cours — Concret | - | - | - | - | 10/07 | 28/07 (+11j) | 10/07 | 03/08 (+15j) |
 | 10 | Integrer l'editique Armony de la facture comme | En cours — Globasoft | - | - | - | 16/07 | 08/07 | 08/07 | 30/07 | 03/08 (+2j) |
 | 33 | Modification du template facture FACTORY pour  | Prêt — ISIA | - | - | - | 27/07 | - | - | - | - |
 
