@@ -139,11 +139,11 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 | # | Description | Statut | A/R RSI | Retard spec | Retard dev | Créé GLPI | Spec initiale | Livr. spec | Dev initiale | Livr. dev |
 |---|---|---|---|---|---|---|---|---|---|---|
 | 25 | Lobby pour valider les factures préliminaires  | Validé RSI — RSI (Justine Navarro) | - | - | - | - | 10/07 | 09/07 (-1j) | 16/07 | 10/07 (-6j) |
-| 1 | Mise à disposition des factures au format UBL  | Livré — Globasoft | - | - | - | 01/06 | 22/06 | 22/06 | 15/07 | 31/07 (+16j) |
+| 1 | Mise à disposition des factures au format UBL  | Livré — Globasoft | - | - | - | 01/06 | 22/06 | 22/06 | 15/07 | 03/08 (+19j) |
 | 9 | Integrer l'editique Armony de la facture comme | Livré — Globasoft | - | - | - | 16/07 | 08/07 | 08/07 | 17/07 | 30/07 (+13j) |
 | 27 | Récupérer les PJ additionnelles (hors lisible  | Livré — Globasoft | - | - | - | 17/07 | - | - | 20/07 | 23/07 (+3j) |
 | 8 | Fiche « Client », rendre obligatoire la saisie | En cours — Concret | - | - | - | - | 10/07 | 28/07 (+18j) | 10/07 | 31/07 (+21j) |
-| 10 | Integrer l'editique Armony de la facture comme | En cours — Globasoft | - | - | - | 16/07 | 08/07 | 08/07 | 30/07 | 30/07 |
+| 10 | Integrer l'editique Armony de la facture comme | En cours — Globasoft | - | - | - | 16/07 | 08/07 | 08/07 | 30/07 | 03/08 (+4j) |
 | 33 | Modification du template facture FACTORY pour  | Prêt — ISIA | - | - | - | 27/07 | - | - | - | - |
 
 ### ⏱️ Durées du cycle *(jours ouvrés)*
