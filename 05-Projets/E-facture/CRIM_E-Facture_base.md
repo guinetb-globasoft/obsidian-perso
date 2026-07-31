@@ -1,6 +1,6 @@
 # CRIM E-Facture — Base de travail
 
-*Source : Redmine POP + GLPI. Généré le 30/07/2026.*
+*Source : Redmine POP + GLPI. Généré le 31/07/2026.*
 
 ## Légende
 
@@ -62,7 +62,7 @@
 | 28 | Mise à disposition des factures fournisseurs " | Validé RSI — RSI (Justine Navarro) | - | - | - | 22/06 | 07/07 | 07/07 | 20/07 | 27/07 (+5j) |
 | 22 | Interdire le rejet technique de la facture fou | Livré — GA | - | - | - | - | 08/07 | 08/07 | 17/07 | 27/07 (+6j) |
 | 26 | Personnaliser le bon de commande (Edition Armo | Livré — Ootary | 1 | - | - | 09/07 | 08/07 | 08/07 | 16/07 | 24/07 (+6j) |
-| 29 | Gestion des lisibles factures fournisseurs dan | Livré — Globasoft | 2 | - | - | 09/07 | 07/07 | 07/07 | 20/07 | 27/07 (+5j) |
+| 29 | Gestion des lisibles factures fournisseurs dan | Livré — Globasoft | 3 | - | - | 09/07 | 07/07 | 07/07 | 20/07 | 27/07 (+5j) |
 
 ### ⏱️ Durées du cycle *(jours ouvrés)*
 
