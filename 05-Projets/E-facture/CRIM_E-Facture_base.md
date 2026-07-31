@@ -140,9 +140,9 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 |---|---|---|---|---|---|---|---|---|---|---|
 | 25 | Lobby pour valider les factures préliminaires  | Validé RSI — RSI (Justine Navarro) | - | - | - | - | 10/07 | 09/07 (-1j) | 16/07 | 10/07 (-3j) |
 | 1 | Mise à disposition des factures au format UBL  | Livré — Globasoft | - | - | - | 01/06 | 22/06 | 22/06 | 15/07 | 03/08 (+13j) |
+| 8 | Fiche « Client », rendre obligatoire la saisie | Livré — Concret | 1 | - | - | - | 10/07 | 28/07 (+11j) | 10/07 | 31/07 (+14j) |
 | 9 | Integrer l'editique Armony de la facture comme | Livré — Globasoft | - | - | - | 16/07 | 08/07 | 08/07 | 17/07 | 30/07 (+9j) |
 | 27 | Récupérer les PJ additionnelles (hors lisible  | Livré — Globasoft | - | - | - | 17/07 | - | - | 20/07 | 23/07 (+3j) |
-| 8 | Fiche « Client », rendre obligatoire la saisie | En cours — Concret | - | - | - | - | 10/07 | 28/07 (+11j) | 10/07 | 03/08 (+15j) |
 | 10 | Integrer l'editique Armony de la facture comme | En cours — Globasoft | - | - | - | 16/07 | 08/07 | 08/07 | 30/07 | 03/08 (+2j) |
 | 33 | Modification du template facture FACTORY pour  | Prêt — ISIA | - | - | - | 27/07 | - | - | - | - |
 
@@ -171,7 +171,7 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 | # | Statut | Chiffrage init. | Consommé | Écart |
 |---|---|---|---|---|
 | 1 | Livré | 22,5 j | 15 j | -7,5 j (-33 %) |
-| 8 | En cours | 1 j | - | - |
+| 8 | Livré | 1 j | - | - |
 | 9 | Livré | 3 j | 1,75 j | -1,25 j (-42 %) |
 | 10 | En cours | 3 j | 0 j | -3 j (-100 %) |
 | 12 | En spécification | 3 j | - | - |
