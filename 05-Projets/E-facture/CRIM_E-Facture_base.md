@@ -138,7 +138,7 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 
 | # | Description | Statut | A/R RSI | Retard spec | Retard dev | Créé GLPI | Spec initiale | Livr. spec | Dev initiale | Livr. dev |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 25 | Lobby pour valider les factures préliminaires  | Validé RSI — RSI (Justine Navarro) | - | - | - | - | 10/07 | 09/07 (-1j) | 16/07 | 10/07 (-3j) |
+| 25 | Lobby pour valider les factures préliminaires  | Validé RSI — RSI (Justine Navarro) | 1 | - | - | - | 10/07 | 09/07 (-1j) | 16/07 | 10/07 (-3j) |
 | 1 | Mise à disposition des factures au format UBL  | Livré — Globasoft | - | - | - | 01/06 | 22/06 | 22/06 | 15/07 | 03/08 (+13j) |
 | 8 | Fiche « Client », rendre obligatoire la saisie | Livré — Concret | 1 | - | - | - | 10/07 | 28/07 (+11j) | 10/07 | 31/07 (+14j) |
 | 9 | Integrer l'editique Armony de la facture comme | Livré — Globasoft | - | - | - | 16/07 | 08/07 | 08/07 | 17/07 | 30/07 (+9j) |
