@@ -62,7 +62,7 @@
 | 29 | Gestion des lisibles factures fournisseurs dan | Validé — — | 3 | - | - | 09/07 | 07/07 | 07/07 | 20/07 | 27/07 (+5j) |
 | 30 | Changer l'encodage du fichier .csv ref fournis | Validé — — | - | - | - | - | - | - | 04/07 | 04/07 |
 | 31 | Changer l'encodage du fichier .csv ref fournis | Validé — — | - | - | - | - | - | - | 01/07 | 01/07 |
-| 22 | Interdire le rejet technique de la facture fou | Livré — GA | - | - | - | - | 08/07 | 08/07 | 17/07 | 27/07 (+6j) |
+| 22 | Interdire le rejet technique de la facture fou | Livré — GA | 1 | - | - | - | 08/07 | 08/07 | 17/07 | 27/07 (+6j) |
 
 ### ⏱️ Durées du cycle *(jours ouvrés)*
 
