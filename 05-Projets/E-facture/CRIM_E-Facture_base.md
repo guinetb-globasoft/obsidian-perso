@@ -1,6 +1,6 @@
 # CRIM E-Facture — Base de travail
 
-*Source : Redmine POP + GLPI. Généré le 11/08/2026.*
+*Source : Redmine POP + GLPI. Généré le 13/08/2026.*
 
 ## Légende
 
@@ -143,7 +143,7 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 | 8 | Fiche « Client », rendre obligatoire la saisie | Livré — Concret | 1 | - | - | - | 10/07 | 28/07 (+11j) | 10/07 | 31/07 (+14j) |
 | 9 | Integrer l'editique Armony de la facture comme | Livré — Globasoft | - | - | - | 16/07 | 08/07 | 08/07 | 17/07 | 30/07 (+9j) |
 | 27 | Récupérer les PJ additionnelles (hors lisible  | Livré — Globasoft | - | - | - | 17/07 | - | - | 20/07 | 23/07 (+3j) |
-| 10 | Integrer l'editique Armony de la facture comme | En cours — Globasoft | - | - | 8 | 16/07 | 08/07 | 08/07 | 30/07 | 03/08 (+2j) |
+| 10 | Integrer l'editique Armony de la facture comme | En cours — Globasoft | - | - | 10 | 16/07 | 08/07 | 08/07 | 30/07 | 03/08 (+2j) |
 | 33 | Modification du template facture FACTORY pour  | Prêt — ISIA | - | - | - | 27/07 | - | - | - | - |
 
 ### ⏱️ Durées du cycle *(jours ouvrés)*
@@ -171,17 +171,17 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 | # | Statut | Chiffrage init. | Consommé | Écart |
 |---|---|---|---|---|
 | 1 | Livré | 22,5 j | 15 j | -7,5 j (-33 %) |
-| 8 | Livré | 1 j | - | - |
+| 8 | Livré | 1 j | 1,313 j | +0,313 j (+31 %) |
 | 9 | Livré | 3 j | 1,75 j | -1,25 j (-42 %) |
 | 10 | En cours | 3 j | 0 j | -3 j (-100 %) |
 | 12 | En spécification | 3 j | - | - |
 | 25 | Validé RSI | 1 j | - | - |
 | 27 | Livré | 3 j | 3,5 j | +0,5 j (+17 %) |
 | 33 | Prêt | 4 j | - | - |
-| **Total lot** | | **40,5 j** | **20,25 j** | |
+| **Total lot** | | **40,5 j** | **21,56 j** | |
 
 - **#1** — chiffré **22,5 j**, consommé **15 j** → **-7,5 j (-33 %)** *(sous le budget)*.
-- **#8** — chiffré **1 j**, *aucun temps passé saisi à ce jour*.
+- **#8** — chiffré **1 j**, consommé **1,313 j** → **+0,313 j (+31 %)** *(dépassement)*.
 - **#9** — chiffré **3 j**, consommé **1,75 j** → **-1,25 j (-42 %)** *(sous le budget)*.
 - **#10** — chiffré **3 j**, consommé **0 j** → **-3 j (-100 %)** *(sous le budget)*.
 - **#12** — chiffré **3 j**, *aucun temps passé saisi à ce jour*.
@@ -212,7 +212,7 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 
 | # | Description | Statut | A/R RSI | Retard spec | Retard dev | Créé GLPI | Spec initiale | Livr. spec | Dev initiale | Livr. dev |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2 | Mise à disposition des factures éligibles à la | En spécification — Justine Navarro | - | 11 | - | 20/07 | 08/07 | 31/07 (+15j) | 28/08 | 28/08 |
+| 2 | Mise à disposition des factures éligibles à la | En spécification — Justine Navarro | - | 13 | - | 20/07 | 08/07 | 31/07 (+15j) | 28/08 | 28/08 |
 
 ### ⏱️ Durées du cycle *(jours ouvrés)*
 
@@ -242,9 +242,9 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 | Lot | CRIM chiffrées | Chiffrage init. | Consommé | Écart |
 |---|---|---|---|---|
 | Lot 1 — Fournisseur (eInvoicing) | 9 | 18,5 j | 25,89 j | +7,39 j (+40 %) |
-| Lot 2 — Client invoicing | 8 | 40,5 j | 20,25 j | -20,25 j (-50 %) |
+| Lot 2 — Client invoicing | 8 | 40,5 j | 21,56 j | -18,94 j (-47 %) |
 | Lot 3 — Client reporting | 1 | 22,5 j | 0 j | -22,5 j (-100 %) |
-| **Total** | | **81,5 j** | **46,14 j** | **-35,36 j (-43 %)** |
+| **Total** | | **81,5 j** | **47,46 j** | **-34,04 j (-42 %)** |
 
 > ⚠️ Cet écart global n'est **pas** une performance : la majorité des CRIM ne sont pas terminées, donc leur consommé est mécaniquement inférieur au budget. Seul le tableau des CRIM terminées ci-dessous est interprétable.
 
@@ -253,6 +253,7 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 | # | Lot | Statut | Chiffrage init. | Consommé | Écart |
 |---|---|---|---|---|---|
 | 1 | L2 | Livré | 22,5 j | 15 j | -7,5 j (-33 %) |
+| 8 | L2 | Livré | 1 j | 1,313 j | +0,31 j (+31 %) |
 | 9 | L2 | Livré | 3 j | 1,75 j | -1,25 j (-42 %) |
 | 14 | L1 | Validé | 1,5 j | 3,75 j | +2,25 j (+150 %) |
 | 16 | L1 | Validé | 1,5 j | 6 j | +4,5 j (+300 %) |
@@ -261,7 +262,7 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 | 27 | L2 | Livré | 3 j | 3,5 j | +0,5 j (+17 %) |
 | 28 | L1 | Validé | 1 j | 7 j | +6 j (+600 %) |
 | 29 | L1 | Validé | 3 j | 1,375 j | -1,62 j (-54 %) |
-| **Total terminé** | | | **42 j** | **46,14 j** | **+4,14 j (+10 %)** |
+| **Total terminé** | | | **43 j** | **47,46 j** | **+4,46 j (+10 %)** |
 
 ### Répartition de la charge par phase, tous lots *(jours)*
 
