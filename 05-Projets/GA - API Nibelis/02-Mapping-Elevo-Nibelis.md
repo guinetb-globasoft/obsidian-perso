@@ -1,7 +1,7 @@
 ---
 tags: ["elevo", "nibelis", "mapping", "GA", "import-utilisateurs", "sftp"]
 created: 2026-05-29
-updated: 2026-06-02
+updated: 2026-06-12
 ---
 
 ---
@@ -10,7 +10,7 @@ type: mapping
 cible: Elevo — Synchronisation des utilisateurs (SFTP)
 source: API Nibelis
 created: 2026-05-29
-updated: 2026-06-02
+updated: 2026-06-12
 sources_elevo: ["Synchroniser les utilisateurs via SFTP – Elevo.pdf", "Elevo - Fichier type synchronisation SFTP (FR).xlsx", "Fichier d'import Elevo x Simbel.xlsx"]
 doc_elevo_url: "https://docs.elevo.fr/hc/fr/articles/4403024287249-Ajouter-importer-ou-mettre-%C3%A0-jour-des-utilisateurs"
 ---
@@ -158,6 +158,22 @@ Le cas Simbel (`Fichier d'import Elevo x Simbel.xlsx`) montre des colonnes custo
 
 **Création** : demander au support Elevo (intitulé exact transmis par eux).
 
+### ✅ Custom GA validés (2026-06-12)
+
+3 colonnes custom demandées pour l'import salarié. Intitulés machine **en français** (à créer chez Elevo support avec ces noms exacts). Champs Nibelis disponibles en direct dans la fiche `api/salaries/{id}` — aucun appel supplémentaire.
+
+| Colonne custom Elevo | Champ Nibelis | Transformation | Exemple |
+|---|---|---|---|
+| `custom_type_de_contrat` | `type_contrat_libelle` | aucune | "Contrat à durée indéterminée" |
+| `custom_code_contrat` | `type_contrat_code` | aucune | "CDI" |
+| `custom_niveau` | `niveau` | aucune | "3" |
+| `custom_coefficient` | `coefficient` | `str()` (numérique → texte) | "345" |
+
+> ℹ️ **Type de contrat** : on exporte les deux — libellé complet (`type_contrat_libelle`) ET code court (`type_contrat_code`). Codes distincts observés : `CDI, CDD, APPR, PROF, STAG, STAG_PROF`. Couverture vérifiée sur l'export 888 salariés : `custom_type_de_contrat`/`custom_code_contrat` 888/888, `niveau` 737/888, `coefficient` 703/888.
+
+> ⚠️ Ces 3 custom **remplacent l'arbitrage `level`** resté ouvert : au lieu de choisir une seule source pour `level`, on éclate niveau et coefficient en colonnes dédiées. `level` peut rester sur `categorie_professionnelle_libelle` (ou être laissé vide) sans redondance.
+> Implémenté dans `gen_elevo_import.py` (Mode A) — append après `use_sso`. Pour le Mode B (SFTP), ajouter ces mêmes 3 colonnes au CSV après les 21 colonnes standard.
+
 **Pertinent pour Nibelis** (à valider avec RH/Elevo) :
 - `custom_contract_type` ← `type_contrat_libelle` (CDI/CDD/...)
 - `custom_socio_professional_category` ← `categorie_professionnelle_libelle`
@@ -205,7 +221,8 @@ Le tab "Mapping" du fichier Simbel montre qu'on peut **livrer un CSV avec d'autr
 ## Décisions à prendre côté GA
 
 - [ ] **Sémantique `region`** Elevo : ville, site, zone géo ? (à clarifier avec Elevo support OU avec RH)
-- [ ] **Source `level`** : `qualification` / `categorie_professionnelle_libelle` / `coefficient` ?
+- [x] ~~**Source `level`**~~ : tranché (2026-06-12) — niveau et coefficient éclatés en 3 colonnes custom dédiées (`custom_type_de_contrat`, `custom_niveau`, `custom_coefficient`). `level` reste sur `categorie_professionnelle_libelle` ou vide.
+- [ ] **Créer les 3 custom chez Elevo** : `custom_type_de_contrat`, `custom_niveau`, `custom_coefficient` (demande à support@elevo.io avec ces intitulés machine exacts)
 - [ ] **Salariés sans email pro Nibelis** : utiliser `username` = `matricule` ou les exclure via `skip` ?
 - [ ] **Champs custom à créer** chez Elevo : liste finale + intitulés (demande à support@elevo.io)
 - [ ] **Activer "gestion droits admin restreints" Elevo** pour utiliser `entity` ? Sinon laisser vide

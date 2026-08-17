@@ -97,7 +97,7 @@ Vérifié sur le terrain (matricule 10037 ADODO, société 6961).
 ## Points ouverts / à cadrer
 
 - [ ] **Population « Trésorerie » = salariés SORTIS** : les 9 matricules du modèle sont tous absents de `api/salaries` (même avec `&periode=2025-12-01`). L'endpoint liste ne renvoie jamais les sortis → trouver comment obtenir leur `id_nibelis` (param non documenté ? autre endpoint ?).
-- [ ] **Comptabilité** : modèle Excel vide (« Gestion avancée ») → obtenir la spec des colonnes.
+- [x] ~~**Comptabilité** : modèle Excel vide~~ → RÉSOLU (2026-06-22) : en-tête en **ligne 13** (comme le CDG), **13 colonnes**, mapping validé dans [[Nibelis Extract - Comptabilité]].
 - [ ] Ajouter l'annotation `@CU` au validateur de `champs`.
 - [ ] Nom réel de la table de paramétrage (schéma/table) à confirmer pour les `INSERT`.
 - [ ] E-mails réels des destinataires.

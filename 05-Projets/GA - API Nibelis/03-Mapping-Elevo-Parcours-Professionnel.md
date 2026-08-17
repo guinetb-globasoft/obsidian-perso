@@ -1,7 +1,7 @@
 ---
 tags: ["elevo", "nibelis", "mapping", "GA", "parcours-professionnel", "remuneration", "sftp"]
 created: 2026-05-29
-updated: 2026-05-29
+updated: 2026-06-16
 ---
 
 ---
@@ -10,7 +10,7 @@ type: mapping
 cible: Elevo — Import parcours professionnel (SFTP)
 source: API Nibelis
 created: 2026-05-29
-updated: 2026-05-29
+updated: 2026-06-16
 sources_elevo: ["Importer les données relatives au parcours professionnel des collaborateurs – Elevo.pdf", "Elevo - Import du parcours professionnel.xlsx"]
 ---
 
@@ -64,6 +64,19 @@ Le template parcours attend **8 colonnes**. Sur ces 8 :
 **Conclusion** : couverture insuffisante en l'état pour l'usage cible (parcours + rémunération). Les 3 champs obligatoires sont accessibles, mais l'import n'aura de valeur métier qu'avec les endpoints paie.
 
 ⚠️ **Limitation structurelle persistante** : l'API actuelle ne retourne que la **situation courante**, pas l'**historique des postes**. Pour reconstituer un vrai parcours multi-postes, il faudrait un endpoint d'historique côté Nibelis (à confirmer).
+
+## ✅ MAJ 2026-06-16 — Historique de paie DÉBLOQUÉ (reconstruction par balayage de périodes)
+
+Pas d'endpoint « historique » dédié (`GET api/contrats` → 404), mais on **reconstruit** l'historique en lisant des endpoints **paramétrés par période** :
+
+- **Rémunération mensuelle** : `GET api/element-variable-paie?id_nibelis=X&code_variable=SALA_BASE&periode=YYYY-MM-01` → salaire de base du mois. On balaie les mois, on **condense les mois consécutifs de même valeur en périodes** (1 ligne = 1 niveau de salaire). Script : `gen_parcours_*.py`.
+- **Intitulé de poste par période** : seulement via le **bulletin** `api/bulletin` (PDF) → ligne `Emploi :` (texte extractible avec `pdftotext`/`pdfminer`). La fiche ne donne que le poste courant.
+
+🔑 **Profondeur d'historique = décembre 2016** (vérifié sur EQUILAB, juin 2026) : `SALA_BASE` ne remonte qu'à **2016-12**, même pour un salarié entré en 1998. Tout mois antérieur renvoie `null` (= date de bascule paie vers Nibelis). → **Inutile de balayer avant 2016-12** : les batchs d'historique doivent démarrer à `2016-12-01` (sinon ~moitié des appels à vide).
+
+💡 **`SALA_ANNU_CONT` (Salaire annuel contractuel)** = champ salaire **universel** : rempli pour 100 % des profils, y compris **alternants/stagiaires** (pour qui `SALA_BASE` est vide). `SALA_ANNU_CONT ÷ 12 = SALA_BASE` pour les mensualisés. À utiliser pour couvrir tout le monde sans trou, ou pour `fixed_amount` en annuel.
+
+⚠️ **Débit API** : ~2 appels/s en série (latence ~0,45 s/appel), aucun throttling observé jusqu'à 6-8 workers en parallèle (0 HTTP 429). Pas de quota documenté confirmé — à valider avec Nibelis avant un très gros batch.
 
 ## Mapping détaillé (8 colonnes CSV Elevo)
 
