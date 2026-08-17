@@ -116,6 +116,16 @@ VP CONSEIL assure la comptabilité courante de Globasoft ESN (expertise comptabl
 | Ancien | `F-YYMM####` (ex. `F-26060481`) | Un fichier par prestation — bug d'affichage des montants HT |
 | Nouveau | `F-2026-XXXXX` (ex. `F-2026-06490`) | Un fichier peut regrouper plusieurs prestations — montants fiables |
 
+### Relevé mensuel Revolut — réflexe à ne pas oublier
+
+Chaque mois, **3 gestes** pour le compte Revolut principal (journal **BNK3 id 10**, `FR7628233000015895091681980`) :
+
+1. **Créer le relevé Odoo** (`account.bank.statement`) : `name = Revolut-Main-2026-MM`, `journal_id = 10`, `date` = dernier jour du mois. Soldes **réels enchaînés** : `balance_start` = `balance_end_real` du mois précédent, `balance_end_real` = solde de clôture du PDF. Puis **rattacher les lignes du mois** (`account.bank.statement.line`, `statement_id` = id du relevé). Vérifier `balance_end == balance_end_real` et `is_complete = oui` → le mois est bouclé au centime.
+2. **Attacher le PDF du relevé** sur ce même `account.bank.statement` (`attach_file_to_record`, res_model `account.bank.statement`). ⚠️ Jamais sur une facture fournisseur.
+3. **Copier le PDF dans le Drive** : `H:\Mon Drive\Comptabilité Groupe\Globasoft ESN\<année>\Relevés Bancaires\<seq> - Revolut-Main-AAAA-MM.pdf` (la séquence suit les fichiers existants, ex. 9 = juin → 10 = juillet).
+
+> Fait pour juillet 2026 : relevé id 10 (691,34 → 671,21, 32 lignes), PJ id 5903, Drive `10 - Revolut-Main-2026-07.pdf`.
+
 ### Rapprochement bancaire mensuel
 
 - Libellé du prélèvement : `COMPTA+SOCIAL MENSUEL Vp Conseil`
