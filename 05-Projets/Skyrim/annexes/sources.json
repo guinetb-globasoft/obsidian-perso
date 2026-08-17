@@ -1,0 +1,306 @@
+{
+ "Mudcrab Legs": {
+  "listes": [
+   "DeathItemMudCrab01",
+   "DeathItemMudCrab02",
+   "DeathItemMudCrab03"
+  ],
+  "conteneurs": [],
+  "plantes": [],
+  "depouilles": [
+   "Ancient Mudcrab",
+   "BYOHHouseTameMudcrab",
+   "Mudcrab",
+   "Pincer",
+   "dunTransmogrifyMudcrab"
+  ]
+ },
+ "Butter": {
+  "listes": [],
+  "conteneurs": [],
+  "plantes": [
+   "Churn"
+  ],
+  "depouilles": []
+ },
+ "Jug of Milk": {
+  "listes": [],
+  "conteneurs": [],
+  "plantes": [],
+  "depouilles": []
+ },
+ "Sack of Flour": {
+  "listes": [
+   "BYOHLItemFoodFlour",
+   "BYOHLItemFoodFlour75",
+   "BYOHLItemFoodFlourSmall"
+  ],
+  "conteneurs": [],
+  "plantes": [],
+  "depouilles": []
+ },
+ "Chicken Breast": {
+  "listes": [
+   "DeathItemChicken",
+   "LItemBarrelFoodRawMeatSame",
+   "LItemFoodMeatChicken",
+   "LItemFoodMeatChicken75",
+   "LItemFoodRawMeat"
+  ],
+  "conteneurs": [
+   "All Potions"
+  ],
+  "plantes": [],
+  "depouilles": [
+   "Chicken",
+   "SnowShodFarmChicken",
+   "dunTransmogrifyChicken"
+  ]
+ },
+ "Mammoth Snout": {
+  "listes": [],
+  "conteneurs": [
+   "All Potions"
+  ],
+  "plantes": [],
+  "depouilles": []
+ },
+ "Moon Sugar": {
+  "listes": [
+   "DeathItemHagraven",
+   "LItemApothecaryIngredienstUncommon75",
+   "LItemIngredientsUncommon",
+   "LItemMoonsugar75",
+   "LootBanditIngredients10",
+   "LootBanditRandomWizard",
+   "LootForswornIngredients10",
+   "LootForswornIngredients25",
+   "LootForswornRandomWizard",
+   "LootThalmorRandomWizard",
+   "LootWarlockIngredients10",
+   "LootWarlockIngredients25",
+   "LootWarlockRandom"
+  ],
+  "conteneurs": [
+   "Barrel",
+   "Chest"
+  ],
+  "plantes": [],
+  "depouilles": [
+   "Drascua",
+   "EncHagravenHoldPosition256",
+   "EncHagravenHoldPosition256UntilReleased",
+   "EncHagravenHoldPosition512",
+   "Glenmoril Witch",
+   "Hagraven",
+   "Melka",
+   "Moira",
+   "TreasCorpseHagraven",
+   "dunHagsEndHagraven",
+   "dunKarthspireHagraven",
+   "dunLostValleyRedoubtHagraven",
+   "dunOrphanRockHagravenHoldPosition512"
+  ]
+ },
+ "Horse Meat": {
+  "listes": [
+   "DeathItemHorse"
+  ],
+  "conteneurs": [
+   "All Ingredients",
+   "All Potions"
+  ],
+  "plantes": [],
+  "depouilles": [
+   "Arvak",
+   "CWCourierHorse",
+   "CaravanAHorse",
+   "CaravanBHorse",
+   "CaravanCHorse",
+   "DB10PenitusOculatusHorse",
+   "DBCiceroHorse",
+   "DLC01SoulCairnHorseScene",
+   "DLC01SoulCairnHorseUnrideable",
+   "DLC1EncHorseBone",
+   "DLC1_WESC07_EncHorseSaddledGrey",
+   "Frost",
+   "Horse",
+   "Karinda",
+   "MQ101CartHorse",
+   "MQ101Horse",
+   "MarkarthPlayerHorse",
+   "MarkarthStablesHorseUnsaddled",
+   "RiftenPlayerHorse",
+   "RiftenStablesHorseUnsaddled",
+   "Shadowmere",
+   "SolitudePlayerHorse",
+   "SolitudeStablesHorseUnsaddled",
+   "WERoad12Horse",
+   "WhiterunPlayerHorse",
+   "WindhelmPlayerHorse",
+   "WindhelmStablesHorseUnsaddled",
+   "dunPOISmugglerHorse"
+  ]
+ },
+ "Leg of Goat": {
+  "listes": [
+   "DeathItemGoat",
+   "LItemBarrelFoodRawMeatSame",
+   "LItemFoodMeatGoat",
+   "LItemFoodMeatGoat75",
+   "LItemFoodRawMeat",
+   "LItemFoodRawMeatHunter",
+   "LootForswornRandom",
+   "LootForswornRawMeat25"
+  ],
+  "conteneurs": [
+   "All Ingredients",
+   "All Potions"
+  ],
+  "plantes": [],
+  "depouilles": [
+   "Gleda the Goat",
+   "Goat"
+  ]
+ },
+ "Eidar Cheese Wheel": {
+  "listes": [],
+  "conteneurs": [
+   "All Ingredients",
+   "All Potions"
+  ],
+  "plantes": [],
+  "depouilles": []
+ },
+ "Raw Beef": {
+  "listes": [
+   "DeathItemCow",
+   "LItemBarrelFoodRawMeatSame",
+   "LItemFoodMeatBeef",
+   "LItemFoodMeatBeef75",
+   "LItemFoodRawMeat"
+  ],
+  "conteneurs": [
+   "All Ingredients",
+   "All Potions",
+   "Chest"
+  ],
+  "plantes": [],
+  "depouilles": [
+   "Cow",
+   "RoriksteadCow",
+   "Therium",
+   "Therium Calf"
+  ]
+ },
+ "Horker Meat": {
+  "listes": [
+   "DeathItemHorker",
+   "LItemBarrelFoodRawMeatSame",
+   "LItemFoodMeatHorker",
+   "LItemFoodMeatHorker75",
+   "LItemFoodRawMeat",
+   "LItemFoodRawMeatHunter",
+   "LootForswornRandom",
+   "LootForswornRawMeat25"
+  ],
+  "conteneurs": [
+   "All Ingredients",
+   "All Potions"
+  ],
+  "plantes": [],
+  "depouilles": [
+   "Horker"
+  ]
+ },
+ "Chicken's Egg": {
+  "listes": [
+   "DeathItemHagraven",
+   "LItemApothecaryIngredienstUncommon75",
+   "LItemIngredientsUncommon",
+   "LootBanditIngredients10",
+   "LootBanditRandomWizard",
+   "LootForswornIngredients10",
+   "LootForswornIngredients25",
+   "LootForswornRandomWizard",
+   "LootThalmorRandomWizard",
+   "LootWarlockIngredients10",
+   "LootWarlockIngredients25",
+   "LootWarlockRandom"
+  ],
+  "conteneurs": [],
+  "plantes": [
+   "Chickens' Nest"
+  ],
+  "depouilles": [
+   "Drascua",
+   "EncHagravenHoldPosition256",
+   "EncHagravenHoldPosition256UntilReleased",
+   "EncHagravenHoldPosition512",
+   "Glenmoril Witch",
+   "Hagraven",
+   "Melka",
+   "Moira",
+   "TreasCorpseHagraven",
+   "dunHagsEndHagraven",
+   "dunKarthspireHagraven",
+   "dunLostValleyRedoubtHagraven",
+   "dunOrphanRockHagravenHoldPosition512"
+  ]
+ },
+ "Ale": {
+  "listes": [
+   "CWSoldierImperialGear",
+   "CWSoldierImperialGearNoTorch",
+   "CWSoldierImperialGearNoTorchNoBow",
+   "CWSoldierSonsGear",
+   "CWSoldierSonsGearNoTorch",
+   "CWSoldierSonsGearNoTorchNoBow",
+   "LItemInnRuralDrink",
+   "LootBanditRandom",
+   "LootCitizenDrinkList75",
+   "LootCitizenPocketsCommon",
+   "LootCitizenPocketsPoor",
+   "LootCitizenPocketsRich",
+   "LootDrinkList25",
+   "LootSilverHandRandom",
+   "PenitusGear",
+   "PenitusGearWithBow",
+   "WIChangeLocation05GiftAdult"
+  ],
+  "conteneurs": [
+   "All Potions",
+   "Chest"
+  ],
+  "plantes": [],
+  "depouilles": []
+ },
+ "Venison": {
+  "listes": [
+   "DLC1DeathItemDeerVale",
+   "DeathItemDeerNew",
+   "DeathItemElkFemale",
+   "DeathItemElkMale",
+   "LItemFoodRawMeatHunter",
+   "LootForswornRandom",
+   "LootForswornRawMeat25"
+  ],
+  "conteneurs": [
+   "All Ingredients",
+   "All Potions",
+   "Chest"
+  ],
+  "plantes": [],
+  "depouilles": [
+   "DA05QuestingBeast",
+   "Deer",
+   "Elk",
+   "EncDeerSprigganCompanion",
+   "EncElkFemale",
+   "EncElkFemaleSprigganCompanion",
+   "Vale Deer",
+   "White Stag",
+   "dunCGEncDeer"
+  ]
+ }
+}

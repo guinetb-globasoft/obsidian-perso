@@ -1,0 +1,1237 @@
+[
+ {
+  "station": "BYOHCraftingOven",
+  "plat": "Apple Dumpling",
+  "edid_recette": "BYOHRecipeFoodAppleDumplings",
+  "count": 1,
+  "source": "HearthFires.esm",
+  "source_plat": "HearthFires.esm",
+  "type": "nourriture",
+  "valeur": 3,
+  "poids": 0.10000000149011612,
+  "effets": [
+   {
+    "effet": "Restore Health",
+    "edid": "FoodRestoreHealth",
+    "mag": 5.0,
+    "dur": 0
+   },
+   {
+    "effet": "Fortify Marksman",
+    "edid": "AlchFortifyMarksman",
+    "mag": 5.0,
+    "dur": 60
+   }
+  ],
+  "ingredients": [
+   [
+    "Sack of Flour",
+    1
+   ],
+   [
+    "Green Apple",
+    1
+   ],
+   [
+    "Red Apple",
+    1
+   ]
+  ]
+ },
+ {
+  "station": "BYOHCraftingOven",
+  "plat": "Apple Pie",
+  "edid_recette": "BYOHRecipeFoodApplePie",
+  "count": 1,
+  "source": "HearthFires.esm",
+  "source_plat": "Skyrim.esm",
+  "type": "nourriture",
+  "valeur": 5,
+  "poids": 0.5,
+  "effets": [
+   {
+    "effet": "Restore Health",
+    "edid": "FoodRestoreHealth",
+    "mag": 10.0,
+    "dur": 0
+   }
+  ],
+  "ingredients": [
+   [
+    "skyrim.esm:034CDF",
+    1
+   ],
+   [
+    "Sack of Flour",
+    1
+   ],
+   [
+    "Butter",
+    1
+   ],
+   [
+    "skyrim.esm:023D77",
+    1
+   ],
+   [
+    "Green Apple",
+    2
+   ],
+   [
+    "Red Apple",
+    2
+   ]
+  ]
+ },
+ {
+  "station": "BYOHCraftingOven",
+  "plat": "Braided Bread",
+  "edid_recette": "BYOHRecipeFoodBraidedBread",
+  "count": 1,
+  "source": "HearthFires.esm",
+  "source_plat": "HearthFires.esm",
+  "type": "nourriture",
+  "valeur": 2,
+  "poids": 0.20000000298023224,
+  "effets": [
+   {
+    "effet": "Restore Health",
+    "edid": "FoodRestoreHealth",
+    "mag": 2.0,
+    "dur": 0
+   },
+   {
+    "effet": "Fortify Carry Weight",
+    "edid": "AlchFortifyCarryWeight",
+    "mag": 5.0,
+    "dur": 30
+   }
+  ],
+  "ingredients": [
+   [
+    "skyrim.esm:034CDF",
+    1
+   ],
+   [
+    "Sack of Flour",
+    1
+   ]
+  ]
+ },
+ {
+  "station": "BYOHCraftingOven",
+  "plat": "Bread",
+  "edid_recette": "BYOHRecipeFoodBread",
+  "count": 1,
+  "source": "HearthFires.esm",
+  "source_plat": "Skyrim.esm",
+  "type": "nourriture",
+  "valeur": 2,
+  "poids": 0.20000000298023224,
+  "effets": [
+   {
+    "effet": "Restore Health",
+    "edid": "FoodRestoreHealth",
+    "mag": 2.0,
+    "dur": 0
+   }
+  ],
+  "ingredients": [
+   [
+    "skyrim.esm:034CDF",
+    1
+   ],
+   [
+    "Jug of Milk",
+    1
+   ],
+   [
+    "Sack of Flour",
+    1
+   ],
+   [
+    "skyrim.esm:023D77",
+    1
+   ]
+  ]
+ },
+ {
+  "station": "BYOHCraftingOven",
+  "plat": "Chicken Dumpling",
+  "edid_recette": "BYOHRecipeFoodChickenDumplings",
+  "count": 1,
+  "source": "HearthFires.esm",
+  "source_plat": "HearthFires.esm",
+  "type": "nourriture",
+  "valeur": 3,
+  "poids": 0.10000000149011612,
+  "effets": [
+   {
+    "effet": "Restore Health",
+    "edid": "FoodRestoreHealth",
+    "mag": 15.0,
+    "dur": 0
+   },
+   {
+    "effet": "Restore Health",
+    "edid": "FoodRestoreHealthDuration",
+    "mag": 1.0,
+    "dur": 120
+   }
+  ],
+  "ingredients": [
+   [
+    "skyrim.esm:034CDF",
+    1
+   ],
+   [
+    "Sack of Flour",
+    1
+   ],
+   [
+    "Chicken Breast",
+    1
+   ],
+   [
+    "skyrim.esm:034D22",
+    1
+   ],
+   [
+    "Leek",
+    1
+   ]
+  ]
+ },
+ {
+  "station": "BYOHCraftingOven",
+  "plat": "Garlic Bread",
+  "edid_recette": "BYOHRecipeFoodGarlicBread",
+  "count": 2,
+  "source": "HearthFires.esm",
+  "source_plat": "HearthFires.esm",
+  "type": "nourriture",
+  "valeur": 2,
+  "poids": 0.10000000149011612,
+  "effets": [
+   {
+    "effet": "Restore Health",
+    "edid": "FoodRestoreHealth",
+    "mag": 1.0,
+    "dur": 0
+   },
+   {
+    "effet": "Cure Disease",
+    "edid": "AlchCureDisease",
+    "mag": 1.0,
+    "dur": 0
+   }
+  ],
+  "ingredients": [
+   [
+    "skyrim.esm:034D22",
+    1
+   ],
+   [
+    "Butter",
+    1
+   ],
+   [
+    "Bread",
+    1
+   ]
+  ]
+ },
+ {
+  "station": "BYOHCraftingOven",
+  "plat": "Jazbay Crostata",
+  "edid_recette": "BYOHRecipeFoodJazbayCrostata",
+  "count": 1,
+  "source": "HearthFires.esm",
+  "source_plat": "HearthFires.esm",
+  "type": "nourriture",
+  "valeur": 5,
+  "poids": 0.20000000298023224,
+  "effets": [
+   {
+    "effet": "Restore Health",
+    "edid": "FoodRestoreHealth",
+    "mag": 10.0,
+    "dur": 0
+   },
+   {
+    "effet": "Fortify Magicka",
+    "edid": "AlchFortifyMagicka",
+    "mag": 4.0,
+    "dur": 60
+   }
+  ],
+  "ingredients": [
+   [
+    "Butter",
+    1
+   ],
+   [
+    "skyrim.esm:06AC4A",
+    2
+   ],
+   [
+    "Sack of Flour",
+    1
+   ]
+  ]
+ },
+ {
+  "station": "BYOHCraftingOven",
+  "plat": "Juniper Berry Crostata",
+  "edid_recette": "BYOHRecipeFoodJuniperberryCrostata",
+  "count": 1,
+  "source": "HearthFires.esm",
+  "source_plat": "HearthFires.esm",
+  "type": "nourriture",
+  "valeur": 5,
+  "poids": 0.20000000298023224,
+  "effets": [
+   {
+    "effet": "Restore Health",
+    "edid": "FoodRestoreHealth",
+    "mag": 4.0,
+    "dur": 0
+   },
+   {
+    "effet": "Restore Health",
+    "edid": "FoodRestoreHealthDuration",
+    "mag": 2.0,
+    "dur": 60
+   }
+  ],
+  "ingredients": [
+   [
+    "Butter",
+    1
+   ],
+   [
+    "skyrim.esm:05076E",
+    3
+   ],
+   [
+    "Sack of Flour",
+    1
+   ]
+  ]
+ },
+ {
+  "station": "BYOHCraftingOven",
+  "plat": "Lavender Dumpling",
+  "edid_recette": "BYOHRecipeFoodLavenderDumplings",
+  "count": 1,
+  "source": "HearthFires.esm",
+  "source_plat": "HearthFires.esm",
+  "type": "nourriture",
+  "valeur": 3,
+  "poids": 0.10000000149011612,
+  "effets": [
+   {
+    "effet": "Restore Health",
+    "edid": "FoodRestoreHealth",
+    "mag": 5.0,
+    "dur": 0
+   },
+   {
+    "effet": "Fortify Magicka",
+    "edid": "FoodFortifyMagicka",
+    "mag": 10.0,
+    "dur": 60
+   },
+   {
+    "effet": "Resist Magic",
+    "edid": "AlchResistMagic",
+    "mag": 10.0,
+    "dur": 60
+   }
+  ],
+  "ingredients": [
+   [
+    "skyrim.esm:0D8E3F",
+    1
+   ],
+   [
+    "Sack of Flour",
+    1
+   ],
+   [
+    "skyrim.esm:01B3BD",
+    2
+   ],
+   [
+    "skyrim.esm:045C28",
+    1
+   ]
+  ]
+ },
+ {
+  "station": "BYOHCraftingOven",
+  "plat": "Potato Bread",
+  "edid_recette": "BYOHRecipeFoodPotatoBread",
+  "count": 1,
+  "source": "HearthFires.esm",
+  "source_plat": "HearthFires.esm",
+  "type": "nourriture",
+  "valeur": 2,
+  "poids": 0.20000000298023224,
+  "effets": [
+   {
+    "effet": "Restore Health",
+    "edid": "FoodRestoreHealth",
+    "mag": 3.0,
+    "dur": 0
+   }
+  ],
+  "ingredients": [
+   [
+    "skyrim.esm:034CDF",
+    1
+   ],
+   [
+    "Jug of Milk",
+    1
+   ],
+   [
+    "Sack of Flour",
+    1
+   ],
+   [
+    "Potato",
+    1
+   ],
+   [
+    "skyrim.esm:023D77",
+    1
+   ]
+  ]
+ },
+ {
+  "station": "BYOHCraftingOven",
+  "plat": "Snowberry Crostata",
+  "edid_recette": "BYOHRecipeFoodSnowberryCrostata",
+  "count": 1,
+  "source": "HearthFires.esm",
+  "source_plat": "HearthFires.esm",
+  "type": "nourriture",
+  "valeur": 5,
+  "poids": 0.20000000298023224,
+  "effets": [
+   {
+    "effet": "Restore Health",
+    "edid": "FoodRestoreHealth",
+    "mag": 10.0,
+    "dur": 0
+   },
+   {
+    "effet": "Resist Fire",
+    "edid": "AlchResistFire",
+    "mag": 4.0,
+    "dur": 60
+   }
+  ],
+  "ingredients": [
+   [
+    "Butter",
+    1
+   ],
+   [
+    "skyrim.esm:01B3BD",
+    2
+   ],
+   [
+    "Sack of Flour",
+    1
+   ]
+  ]
+ },
+ {
+  "station": "BYOHCraftingOven",
+  "plat": "Sweet Roll",
+  "edid_recette": "BYOHRecipeFoodSweetRoll",
+  "count": 1,
+  "source": "HearthFires.esm",
+  "source_plat": "Skyrim.esm",
+  "type": "nourriture",
+  "valeur": 2,
+  "poids": 0.10000000149011612,
+  "effets": [
+   {
+    "effet": "Restore Health",
+    "edid": "FoodRestoreHealth",
+    "mag": 5.0,
+    "dur": 0
+   }
+  ],
+  "ingredients": [
+   [
+    "skyrim.esm:034CDF",
+    1
+   ],
+   [
+    "Jug of Milk",
+    1
+   ],
+   [
+    "Sack of Flour",
+    1
+   ],
+   [
+    "Butter",
+    1
+   ],
+   [
+    "skyrim.esm:023D77",
+    1
+   ]
+  ]
+ },
+ {
+  "station": "CraftingCookpot",
+  "plat": "Apple Cabbage Stew",
+  "edid_recette": "RecipeFoodStewAppleCabbage",
+  "count": 1,
+  "source": "Skyrim.esm",
+  "source_plat": "HearthFires.esm",
+  "type": "nourriture",
+  "valeur": 8,
+  "poids": 0.5,
+  "effets": [
+   {
+    "effet": "Restore Stamina",
+    "edid": "FoodRestoreStamina",
+    "mag": 15.0,
+    "dur": 0
+   },
+   {
+    "effet": "Restore Health",
+    "edid": "FoodRestoreHealth",
+    "mag": 10.0,
+    "dur": 0
+   }
+  ],
+  "ingredients": [
+   [
+    "skyrim.esm:034CDF",
+    1
+   ],
+   [
+    "Red Apple",
+    1
+   ],
+   [
+    "Cabbage",
+    1
+   ]
+  ]
+ },
+ {
+  "station": "CraftingCookpot",
+  "plat": "Beef Stew",
+  "edid_recette": "RecipeFoodStewBeef",
+  "count": 1,
+  "source": "Skyrim.esm",
+  "source_plat": "HearthFires.esm",
+  "type": "nourriture",
+  "valeur": 8,
+  "poids": 0.5,
+  "effets": [
+   {
+    "effet": "Fortify Stamina",
+    "edid": "FoodFortifyStamina",
+    "mag": 25.0,
+    "dur": 720
+   },
+   {
+    "effet": "Restore Stamina",
+    "edid": "FoodRestoreStaminaDuration",
+    "mag": 2.0,
+    "dur": 720
+   }
+  ],
+  "ingredients": [
+   [
+    "Raw Beef",
+    1
+   ],
+   [
+    "Carrot",
+    1
+   ],
+   [
+    "skyrim.esm:034CDF",
+    1
+   ],
+   [
+    "skyrim.esm:034D22",
+    1
+   ]
+  ]
+ },
+ {
+  "station": "CraftingCookpot",
+  "plat": "Cabbage Potato Soup",
+  "edid_recette": "RecipeFoodSoupCabbagePotato",
+  "count": 1,
+  "source": "Skyrim.esm",
+  "source_plat": "HearthFires.esm",
+  "type": "nourriture",
+  "valeur": 5,
+  "poids": 0.5,
+  "effets": [
+   {
+    "effet": "Restore Health",
+    "edid": "FoodRestoreHealth",
+    "mag": 10.0,
+    "dur": 0
+   },
+   {
+    "effet": "Restore Stamina",
+    "edid": "FoodRestoreStamina",
+    "mag": 10.0,
+    "dur": 0
+   }
+  ],
+  "ingredients": [
+   [
+    "Potato",
+    1
+   ],
+   [
+    "skyrim.esm:034CDF",
+    1
+   ],
+   [
+    "Leek",
+    1
+   ],
+   [
+    "Cabbage",
+    1
+   ]
+  ]
+ },
+ {
+  "station": "CraftingCookpot",
+  "plat": "Clam Chowder",
+  "edid_recette": "BYOHRecipeFoodSoupClamChowder",
+  "count": 1,
+  "source": "HearthFires.esm",
+  "source_plat": "HearthFires.esm",
+  "type": "nourriture",
+  "valeur": 5,
+  "poids": 0.5,
+  "effets": [
+   {
+    "effet": "Restore Health",
+    "edid": "FoodRestoreHealth",
+    "mag": 10.0,
+    "dur": 0
+   },
+   {
+    "effet": "Restore Stamina",
+    "edid": "FoodRestoreStamina",
+    "mag": 10.0,
+    "dur": 0
+   }
+  ],
+  "ingredients": [
+   [
+    "Clam Meat",
+    1
+   ],
+   [
+    "Potato",
+    1
+   ],
+   [
+    "Jug of Milk",
+    1
+   ],
+   [
+    "Butter",
+    1
+   ]
+  ]
+ },
+ {
+  "station": "CraftingCookpot",
+  "plat": "Cooked Beef",
+  "edid_recette": "RecipeFoodBeefCooked",
+  "count": 1,
+  "source": "Skyrim.esm",
+  "source_plat": "Skyrim.esm",
+  "type": "nourriture",
+  "valeur": 5,
+  "poids": 0.5,
+  "effets": [
+   {
+    "effet": "Restore Health",
+    "edid": "FoodRestoreHealth",
+    "mag": 10.0,
+    "dur": 0
+   }
+  ],
+  "ingredients": [
+   [
+    "skyrim.esm:034CDF",
+    1
+   ],
+   [
+    "Raw Beef",
+    1
+   ]
+  ]
+ },
+ {
+  "station": "CraftingCookpot",
+  "plat": "Elsweyr Fondue",
+  "edid_recette": "RecipeFoodElsweyrFondue",
+  "count": 1,
+  "source": "Skyrim.esm",
+  "source_plat": "HearthFires.esm",
+  "type": "nourriture",
+  "valeur": 5,
+  "poids": 0.5,
+  "effets": [
+   {
+    "effet": "Regenerate Magicka",
+    "edid": "FoodFortifyMagickaRate",
+    "mag": 25.0,
+    "dur": 720
+   },
+   {
+    "effet": "Fortify Magicka",
+    "edid": "FoodFortifyMagicka",
+    "mag": 100.0,
+    "dur": 720
+   }
+  ],
+  "ingredients": [
+   [
+    "Eidar Cheese Wheel",
+    1
+   ],
+   [
+    "skyrim.esm:0D8E3F",
+    1
+   ],
+   [
+    "Ale",
+    1
+   ]
+  ]
+ },
+ {
+  "station": "CraftingCookpot",
+  "plat": "Grilled Chicken Breast",
+  "edid_recette": "RecipeFoodChickenCooked",
+  "count": 1,
+  "source": "Skyrim.esm",
+  "source_plat": "Skyrim.esm",
+  "type": "nourriture",
+  "valeur": 4,
+  "poids": 0.20000000298023224,
+  "effets": [
+   {
+    "effet": "Restore Health",
+    "edid": "FoodRestoreHealth",
+    "mag": 5.0,
+    "dur": 0
+   }
+  ],
+  "ingredients": [
+   [
+    "skyrim.esm:034CDF",
+    1
+   ],
+   [
+    "Chicken Breast",
+    1
+   ]
+  ]
+ },
+ {
+  "station": "CraftingCookpot",
+  "plat": "Horker Loaf",
+  "edid_recette": "RecipeFoodHorkerCooked",
+  "count": 1,
+  "source": "Skyrim.esm",
+  "source_plat": "Skyrim.esm",
+  "type": "nourriture",
+  "valeur": 4,
+  "poids": 1.0,
+  "effets": [
+   {
+    "effet": "Restore Health",
+    "edid": "FoodRestoreHealth",
+    "mag": 10.0,
+    "dur": 0
+   }
+  ],
+  "ingredients": [
+   [
+    "skyrim.esm:034CDF",
+    1
+   ],
+   [
+    "Horker Meat",
+    1
+   ]
+  ]
+ },
+ {
+  "station": "CraftingCookpot",
+  "plat": "Horker Stew",
+  "edid_recette": "RecipeFoodStewHorker",
+  "count": 1,
+  "source": "Skyrim.esm",
+  "source_plat": "HearthFires.esm",
+  "type": "nourriture",
+  "valeur": 8,
+  "poids": 0.5,
+  "effets": [
+   {
+    "effet": "Restore Stamina",
+    "edid": "FoodRestoreStamina",
+    "mag": 15.0,
+    "dur": 0
+   },
+   {
+    "effet": "Restore Health",
+    "edid": "FoodRestoreHealth",
+    "mag": 15.0,
+    "dur": 0
+   },
+   {
+    "effet": "Restore Health",
+    "edid": "FoodRestoreHealthDuration",
+    "mag": 1.0,
+    "dur": 720
+   }
+  ],
+  "ingredients": [
+   [
+    "skyrim.esm:045C28",
+    1
+   ],
+   [
+    "Tomato",
+    1
+   ],
+   [
+    "skyrim.esm:034D22",
+    1
+   ],
+   [
+    "Horker Meat",
+    1
+   ]
+  ]
+ },
+ {
+  "station": "CraftingCookpot",
+  "plat": "Horse Haunch",
+  "edid_recette": "RecipeFoodHorseCooked",
+  "count": 1,
+  "source": "Skyrim.esm",
+  "source_plat": "Skyrim.esm",
+  "type": "nourriture",
+  "valeur": 4,
+  "poids": 2.0,
+  "effets": [
+   {
+    "effet": "Restore Health",
+    "edid": "FoodRestoreHealth",
+    "mag": 10.0,
+    "dur": 0
+   }
+  ],
+  "ingredients": [
+   [
+    "skyrim.esm:034CDF",
+    1
+   ],
+   [
+    "Horse Meat",
+    1
+   ]
+  ]
+ },
+ {
+  "station": "CraftingCookpot",
+  "plat": "Leg of Goat Roast",
+  "edid_recette": "RecipeFoodGoatCooked",
+  "count": 1,
+  "source": "Skyrim.esm",
+  "source_plat": "Skyrim.esm",
+  "type": "nourriture",
+  "valeur": 4,
+  "poids": 1.0,
+  "effets": [
+   {
+    "effet": "Restore Health",
+    "edid": "FoodRestoreHealth",
+    "mag": 10.0,
+    "dur": 0
+   }
+  ],
+  "ingredients": [
+   [
+    "skyrim.esm:034CDF",
+    1
+   ],
+   [
+    "Leg of Goat",
+    1
+   ]
+  ]
+ },
+ {
+  "station": "CraftingCookpot",
+  "plat": "Mammoth Steak",
+  "edid_recette": "RecipeFoodMammothCooked",
+  "count": 1,
+  "source": "Skyrim.esm",
+  "source_plat": "Skyrim.esm",
+  "type": "nourriture",
+  "valeur": 8,
+  "poids": 2.0,
+  "effets": [
+   {
+    "effet": "Restore Health",
+    "edid": "FoodRestoreHealth",
+    "mag": 10.0,
+    "dur": 0
+   }
+  ],
+  "ingredients": [
+   [
+    "skyrim.esm:034CDF",
+    1
+   ],
+   [
+    "Mammoth Snout",
+    1
+   ]
+  ]
+ },
+ {
+  "station": "CraftingCookpot",
+  "plat": "Pheasant Roast",
+  "edid_recette": "RecipeFoodPheasantCooked",
+  "count": 1,
+  "source": "Skyrim.esm",
+  "source_plat": "Skyrim.esm",
+  "type": "nourriture",
+  "valeur": 4,
+  "poids": 0.20000000298023224,
+  "effets": [
+   {
+    "effet": "Restore Health",
+    "edid": "FoodRestoreHealth",
+    "mag": 5.0,
+    "dur": 0
+   }
+  ],
+  "ingredients": [
+   [
+    "Pheasant Breast",
+    1
+   ],
+   [
+    "skyrim.esm:034CDF",
+    1
+   ]
+  ]
+ },
+ {
+  "station": "CraftingCookpot",
+  "plat": "Potato Soup",
+  "edid_recette": "RecipeFoodSoupPotato",
+  "count": 1,
+  "source": "HearthFires.esm",
+  "source_plat": "HearthFires.esm",
+  "type": "nourriture",
+  "valeur": 5,
+  "poids": 0.5,
+  "effets": [
+   {
+    "effet": "Restore Health",
+    "edid": "FoodRestoreHealth",
+    "mag": 10.0,
+    "dur": 0
+   },
+   {
+    "effet": "Restore Stamina",
+    "edid": "FoodRestoreStamina",
+    "mag": 10.0,
+    "dur": 0
+   }
+  ],
+  "ingredients": [
+   [
+    "Potato",
+    1
+   ],
+   [
+    "skyrim.esm:034CDF",
+    1
+   ]
+  ]
+ },
+ {
+  "station": "CraftingCookpot",
+  "plat": "Rabbit Haunch",
+  "edid_recette": "RecipeFoodRabbitCooked",
+  "count": 1,
+  "source": "Skyrim.esm",
+  "source_plat": "Skyrim.esm",
+  "type": "nourriture",
+  "valeur": 3,
+  "poids": 0.10000000149011612,
+  "effets": [
+   {
+    "effet": "Restore Health",
+    "edid": "FoodRestoreHealth",
+    "mag": 5.0,
+    "dur": 0
+   }
+  ],
+  "ingredients": [
+   [
+    "skyrim.esm:034CDF",
+    1
+   ],
+   [
+    "Raw Rabbit Leg",
+    1
+   ]
+  ]
+ },
+ {
+  "station": "CraftingCookpot",
+  "plat": "Salmon Steak",
+  "edid_recette": "RecipeFoodSalmonCooked",
+  "count": 1,
+  "source": "HearthFires.esm",
+  "source_plat": "HearthFires.esm",
+  "type": "nourriture",
+  "valeur": 4,
+  "poids": 0.10000000149011612,
+  "effets": [
+   {
+    "effet": "Restore Health",
+    "edid": "FoodRestoreHealth",
+    "mag": 5.0,
+    "dur": 0
+   }
+  ],
+  "ingredients": [
+   [
+    "skyrim.esm:034CDF",
+    1
+   ],
+   [
+    "Salmon Meat",
+    1
+   ]
+  ]
+ },
+ {
+  "station": "CraftingCookpot",
+  "plat": "Steamed Mudcrab Legs",
+  "edid_recette": "BYOHRecipeFoodMudcrabLegsCooked",
+  "count": 1,
+  "source": "HearthFires.esm",
+  "source_plat": "HearthFires.esm",
+  "type": "nourriture",
+  "valeur": 4,
+  "poids": 0.10000000149011612,
+  "effets": [
+   {
+    "effet": "Restore Health",
+    "edid": "FoodRestoreHealth",
+    "mag": 12.0,
+    "dur": 0
+   }
+  ],
+  "ingredients": [
+   [
+    "Mudcrab Legs",
+    1
+   ],
+   [
+    "Butter",
+    1
+   ]
+  ]
+ },
+ {
+  "station": "CraftingCookpot",
+  "plat": "Tomato Soup",
+  "edid_recette": "RecipeFoodSoupTomato",
+  "count": 1,
+  "source": "Skyrim.esm",
+  "source_plat": "HearthFires.esm",
+  "type": "nourriture",
+  "valeur": 5,
+  "poids": 0.5,
+  "effets": [
+   {
+    "effet": "Restore Health",
+    "edid": "FoodRestoreHealth",
+    "mag": 10.0,
+    "dur": 0
+   },
+   {
+    "effet": "Restore Stamina",
+    "edid": "FoodRestoreStamina",
+    "mag": 10.0,
+    "dur": 0
+   }
+  ],
+  "ingredients": [
+   [
+    "Tomato",
+    1
+   ],
+   [
+    "skyrim.esm:034CDF",
+    1
+   ],
+   [
+    "skyrim.esm:034D22",
+    1
+   ],
+   [
+    "Leek",
+    1
+   ]
+  ]
+ },
+ {
+  "station": "CraftingCookpot",
+  "plat": "Vegetable Soup",
+  "edid_recette": "RecipeFoodSoupVegetable",
+  "count": 1,
+  "source": "Skyrim.esm",
+  "source_plat": "HearthFires.esm",
+  "type": "nourriture",
+  "valeur": 5,
+  "poids": 0.5,
+  "effets": [
+   {
+    "effet": "Restore Health",
+    "edid": "FoodRestoreHealthDuration",
+    "mag": 1.0,
+    "dur": 720
+   },
+   {
+    "effet": "Restore Stamina",
+    "edid": "FoodRestoreStaminaDuration",
+    "mag": 1.0,
+    "dur": 720
+   }
+  ],
+  "ingredients": [
+   [
+    "Cabbage",
+    1
+   ],
+   [
+    "Potato",
+    1
+   ],
+   [
+    "Leek",
+    1
+   ],
+   [
+    "Tomato",
+    1
+   ]
+  ]
+ },
+ {
+  "station": "CraftingCookpot",
+  "plat": "Venison Chop",
+  "edid_recette": "RecipeFoodVenisonCooked",
+  "count": 1,
+  "source": "Skyrim.esm",
+  "source_plat": "Skyrim.esm",
+  "type": "nourriture",
+  "valeur": 5,
+  "poids": 2.0,
+  "effets": [
+   {
+    "effet": "Restore Health",
+    "edid": "FoodRestoreHealth",
+    "mag": 5.0,
+    "dur": 0
+   }
+  ],
+  "ingredients": [
+   [
+    "skyrim.esm:034CDF",
+    1
+   ],
+   [
+    "Venison",
+    1
+   ]
+  ]
+ },
+ {
+  "station": "CraftingCookpot",
+  "plat": "Venison Stew",
+  "edid_recette": "RecipeFoodStewVenison",
+  "count": 1,
+  "source": "Skyrim.esm",
+  "source_plat": "HearthFires.esm",
+  "type": "nourriture",
+  "valeur": 8,
+  "poids": 0.5,
+  "effets": [
+   {
+    "effet": "Restore Stamina",
+    "edid": "FoodRestoreStamina",
+    "mag": 15.0,
+    "dur": 0
+   },
+   {
+    "effet": "Restore Health",
+    "edid": "FoodRestoreHealthDuration",
+    "mag": 1.0,
+    "dur": 720
+   },
+   {
+    "effet": "Restore Stamina",
+    "edid": "FoodRestoreStaminaDuration",
+    "mag": 1.0,
+    "dur": 720
+   }
+  ],
+  "ingredients": [
+   [
+    "Venison",
+    1
+   ],
+   [
+    "skyrim.esm:034CDF",
+    1
+   ],
+   [
+    "Potato",
+    1
+   ],
+   [
+    "Leek",
+    1
+   ]
+  ]
+ }
+]

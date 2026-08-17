@@ -1,0 +1,2278 @@
+﻿==============================================================================
+Skyrim.esm   (249 371 467 octets)
+==============================================================================
+  Auteur      : mcarofano
+  Masters     : (aucun)
+  Type        : ESM / chaines localisees
+  Records     : 869692 dont 0 en surcharge de records existants
+
+  TYPE       TOTAL   SURCHARGES   NOUVEAUX
+  ----------------------------------------
+  REFR      693339            0     693339
+  INFO       31465            0      31465
+  CELL       17568            0      17568
+  NAVM       15966            0      15966
+  LAND       15564            0      15564
+  DIAL       15037            0      15037
+  ACHR       10504            0      10504
+  STAT        9720            0       9720
+  PACK        5961            0       5961
+  NPC_        5118            0       5118
+  IDLE        3285            0       3285
+  LVLI        3075            0       3075
+  DLBR        3061            0       3061
+  ARMO        2762            0       2762
+  WEAP        2484            0       2484
+  SNDR        2453            0       2453
+  ACTI        1870            0       1870
+  QUST        1811            0       1811
+  SCEN        1706            0       1706
+  GMST        1583            0       1583
+  DLVW        1126            0       1126
+  FACT        1084            0       1084
+  SOUN         997            0        997
+  MGEF         950            0        950
+  SPEL         827            0        827
+  KYWD         825            0        825
+  BOOK         821            0        821
+  HDPT         766            0        766
+  ARMA         766            0        766
+  FLST         726            0        726
+  MSTT         691            0        691
+  GLOB         664            0        664
+  RELA         642            0        642
+  LCTN         638            0        638
+  ENCH         604            0        604
+  COBJ         601            0        601
+  TXST         572            0        572
+  MESG         571            0        571
+  LVLN         527            0        527
+  IPCT         515            0        515
+  OTFT         481            0        481
+  SMQN         448            0        448
+  CONT         436            0        436
+  LIGH         435            0        435
+  LCRT         406            0        406
+  FURN         400            0        400
+  PERK         375            0        375
+  MISC         371            0        371
+  ALCH         363            0        363
+  PHZD         335            0        335
+  KEYM         334            0        334
+  REGN         317            0        317
+  LSCR         298            0        298
+  ECZN         280            0        280
+  IMGS         270            0        270
+  MUST         258            0        258
+  DOOR         244            0        244
+  IPDS         220            0        220
+  ARTO         201            0        201
+  CLFM         178            0        178
+  IMAD         170            0        170
+  EFSH         169            0        169
+  TREE         154            0        154
+  AVIF         149            0        149
+  CSTY         145            0        145
+  EXPL         143            0        143
+  VTYP         143            0        143
+  CLAS         138            0        138
+  PROJ         134            0        134
+  FSTP         116            0        116
+  RFCT         103            0        103
+  RACE          99            0         99
+  SMBN          99            0         99
+  LGTM          97            0         97
+  INGR          94            0         94
+  MOVT          92            0         92
+  ADDN          89            0         89
+  FLOR          86            0         86
+  CAMS          86            0         86
+  WTHR          84            0         84
+  IDLM          81            0         81
+  WOOP          81            0         81
+  MATT          78            0         78
+  SHOU          75            0         75
+  SCRL          74            0         74
+  AACT          69            0         69
+  SOPM          69            0         69
+  LTEX          68            0         68
+  ANIO          63            0         63
+  COLL          55            0         55
+  CPTH          51            0         51
+  MUSC          50            0         50
+  ASPC          45            0         45
+  APPA          45            0         45
+  HAZD          44            0         44
+  PGRE          42            0         42
+  WRLD          37            0         37
+  AMMO          35            0         35
+  BPTD          35            0         35
+  FSTS          35            0         35
+  WATR          34            0         34
+  MATO          32            0         32
+  GRAS          27            0         27
+  TACT          25            0         25
+  LVSP          24            0         24
+  SMEN          24            0         24
+  ASTP          20            0         20
+  SNCT          18            0         18
+  SLGM          17            0         17
+  SPGD          16            0         16
+  REVB          10            0         10
+  EYES           8            0          8
+  EQUP           7            0          7
+  CLMT           6            0          6
+  DEBR           3            0          3
+  DUAL           2            0          2
+  NAVI           1            0          1
+  DOBJ           1            0          1
+
+  --- detail des records demandes ---
+  [nouveau  ] COBJ 00000F61  TemperWeaponSkyforgeSteelWarAxe  (recette)
+              composant 0005ACE5 x1
+              produit 0009F260 x1
+  [nouveau  ] COBJ 00000F60  TemperWeaponSkyforgeSteelSword  (recette)
+              composant 0005ACE5 x1
+              produit 0009F25C x1
+  [nouveau  ] COBJ 00000F5F  TemperWeaponSkyforgeSteelGreatsword  (recette)
+              composant 0005ACE5 x1
+              produit 0009F25E x1
+  [nouveau  ] COBJ 00000F5E  TemperWeaponSkyforgeSteelBattleAxe  (recette)
+              composant 0005ACE5 x1
+              produit 0009F25F x1
+  [nouveau  ] COBJ 00000E4D  TemperWeaponSkyforgeWarAxe  (recette)
+              composant 0005ACE5 x1
+              produit 00068C63 x1
+  [nouveau  ] COBJ 00000E4C  TemperWeaponSkyforgeSword  (recette)
+              composant 0005ACE5 x1
+              produit 00068C7B x1
+  [nouveau  ] COBJ 00000E4B  TemperWeaponSkyforgeGreatsword  (recette)
+              composant 0005ACE5 x1
+              produit 000A3115 x1
+  [nouveau  ] COBJ 00000E4A  TemperWeaponSkyforgeBow  (recette)
+              composant 0005ACE5 x1
+              produit 00068C79 x1
+  [nouveau  ] COBJ 00000E49  TemperWeaponSkyforgeBattleAxe  (recette)
+              composant 0005ACE5 x1
+              produit 00068C79 x1
+  [nouveau  ] COBJ 00000DD5  TemperArmorElvenLightHelmet  (recette)
+              composant 0005AD9F x1
+              produit 00105F14 x1
+  [nouveau  ] COBJ 00000DD4  TemperArmorElvenLightGauntlets  (recette)
+              composant 0005AD9F x1
+              produit 00105F13 x1
+  [nouveau  ] COBJ 00000DD3  TemperArmorElvenLightCuirass  (recette)
+              composant 0005AD9F x1
+              produit 00105F12 x1
+  [nouveau  ] COBJ 00000DD2  TemperArmorElvenLightBoots  (recette)
+              composant 0005AD9F x1
+              produit 00105F11 x1
+  [nouveau  ] COBJ 000173BB  TemperWeaponBladesSword  (recette)
+              composant 0005ACE5 x1
+              produit 0003AEB9 x1
+  [nouveau  ] COBJ 0001731E  TemperArmorDraugrHelmet  (recette)
+              composant 0005ACE4 x1
+              produit 00056A9E x1
+  [nouveau  ] COBJ 0001731D  TemperArmorDraugrGauntlets  (recette)
+              composant 0005ACE4 x1
+              produit 00056B17 x1
+  [nouveau  ] COBJ 0001731C  TemperArmorDraugrCuirass  (recette)
+              composant 0005ACE4 x1
+              produit 00018388 x1
+  [nouveau  ] COBJ 0001731B  TemperArmorDraugrBoots  (recette)
+              composant 0005ACE4 x1
+              produit 00056A9D x1
+  [nouveau  ] COBJ 0001731A  TemperArmorFalmerShield  (recette)
+              composant 0003AD57 x1
+              produit 0005C06C x1
+  [nouveau  ] COBJ 00017319  TemperArmorFalmerHelmet  (recette)
+              composant 0003AD57 x1
+              produit 0004C3CB x1
+  [nouveau  ] COBJ 0001730F  TemperArmorFalmerGauntlets  (recette)
+              composant 0003AD57 x1
+              produit 000B83CF x1
+  [nouveau  ] COBJ 0001730E  TemperArmorFalmerCuirass  (recette)
+              composant 0003AD57 x1
+              produit 000B83CB x1
+  [nouveau  ] COBJ 000172E7  TemperArmorFalmerBoots  (recette)
+              composant 0003AD57 x1
+              produit 000B83CD x1
+  [nouveau  ] COBJ 0010FDF6  TemperWeaponScimitar  (recette)
+              composant 0005ACE5 x1
+              produit 0007A91A x1
+  [nouveau  ] COBJ 0010FBD9  RecipeIngotDwarvenScrapPlateMetalSmall  (recette)
+              composant 000C8866 x1
+              produit 000DB8A2 x3
+  [nouveau  ] COBJ 0010FB20  TemperArmorGuardShieldWinterhold  (recette)
+              composant 0005ACE4 x1
+              produit 000214F1 x1
+  [nouveau  ] COBJ 0010FB1F  TemperArmorGuardShieldWhiterun  (recette)
+              composant 0005ACE4 x1
+              produit 000214E0 x1
+  [nouveau  ] COBJ 0010FB1E  TemperArmorGuardShieldSolitude  (recette)
+              composant 0005ACE4 x1
+              produit 000214F4 x1
+  [nouveau  ] COBJ 0010FB1D  TemperArmorGuardShieldRiften  (recette)
+              composant 0005ACE4 x1
+              produit 000214BA x1
+  [nouveau  ] COBJ 0010FB1C  TemperArmorGuardShieldPale  (recette)
+              composant 0005ACE4 x1
+              produit 000214F7 x1
+  [nouveau  ] COBJ 0010FB1B  TemperArmorGuardShieldMarkarth  (recette)
+              composant 0005ACE4 x1
+              produit 000214DC x1
+  [nouveau  ] COBJ 0010FB1A  TemperArmorGuardShieldHjaalmarch  (recette)
+              composant 0005ACE4 x1
+              produit 000214EF x1
+  [nouveau  ] COBJ 0010FB19  TemperArmorGuardShieldFalkreath  (recette)
+              composant 0005ACE4 x1
+              produit 000214ED x1
+  [nouveau  ] COBJ 0010FB18  TemperArmorGuardShieldEastmarch  (recette)
+              composant 0005ACE4 x1
+              produit 000214EB x1
+  [nouveau  ] COBJ 0010FB17  TemperArmorGuardHelmetWinterhold  (recette)
+              composant 0005ACE4 x1
+              produit 0002161D x1
+  [nouveau  ] COBJ 0010FB16  TemperArmorGuardHelmetWhiterun  (recette)
+              composant 0005ACE4 x1
+              produit 00021615 x1
+  [nouveau  ] COBJ 0010FB15  TemperArmorGuardHelmetRift  (recette)
+              composant 0005ACE4 x1
+              produit 00021622 x1
+  [nouveau  ] COBJ 0010FB14  TemperArmorGuardHelmetReach  (recette)
+              composant 0005ACE4 x1
+              produit 00021613 x1
+  [nouveau  ] COBJ 0010FB13  TemperArmorGuardHelmetPale  (recette)
+              composant 0005ACE4 x1
+              produit 0002161F x1
+  [nouveau  ] COBJ 0010FB12  TemperArmorGuardHelmetHjaalmarch  (recette)
+              composant 0005ACE4 x1
+              produit 0002161B x1
+  [nouveau  ] COBJ 0010FB11  TemperArmorGuardHelmetHaafingar  (recette)
+              composant 0005ACE4 x1
+              produit 000C7F5C x1
+  [nouveau  ] COBJ 0010FB10  TemperArmorGuardHelmetFalkreath  (recette)
+              composant 0005ACE4 x1
+              produit 00021619 x1
+  [nouveau  ] COBJ 0010FB0F  TemperArmorGuardCuirassWinterhold  (recette)
+              composant 000DB5D2 x1
+              produit 00021522 x1
+  [nouveau  ] COBJ 0010FB0E  TemperArmorGuardCuirassWhiterun  (recette)
+              composant 000DB5D2 x1
+              produit 0002150D x1
+  [nouveau  ] COBJ 0010FB0D  TemperArmorGuardCuirassThePale  (recette)
+              composant 000DB5D2 x1
+              produit 00021525 x1
+  [nouveau  ] COBJ 0010FB0C  TemperArmorGuardCuirassSolitude  (recette)
+              composant 000DB5D2 x1
+              produit 000C7F5B x1
+  [nouveau  ] COBJ 0010FB0B  TemperArmorGuardCuirassRiften  (recette)
+              composant 000DB5D2 x1
+              produit 00021507 x1
+  [nouveau  ] COBJ 0010FB0A  TemperArmorGuardCuirassMarkarth  (recette)
+              composant 000DB5D2 x1
+              produit 00021508 x1
+  [nouveau  ] COBJ 0010FB09  TemperArmorGuardCuirassHjaalmarch  (recette)
+              composant 000DB5D2 x1
+              produit 00021520 x1
+  [nouveau  ] COBJ 0010FB08  TemperArmorGuardCuirassFalkreath  (recette)
+              composant 000DB5D2 x1
+              produit 0002151E x1
+  [nouveau  ] COBJ 0010FB07  TemperArmorPenitusHelmet  (recette)
+              composant 000DB5D2 x1
+              produit 000D3EAA x1
+  [nouveau  ] COBJ 0010FB06  TemperArmorPenitusGauntlets  (recette)
+              composant 000DB5D2 x1
+              produit 000D3EAB x1
+  [nouveau  ] COBJ 0010FB05  TemperArmorPenitusCuirass  (recette)
+              composant 0005ACE5 x1
+              produit 000D3EA0 x1
+  [nouveau  ] COBJ 0010FB04  TemperArmorPenitusBoots  (recette)
+              composant 000DB5D2 x1
+              produit 000D3EA7 x1
+  [nouveau  ] COBJ 0010FB03  TemperArmorBladesShield  (recette)
+              composant 0005ACE5 x1
+              produit 0004F912 x1
+  [nouveau  ] COBJ 0010FB02  TemperArmorBladesHelmet  (recette)
+              composant 0005ACE5 x1
+              produit 0004B28F x1
+  [nouveau  ] COBJ 0010FB01  TemperArmorBladesGauntlets  (recette)
+              composant 0005ACE5 x1
+              produit 0004B28D x1
+  [nouveau  ] COBJ 0010FB00  TemperArmorBladesCuirass  (recette)
+              composant 0005ACE5 x1
+              produit 0004B28B x1
+  [nouveau  ] COBJ 0010FAFF  TemperArmorBladesBoots  (recette)
+              composant 0005ACE5 x1
+              produit 0004B288 x1
+  [nouveau  ] COBJ 0010E94D  TemperArmorHideShield  (recette)
+              composant 000DB5D2 x1
+              produit 00013914 x1
+  [nouveau  ] COBJ 0010E881  TemperArmorStormcloakCuirassSleeves  (recette)
+              composant 000DB5D2 x1
+              produit 000AD5A0 x1
+  [nouveau  ] COBJ 0010E880  TemperArmorSummersetShadowsGuildHelmet  (recette)
+              composant 000DB5D2 x1
+              produit 00108542 x1
+  [nouveau  ] COBJ 0010E87F  TemperArmorSummersetShadowsGuildGauntlets  (recette)
+              composant 000DB5D2 x1
+              produit 00108541 x1
+  [nouveau  ] COBJ 0010E87E  TemperArmorSummersetShadowsGuildCuirass  (recette)
+              composant 000DB5D2 x1
+              produit 00108540 x1
+  [nouveau  ] COBJ 0010E87D  TemperArmorSummersetShadowsGuildBoots  (recette)
+              composant 000DB5D2 x1
+              produit 0010853F x1
+  [nouveau  ] COBJ 0010E87C  TemperArmorStormcloakHelmetFull  (recette)
+              composant 000DB5D2 x1
+              produit 000A6D79 x1
+  [nouveau  ] COBJ 0010E87B  TemperArmorStormcloakGauntlets  (recette)
+              composant 000DB5D2 x1
+              produit 000A6D7D x1
+  [nouveau  ] COBJ 0010E87A  TemperArmorStormcloakCuirass  (recette)
+              composant 000DB5D2 x1
+              produit 000A6D7B x1
+  [nouveau  ] COBJ 0010E879  TemperArmorStormcloakBoots  (recette)
+              composant 000DB5D2 x1
+              produit 000A6D7F x1
+  [nouveau  ] COBJ 0010E878  TemperArmorStormcloakBearHelmet  (recette)
+              composant 000DB5D2 x1
+              produit 00086985 x1
+  [nouveau  ] COBJ 0010E877  TemperArmorStormcloakBearGauntlets  (recette)
+              composant 000DB5D2 x1
+              produit 00086983 x1
+  [nouveau  ] COBJ 0010E876  TemperArmorStormcloakBearCuriass  (recette)
+              composant 000DB5D2 x1
+              produit 0008697E x1
+  [nouveau  ] COBJ 0010E875  TemperArmorStormcloakBearBoots  (recette)
+              composant 000DB5D2 x1
+              produit 00086981 x1
+  [nouveau  ] COBJ 0010E874  TemperArmorImperialLightShield  (recette)
+              composant 000DB5D2 x1
+              produit 00013AB2 x1
+  [nouveau  ] COBJ 0010E873  TemperArmorImperialLightHelmet  (recette)
+              composant 000DB5D2 x1
+              produit 00013EDB x1
+  [nouveau  ] COBJ 0010E872  TemperArmorImperialLightGauntlets  (recette)
+              composant 000DB5D2 x1
+              produit 00013EDA x1
+  [nouveau  ] COBJ 0010E871  TemperArmorImperialLightCuirass  (recette)
+              composant 000DB5D2 x1
+              produit 00013ED9 x1
+  [nouveau  ] COBJ 0010E870  TemperArmorImperialLightBoots  (recette)
+              composant 000DB5D2 x1
+              produit 00013ED7 x1
+  [nouveau  ] COBJ 0010E86F  TemperArmorImperialHelmetOfficer  (recette)
+              composant 0005ACE5 x1
+              produit 000136CF x1
+  [nouveau  ] COBJ 0010E86E  TemperArmorImperialHelmetFull  (recette)
+              composant 0005ACE5 x1
+              produit 0009610D x1
+  [nouveau  ] COBJ 0010E86D  TemperArmorBanditHelmet  (recette)
+              composant 000DB5D2 x1
+              produit 0006F39E x1
+  [nouveau  ] COBJ 0010E86C  TemperArmorBanditGauntlets  (recette)
+              composant 000DB5D2 x1
+              produit 0006F39B x1
+  [nouveau  ] COBJ 0010E86B  TemperArmorBanditCuirass3  (recette)
+              composant 000DB5D2 x1
+              produit 0010594F x1
+  [nouveau  ] COBJ 0010E86A  TemperArmorBanditCuirass2  (recette)
+              composant 000DB5D2 x1
+              produit 0010594D x1
+  [nouveau  ] COBJ 0010E869  TemperArmorBanditCuirass1  (recette)
+              composant 000DB5D2 x1
+              produit 0010594B x1
+  [nouveau  ] COBJ 0010E868  TemperArmorBanditCuirass  (recette)
+              composant 000DB5D2 x1
+              produit 0006F393 x1
+  [nouveau  ] COBJ 0010E867  TemperArmorBanditBoots  (recette)
+              composant 000DB5D2 x1
+              produit 0006F398 x1
+  [nouveau  ] COBJ 0010E449  TemperWeaponLongBow  (recette)
+              composant 0006F993 x1
+              produit 0003B562 x1
+  [nouveau  ] COBJ 0010E448  TemperWeaponHuntingBow  (recette)
+              composant 000800E4 x1
+              produit 00013985 x1
+  [nouveau  ] COBJ 0010DD2D  RecipeIngotDwarvenScrapLarge03  (recette)
+              composant 000C8878 x1
+              produit 000DB8A2 x2
+  [nouveau  ] COBJ 0010DD2C  RecipeIngotDwarvenScrapLarge02  (recette)
+              composant 000C8874 x1
+              produit 000DB8A2 x5
+  [nouveau  ] COBJ 0010DD2B  RecipeIngotDwarvenScrapLarge  (recette)
+              composant 000C8872 x1
+              produit 000DB8A2 x3
+  [nouveau  ] COBJ 0010DD2A  RecipeIngotDwarvenScrapBent  (recette)
+              composant 000C886C x1
+              produit 000DB8A2 x3
+  [nouveau  ] COBJ 0010DD28  RecipeIngotDwarvenScrapPlateMetalLarge  (recette)
+              composant 000C8864 x1
+              produit 000DB8A2 x3
+  [nouveau  ] COBJ 0010D159  RecipeLeatherFoxSnowHide  (recette)
+              composant 000D4BE7 x1
+              produit 000DB5D2 x1
+  [nouveau  ] COBJ 0010CC6B  RecipeLeatherFoxHide  (recette)
+              composant 000D4B35 x1
+              produit 000DB5D2 x1
+  [nouveau  ] COBJ 0010C434  TemperWeaponT03Nettlebane  (recette)
+              composant 0005AD9D x1
+              produit 0001C492 x1
+  [nouveau  ] COBJ 0010A06E  TemperArmorQuestRatwayBrawlerGloves  (recette)
+              composant 000800E4 x2
+              composant 000DB5D2 x1
+              produit 0010A06A x1
+  [nouveau  ] COBJ 0010950C  TemperWeaponDunAngisBow  (recette)
+              composant 0005ACE5 x1
+              produit 000CC392 x1
+  [nouveau  ] COBJ 001094D5  TemperMQ203AkaviriKatana5  (recette)
+              composant 0005ADA0 x1
+              produit 000F71D0 x1
+  [nouveau  ] COBJ 001094D4  TemperMQ203AkaviriKatana4  (recette)
+              composant 0005ADA0 x1
+              produit 000F71CF x1
+  [nouveau  ] COBJ 001094D3  TemperMQ203AkaviriKatana3  (recette)
+              composant 0005ADA0 x1
+              produit 000F71CE x1
+  [nouveau  ] COBJ 001094D2  TemperMQ203AkaviriKatana2  (recette)
+              composant 0005ADA0 x1
+              produit 000F71CD x1
+  [nouveau  ] COBJ 001094D1  TemperMQ203AkaviriKatana1  (recette)
+              composant 0005ADA0 x1
+              produit 000F1AC1 x1
+  [nouveau  ] COBJ 0010948F  TemperArmorForswornHelmet  (recette)
+              composant 000DB5D2 x1
+              produit 000D8D52 x1
+  [nouveau  ] COBJ 0010948E  TemperArmorForswornGauntlets  (recette)
+              composant 000DB5D2 x1
+              produit 000D8D55 x1
+  [nouveau  ] COBJ 0010948D  TemperArmorForswornBoots  (recette)
+              composant 000DB5D2 x1
+              produit 000D8D4E x1
+  [nouveau  ] COBJ 0010948C  TemperArmorForswornArmor  (recette)
+              composant 000DB5D2 x1
+              produit 000D8D50 x1
+  [nouveau  ] COBJ 0010948B  TemperWeaponForswornSword  (recette)
+              composant 0005ACE5 x1
+              produit 000CADE9 x1
+  [nouveau  ] COBJ 0010948A  TemperWeaponForswornBow  (recette)
+              composant 0005ACE5 x1
+              produit 000CEE9B x1
+  [nouveau  ] COBJ 00109489  TemperWeaponForswornAxe  (recette)
+              composant 0005ACE5 x1
+              produit 000CC829 x1
+  [nouveau  ] COBJ 00109418  TemperWeaponQuestdunHaltedStreamPoachersAxe  (recette)
+              composant 0005ACE5 x1
+              produit 000AE086 x1
+  [nouveau  ] COBJ 00109417  TemperWeaponQuestdunLostValleyRedoubtAxe  (recette)
+              composant 0005ACE5 x1
+              produit 000AE087 x1
+  [nouveau  ] COBJ 00109416  TemperWeaponQuestdunLiarsRetreatLonghammer  (recette)
+              composant 0005AD99 x1
+              produit 000AE085 x1
+  [nouveau  ] COBJ 00109415  TemperWeaponQuestdunTargeOfTheBlooded  (recette)
+              composant 0005ACE5 x1
+              produit 000FC5BF x1
+  [nouveau  ] COBJ 00109402  TemperWeaponQuestdunAnsilvundGhostblade  (recette)
+              composant 0003AD63 x3
+              produit 00094A2B x1
+  [nouveau  ] COBJ 0010910E  TemperWeaponQuestVolunruudRelic02  (recette)
+              composant 0005ACE5 x1
+              produit 0008ADFC x1
+  [nouveau  ] COBJ 0010910D  TemperWeaponQuestVolunruudRelic01  (recette)
+              composant 0005ACE5 x1
+              produit 0008ADFB x1
+  [nouveau  ] COBJ 0010910C  TemperWeaponQuestVolunruudPickaxe  (recette)
+              composant 0005ACE4 x1
+              produit 001019D4 x1
+  [nouveau  ] COBJ 0010910B  TemperWeaponQuestVolunruudOkin  (recette)
+              composant 0005ACE5 x1
+              produit 0008FFDE x1
+  [nouveau  ] COBJ 0010910A  TemperWeaponQuestVolunruudEduj  (recette)
+              composant 0005ACE5 x1
+              produit 0008FFDF x1
+  [nouveau  ] COBJ 00109109  TemperWeaponQuestHuntersBow  (recette)
+              composant 0005ACE4 x1
+              produit 000C0186 x1
+  [nouveau  ] COBJ 00109107  TemperArmorQuestDragonPriestMaskMoonstone  (recette)
+              composant 0005AD9F x1
+              produit 00061C8B x1
+  [nouveau  ] COBJ 00109106  TemperArmorQuestDragonPriestMaskMarble  (recette)
+              composant 0005ADA1 x1
+              produit 00061CC2 x1
+  [nouveau  ] COBJ 00109105  TemperArmorQuestDragonPriestMaskIron  (recette)
+              composant 0005ACE4 x1
+              produit 00061CC1 x1
+  [nouveau  ] COBJ 00109103  TemperArmorQuestDragonPriestMaskUltra  (recette)
+              composant 0005AD9E x1
+              produit 00061CD6 x1
+  [nouveau  ] COBJ 00109102  TemperArmorQuestDragonPriestMaskSteel  (recette)
+              composant 0005ACE5 x1
+              produit 00061CC9 x1
+  [nouveau  ] COBJ 00109101  TemperArmorQuestDragonPriestMaskOrichalum  (recette)
+              composant 0005AD99 x1
+              produit 00061CC0 x1
+  [nouveau  ] COBJ 00109100  TemperArmorQuestDragonPriestMaskEbony  (recette)
+              composant 0005AD9D x1
+              produit 00061CA5 x1
+  [nouveau  ] COBJ 001090FF  TemperArmorQuestDragonPriestMaskCordundrum  (recette)
+              composant 0005AD93 x1
+              produit 00061CAB x1
+  [nouveau  ] COBJ 001090FE  TemperArmorQuestDragonPriestMaskBronze  (recette)
+              composant 0005ACE4 x1
+              produit 00061CB9 x1
+  [nouveau  ] COBJ 001090FD  TemperArmorQuestYngolBarrowSteelPlateHelmet  (recette)
+              composant 0005ACE5 x1
+              produit 000295F3 x1
+  [nouveau  ] COBJ 001090F1  TemperArmordunWhiteRiverWatchGauntlets  (recette)
+              composant 0005ACE4 x1
+              produit 000E1643 x1
+  [nouveau  ] COBJ 001090F0  TemperArmordunDeepwoodBoots  (recette)
+              composant 0005ACE4 x1
+              produit 000A4DCD x1
+  [nouveau  ] COBJ 001090EF  TemperWeaponQuestdunHagsEndDagger  (recette)
+              composant 0005ACE5 x1
+              produit 000A4DCE x1
+  [nouveau  ] COBJ 001090EE  TemperWeaponQuestdunMossMotherValdrDagger  (recette)
+              composant 0005ACE5 x1
+              produit 000B994E x1
+  [nouveau  ] COBJ 001090ED  TemperWeaponQuestdunFrostmereCryptPaleBlade05  (recette)
+              composant 0005ACE5 x1
+              produit 000F5D2D x1
+  [nouveau  ] COBJ 001090EC  TemperWeaponQuestdunFrostmereCryptPaleBlade04  (recette)
+              composant 0005ACE5 x1
+              produit 000F5D2C x1
+  [nouveau  ] COBJ 001090EB  TemperWeaponQuestdunFrostmereCryptPaleBlade03  (recette)
+              composant 0005ACE5 x1
+              produit 000F5D2B x1
+  [nouveau  ] COBJ 001090EA  TemperWeaponQuestdunFrostmereCryptPaleBlade02  (recette)
+              composant 0005ACE5 x1
+              produit 000F5D2A x1
+  [nouveau  ] COBJ 001090E9  TemperWeaponQuestdunFrostmereCryptPaleBlade01  (recette)
+              composant 0005ACE5 x1
+              produit 000D37CE x1
+  [nouveau  ] COBJ 001090E8  TemperWeaponQuestdunClearspringTarnBowOfHunt  (recette)
+              composant 0005ACE5 x1
+              produit 000AB705 x1
+  [nouveau  ] COBJ 001090E7  TemperWeaponQuestdunGeirmundSigdisBow06  (recette)
+              composant 0005ACE5 x1
+              produit 000F5D22 x1
+  [nouveau  ] COBJ 001090E6  TemperWeaponQuestdunGeirmundSigdisBow05  (recette)
+              composant 0005ACE5 x1
+              produit 000F5D21 x1
+  [nouveau  ] COBJ 001090E5  TemperWeaponQuestdunGeirmundSigdisBow04  (recette)
+              composant 0005ACE5 x1
+              produit 000F5D20 x1
+  [nouveau  ] COBJ 001090E4  TemperWeaponQuestdunGeirmundSigdisBow03  (recette)
+              composant 0005ACE5 x1
+              produit 000F5D1F x1
+  [nouveau  ] COBJ 001090E3  TemperWeaponQuestdunGeirmundSigdisBow02  (recette)
+              composant 0005ACE5 x1
+              produit 000A5DEF x1
+  [nouveau  ] COBJ 001090E2  TemperWeaponQuestdunFolgunthurMikrulSword06  (recette)
+              composant 0005ACE5 x1
+              produit 000F5D1D x1
+  [nouveau  ] COBJ 001090E1  TemperWeaponQuestdunFolgunthurMikrulSword05  (recette)
+              composant 0005ACE5 x1
+              produit 000F5D1C x1
+  [nouveau  ] COBJ 001090E0  TemperWeaponQuestdunFolgunthurMikrulSword04  (recette)
+              composant 0005ACE5 x1
+              produit 000F5D1B x1
+  [nouveau  ] COBJ 001090DF  TemperWeaponQuestdunFolgunthurMikrulSword03  (recette)
+              composant 0005ACE5 x1
+              produit 000F5D1A x1
+  [nouveau  ] COBJ 001090DE  TemperWeaponQuestdunFolgunthurMikrulSword02  (recette)
+              composant 0005ACE5 x1
+              produit 000AB702 x1
+  [nouveau  ] COBJ 001090DD  TemperWeaponQuestdunBloatedMansKatana  (recette)
+              composant 0005ADA0 x1
+              produit 000C1989 x1
+  [nouveau  ] COBJ 001090DC  TemperWeaponQuestdunRedEagleSwordUpgraded  (recette)
+              composant 0005ACE5 x1
+              produit 000AB703 x1
+  [nouveau  ] COBJ 001090DB  TemperWeaponQuestdunRedEagleSwordBase  (recette)
+              composant 0005ACE5 x1
+              produit 0009FD50 x1
+  [nouveau  ] COBJ 001090DA  TemperWeaponQuestdunKatariahScimitar  (recette)
+              composant 0005ACE5 x1
+              produit 0006EA8B x1
+  [nouveau  ] COBJ 001090D9  TemperWeaponQuestdunTrollsbane  (recette)
+              composant 0005ACE5 x1
+              produit 0006AF63 x1
+  [nouveau  ] COBJ 00109093  TemperArmorMS02ForswornHelmet  (recette)
+              composant 000DB5D2 x1
+              produit 000EAFD1 x1
+  [nouveau  ] COBJ 00109092  TemperArmorMS02ForswornGauntlets  (recette)
+              composant 000DB5D2 x1
+              produit 000EAFD2 x1
+  [nouveau  ] COBJ 00109091  TemperArmorMS02ForswornBoots  (recette)
+              composant 000DB5D2 x1
+              produit 000EAFD3 x1
+  [nouveau  ] COBJ 00109090  TemperArmorMS02ForswornArrmor  (recette)
+              composant 000DB5D2 x1
+              produit 000EAFD0 x1
+  [nouveau  ] COBJ 00108FFC  TemperWeaponDA09Dawnbreaker  (recette)
+              composant 0005AD9D x1
+              produit 0004E4EE x1
+  [nouveau  ] COBJ 00108FFB  TemperWeaponDA10MaceofMolagBal  (recette)
+              composant 0005AD9D x1
+              produit 000233E3 x1
+  [nouveau  ] COBJ 00108FFA  TemperWeaponDA07MehrunesRazor  (recette)
+              composant 0005AD9D x1
+              produit 000240D2 x1
+  [nouveau  ] COBJ 00108FF9  TemperWeaponDA03RuefulAxe  (recette)
+              composant 0005AD9D x1
+              produit 0001C4E6 x1
+  [nouveau  ] COBJ 00108FF7  TemperArmorDA13Spellbreaker  (recette)
+              composant 000DB8A2 x1
+              produit 00045F96 x1
+  [nouveau  ] COBJ 00108FF6  TemperArmorDA05SaviorsHide  (recette)
+              composant 000DB5D2 x1
+              produit 0002AC61 x1
+  [nouveau  ] COBJ 00108FF5  TemperArmorDA03Masque  (recette)
+              composant 0005ACE5 x1
+  [nouveau  ] COBJ 00108FF4  TemperArmorDA02EbonyMail  (recette)
+              composant 0005AD9D x1
+              produit 00052794 x1
+  [nouveau  ] COBJ 00108FF3  TemperWeaponDA06Volendrung  (recette)
+              composant 0005AD9D x1
+              produit 0002ACD2 x1
+  [nouveau  ] COBJ 00108D06  TemperWeaponOrcishBow  (recette)
+              composant 0005AD99 x1
+              produit 0001398D x1
+  [nouveau  ] COBJ 00108D05  TemperWeaponImperialBow  (recette)
+              composant 0005ACE5 x1
+              produit 00013841 x1
+  [nouveau  ] COBJ 00108D04  TemperWeaponGlassBow  (recette)
+              composant 0005ADA1 x1
+              produit 000139A5 x1
+  [nouveau  ] COBJ 00108D03  TemperWeaponFalmerBow  (recette)
+              composant 0003AD57 x1
+              produit 00038340 x1
+  [nouveau  ] COBJ 00108D02  TemperWeaponElvenBow  (recette)
+              composant 0005AD9F x1
+              produit 0001399D x1
+  [nouveau  ] COBJ 00108D01  TemperWeaponEbonyBow  (recette)
+              composant 0005AD9D x1
+              produit 000139AD x1
+  [nouveau  ] COBJ 00108D00  TemperWeaponDwarvenBow  (recette)
+              composant 000DB8A2 x1
+              produit 00013995 x1
+  [nouveau  ] COBJ 00108CFF  TemperWeaponDraugrBow  (recette)
+              composant 0005ACE5 x1
+              produit 000302CA x1
+  [nouveau  ] COBJ 00108CFE  TemperWeaponDaedricBow  (recette)
+              composant 0005AD9D x1
+              produit 000139B5 x1
+  [nouveau  ] COBJ 00108CFD  RecipeWeaponSkyforgeBow  (recette)
+              composant 000302CA x1
+              composant 0005ACE5 x3
+              produit 00068C57 x1
+  [nouveau  ] COBJ 00108CFC  RecipeWeaponOrcishBow  (recette)
+              composant 0005ACE4 x1
+              composant 0005AD99 x2
+              produit 0001398D x1
+  [nouveau  ] COBJ 00108CFB  RecipeWeaponGlassBow  (recette)
+              composant 0005AD9F x1
+              composant 0005ADA1 x2
+              produit 000139A5 x1
+  [nouveau  ] COBJ 00108CFA  RecipeWeaponElvenBow  (recette)
+              composant 0005ADA0 x1
+              composant 0005AD9F x2
+              produit 0001399D x1
+  [nouveau  ] COBJ 00108CF9  RecipeWeaponEbonyBow  (recette)
+              composant 0005AD9D x3
+              produit 000139AD x1
+  [nouveau  ] COBJ 00108CF8  RecipeWeaponDwarvenBow  (recette)
+              composant 0005ACE4 x1
+              composant 000DB8A2 x2
+              produit 00013995 x1
+  [nouveau  ] COBJ 00108CF7  RecipeWeaponDaedricBow  (recette)
+              composant 0005AD9D x3
+              composant 0003AD5B x1
+              produit 000139B5 x1
+  [nouveau  ] COBJ 00108CCC  TemperArmorTGImprovedHelmet  (recette)
+              composant 000DB5D2 x1
+              produit 000D3ACE x1
+  [nouveau  ] COBJ 00108CCB  TemperArmorTGImprovedGauntlets  (recette)
+              composant 000DB5D2 x1
+              produit 000D3ACD x1
+  [nouveau  ] COBJ 00108CCA  TemperArmorTGImprovedCuirass  (recette)
+              composant 000DB5D2 x1
+              produit 000D3ACC x1
+  [nouveau  ] COBJ 00108CC9  TemperArmorTGImprovedBoots  (recette)
+              composant 000DB5D2 x1
+              produit 000D3ACB x1
+  [nouveau  ] COBJ 00108CC8  TemperArmorNightingaleHelmet03  (recette)
+              composant 0003AD60 x1
+              produit 000FCC12 x1
+  [nouveau  ] COBJ 00108CC7  TemperArmorNightingaleHelmet02  (recette)
+              composant 0003AD60 x1
+              produit 000FCC13 x1
+  [nouveau  ] COBJ 00108CC6  TemperArmorNightingaleHelmet01  (recette)
+              composant 0003AD60 x1
+              produit 0005DB88 x1
+  [nouveau  ] COBJ 00108CC5  TemperArmorNightingaleGauntlets03  (recette)
+              composant 0003AD60 x1
+              produit 000FCC11 x1
+  [nouveau  ] COBJ 00108CC4  TemperArmorNightingaleGauntlets02  (recette)
+              composant 0003AD60 x1
+              produit 000FCC10 x1
+  [nouveau  ] COBJ 00108CC3  TemperArmorNightingaleGauntlets01  (recette)
+              composant 0003AD60 x1
+              produit 0005DB87 x1
+  [nouveau  ] COBJ 00108CC2  TemperArmorNightingaleCuirass01  (recette)
+              composant 0003AD60 x1
+              produit 0005DB86 x1
+  [nouveau  ] COBJ 00108CC1  TemperArmorNightingaleCuirass02  (recette)
+              composant 0003AD60 x1
+              produit 000FCC0E x1
+  [nouveau  ] COBJ 00108CC0  TemperArmorNightingaleCuirass03  (recette)
+              composant 0003AD60 x1
+              produit 000FCC0F x1
+  [nouveau  ] COBJ 00108CBF  TemperArmorNightingaleBoots03  (recette)
+              composant 0003AD60 x1
+              produit 000FCC0D x1
+  [nouveau  ] COBJ 00108CBE  TemperArmorNightingaleBoots02  (recette)
+              composant 0003AD60 x1
+              produit 0005DB85 x1
+  [nouveau  ] COBJ 00108CBD  TemperArmorNightingaleBoots01  (recette)
+              composant 0003AD60 x1
+              produit 000FCC0C x1
+  [nouveau  ] COBJ 00108CBC  TemperArmorTGLinweHelmet  (recette)
+              composant 000DB5D2 x1
+              produit 00108546 x1
+  [nouveau  ] COBJ 00108CBB  TemperArmorTGLinweGauntlets  (recette)
+              composant 000DB5D2 x1
+              produit 00108545 x1
+  [nouveau  ] COBJ 00108CBA  TemperArmorTGLinweCuirass  (recette)
+              composant 000DB5D2 x1
+              produit 00108544 x1
+  [nouveau  ] COBJ 00108CB9  TemperArmorTGLinweBoots  (recette)
+              composant 000DB5D2 x1
+              produit 00108543 x1
+  [nouveau  ] COBJ 00108CB8  TemperWeaponNightingaleBow05  (recette)
+              composant 0005AD9D x1
+              produit 000F652C x1
+  [nouveau  ] COBJ 00108CB7  TemperWeaponNightingaleBow04  (recette)
+              composant 0005AD9D x1
+              produit 000F652B x1
+  [nouveau  ] COBJ 00108CB6  TemperWeaponNightingaleBow03  (recette)
+              composant 0005AD9D x1
+              produit 000F652A x1
+  [nouveau  ] COBJ 00108CB5  TemperWeaponNightingaleBow02  (recette)
+              composant 0005AD9D x1
+              produit 000F6529 x1
+  [nouveau  ] COBJ 00108CB4  TemperWeaponNightingaleBow01  (recette)
+              composant 0005AD9D x1
+              produit 0007E5C3 x1
+  [nouveau  ] COBJ 00108CB3  TemperWeaponNightingaleBlade05  (recette)
+              composant 0005AD9D x1
+              produit 000F6526 x1
+  [nouveau  ] COBJ 00108CB2  TemperWeaponNightingaleBlade04  (recette)
+              composant 0005AD9D x1
+              produit 000F6526 x1
+  [nouveau  ] COBJ 00108CB1  TemperWeaponNightingaleBlade03  (recette)
+              composant 0005AD9D x1
+              produit 000F6525 x1
+  [nouveau  ] COBJ 00108CB0  TemperWeaponNightingaleBlade02  (recette)
+              composant 0005AD9D x1
+              produit 000F6524 x1
+  [nouveau  ] COBJ 00108CAF  TemperWeaponNightingaleBlade01  (recette)
+              composant 0005AD9D x1
+              produit 0007A917 x1
+  [nouveau  ] COBJ 00108CAE  TemperWeaponChillrend06  (recette)
+              composant 0005ADA1 x1
+              produit 000F8318 x1
+  [nouveau  ] COBJ 00108CAD  TemperWeaponChillrend05  (recette)
+              composant 0005ADA1 x1
+              produit 000F8317 x1
+  [nouveau  ] COBJ 00108CAC  TemperWeaponChillrend04  (recette)
+              composant 0005ADA1 x1
+              produit 000F8316 x1
+  [nouveau  ] COBJ 00108CAB  TemperWeaponChillrend03  (recette)
+              composant 0005ADA1 x1
+              produit 000F8315 x1
+  [nouveau  ] COBJ 00108CAA  TemperWeaponChillrend02  (recette)
+              composant 0005ADA1 x1
+              produit 000F8314 x1
+  [nouveau  ] COBJ 00108CA9  TemperWeaponChillrend01  (recette)
+              composant 0005ADA1 x1
+              produit 000F8313 x1
+  [nouveau  ] COBJ 00108C8B  TemperWeaponDBAegisbane  (recette)
+              composant 0005ACE4 x1
+              produit 000D2AFE x1
+  [nouveau  ] COBJ 00108C8A  TemperWeaponDBFirinielsEnd  (recette)
+              composant 0005AD9F x1
+              produit 00017059 x1
+  [nouveau  ] COBJ 00108C89  TemperWeaponDBBladeOfWoeReward  (recette)
+              produit 0009CCDC x1
+  [nouveau  ] COBJ 00108C88  TemperWeaponDBBladeOfWoeAstrid  (recette)
+              produit 000964C9 x1
+  [nouveau  ] COBJ 00108BA3  TemperWeaponFalmerWarAxe  (recette)
+              composant 0003AD57 x1
+              produit 000302CD x1
+  [nouveau  ] COBJ 00108BA2  TemperWeaponFalmerSword  (recette)
+              composant 0003AD57 x1
+              produit 0002E6D1 x1
+  [nouveau  ] COBJ 001082FC  TemperWeaponDA02Dagger  (recette)
+              composant 0005AD9D x1
+              produit 00079B1D x1
+  [nouveau  ] COBJ 001082CC  TemperWeaponDraugrWarAxeHoned  (recette)
+              composant 0005ACE5 x1
+              produit 0005BF15 x1
+  [nouveau  ] COBJ 001082CB  TemperWeaponDraugrWarAxe  (recette)
+              composant 0005ACE5 x1
+              produit 0002C672 x1
+  [nouveau  ] COBJ 001082CA  TemperWeaponDraugrSwordHoned  (recette)
+              composant 0005ACE5 x1
+              produit 0005BF14 x1
+  [nouveau  ] COBJ 001082C9  TemperWeaponDraugrSword  (recette)
+              composant 0005ACE5 x1
+              produit 0002C66F x1
+  [nouveau  ] COBJ 001082C8  TemperWeaponDraugrGreatswordHoned  (recette)
+              composant 0005ACE5 x1
+              produit 0005BF13 x1
+  [nouveau  ] COBJ 001082C7  TemperWeaponDraugrGreatsword  (recette)
+              composant 0005ACE5 x1
+              produit 000236A5 x1
+  [nouveau  ] COBJ 001082C6  TemperWeaponDraugrBattleAxeHoned  (recette)
+              composant 0005ACE5 x1
+              produit 0005BF12 x1
+  [nouveau  ] COBJ 001082C5  TemperWeaponDraugrBattleAxe  (recette)
+              composant 0005ACE5 x1
+              produit 0001CB64 x1
+  [nouveau  ] COBJ 001082C4  TemperWeaponImperialSword  (recette)
+              composant 0005ACE5 x1
+              produit 000135B8 x1
+  [nouveau  ] COBJ 00104DBF  TemperArmorGeneralTullius  (recette)
+              composant 0005ACE5 x1
+              produit 0005CBFE x1
+  [nouveau  ] COBJ 00104DBE  TemperArmorTGLeaderHelmet  (recette)
+              composant 000DB5D2 x1
+              produit 000E35D9 x1
+  [nouveau  ] COBJ 00104DBD  TemperArmorTGLeaderGauntlets  (recette)
+              composant 000DB5D2 x1
+              produit 000E35D8 x1
+  [nouveau  ] COBJ 00104DBC  TemperArmorTGLeaderCuirass  (recette)
+              composant 000DB5D2 x1
+              produit 000E35D7 x1
+  [nouveau  ] COBJ 00104DBB  TemperArmorTGHelmet  (recette)
+              composant 000DB5D2 x1
+              produit 000D3AC5 x1
+  [nouveau  ] COBJ 00104DBA  TemperArmorTGGauntlets  (recette)
+              composant 000DB5D2 x1
+              produit 000D3AC4 x1
+  [nouveau  ] COBJ 00104DB9  TemperArmorTGCuirass  (recette)
+              composant 000DB5D2 x1
+              produit 000D3AC3 x1
+  [nouveau  ] COBJ 00104DB8  TemperArmorTGLeaderBoots  (recette)
+              composant 000DB5D2 x1
+              produit 000E35D6 x1
+  [nouveau  ] COBJ 00104DB7  TemperArmorTGBoots  (recette)
+              composant 000DB5D2 x1
+              produit 000D3AC2 x1
+  [nouveau  ] COBJ 00104DB6  TemperArmorDBShroudedHelmet  (recette)
+              composant 000DB5D2 x1
+              produit 000E1F17 x1
+  [nouveau  ] COBJ 00104DB5  TemperArmorDBShroudedGauntlets  (recette)
+              composant 000DB5D2 x1
+              produit 000E1F16 x1
+  [nouveau  ] COBJ 00104DB4  TemperArmorDBShroudedCuirass  (recette)
+              composant 000DB5D2 x1
+              produit 000E1F15 x1
+  [nouveau  ] COBJ 00104DB3  TemperArmorDBShroudedBoots  (recette)
+              composant 000DB5D2 x1
+              produit 000E1F14 x1
+  [nouveau  ] COBJ 00104DB2  TemperArmorDBHelmet  (recette)
+              composant 000DB5D2 x1
+              produit 000D2842 x1
+  [nouveau  ] COBJ 00104DB1  TemperArmorDBGauntlets  (recette)
+              composant 000DB5D2 x1
+              produit 000D2843 x1
+  [nouveau  ] COBJ 00104DB0  TemperArmorDBCuirass  (recette)
+              composant 000DB5D2 x1
+              produit 000D2844 x1
+  [nouveau  ] COBJ 00104DAF  TemperArmorDBBoots  (recette)
+              composant 000DB5D2 x1
+              produit 000D2845 x1
+  [nouveau  ] COBJ 00104DAE  TemperArmorCompanionsHelmet  (recette)
+              composant 0005ACE5 x1
+              produit 0004C3D0 x1
+  [nouveau  ] COBJ 00104DAD  TemperArmorCompanionsGauntlets  (recette)
+              composant 0005ACE5 x1
+              produit 000CEE7E x1
+  [nouveau  ] COBJ 00104DAC  TemperArmorCompanionsCuirass  (recette)
+              composant 0005ACE5 x1
+              produit 000CAE15 x1
+  [nouveau  ] COBJ 00104DAB  TemperArmorCompanionsBoots  (recette)
+              composant 0005ACE5 x1
+              produit 000CEE7C x1
+  [nouveau  ] COBJ 001033DE  RecipeLeatherDeerHide02  (recette)
+              composant 000D284D x1
+              produit 000DB5D2 x2
+  [nouveau  ] COBJ 000F7F43  RecipeLeatherStrips  (recette)
+              composant 000DB5D2 x1
+              produit 000800E4 x4
+  [nouveau  ] COBJ 000F6F30  RecipeArmorSteelHelmetB  (recette)
+              composant 000800E4 x2
+              composant 0005ACE5 x2
+              composant 0005ACE4 x1
+              produit 000F6F24 x1
+  [nouveau  ] COBJ 000F6F2F  TemperArmorSteelHelmetB  (recette)
+              composant 0005ACE5 x1
+              produit 000F6F24 x1
+  [nouveau  ] COBJ 000F6F2E  RecipeArmorSteelGauntletsB  (recette)
+              composant 000800E4 x2
+              composant 0005ACE5 x2
+              composant 0005ACE4 x1
+              produit 000F6F23 x1
+  [nouveau  ] COBJ 000F6F2D  TemperArmorSteelGauntletsB  (recette)
+              composant 0005ACE5 x1
+              produit 000F6F23 x1
+  [nouveau  ] COBJ 000F6F2C  RecipeArmorSteelCuirassB  (recette)
+              composant 000800E4 x3
+              composant 0005ACE5 x4
+              composant 0005ACE4 x1
+              produit 000F6F22 x1
+  [nouveau  ] COBJ 000F6F2B  TemperArmorSteelCuirassB  (recette)
+              composant 0005ACE5 x1
+              produit 000F6F22 x1
+  [nouveau  ] COBJ 000F6F2A  RecipeArmorSteelBootsB  (recette)
+              composant 000800E4 x2
+              composant 0005ACE4 x1
+              composant 0005ACE5 x3
+              produit 000F6F21 x1
+  [nouveau  ] COBJ 000F6F29  TemperArmorSteelBootsB  (recette)
+              composant 0005ACE5 x1
+              produit 000F6F21 x1
+  [nouveau  ] COBJ 000F46D0  RecipeArmorSkyforgeHelmet  (recette)
+              composant 000800E4 x3
+              composant 0005ACE5 x3
+              composant 0005ACE4 x2
+              composant 000DB5D2 x2
+              produit 00056A9E x1
+  [nouveau  ] COBJ 000F46CF  RecipeArmorSkyforgeGauntlets  (recette)
+              composant 000800E4 x3
+              composant 0005ACE5 x3
+              composant 0005ACE4 x2
+              composant 000DB5D2 x2
+              produit 00056B17 x1
+  [nouveau  ] COBJ 000F46CD  RecipeArmorSkyforgeBoots  (recette)
+              composant 000800E4 x3
+              composant 0005ACE4 x2
+              composant 0005ACE5 x4
+              composant 000DB5D2 x2
+              produit 00056A9D x1
+  [nouveau  ] COBJ 000F46CC  RecipeArmorSkyforgeCuirass  (recette)
+              composant 0005ACE5 x5
+              composant 000800E4 x4
+              composant 000DB5D2 x2
+              composant 0005ACE4 x2
+              produit 00018388 x1
+  [nouveau  ] COBJ 000F46CB  RecipeWeaponSkyforgeWarAxe  (recette)
+              composant 0002C672 x1
+              composant 0005ACE5 x2
+              composant 000800E4 x2
+              produit 00068C63 x1
+  [nouveau  ] COBJ 000F46CA  RecipeWeaponSkyforgeSword  (recette)
+              composant 0002C66F x1
+              composant 0005ACE5 x2
+              composant 000800E4 x2
+              produit 00068C7B x1
+  [nouveau  ] COBJ 000F46C9  RecipeWeaponSkyforgeGreatsword  (recette)
+              composant 000236A5 x1
+              composant 0005ACE5 x3
+              composant 000800E4 x3
+              produit 000A3115 x1
+  [nouveau  ] COBJ 000F46C8  RecipeWeaponSkyforgeBattleAxe  (recette)
+              composant 0001CB64 x1
+              composant 0005ACE5 x3
+              composant 000800E4 x3
+              produit 00068C79 x1
+  [nouveau  ] COBJ 000F46C7  TemperWeaponElvenWarhammer  (recette)
+              composant 0005AD9F x1
+              produit 000139A2 x1
+  [nouveau  ] COBJ 000F46C6  TemperWeaponElvenWarAxe  (recette)
+              composant 0005AD9F x1
+              produit 0001399B x1
+  [nouveau  ] COBJ 000F46C5  TemperWeaponElvenSword  (recette)
+              composant 0005AD9F x1
+              produit 000139A1 x1
+  [nouveau  ] COBJ 000F46C4  TemperWeaponElvenMace  (recette)
+              composant 0005AD9F x1
+              produit 000139A0 x1
+  [nouveau  ] COBJ 000F46C3  TemperWeaponElvenGreatsword  (recette)
+              composant 0005AD9F x1
+              produit 0001399F x1
+  [nouveau  ] COBJ 000F46C2  TemperWeaponElvenDagger  (recette)
+              composant 0005AD9F x1
+              produit 0001399E x1
+  [nouveau  ] COBJ 000F46C1  TemperWeaponElvenBattleAxe  (recette)
+              composant 0005AD9F x1
+              produit 0001399C x1
+  [nouveau  ] COBJ 000F46C0  TemperWeaponEbonyWarhammer  (recette)
+              composant 0005AD9D x1
+              produit 000139B2 x1
+  [nouveau  ] COBJ 000F46BF  TemperWeaponDwarvenWarhammer  (recette)
+              composant 000DB8A2 x1
+              produit 0001399A x1
+  [nouveau  ] COBJ 000F46BE  TemperWeaponEbonyWarAxe  (recette)
+              composant 0005AD9D x1
+              produit 000139AB x1
+  [nouveau  ] COBJ 000F46BD  TemperWeaponEbonySword  (recette)
+              composant 0005AD9D x1
+              produit 000139B1 x1
+  [nouveau  ] COBJ 000F46BC  TemperWeaponEbonyMace  (recette)
+              composant 0005AD9D x1
+              produit 000139B0 x1
+  [nouveau  ] COBJ 000F46BB  TemperWeaponDwarvenWarAxe  (recette)
+              composant 000DB8A2 x1
+              produit 00013993 x1
+  [nouveau  ] COBJ 000F46BA  TemperWeaponEbonyGreatsword  (recette)
+              composant 0005AD9D x1
+              produit 000139AF x1
+  [nouveau  ] COBJ 000F46B9  TemperWeaponEbonyDagger  (recette)
+              composant 0005AD9D x1
+              produit 000139AE x1
+  [nouveau  ] COBJ 000F46B8  TemperWeaponEbonyBattleAxe  (recette)
+              composant 0005AD9D x1
+              produit 000139AC x1
+  [nouveau  ] COBJ 000F46B7  TemperWeaponGlassWarhammer  (recette)
+              composant 0005ADA1 x1
+              produit 000139AA x1
+  [nouveau  ] COBJ 000F46B6  TemperWeaponGlassWarAxe  (recette)
+              composant 0005ADA1 x1
+              produit 000139A3 x1
+  [nouveau  ] COBJ 000F46B5  TemperWeaponGlassSword  (recette)
+              composant 0005ADA1 x1
+              produit 000139A9 x1
+  [nouveau  ] COBJ 000F46B4  TemperWeaponGlassMace  (recette)
+              composant 0005ADA1 x1
+              produit 000139A8 x1
+  [nouveau  ] COBJ 000F46B3  TemperWeaponGlassGreatsword  (recette)
+              composant 0005ADA1 x1
+              produit 000139A7 x1
+  [nouveau  ] COBJ 000F46B2  TemperWeaponGlassDagger  (recette)
+              composant 0005ADA1 x1
+              produit 000139A6 x1
+  [nouveau  ] COBJ 000F46B1  TemperWeaponGlassBattleAxe  (recette)
+              composant 0005ADA1 x1
+              produit 000139A4 x1
+  [nouveau  ] COBJ 000F46B0  TemperWeaponSteelWarhammer  (recette)
+              composant 0005ACE5 x1
+              produit 0001398A x1
+  [nouveau  ] COBJ 000F46AF  TemperWeaponSteelWarAxe  (recette)
+              composant 0005ACE5 x1
+              produit 00013983 x1
+  [nouveau  ] COBJ 000F46AE  TemperWeaponSteelSword  (recette)
+              composant 0005ACE5 x1
+              produit 00013989 x1
+  [nouveau  ] COBJ 000F46AD  TemperWeaponSteelMace  (recette)
+              composant 0005ACE5 x1
+              produit 00013988 x1
+  [nouveau  ] COBJ 000F46AC  TemperWeaponSteelGreatsword  (recette)
+              composant 0005ACE5 x1
+              produit 00013987 x1
+  [nouveau  ] COBJ 000F46AB  TemperWeaponSteelDagger  (recette)
+              composant 0005ACE5 x1
+              produit 00013986 x1
+  [nouveau  ] COBJ 000F46AA  TemperWeaponSteelBattleAxe  (recette)
+              composant 0005ACE5 x1
+              produit 00013984 x1
+  [nouveau  ] COBJ 000F46A9  TemperWeaponOrcishWarhammer  (recette)
+              composant 0005AD99 x1
+              produit 00013992 x1
+  [nouveau  ] COBJ 000F46A8  TemperWeaponOrcishWarAxe  (recette)
+              composant 0005AD99 x1
+              produit 0001398B x1
+  [nouveau  ] COBJ 000F46A7  TemperWeaponOrcishSword  (recette)
+              composant 0005AD99 x1
+              produit 00013991 x1
+  [nouveau  ] COBJ 000F46A6  TemperWeaponOrcishMace  (recette)
+              composant 0005AD99 x1
+              produit 00013990 x1
+  [nouveau  ] COBJ 000F46A5  TemperWeaponOrcishGreatsword  (recette)
+              composant 0005AD99 x1
+              produit 0001398F x1
+  [nouveau  ] COBJ 000F46A4  TemperWeaponOrcishDagger  (recette)
+              composant 0005AD99 x1
+              produit 0001398E x1
+  [nouveau  ] COBJ 000F46A3  TemperWeaponOrcishBattleAxe  (recette)
+              composant 0005AD99 x1
+              produit 0001398C x1
+  [nouveau  ] COBJ 000F4330  RecipeJewelryRingSilverRuby  (recette)
+              composant 00063B42 x1
+              composant 0005ACE3 x1
+              produit 000877B1 x1
+  [nouveau  ] COBJ 000F432F  RecipeJewelryRingSilverGarnet  (recette)
+              composant 00063B45 x1
+              composant 0005ACE3 x1
+              produit 000877AB x1
+  [nouveau  ] COBJ 000F432E  RecipeJewelryRingSilverAmethyst  (recette)
+              composant 00063B46 x1
+              composant 0005ACE3 x1
+              produit 000877A7 x1
+  [nouveau  ] COBJ 000F432D  RecipeJewelryRingSilver  (recette)
+              composant 0005ACE3 x1
+              produit 0003B97C x2
+  [nouveau  ] COBJ 000F432C  RecipeJewelryRingGoldSapphire  (recette)
+              composant 00063B44 x1
+              composant 0005AD9E x1
+              produit 000877CB x1
+  [nouveau  ] COBJ 000F432B  RecipeJewelryRingGoldEmerald  (recette)
+              composant 00063B43 x1
+              composant 0005AD9E x1
+              produit 000877CA x1
+  [nouveau  ] COBJ 000F432A  RecipeJewelryRingGoldDiamond  (recette)
+              composant 00063B47 x1
+              composant 0005AD9E x1
+              produit 000877C9 x1
+  [nouveau  ] COBJ 000F4329  RecipeJewelryRingGold  (recette)
+              composant 0005AD9E x1
+              produit 0001CF2B x2
+  [nouveau  ] COBJ 000F4328  RecipeJewelryNecklaceSilverSapphire  (recette)
+              composant 0005ACE3 x1
+              composant 00068523 x1
+              produit 00087832 x1
+  [nouveau  ] COBJ 000F4327  RecipeJewelryNecklaceSilverGems  (recette)
+              composant 00068521 x2
+              composant 0005ACE3 x1
+              produit 00087834 x1
+  [nouveau  ] COBJ 000F4326  RecipeJewelryNecklaceSilverEmerald  (recette)
+              composant 00068520 x1
+              composant 0005ACE3 x1
+              produit 00087833 x1
+  [nouveau  ] COBJ 000F4325  RecipeJewelryNecklaceSilver  (recette)
+              composant 0005ACE3 x1
+              produit 0009171B x1
+  [nouveau  ] COBJ 000F4324  RecipeJewelryNecklaceGoldRuby  (recette)
+              composant 00068522 x1
+              composant 0005AD9E x1
+              produit 000877DC x1
+  [nouveau  ] COBJ 000F4323  RecipeJewelryNecklaceGoldGems  (recette)
+              composant 0006851E x2
+              composant 0005AD9E x1
+              produit 00087835 x1
+  [nouveau  ] COBJ 000F4322  RecipeJewelryNecklaceGoldDiamond  (recette)
+              composant 0006851F x1
+              composant 0005AD9E x1
+              produit 000877F1 x1
+  [nouveau  ] COBJ 000F4321  RecipeJewelryNecklaceGold  (recette)
+              composant 0005AD9E x1
+              produit 000877D5 x1
+  [nouveau  ] COBJ 000F431F  RecipeFoodElsweyrFondue  (recette)
+              composant 00064B34 x1
+              composant 000D8E3F x1
+              composant 00034C5E x1
+              produit 000F4320 x1
+  [nouveau  ] COBJ 000F431A  RecipeFoodSoupCabbagePotato  (recette)
+              composant 00064B41 x1
+              composant 00034CDF x1
+              composant 000669A5 x1
+              composant 00064B3F x1
+              produit 000F431B x1
+  [nouveau  ] COBJ 000F4319  RecipeFoodSoupVegetable  (recette)
+              composant 00064B3F x1
+              composant 00064B41 x1
+              composant 000669A5 x1
+              composant 00064B42 x1
+              produit 000F431E x1
+  [nouveau  ] COBJ 000F4318  RecipeFoodSoupTomato  (recette)
+              composant 00064B42 x1
+              composant 00034CDF x1
+              composant 00034D22 x1
+              composant 000669A5 x1
+              produit 000F431C x1
+  [nouveau  ] COBJ 000F4317  RecipeFoodStewVenison  (recette)
+              composant 000669A2 x1
+              composant 00034CDF x1
+              composant 00064B41 x1
+              composant 000669A5 x1
+              produit 000F431D x1
+  [nouveau  ] COBJ 000F4316  RecipeFoodStewHorker  (recette)
+              composant 00045C28 x1
+              composant 00064B42 x1
+              composant 00034D22 x1
+              composant 00065C9B x1
+              produit 000F4315 x1
+  [nouveau  ] COBJ 000F4313  RecipeFoodStewBeef  (recette)
+              composant 00065C99 x1
+              composant 00064B40 x1
+              composant 00034CDF x1
+              composant 00034D22 x1
+              produit 000F4314 x1
+  [nouveau  ] COBJ 000F4312  RecipeFoodStewAppleCabbage  (recette)
+              composant 00034CDF x1
+              composant 00064B2E x1
+              composant 00064B3F x1
+              produit 000EBA01 x1
+  [nouveau  ] COBJ 000F4311  RecipeFoodVenisonCooked  (recette)
+              composant 00034CDF x1
+              composant 000669A2 x1
+              produit 000722BD x1
+  [nouveau  ] COBJ 000F4310  RecipeFoodSalmonCooked  (recette)
+              composant 00034CDF x1
+              composant 00065C9F x1
+              produit 00064B3B x1
+  [nouveau  ] COBJ 000F430F  RecipeFoodRabbitCooked  (recette)
+              composant 00034CDF x1
+              composant 00065C9E x1
+              produit 000722C2 x1
+  [nouveau  ] COBJ 000F430E  RecipeFoodPheasantCooked  (recette)
+              composant 00065C9D x1
+              composant 00034CDF x1
+              produit 000722C7 x1
+  [nouveau  ] COBJ 000F430D  RecipeFoodMammothCooked  (recette)
+              composant 00034CDF x1
+              composant 000669A4 x1
+              produit 000722BB x1
+  [nouveau  ] COBJ 000F430C  RecipeFoodHorseCooked  (recette)
+              composant 00034CDF x1
+              composant 00065C9C x1
+              produit 000722B0 x1
+  [nouveau  ] COBJ 000F430B  RecipeFoodHorkerCooked  (recette)
+              composant 00034CDF x1
+              composant 00065C9B x1
+              produit 0007224E x1
+  [nouveau  ] COBJ 000F430A  RecipeFoodGoatCooked  (recette)
+              composant 00034CDF x1
+              composant 00065C9A x1
+              produit 0007224C x1
+  [nouveau  ] COBJ 000F4309  RecipeFoodBeefCooked  (recette)
+              composant 00034CDF x1
+              composant 00065C99 x1
+              produit 000721E8 x1
+  [nouveau  ] COBJ 000F4308  RecipeFoodChickenCooked  (recette)
+              composant 00034CDF x1
+              composant 000F2011 x1
+              produit 000E8947 x1
+  [nouveau  ] COBJ 000EB869  TemperWeaponDwarvenSword  (recette)
+              composant 000DB8A2 x1
+              produit 00013999 x1
+  [nouveau  ] COBJ 000EB868  TemperWeaponDwarvenMace  (recette)
+              composant 000DB8A2 x1
+              produit 00013998 x1
+  [nouveau  ] COBJ 000EB867  TemperWeaponDwarvenGreatsword  (recette)
+              composant 000DB8A2 x1
+              produit 00013997 x1
+  [nouveau  ] COBJ 000EB866  TemperWeaponDwarvenDagger  (recette)
+              composant 000DB8A2 x1
+              produit 00013996 x1
+  [nouveau  ] COBJ 000EB865  TemperWeaponDwarvenBattleAxe  (recette)
+              composant 000DB8A2 x1
+              produit 00013994 x1
+  [nouveau  ] COBJ 000EB864  TemperWeaponDaedricWarhammer  (recette)
+              composant 0005AD9D x1
+              produit 000139BA x1
+  [nouveau  ] COBJ 000EB863  TemperWeaponDaedricWarAxe  (recette)
+              composant 0005AD9D x1
+              produit 000139B3 x1
+  [nouveau  ] COBJ 000EB862  TemperWeaponDaedricSword  (recette)
+              composant 0005AD9D x1
+              produit 000139B9 x1
+  [nouveau  ] COBJ 000EB861  TemperWeaponDaedricMace  (recette)
+              composant 0005AD9D x1
+              produit 000139B8 x1
+  [nouveau  ] COBJ 000EB860  TemperWeaponDaedricGreatsword  (recette)
+              composant 0005AD9D x1
+              produit 000139B7 x1
+  [nouveau  ] COBJ 000EB85F  TemperWeaponDaedricDagger  (recette)
+              composant 0005AD9D x1
+              produit 000139B6 x1
+  [nouveau  ] COBJ 000EB85E  TemperWeaponDaedricBattleAxe  (recette)
+              composant 0005AD9D x1
+              produit 000139B4 x1
+  [nouveau  ] COBJ 000EB85D  TemperWeaponIronWarhammer  (recette)
+              composant 0005ACE4 x1
+              produit 00013981 x1
+  [nouveau  ] COBJ 000EB85C  TemperArmorStuddedCuirass  (recette)
+              composant 0005ACE4 x1
+              produit 0001B3A2 x1
+  [nouveau  ] COBJ 000EB85B  TemperArmorSteelShield  (recette)
+              composant 0005ACE5 x1
+              produit 00013955 x1
+  [nouveau  ] COBJ 000EB85A  TemperArmorSteelPlateShield  (recette)
+              composant 0005AD93 x1
+  [nouveau  ] COBJ 000EB859  TemperArmorSteelPlateHelmet  (recette)
+              composant 0005AD93 x1
+              produit 0001395E x1
+  [nouveau  ] COBJ 000EB858  TemperArmorSteelPlateGauntlets  (recette)
+              composant 0005AD93 x1
+              produit 0001395D x1
+  [nouveau  ] COBJ 000EB857  TemperArmorSteelPlateCuirass  (recette)
+              composant 0005AD93 x1
+              produit 0001395C x1
+  [nouveau  ] COBJ 000EB856  TemperArmorSteelPlateBoots  (recette)
+              composant 0005AD93 x1
+              produit 0001395B x1
+  [nouveau  ] COBJ 000EB855  TemperArmorSteelHelmetA  (recette)
+              composant 0005ACE5 x1
+              produit 00013954 x1
+  [nouveau  ] COBJ 000EB854  TemperArmorSteelGauntletsA  (recette)
+              composant 0005ACE5 x1
+              produit 00013953 x1
+  [nouveau  ] COBJ 000EB853  TemperArmorSteelCuirassA  (recette)
+              composant 0005ACE5 x1
+              produit 00013952 x1
+  [nouveau  ] COBJ 000EB852  TemperArmorSteelBootsA  (recette)
+              composant 0005ACE5 x1
+              produit 00013951 x1
+  [nouveau  ] COBJ 000EB851  TemperArmorScaledHelmet  (recette)
+              composant 0005AD93 x1
+              produit 0001B3A1 x1
+  [nouveau  ] COBJ 000EB84C  TemperArmorScaledGauntlets  (recette)
+              composant 0005AD93 x1
+              produit 0001B3A0 x1
+  [nouveau  ] COBJ 000EB84B  TemperArmorScaledCuirass  (recette)
+              composant 0005AD93 x1
+              produit 0001B3A3 x1
+  [nouveau  ] COBJ 000EB836  TemperArmorScaledBoots  (recette)
+              composant 0005AD93 x1
+              produit 0001B39F x1
+  [nouveau  ] COBJ 000EB801  TemperArmorOrcishShield  (recette)
+              composant 0005AD99 x1
+              produit 00013946 x1
+  [nouveau  ] COBJ 000EB800  TemperArmorOrcishHelmet  (recette)
+              composant 0005AD99 x1
+              produit 00013959 x1
+  [nouveau  ] COBJ 000EB7FB  TemperArmorOrcishGauntlets  (recette)
+              composant 0005AD99 x1
+              produit 00013958 x1
+  [nouveau  ] COBJ 000EB7FA  TemperArmorOrcishCuirass  (recette)
+              composant 0005AD99 x1
+              produit 00013957 x1
+  [nouveau  ] COBJ 000EB7F8  TemperArmorOrcishBoots  (recette)
+              composant 0005AD99 x1
+              produit 00013956 x1
+  [nouveau  ] COBJ 000EB7F6  TemperArmorIronBandedShield  (recette)
+              composant 0005AD93 x1
+              produit 0001394B x1
+  [nouveau  ] COBJ 000EB7F4  TemperArmorIronBandedCuirass  (recette)
+              composant 0005AD93 x1
+              produit 00013948 x1
+  [nouveau  ] COBJ 000EB7F3  TemperArmorImperialShield  (recette)
+              composant 0005ACE5 x1
+              produit 000135BA x1
+  [nouveau  ] COBJ 000EB7F2  TemperArmorImperialHelmet  (recette)
+              composant 0005ACE5 x1
+              produit 00013EDC x1
+  [nouveau  ] COBJ 000EB7F0  TemperArmorImperialGauntlets  (recette)
+              composant 0005ACE5 x1
+              produit 000136D4 x1
+  [nouveau  ] COBJ 000EB7EE  TemperArmorImperialCuirass  (recette)
+              composant 0005ACE5 x1
+              produit 000136D5 x1
+  [nouveau  ] COBJ 000EB7EC  TemperArmorImperialBoots  (recette)
+              composant 0005ACE5 x1
+              produit 000136D6 x1
+  [nouveau  ] COBJ 000EB7A9  TemperArmorGlassShield  (recette)
+              composant 0005ADA1 x1
+              produit 0001393C x1
+  [nouveau  ] COBJ 000EB7A7  TemperArmorGlassHelmet  (recette)
+              composant 0005ADA1 x1
+              produit 0001393B x1
+  [nouveau  ] COBJ 000EB7A6  TemperArmorGlassGauntlets  (recette)
+              composant 0005ADA1 x1
+              produit 0001393A x1
+  [nouveau  ] COBJ 000EB7A1  TemperArmorGlassCuirass  (recette)
+              composant 0005ADA1 x1
+              produit 00013939 x1
+  [nouveau  ] COBJ 000EB78E  TemperArmorGlassBoots  (recette)
+              composant 0005ADA1 x1
+              produit 00013938 x1
+  [nouveau  ] COBJ 000EB78D  TemperArmorGildedElvenShield  (recette)
+              composant 0005ADA0 x1
+  [nouveau  ] COBJ 000EB78C  TemperArmorGildedElvenHelmet  (recette)
+              composant 0005ADA0 x1
+  [nouveau  ] COBJ 000EB78B  TemperArmorGildedElvenGauntlets  (recette)
+              composant 0005ADA0 x1
+  [nouveau  ] COBJ 000EB78A  TemperArmorGildedElvenCuirass  (recette)
+              composant 0005ADA0 x1
+              produit 0001392A x1
+  [nouveau  ] COBJ 000EB789  TemperArmorGildedElvenBoots  (recette)
+              composant 0005ADA0 x1
+  [nouveau  ] COBJ 000EB788  TemperArmorElvenShield  (recette)
+              composant 0005AD9F x1
+              produit 0001391E x1
+  [nouveau  ] COBJ 000EB787  TemperArmorElvenHelmet  (recette)
+              composant 0005AD9F x1
+              produit 0001391D x1
+  [nouveau  ] COBJ 000EB786  TemperArmorElvenGauntlets  (recette)
+              composant 0005AD9F x1
+              produit 0001391C x1
+  [nouveau  ] COBJ 000EB785  TemperArmorElvenCuirass  (recette)
+              composant 0005AD9F x1
+              produit 000896A3 x1
+  [nouveau  ] COBJ 000EB52D  TemperArmorElvenBoots  (recette)
+              composant 0005AD9F x1
+              produit 0001391A x1
+  [nouveau  ] COBJ 000EB4A7  TemperArmorEbonyShield  (recette)
+              composant 0005AD9D x1
+              produit 00013964 x1
+  [nouveau  ] COBJ 000EB4A5  TemperArmorEbonyHelmet  (recette)
+              composant 0005AD9D x1
+              produit 00013963 x1
+  [nouveau  ] COBJ 000EB478  TemperArmorEbonyGauntlets  (recette)
+              composant 0005AD9D x1
+              produit 00013962 x1
+  [nouveau  ] COBJ 000EB448  TemperArmorEbonyCuirass  (recette)
+              composant 0005AD9D x1
+              produit 00013961 x1
+  [nouveau  ] COBJ 000EB3C8  TemperArmorEbonyBoots  (recette)
+              composant 0005AD9D x1
+              produit 00013960 x1
+  [nouveau  ] COBJ 000EB3C6  TemperArmorDwarvenShield  (recette)
+              composant 000DB8A2 x1
+              produit 00013950 x1
+  [nouveau  ] COBJ 000EB2BE  TemperArmorDwarvenHelmet  (recette)
+              composant 000DB8A2 x1
+              produit 0001394F x1
+  [nouveau  ] COBJ 000EB1E3  TemperArmorDwarvenGauntlets  (recette)
+              composant 000DB8A2 x1
+              produit 0001394E x1
+  [nouveau  ] COBJ 000EB124  TemperArmorDwarvenCuirass  (recette)
+              composant 000DB8A2 x1
+              produit 0001394D x1
+  [nouveau  ] COBJ 000EB0CA  TemperArmorDwarvenBoots  (recette)
+              composant 000DB8A2 x1
+              produit 0001394C x1
+  [nouveau  ] COBJ 000EB0C4  TemperArmorDragonscaleShield  (recette)
+              composant 0003ADA3 x1
+              produit 00013941 x1
+  [nouveau  ] COBJ 000EB0C3  TemperArmorDragonscaleHelmet  (recette)
+              composant 0003ADA3 x1
+              produit 00013940 x1
+  [nouveau  ] COBJ 000EB0C2  TemperArmorDragonscaleGauntlets  (recette)
+              composant 0003ADA3 x1
+              produit 0001393F x1
+  [nouveau  ] COBJ 000EB0BF  TemperArmorDragonscaleCuirass  (recette)
+              composant 0003ADA3 x1
+              produit 0001393E x1
+  [nouveau  ] COBJ 000EB0BE  TemperArmorDragonscaleBoots  (recette)
+              composant 0003ADA3 x1
+              produit 0001393D x1
+  [nouveau  ] COBJ 000EB0BD  TemperArmorDragonplateShield  (recette)
+              composant 0003ADA4 x1
+              produit 00013968 x1
+  [nouveau  ] COBJ 000EB0BC  TemperArmorDragonplateHelmet  (recette)
+              composant 0003ADA3 x1
+              produit 00013969 x1
+  [nouveau  ] COBJ 000EB0BB  TemperArmorDragonplateGauntlets  (recette)
+              composant 0003ADA3 x1
+              produit 00013967 x1
+  [nouveau  ] COBJ 000EB0BA  TemperArmorDragonplateCuirass  (recette)
+              composant 0003ADA4 x1
+              produit 00013966 x1
+  [nouveau  ] COBJ 000EB0B9  TemperArmorDragonplateBoots  (recette)
+              composant 0003ADA3 x1
+              produit 00013965 x1
+  [nouveau  ] COBJ 000EB0B8  TemperArmorDaedricShield  (recette)
+              composant 0005AD9D x1
+              produit 0001396E x1
+  [nouveau  ] COBJ 000EB0B7  TemperArmorDaedricHelmet  (recette)
+              composant 0005AD9D x1
+              produit 0001396D x1
+  [nouveau  ] COBJ 000EB0B6  TemperArmorDaedricGauntlets  (recette)
+              composant 0005AD9D x1
+              produit 0001396C x1
+  [nouveau  ] COBJ 000EB0B5  TemperArmorDaedricCuirass  (recette)
+              composant 0005AD9D x1
+              produit 0001396B x1
+  [nouveau  ] COBJ 000EB0B4  TemperArmorDaedricBoots  (recette)
+              composant 0005AD9D x1
+              produit 0001396A x1
+  [nouveau  ] COBJ 000EB0B2  RecipeLeatherHorseHide  (recette)
+              composant 0003AD93 x1
+              produit 000DB5D2 x3
+  [nouveau  ] COBJ 000EB0B1  RecipeLeatherSabrecatSnowHide  (recette)
+              composant 0003AD6E x1
+              produit 000DB5D2 x4
+  [nouveau  ] COBJ 000EB0B0  RecipeLeatherSabrecatHide  (recette)
+              composant 0003AD6D x1
+              produit 000DB5D2 x4
+  [nouveau  ] COBJ 000EB0AF  RecipeLeatherBearSnowHide  (recette)
+              composant 0003AD54 x1
+              produit 000DB5D2 x4
+  [nouveau  ] COBJ 000EB0AE  RecipeLeatherBearCaveHide  (recette)
+              composant 0003AD53 x1
+              produit 000DB5D2 x4
+  [nouveau  ] COBJ 000EB0AD  RecipeLeatherBearHide  (recette)
+              composant 0003AD52 x1
+              produit 000DB5D2 x4
+  [nouveau  ] COBJ 000EB0AC  RecipeLeatherIceWolfHide  (recette)
+              composant 0003AD75 x1
+              produit 000DB5D2 x1
+  [nouveau  ] COBJ 000ADBD7  TemperArmorHideHelmet  (recette)
+              composant 000DB5D2 x1
+              produit 00013913 x1
+  [nouveau  ] COBJ 000ADBD6  TemperArmorHideGauntlets  (recette)
+              composant 000DB5D2 x1
+              produit 00013912 x1
+  [nouveau  ] COBJ 000ADBD5  TemperArmorHideCuirass  (recette)
+              composant 000DB5D2 x1
+              produit 00013911 x1
+  [nouveau  ] COBJ 000ADBD4  TemperArmorHideBoots  (recette)
+              composant 000DB5D2 x1
+              produit 00013910 x1
+  [nouveau  ] COBJ 000ADBD3  TemperArmorLeatherHelmet  (recette)
+              composant 000DB5D2 x1
+              produit 00013922 x1
+  [nouveau  ] COBJ 000ADBAC  TemperArmorLeatherGauntlets  (recette)
+              composant 000DB5D2 x1
+              produit 00013921 x1
+  [nouveau  ] COBJ 000ADB9E  TemperArmorLeatherCuirass  (recette)
+              composant 000DB5D2 x1
+              produit 0003619E x1
+  [nouveau  ] COBJ 000ADB9D  TemperArmorLeatherBoots  (recette)
+              composant 000DB5D2 x1
+              produit 00013920 x1
+  [nouveau  ] COBJ 000ADB93  TemperArmorIronHelmet  (recette)
+              composant 0005ACE4 x1
+              produit 00012E4D x1
+  [nouveau  ] COBJ 000ADB92  TemperArmorIronGauntlets  (recette)
+              composant 0005ACE4 x1
+              produit 00012E46 x1
+  [nouveau  ] COBJ 000ADB89  TemperArmorIronBoots  (recette)
+              composant 0005ACE4 x1
+              produit 00012E4B x1
+  [nouveau  ] COBJ 000ADB80  TemperWeaponIronMace  (recette)
+              composant 0005ACE4 x1
+              produit 00013982 x1
+  [nouveau  ] COBJ 000ADB7F  TemperWeaponIronGreatsword  (recette)
+              composant 0005ACE4 x1
+              produit 0001359D x1
+  [nouveau  ] COBJ 000ADB7E  TemperWeaponIronDagger  (recette)
+              composant 0005ACE4 x1
+              produit 0001397E x1
+  [nouveau  ] COBJ 000ADB79  TemperWeaponIronBattleAxe  (recette)
+              composant 0005ACE4 x1
+              produit 00013980 x1
+  [nouveau  ] COBJ 000ADB77  TemperWeaponIronSword  (recette)
+              composant 0005ACE4 x1
+              produit 00012EB7 x1
+  [nouveau  ] COBJ 000A5CD6  RecipeWeaponSteelGreatsword  (recette)
+              composant 0005ACE4 x2
+              composant 000800E4 x3
+              composant 0005ACE5 x4
+              produit 00013987 x1
+  [nouveau  ] COBJ 000A30E4  RecipeIngotSteel  (recette)
+              composant 0005ACDB x1
+              composant 00071CF3 x1
+              produit 0005ACE5 x1
+  [nouveau  ] COBJ 000A30DD  RecipeIngotSilver  (recette)
+              composant 0005ACDF x2
+              produit 0005ACE3 x1
+  [nouveau  ] COBJ 000A30DC  RecipeIngotQuicksilver  (recette)
+              composant 0005ACE2 x2
+              produit 0005ADA0 x1
+  [nouveau  ] COBJ 000A30DB  RecipeIngotOrichalcum  (recette)
+              composant 0005ACDD x2
+              produit 0005AD99 x1
+  [nouveau  ] COBJ 000A30DA  RecipeIngotMalachite  (recette)
+              composant 0005ACE1 x2
+              produit 0005ADA1 x1
+  [nouveau  ] COBJ 000A30D9  RecipeIngotMoonstone  (recette)
+              composant 0005ACE0 x2
+              produit 0005AD9F x1
+  [nouveau  ] COBJ 000A30D4  RecipeIngotGold  (recette)
+              composant 0005ACDE x2
+              produit 0005AD9E x1
+  [nouveau  ] COBJ 000A30D3  RecipeIngotEbony  (recette)
+              composant 0005ACDC x2
+              produit 0005AD9D x1
+  [nouveau  ] COBJ 000A30CB  RecipeIngotCorundum  (recette)
+              composant 0005ACDB x2
+              produit 0005AD93 x1
+  [nouveau  ] COBJ 000A30C3  RecipeIngotIron  (recette)
+              composant 00071CF3 x1
+              produit 0005ACE4 x1
+  [nouveau  ] COBJ 00085DC7  TemperArmorIronShield  (recette)
+              composant 0005ACE4 x1
+              produit 00012EB6 x1
+  [nouveau  ] COBJ 00085DC6  TemperWeaponIronWarAxe  (recette)
+              composant 0005ACE4 x1
+              produit 00013790 x1
+  [nouveau  ] COBJ 00085DC5  TemperArmorIronCuirass  (recette)
+              composant 0005ACE4 x1
+              produit 00012E49 x1
+  [nouveau  ] COBJ 00078B54  RecipeLeatherWolfHide  (recette)
+              composant 0003AD74 x1
+              produit 000DB5D2 x1
+  [nouveau  ] COBJ 00078B49  RecipeLeatherDeerHide  (recette)
+              composant 0003AD90 x1
+              produit 000DB5D2 x2
+  [nouveau  ] COBJ 00078B48  RecipeLeatherCowHide  (recette)
+              composant 0003AD8F x1
+              produit 000DB5D2 x3
+  [nouveau  ] COBJ 0007866B  RecipeLeatherGoatHide  (recette)
+              composant 0003AD8E x2
+              produit 000DB5D2 x1
+  [nouveau  ] COBJ 000DD996  RecipeArmorDaedricShield  (recette)
+              composant 000800E4 x1
+              composant 0005AD9D x4
+              composant 0003AD5B x1
+              produit 0001396E x1
+  [nouveau  ] COBJ 000DD995  RecipeArmorDaedricHelmet  (recette)
+              composant 000800E4 x2
+              composant 0005AD9D x3
+              composant 0003AD5B x1
+              produit 0001396D x1
+  [nouveau  ] COBJ 000DD994  RecipeArmorDaedricGauntlets  (recette)
+              composant 000800E4 x2
+              composant 0005AD9D x2
+              composant 0003AD5B x1
+              produit 0001396C x1
+  [nouveau  ] COBJ 000DD993  RecipeArmorDaedricCuirass  (recette)
+              composant 000800E4 x3
+              composant 0005AD9D x5
+              composant 0003AD5B x1
+              produit 0001396B x1
+  [nouveau  ] COBJ 000DD992  RecipeArmorDaedricBoots  (recette)
+              composant 000800E4 x2
+              composant 0005AD9D x3
+              composant 0003AD5B x1
+              produit 0001396A x1
+  [nouveau  ] COBJ 000DD991  RecipeArmorDragonplateShield  (recette)
+              composant 000800E4 x1
+              composant 0003ADA3 x3
+              composant 0003ADA4 x1
+              produit 00013968 x1
+  [nouveau  ] COBJ 000DD990  RecipeArmorDragonplateHelmet  (recette)
+              composant 000800E4 x2
+              composant 0003ADA3 x2
+              composant 0003ADA4 x1
+              produit 00013969 x1
+  [nouveau  ] COBJ 000DD98F  RecipeArmorDragonplateGauntlets  (recette)
+              composant 000800E4 x2
+              composant 0003ADA3 x2
+              composant 0003ADA4 x1
+              produit 00013967 x1
+  [nouveau  ] COBJ 000DD98E  RecipeArmorDragonplateCuirass  (recette)
+              composant 000800E4 x3
+              composant 0003ADA3 x3
+              composant 0003ADA4 x2
+              produit 00013966 x1
+  [nouveau  ] COBJ 000DD98D  RecipeArmorDragonplateBoots  (recette)
+              composant 000800E4 x2
+              composant 0003ADA3 x3
+              composant 0003ADA4 x1
+              produit 00013965 x1
+  [nouveau  ] COBJ 000DD98C  RecipeArmorEbonyShield  (recette)
+              composant 000800E4 x1
+              composant 0005AD9D x4
+              produit 00013964 x1
+  [nouveau  ] COBJ 000DD98B  RecipeArmorEbonyHelmet  (recette)
+              composant 000800E4 x2
+              composant 0005AD9D x3
+              produit 00013963 x1
+  [nouveau  ] COBJ 000DD98A  RecipeArmorEbonyGauntlets  (recette)
+              composant 000800E4 x2
+              composant 0005AD9D x2
+              produit 00013962 x1
+  [nouveau  ] COBJ 000DD989  RecipeArmorEbonyCuirass  (recette)
+              composant 000800E4 x3
+              composant 0005AD9D x5
+              produit 00013961 x1
+  [nouveau  ] COBJ 000DD988  RecipeArmorEbonyBoots  (recette)
+              composant 000800E4 x2
+              composant 0005AD9D x3
+              produit 00013960 x1
+  [nouveau  ] COBJ 000DD987  RecipeArmorOrcishShield  (recette)
+              composant 000800E4 x1
+              composant 0005AD99 x3
+              composant 0005ACE4 x1
+              produit 00013946 x1
+  [nouveau  ] COBJ 000DD986  RecipeArmorOrcishHelmet  (recette)
+              composant 000800E4 x2
+              composant 0005AD99 x2
+              composant 0005ACE4 x1
+              produit 00013959 x1
+  [nouveau  ] COBJ 000DD985  RecipeArmorOrcishGauntlets  (recette)
+              composant 000800E4 x2
+              composant 0005AD99 x2
+              composant 0005ACE4 x1
+              produit 00013958 x1
+  [nouveau  ] COBJ 000DD984  RecipeArmorOrcishCuirass  (recette)
+              composant 000800E4 x3
+              composant 0005AD99 x4
+              composant 0005ACE4 x1
+              produit 00013957 x1
+  [nouveau  ] COBJ 000DD983  RecipeArmorOrcishBoots  (recette)
+              composant 000800E4 x2
+              composant 0005ACE4 x1
+              composant 0005AD99 x3
+              produit 00013956 x1
+  [nouveau  ] COBJ 000DD982  RecipeArmorSteelPlateShield  (recette)
+              composant 0005AD93 x1
+              composant 0005ACE5 x3
+              composant 000800E4 x1
+              composant 0005ACE4 x1
+  [nouveau  ] COBJ 000DD981  RecipeArmorSteelPlateHelmet  (recette)
+              composant 0005ACE4 x1
+              composant 0005ACE5 x2
+              composant 000800E4 x2
+              composant 0005AD93 x1
+              produit 0001395E x1
+  [nouveau  ] COBJ 000DD980  RecipeArmorSteelPlateGauntlets  (recette)
+              composant 0005AD93 x1
+              composant 0005ACE5 x2
+              composant 000800E4 x2
+              composant 0005ACE4 x1
+              produit 0001395D x1
+  [nouveau  ] COBJ 000DD97F  RecipeArmorSteelPlateCuirass  (recette)
+              composant 0005ACE4 x1
+              composant 0005ACE5 x3
+              composant 000800E4 x3
+              composant 0005AD93 x1
+              produit 0001395C x1
+  [nouveau  ] COBJ 000DD97E  RecipeArmorSteelPlateBoots  (recette)
+              composant 0005ACE5 x2
+              composant 0005AD93 x1
+              composant 000800E4 x2
+              composant 0005ACE4 x1
+              produit 0001395B x1
+  [nouveau  ] COBJ 000DD97D  RecipeArmorDwarvenShield  (recette)
+              composant 0005ACE5 x1
+              composant 000800E4 x1
+              composant 000DB8A2 x2
+              composant 0005ACE4 x1
+              produit 00013950 x1
+  [nouveau  ] COBJ 000DD97C  RecipeArmorDwarvenHelmet  (recette)
+              composant 0005ACE5 x1
+              composant 000800E4 x2
+              composant 000DB8A2 x2
+              composant 0005ACE4 x1
+              produit 0001394F x1
+  [nouveau  ] COBJ 000DD97B  RecipeArmorDwarvenGauntlets  (recette)
+              composant 0005ACE5 x1
+              composant 000800E4 x2
+              composant 000DB8A2 x1
+              composant 0005ACE4 x1
+              produit 0001394E x1
+  [nouveau  ] COBJ 000DD97A  RecipeArmorDwarvenCuirass  (recette)
+              composant 000800E4 x3
+              composant 000DB8A2 x3
+              composant 0005ACE4 x1
+              composant 0005ACE5 x1
+              produit 0001394D x1
+  [nouveau  ] COBJ 000DD979  RecipeArmorDwarvenBoots  (recette)
+              composant 000800E4 x2
+              composant 0005ACE4 x1
+              composant 000DB8A2 x2
+              composant 0005ACE5 x1
+              produit 0001394C x1
+  [nouveau  ] COBJ 000DD978  RecipeArmorSteelShield  (recette)
+              composant 000800E4 x1
+              composant 0005ACE5 x3
+              composant 0005ACE4 x1
+              produit 00013955 x1
+  [nouveau  ] COBJ 000DD977  RecipeArmorSteelHelmetA  (recette)
+              composant 000800E4 x2
+              composant 0005ACE5 x2
+              composant 0005ACE4 x1
+              produit 00013954 x1
+  [nouveau  ] COBJ 000DD976  RecipeArmorSteelGauntletsA  (recette)
+              composant 000800E4 x2
+              composant 0005ACE5 x2
+              composant 0005ACE4 x1
+              produit 00013953 x1
+  [nouveau  ] COBJ 000DD975  RecipeArmorSteelCuirassA  (recette)
+              composant 000800E4 x3
+              composant 0005ACE5 x4
+              composant 0005ACE4 x1
+              produit 00013952 x1
+  [nouveau  ] COBJ 000DD974  RecipeArmorSteelBootsA  (recette)
+              composant 000800E4 x2
+              composant 0005ACE4 x1
+              composant 0005ACE5 x3
+              produit 00013951 x1
+  [nouveau  ] COBJ 000DCA17  RecipeArmorDragonscaleShield  (recette)
+              composant 000800E4 x2
+              composant 0003ADA3 x4
+              composant 0005ACE4 x2
+              produit 00013941 x1
+  [nouveau  ] COBJ 000DCA16  RecipeArmorDragonscaleHelmet  (recette)
+              composant 000800E4 x1
+              composant 000DB5D2 x1
+              composant 0003ADA3 x2
+              composant 0005ACE4 x1
+              produit 00013940 x1
+  [nouveau  ] COBJ 000DCA15  RecipeArmorDragonscaleGauntlets  (recette)
+              composant 000800E4 x2
+              composant 000DB5D2 x1
+              composant 0003ADA3 x2
+              composant 0005ACE4 x1
+              produit 0001393F x1
+  [nouveau  ] COBJ 000DCA14  RecipeArmorDragonscaleCuirass  (recette)
+              composant 000800E4 x3
+              composant 000DB5D2 x1
+              composant 0003ADA3 x4
+              composant 0005ACE4 x2
+              produit 0001393E x1
+  [nouveau  ] COBJ 000DCA13  RecipeArmorDragonscaleBoots  (recette)
+              composant 000800E4 x2
+              composant 000DB5D2 x1
+              composant 0003ADA3 x2
+              composant 0005ACE4 x1
+              produit 0001393D x1
+  [nouveau  ] COBJ 000DCA12  RecipeArmorGlassShield  (recette)
+              composant 0005AD9F x1
+              composant 0005ADA1 x4
+              composant 000800E4 x2
+              produit 0001393C x1
+  [nouveau  ] COBJ 000DCA11  RecipeArmorGlassHelmet  (recette)
+              composant 000800E4 x1
+              composant 000DB5D2 x1
+              composant 0005ADA1 x2
+              composant 0005AD9F x1
+              produit 0001393B x1
+  [nouveau  ] COBJ 000DCA10  RecipeArmorGlassGauntlets  (recette)
+              composant 000800E4 x2
+              composant 000DB5D2 x1
+              composant 0005ADA1 x1
+              composant 0005AD9F x1
+              produit 0001393A x1
+  [nouveau  ] COBJ 000DCA0F  RecipeArmorGlassCuirass  (recette)
+              composant 000800E4 x3
+              composant 000DB5D2 x1
+              composant 0005ADA1 x4
+              composant 0005AD9F x2
+              produit 00013939 x1
+  [nouveau  ] COBJ 000DCA0E  RecipeArmorGlassBoots  (recette)
+              composant 000800E4 x2
+              composant 000DB5D2 x1
+              composant 0005ADA1 x2
+              composant 0005AD9F x1
+              produit 00013938 x1
+  [nouveau  ] COBJ 000DCA0A  RecipeArmorGildedElvenCuirass  (recette)
+              composant 000800E4 x3
+              composant 0005AD9F x4
+              composant 0005ACE4 x1
+              composant 0005ADA0 x1
+              produit 0001392A x1
+  [nouveau  ] COBJ 000DCA08  RecipeArmorScaledHelmet  (recette)
+              composant 0005AD93 x1
+              composant 0005ACE5 x2
+              composant 000DB5D2 x1
+              composant 000800E4 x1
+              produit 0001B3A1 x1
+  [nouveau  ] COBJ 000DCA07  RecipeArmorScaledGauntlets  (recette)
+              composant 0005AD93 x1
+              composant 0005ACE5 x1
+              composant 000DB5D2 x1
+              composant 000800E4 x2
+              produit 0001B3A0 x1
+  [nouveau  ] COBJ 000DCA06  RecipeArmorScaledCuirass  (recette)
+              composant 0005AD93 x2
+              composant 0005ACE5 x3
+              composant 000DB5D2 x2
+              composant 000800E4 x3
+              produit 0001B3A3 x1
+  [nouveau  ] COBJ 000DCA05  RecipeArmorScaledBoots  (recette)
+              composant 0005AD93 x1
+              composant 0005ACE5 x2
+              composant 000DB5D2 x1
+              composant 000800E4 x2
+              produit 0001B39F x1
+  [nouveau  ] COBJ 000DCA04  RecipeArmorLeatherHelmet  (recette)
+              composant 000DB5D2 x2
+              composant 000800E4 x1
+              produit 00013922 x1
+  [nouveau  ] COBJ 000DCA03  RecipeArmorLeatherGauntlets  (recette)
+              composant 000DB5D2 x1
+              composant 000800E4 x2
+              produit 00013921 x1
+  [nouveau  ] COBJ 000DCA02  RecipeArmorLeatherCuirass  (recette)
+              composant 000DB5D2 x4
+              composant 000800E4 x3
+              produit 0003619E x1
+  [nouveau  ] COBJ 000DCA01  RecipeArmorLeatherBoots  (recette)
+              composant 000DB5D2 x2
+              composant 000800E4 x2
+              produit 00013920 x1
+  [nouveau  ] COBJ 000DCA00  RecipeArmorIronBandedShield  (recette)
+              composant 000800E4 x1
+              composant 0005ACE4 x4
+              composant 0005AD93 x1
+              produit 0001394B x1
+  [nouveau  ] COBJ 000DC9FF  RecipeArmorIronBandedCuirass  (recette)
+              composant 000800E4 x3
+              composant 0005ACE4 x5
+              composant 0005AD93 x1
+              produit 00013948 x1
+  [nouveau  ] COBJ 000DC9FE  RecipeArmorElvenShield  (recette)
+              composant 000800E4 x2
+              composant 0005AD9F x4
+              composant 0005ACE4 x1
+              produit 0001391E x1
+  [nouveau  ] COBJ 000DC9FD  RecipeArmorElvenHelmet  (recette)
+              composant 000800E4 x1
+              composant 000DB5D2 x1
+              composant 0005AD9F x2
+              composant 0005ACE4 x1
+              produit 0001391D x1
+  [nouveau  ] COBJ 000DC9FC  RecipeArmorElvenGauntlets  (recette)
+              composant 000800E4 x2
+              composant 000DB5D2 x1
+              composant 0005AD9F x1
+              composant 0005ACE4 x1
+              produit 0001391C x1
+  [nouveau  ] COBJ 000DC9FB  RecipeArmorElvenCuirass  (recette)
+              composant 000800E4 x3
+              composant 000DB5D2 x1
+              composant 0005AD9F x4
+              composant 0005ACE4 x1
+              produit 000896A3 x1
+  [nouveau  ] COBJ 000DC9FA  RecipeArmorElvenBoots  (recette)
+              composant 000800E4 x2
+              composant 000DB5D2 x1
+              composant 0005AD9F x2
+              composant 0005ACE4 x1
+              produit 0001391A x1
+  [nouveau  ] COBJ 000DC9F9  RecipeArmorImperialShield  (recette)
+              composant 000800E4 x2
+              composant 0005ACE5 x4
+              produit 000135BA x1
+  [nouveau  ] COBJ 000DC9F8  RecipeArmorImperialHelmet  (recette)
+              composant 000800E4 x1
+              composant 000DB5D2 x1
+              composant 0005ACE5 x2
+              produit 00013EDC x1
+  [nouveau  ] COBJ 000DC9F7  RecipeArmorImperialGauntlets  (recette)
+              composant 000800E4 x2
+              composant 000DB5D2 x1
+              composant 0005ACE5 x2
+              produit 000136D4 x1
+  [nouveau  ] COBJ 000DC9F6  RecipeArmorImperialCuirass  (recette)
+              composant 000800E4 x3
+              composant 000DB5D2 x2
+              composant 0005ACE5 x4
+              produit 000136D5 x1
+  [nouveau  ] COBJ 000DC9F5  RecipeArmorImperialBoots  (recette)
+              composant 000800E4 x2
+              composant 000DB5D2 x1
+              composant 0005ACE5 x2
+              produit 000136D6 x1
+  [nouveau  ] COBJ 000DC9F4  RecipeArmorStuddedCuirass  (recette)
+              composant 000800E4 x3
+              composant 000DB5D2 x4
+              composant 0005ACE4 x1
+              produit 0001B3A2 x1
+  [nouveau  ] COBJ 000DB8C5  RecipeWeaponDaedricWarhammer  (recette)
+              composant 0005AD9D x5
+              composant 000800E4 x3
+              composant 0003AD5B x1
+              produit 000139BA x1
+  [nouveau  ] COBJ 000DB8C4  RecipeWeaponDaedricWarAxe  (recette)
+              composant 0005AD9D x2
+              composant 000800E4 x2
+              composant 0003AD5B x1
+              produit 000139B3 x1
+  [nouveau  ] COBJ 000DB8C3  RecipeWeaponDaedricSword  (recette)
+              composant 0005AD9D x2
+              composant 000800E4 x1
+              composant 0003AD5B x1
+              produit 000139B9 x1
+  [nouveau  ] COBJ 000DB8C2  RecipeWeaponDaedricMace  (recette)
+              composant 0005AD9D x3
+              composant 000800E4 x1
+              composant 0003AD5B x1
+              produit 000139B8 x1
+  [nouveau  ] COBJ 000DB8C1  RecipeWeaponDaedricGreatsword  (recette)
+              composant 0005AD9D x5
+              composant 000800E4 x3
+              composant 0003AD5B x1
+              produit 000139B7 x1
+  [nouveau  ] COBJ 000DB8C0  RecipeWeaponDaedricDagger  (recette)
+              composant 0005AD9D x1
+              composant 000800E4 x1
+              composant 0003AD5B x1
+              produit 000139B6 x1
+  [nouveau  ] COBJ 000DB8BF  RecipeWeaponDaedricBattleAxe  (recette)
+              composant 0005AD9D x5
+              composant 000800E4 x2
+              composant 0003AD5B x1
+              produit 000139B4 x1
+  [nouveau  ] COBJ 000DB8BE  RecipeWeaponEbonyWarhammer  (recette)
+              composant 0005AD9D x5
+              composant 000800E4 x3
+              produit 000139B2 x1
+  [nouveau  ] COBJ 000DB8BD  RecipeWeaponEbonyWarAxe  (recette)
+              composant 0005AD9D x2
+              composant 000800E4 x2
+              produit 000139AB x1
+  [nouveau  ] COBJ 000DB8BC  RecipeWeaponEbonySword  (recette)
+              composant 0005AD9D x2
+              composant 000800E4 x1
+              produit 000139B1 x1
+  [nouveau  ] COBJ 000DB8BB  RecipeWeaponEbonyMace  (recette)
+              composant 0005AD9D x3
+              composant 000800E4 x1
+              produit 000139B0 x1
+  [nouveau  ] COBJ 000DB8BA  RecipeWeaponEbonyGreatsword  (recette)
+              composant 0005AD9D x5
+              composant 000800E4 x3
+              produit 000139AF x1
+  [nouveau  ] COBJ 000DB8B9  RecipeWeaponEbonyDagger  (recette)
+              composant 0005AD9D x1
+              composant 000800E4 x1
+              produit 000139AE x1
+  [nouveau  ] COBJ 000DB8B8  RecipeWeaponEbonyBattleAxe  (recette)
+              composant 0005AD9D x5
+              composant 000800E4 x2
+              produit 000139AC x1
+  [nouveau  ] COBJ 000DB8B7  RecipeWeaponGlassWarhammer  (recette)
+              composant 0005ADA1 x3
+              composant 000800E4 x3
+              composant 0005AD9F x2
+              produit 000139AA x1
+  [nouveau  ] COBJ 000DB8B6  RecipeWeaponGlassWarAxe  (recette)
+              composant 0005ADA1 x1
+              composant 0005AD9F x1
+              composant 000800E4 x2
+              produit 000139A3 x1
+  [nouveau  ] COBJ 000DB8B5  RecipeWeaponGlassSword  (recette)
+              composant 0005AD9F x1
+              composant 0005ADA1 x1
+              composant 000800E4 x1
+              produit 000139A9 x1
+  [nouveau  ] COBJ 000DB8B4  RecipeWeaponGlassMace  (recette)
+              composant 0005AD9F x1
+              composant 0005ADA1 x2
+              composant 000800E4 x1
+              produit 000139A8 x1
+  [nouveau  ] COBJ 000DB8B3  RecipeWeaponGlassGreatsword  (recette)
+              composant 0005ADA1 x2
+              composant 0005AD9F x2
+              composant 000800E4 x3
+              produit 000139A7 x1
+  [nouveau  ] COBJ 000DB8B2  RecipeWeaponGlassDagger  (recette)
+              composant 0005AD9F x1
+              composant 000800E4 x1
+              composant 0005ADA1 x1
+              produit 000139A6 x1
+  [nouveau  ] COBJ 000DB8B1  RecipeWeaponGlassBattleAxe  (recette)
+              composant 0005AD9F x2
+              composant 000800E4 x2
+              composant 0005ADA1 x2
+              produit 000139A4 x1
+  [nouveau  ] COBJ 000DB8B0  RecipeWeaponElvenWarhammer  (recette)
+              composant 0005ACE4 x2
+              composant 0005ADA0 x1
+              composant 000800E4 x3
+              composant 0005AD9F x2
+              produit 000139A2 x1
+  [nouveau  ] COBJ 000DB8AF  RecipeWeaponElvenWarAxe  (recette)
+              composant 0005ACE4 x1
+              composant 0005AD9F x1
+              composant 000800E4 x2
+              composant 0005ADA0 x1
+              produit 0001399B x1
+  [nouveau  ] COBJ 000DB8AE  RecipeWeaponElvenSword  (recette)
+              composant 0005ACE4 x1
+              composant 0005AD9F x1
+              composant 000800E4 x1
+              composant 0005ADA0 x1
+              produit 000139A1 x1
+  [nouveau  ] COBJ 000DB8AD  RecipeWeaponElvenMace  (recette)
+              composant 0005ACE4 x1
+              composant 0005AD9F x2
+              composant 000800E4 x1
+              composant 0005ADA0 x1
+              produit 000139A0 x1
+  [nouveau  ] COBJ 000DB8AC  RecipeWeaponElvenGreatsword  (recette)
+              composant 0005AD9F x2
+              composant 0005ACE4 x2
+              composant 000800E4 x3
+              composant 0005ADA0 x1
+              produit 0001399F x1
+  [nouveau  ] COBJ 000DB8AB  RecipeWeaponElvenDagger  (recette)
+              composant 0005AD9F x1
+              composant 0005ACE4 x1
+              composant 000800E4 x1
+              composant 0005ADA0 x1
+              produit 0001399E x1
+  [nouveau  ] COBJ 000DB8AA  RecipeWeaponElvenBattleAxe  (recette)
+              composant 0005ACE4 x2
+              composant 0005ADA0 x1
+              composant 000800E4 x2
+              composant 0005AD9F x2
+              produit 0001399C x1
+  [nouveau  ] COBJ 000DB8A9  RecipeWeaponDwarvenWarhammer  (recette)
+              composant 0005ACE5 x2
+              composant 0005ACE4 x1
+              composant 000800E4 x3
+              composant 000DB8A2 x2
+              produit 0001399A x1
+  [nouveau  ] COBJ 000DB8A8  RecipeWeaponDwarvenWarAxe  (recette)
+              composant 0005ACE5 x1
+              composant 000DB8A2 x1
+              composant 000800E4 x2
+              composant 0005ACE4 x1
+              produit 00013993 x1
+  [nouveau  ] COBJ 000DB8A7  RecipeWeaponDwarvenSword  (recette)
+              composant 0005ACE5 x1
+              composant 000DB8A2 x1
+              composant 000800E4 x1
+              composant 0005ACE4 x1
+              produit 00013999 x1
+  [nouveau  ] COBJ 000DB8A6  RecipeWeaponDwarvenMace  (recette)
+              composant 0005ACE5 x1
+              composant 000DB8A2 x2
+              composant 000800E4 x1
+              composant 0005ACE4 x1
+              produit 00013998 x1
+  [nouveau  ] COBJ 000DB8A5  RecipeWeaponDwarvenGreatsword  (recette)
+              composant 000DB8A2 x2
+              composant 0005ACE5 x2
+              composant 000800E4 x3
+              composant 0005ACE4 x2
+              produit 00013997 x1
+  [nouveau  ] COBJ 000DB8A4  RecipeWeaponDwarvenDagger  (recette)
+              composant 000DB8A2 x1
+              composant 0005ACE5 x1
+              composant 000800E4 x1
+              composant 0005ACE4 x1
+              produit 00013996 x1
+  [nouveau  ] COBJ 000DB8A3  RecipeWeaponDwarvenBattleAxe  (recette)
+              composant 0005ACE5 x2
+              composant 0005ACE4 x1
+              composant 000800E4 x2
+              composant 000DB8A2 x2
+              produit 00013994 x1
+  [nouveau  ] COBJ 000DB8A1  RecipeWeaponOrcishWarhammer  (recette)
+              composant 0005ACE4 x1
+              composant 000800E4 x3
+              composant 0005AD99 x4
+              produit 00013992 x1
+  [nouveau  ] COBJ 000DB8A0  RecipeWeaponOrcishWarAxe  (recette)
+              composant 0005AD99 x2
+              composant 000800E4 x2
+              composant 0005ACE4 x1
+              produit 0001398B x1
+  [nouveau  ] COBJ 000DB89F  RecipeWeaponOrcishSword  (recette)
+              composant 0005AD99 x2
+              composant 000800E4 x1
+              composant 0005ACE4 x1
+              produit 00013991 x1
+  [nouveau  ] COBJ 000DB89E  RecipeWeaponSteelWarhammer  (recette)
+              composant 0005ACE4 x1
+              composant 000800E4 x3
+              composant 0005ACE5 x4
+              produit 0001398A x1
+  [nouveau  ] COBJ 000DB89D  RecipeWeaponOrcishMace  (recette)
+              composant 0005ACE4 x1
+              composant 000800E4 x1
+              composant 0005AD99 x3
+              produit 00013990 x1
+  [nouveau  ] COBJ 000DB89C  RecipeWeaponOrcishDagger  (recette)
+              composant 0005AD99 x1
+              composant 000800E4 x1
+              composant 0005ACE4 x1
+              produit 0001398E x1
+  [nouveau  ] COBJ 000DB89B  RecipeWeaponSteelDagger  (recette)
+              composant 0005ACE5 x1
+              composant 000800E4 x1
+              composant 0005ACE4 x1
+              produit 00013986 x1
+  [nouveau  ] COBJ 000DB89A  RecipeWeaponOrcishGreatsword  (recette)
+              composant 0005AD99 x4
+              composant 000800E4 x3
+              composant 0005ACE4 x2
+              produit 0001398F x1
+  [nouveau  ] COBJ 000DB899  RecipeWeaponOrcishBattleAxe  (recette)
+              composant 0005ACE4 x1
+              composant 000800E4 x2
+              composant 0005AD99 x4
+              produit 0001398C x1
+  [nouveau  ] COBJ 000DB898  RecipeWeaponSteelBattleAxe  (recette)
+              composant 0005ACE4 x1
+              composant 000800E4 x2
+              composant 0005ACE5 x4
+              produit 00013984 x1
+  [nouveau  ] COBJ 000DB897  RecipeWeaponSteelWarAxe  (recette)
+              composant 0005ACE5 x2
+              composant 000800E4 x2
+              composant 0005ACE4 x1
+              produit 00013983 x1
+  [nouveau  ] COBJ 000DB896  RecipeWeaponSteelMace  (recette)
+              composant 0005ACE5 x3
+              composant 000800E4 x1
+              composant 0005ACE4 x1
+              produit 00013988 x1
+  [nouveau  ] COBJ 000DB5D7  RecipeWeaponSteelSword  (recette)
+              composant 0005ACE4 x1
+              composant 000800E4 x1
+              composant 0005ACE5 x2
+              produit 00013989 x1
+  [nouveau  ] COBJ 000DB5D6  RecipeArmorHideShield  (recette)
+              composant 000800E4 x2
+              composant 000DB5D2 x4
+              produit 00013914 x1
+  [nouveau  ] COBJ 000DB5D5  RecipeArmorHideHelmet  (recette)
+              composant 000800E4 x1
+              composant 000DB5D2 x2
+              produit 00013913 x1
+  [nouveau  ] COBJ 000DB5D4  RecipeArmorHideCuirass  (recette)
+              composant 000800E4 x3
+              composant 000DB5D2 x4
+              produit 00013911 x1
+  [nouveau  ] COBJ 000DB5D3  RecipeArmorHideBoots  (recette)
+              composant 000800E4 x2
+              composant 000DB5D2 x2
+              produit 00013910 x1
+  [nouveau  ] COBJ 000DB293  RecipeArmorIronShield  (recette)
+              composant 000800E4 x1
+              composant 0005ACE4 x4
+              produit 00012EB6 x1
+  [nouveau  ] COBJ 000DB292  RecipeArmorIronHelmet  (recette)
+              composant 000800E4 x2
+              composant 0005ACE4 x3
+              produit 00012E4D x1
+  [nouveau  ] COBJ 000DB291  RecipeArmorIronCuirass  (recette)
+              composant 000800E4 x3
+              composant 0005ACE4 x5
+              produit 00012E49 x1
+  [nouveau  ] COBJ 000DB290  RecipeArmorIronBoots  (recette)
+              composant 000800E4 x2
+              composant 0005ACE4 x3
+              produit 00012E4B x1
+  [nouveau  ] COBJ 000DB28F  RecipeArmorIronGauntlets  (recette)
+              composant 000800E4 x2
+              composant 0005ACE4 x2
+              produit 00012E46 x1
+  [nouveau  ] COBJ 000DB28E  RecipeArmorHideGauntlets  (recette)
+              composant 000800E4 x2
+              composant 000DB5D2 x1
+              produit 00013912 x1
+  [nouveau  ] COBJ 000DA76F  RecipeWeaponIronGreatsword  (recette)
+              composant 0005ACE4 x4
+              composant 000800E4 x2
+              produit 0001359D x1
+  [nouveau  ] COBJ 000DA76E  RecipeWeaponIronBattleAxe  (recette)
+              composant 0005ACE4 x4
+              composant 000800E4 x2
+              produit 00013980 x1
+  [nouveau  ] COBJ 000DA76D  RecipeWeaponIronWarhammer  (recette)
+              composant 0005ACE4 x4
+              composant 000800E4 x3
+              produit 00013981 x1
+  [nouveau  ] COBJ 000DA76C  RecipeWeaponIronWarAxe  (recette)
+              composant 0005ACE4 x2
+              composant 000800E4 x2
+              produit 00013790 x1
+  [nouveau  ] COBJ 000DA76B  RecipeWeaponIronMace  (recette)
+              composant 0005ACE4 x3
+              composant 000800E4 x2
+              produit 00013982 x1
+  [nouveau  ] COBJ 000DA76A  RecipeWeaponIronDagger  (recette)
+              composant 0005ACE4 x1
+              composant 000800E4 x1
+              produit 0001397E x1
+  [nouveau  ] COBJ 000DA769  RecipeWeaponIronSword  (recette)
+              composant 0005ACE4 x2
+              composant 000800E4 x1
+              produit 00012EB7 x1
+

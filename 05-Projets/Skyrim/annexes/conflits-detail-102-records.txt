@@ -1,0 +1,689 @@
+﻿==============================================================================
+ORDRE DE CHARGEMENT REEL (date de fichier — regle Skyrim LE)
+==============================================================================
+  0  Skyrim.esm
+  1  Update.esm
+  2  Dawnguard.esm
+  3  HearthFires.esm
+  4    moredragonloot.esp
+  5    enchanting extraeffect.esp
+  6    lightingredients.esp
+  7    dk_armor_by_hothtrooper44.esp
+  8    more dragons.esp
+  9    thefrontier.esp
+ 10    de rerum dirennis - dawnguard.esp
+ 11    de rerum dirennis.esp
+ 12    quest_seaofghosts.esp
+ 13    quest_thebiggertheyare.esp
+ 14    quest_nomercy.esp
+ 15    quest_andtherealmsofdaedra.esp
+ 16    quest_sorcery.esp
+ 17    extra encounters - hsr.esp
+ 18    adalmatar.esp
+ 19    quest_pitfighter.esp
+ 20    lighter_mining_smithing_materials.esp
+ 21    weir_weightlessgems.esp
+ 22    guard dialogue overhaul.esp
+ 23    hg.esp
+ 24    dragonboneweaponscomplete.esp
+ 25    thedomain.esp
+ 26    faster vanilla horses.esp
+ 27    dragonsoulstoperks.esp
+ 28    betterdarkbrotherhood.esp
+
+Ecarts avec l'ordre du fichier plugins.txt :
+   moredragonloot.esp                         disque # 4   plugins.txt #17
+   enchanting extraeffect.esp                 disque # 5   plugins.txt #11
+   lightingredients.esp                       disque # 6   plugins.txt #15
+   dk_armor_by_hothtrooper44.esp              disque # 7   plugins.txt # 8
+   more dragons.esp                           disque # 8   plugins.txt #16
+   thefrontier.esp                            disque # 9   plugins.txt #25
+   de rerum dirennis - dawnguard.esp          disque #10   plugins.txt # 6
+   de rerum dirennis.esp                      disque #11   plugins.txt # 7
+   quest_seaofghosts.esp                      disque #12   plugins.txt #21
+   quest_thebiggertheyare.esp                 disque #13   plugins.txt #23
+   quest_nomercy.esp                          disque #14   plugins.txt #19
+   quest_andtherealmsofdaedra.esp             disque #15   plugins.txt #18
+   quest_sorcery.esp                          disque #16   plugins.txt #22
+   extra encounters - hsr.esp                 disque #17   plugins.txt #27
+   adalmatar.esp                              disque #18   plugins.txt # 4
+   quest_pitfighter.esp                       disque #19   plugins.txt #20
+   lighter_mining_smithing_materials.esp      disque #20   plugins.txt #14
+   weir_weightlessgems.esp                    disque #21   plugins.txt #26
+   guard dialogue overhaul.esp                disque #22   plugins.txt #12
+   hg.esp                                     disque #23   plugins.txt #13
+   dragonboneweaponscomplete.esp              disque #24   plugins.txt # 9
+   thedomain.esp                              disque #25   plugins.txt #24
+   faster vanilla horses.esp                  disque #26   plugins.txt #28
+   dragonsoulstoperks.esp                     disque #27   plugins.txt #10
+   betterdarkbrotherhood.esp                  disque #28   plugins.txt # 5
+
+Plugins presents sur le disque mais INACTIFS (ne chargent pas) :
+   HighResTexturePack01.esp
+   HighResTexturePack02.esp
+   HighResTexturePack03.esp
+   improvedskillbooks.esp
+   lockpickvision.esp
+   shenkthieveryoverhaul.esp
+   silencers vestments.esp
+
+==============================================================================
+CONFLITS — records ALCH/INGR/COBJ touches par plus d'un plugin
+==============================================================================
+
+------------------------------------------------------------------------------
+### ALCH  —  2 records en conflit
+------------------------------------------------------------------------------
+
+  DefaultPoison   [skyrim.esm:05629E]  (poison)
+      #0   Skyrim.esm                                 valeur=3  poids=0.5  1 effets
+   >> #11  de rerum dirennis.esp                      valeur=3  poids=0  1 effets
+
+  Unknown Potion   [skyrim.esm:05661F]  (potion)
+      #0   Skyrim.esm                                 valeur=0  poids=0.5  1 effets
+   >> #11  de rerum dirennis.esp                      valeur=0  poids=0  1 effets
+
+------------------------------------------------------------------------------
+### INGR  —  99 records en conflit
+------------------------------------------------------------------------------
+
+  Abecean Longfin   [skyrim.esm:106E1B]  (ingredient)
+      #0   Skyrim.esm                                 valeur=15  poids=0.5  4 effets
+      #6   lightingredients.esp                       valeur=15  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=15  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Ancestor Moth Wing   [dawnguard.esm:0059BA]  (ingredient)
+      #2   Dawnguard.esm                              valeur=2  poids=0.1  4 effets
+   >> #10  de rerum dirennis - dawnguard.esp          valeur=2  poids=0  4 effets
+
+  Bear Claws   [skyrim.esm:06BC02]  (ingredient)
+      #0   Skyrim.esm                                 valeur=2  poids=0.1  4 effets
+      #6   lightingredients.esp                       valeur=2  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=2  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Bee   [skyrim.esm:0A9195]  (ingredient)
+      #0   Skyrim.esm                                 valeur=3  poids=0.1  4 effets
+      #6   lightingredients.esp                       valeur=3  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=3  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Beehive Husk   [skyrim.esm:0A9191]  (ingredient)
+      #0   Skyrim.esm                                 valeur=5  poids=1  4 effets
+      #6   lightingredients.esp                       valeur=5  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=5  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Berit's Ashes   [skyrim.esm:0705B7]  (ingredient)
+      #0   Skyrim.esm                                 valeur=5  poids=0.2  4 effets
+      #6   lightingredients.esp                       valeur=5  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=5  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Bleeding Crown   [skyrim.esm:04DA20]  (ingredient)
+      #0   Skyrim.esm                                 valeur=10  poids=0.3  4 effets
+      #6   lightingredients.esp                       valeur=10  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=10  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Blisterwort   [skyrim.esm:04DA25]  (ingredient)
+      #0   Skyrim.esm                                 valeur=12  poids=0.2  4 effets
+      #6   lightingredients.esp                       valeur=12  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=12  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Blue Butterfly Wing   [skyrim.esm:0727DE]  (ingredient)
+      #0   Skyrim.esm                                 valeur=2  poids=0.1  4 effets
+      #6   lightingredients.esp                       valeur=2  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=2  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Blue Dartwing   [skyrim.esm:0E4F0C]  (ingredient)
+      #0   Skyrim.esm                                 valeur=1  poids=0.1  4 effets
+      #6   lightingredients.esp                       valeur=1  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=1  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Blue Mountain Flower   [skyrim.esm:077E1C]  (ingredient)
+      #0   Skyrim.esm                                 valeur=2  poids=0.1  4 effets
+      #6   lightingredients.esp                       valeur=2  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=2  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Bone Meal   [skyrim.esm:034CDD]  (ingredient)
+      #0   Skyrim.esm                                 valeur=5  poids=0.5  4 effets
+      #6   lightingredients.esp                       valeur=5  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=5  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Briar Heart   [skyrim.esm:03AD61]  (ingredient)
+      #0   Skyrim.esm                                 valeur=20  poids=0.5  4 effets
+      #6   lightingredients.esp                       valeur=20  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=20  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Butterfly Wing   [skyrim.esm:0727E0]  (ingredient)
+      #0   Skyrim.esm                                 valeur=3  poids=0.1  4 effets
+      #6   lightingredients.esp                       valeur=3  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=3  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Canis Root   [skyrim.esm:06ABCB]  (ingredient)
+      #0   Skyrim.esm                                 valeur=5  poids=0.1  4 effets
+      #6   lightingredients.esp                       valeur=5  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=5  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Charred Skeever Hide   [skyrim.esm:052695]  (ingredient)
+      #0   Skyrim.esm                                 valeur=1  poids=0.5  4 effets
+      #6   lightingredients.esp                       valeur=1  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=1  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Chaurus Eggs   [skyrim.esm:03AD56]  (ingredient)
+      #0   Skyrim.esm                                 valeur=10  poids=0.2  4 effets
+      #6   lightingredients.esp                       valeur=10  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=10  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Chaurus Hunter Antennae   [dawnguard.esm:0183B7]  (ingredient)
+      #2   Dawnguard.esm                              valeur=2  poids=0.1  4 effets
+   >> #10  de rerum dirennis - dawnguard.esp          valeur=2  poids=0  4 effets
+
+  Chicken's Egg   [skyrim.esm:023D77]  (ingredient)
+      #0   Skyrim.esm                                 valeur=2  poids=0.5  4 effets
+      #6   lightingredients.esp                       valeur=2  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=2  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Creep Cluster   [skyrim.esm:0B2183]  (ingredient)
+      #0   Skyrim.esm                                 valeur=1  poids=0.2  4 effets
+      #6   lightingredients.esp                       valeur=1  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=1  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Crimson Nirnroot   [skyrim.esm:0B701A]  (ingredient)
+      #0   Skyrim.esm                                 valeur=10  poids=0.2  4 effets
+      #6   lightingredients.esp                       valeur=10  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=10  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Cyrodilic Spadetail   [skyrim.esm:106E19]  (ingredient)
+      #0   Skyrim.esm                                 valeur=15  poids=0.25  4 effets
+      #6   lightingredients.esp                       valeur=15  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=15  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Daedra Heart   [skyrim.esm:03AD5B]  (ingredient)
+      #0   Skyrim.esm                                 valeur=250  poids=0.5  4 effets
+      #6   lightingredients.esp                       valeur=250  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=250  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Deathbell   [skyrim.esm:0516C8]  (ingredient)
+      #0   Skyrim.esm                                 valeur=4  poids=0.1  4 effets
+      #6   lightingredients.esp                       valeur=4  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=4  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Dragon's Tongue   [skyrim.esm:0889A2]  (ingredient)
+      #0   Skyrim.esm                                 valeur=5  poids=0.1  4 effets
+      #6   lightingredients.esp                       valeur=5  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=5  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Dwarven Oil   [skyrim.esm:0F11C0]  (ingredient)
+      #0   Skyrim.esm                                 valeur=15  poids=0.25  4 effets
+      #6   lightingredients.esp                       valeur=15  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=15  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Ectoplasm   [skyrim.esm:03AD63]  (ingredient)
+      #0   Skyrim.esm                                 valeur=25  poids=0.1  4 effets
+      #6   lightingredients.esp                       valeur=25  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=25  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Elves Ear   [skyrim.esm:034D31]  (ingredient)
+      #0   Skyrim.esm                                 valeur=10  poids=0.1  4 effets
+      #6   lightingredients.esp                       valeur=10  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=10  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Eye of Sabre Cat   [skyrim.esm:06BC07]  (ingredient)
+      #0   Skyrim.esm                                 valeur=2  poids=0.1  4 effets
+      #6   lightingredients.esp                       valeur=2  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=2  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Falmer Ear   [skyrim.esm:03AD5D]  (ingredient)
+      #0   Skyrim.esm                                 valeur=10  poids=0.2  4 effets
+      #6   lightingredients.esp                       valeur=10  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=10  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Fire Salts   [skyrim.esm:03AD5E]  (ingredient)
+      #0   Skyrim.esm                                 valeur=50  poids=0.25  4 effets
+      #6   lightingredients.esp                       valeur=50  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=50  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Fly Amanita   [skyrim.esm:04DA00]  (ingredient)
+      #0   Skyrim.esm                                 valeur=2  poids=0.1  4 effets
+      #6   lightingredients.esp                       valeur=2  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=2  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Frost Mirriam   [skyrim.esm:034D32]  (ingredient)
+      #0   Skyrim.esm                                 valeur=1  poids=0.1  4 effets
+      #6   lightingredients.esp                       valeur=1  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=1  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Frost Salts   [skyrim.esm:03AD5F]  (ingredient)
+      #0   Skyrim.esm                                 valeur=100  poids=0.25  4 effets
+      #6   lightingredients.esp                       valeur=100  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=100  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Garlic   [skyrim.esm:034D22]  (ingredient)
+      #0   Skyrim.esm                                 valeur=1  poids=0.25  4 effets
+      #6   lightingredients.esp                       valeur=1  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=1  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Giant Lichen   [skyrim.esm:07E8C1]  (ingredient)
+      #0   Skyrim.esm                                 valeur=5  poids=0.25  4 effets
+      #6   lightingredients.esp                       valeur=5  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=5  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Giant's Toe   [skyrim.esm:03AD64]  (ingredient)
+      #0   Skyrim.esm                                 valeur=20  poids=1  4 effets
+      #6   lightingredients.esp                       valeur=20  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=20  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Gleamblossom   [dawnguard.esm:00B097]  (ingredient)
+      #2   Dawnguard.esm                              valeur=5  poids=0.1  4 effets
+   >> #10  de rerum dirennis - dawnguard.esp          valeur=5  poids=0  4 effets
+
+  Glow Dust   [skyrim.esm:03AD73]  (ingredient)
+      #0   Skyrim.esm                                 valeur=20  poids=0.5  4 effets
+      #6   lightingredients.esp                       valeur=20  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=20  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Glowing Mushroom   [skyrim.esm:07EE01]  (ingredient)
+      #0   Skyrim.esm                                 valeur=5  poids=0.2  4 effets
+      #6   lightingredients.esp                       valeur=5  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=5  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Grass Pod   [skyrim.esm:083E64]  (ingredient)
+      #0   Skyrim.esm                                 valeur=1  poids=0.1  4 effets
+      #6   lightingredients.esp                       valeur=1  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=1  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Hagraven Claw   [skyrim.esm:06B689]  (ingredient)
+      #0   Skyrim.esm                                 valeur=20  poids=0.25  4 effets
+      #6   lightingredients.esp                       valeur=20  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=20  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Hagraven Feathers   [skyrim.esm:03AD66]  (ingredient)
+      #0   Skyrim.esm                                 valeur=20  poids=0.1  4 effets
+      #6   lightingredients.esp                       valeur=20  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=20  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Hanging Moss   [skyrim.esm:057F91]  (ingredient)
+      #0   Skyrim.esm                                 valeur=1  poids=0.25  4 effets
+      #6   lightingredients.esp                       valeur=1  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=1  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Hawk Beak   [skyrim.esm:0E7EBC]  (ingredient)
+      #0   Skyrim.esm                                 valeur=15  poids=0.25  4 effets
+      #6   lightingredients.esp                       valeur=15  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=15  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Hawk Feathers   [skyrim.esm:0E7ED0]  (ingredient)
+      #0   Skyrim.esm                                 valeur=15  poids=0.1  4 effets
+      #6   lightingredients.esp                       valeur=15  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=15  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Histcarp   [skyrim.esm:106E18]  (ingredient)
+      #0   Skyrim.esm                                 valeur=6  poids=0.25  4 effets
+      #6   lightingredients.esp                       valeur=6  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=6  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Honeycomb   [skyrim.esm:0B08C5]  (ingredient)
+      #0   Skyrim.esm                                 valeur=5  poids=1  4 effets
+      #6   lightingredients.esp                       valeur=5  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=5  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Human Flesh   [skyrim.esm:1016B3]  (ingredient)
+      #0   Skyrim.esm                                 valeur=1  poids=0.25  4 effets
+      #6   lightingredients.esp                       valeur=1  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=1  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Human Heart   [skyrim.esm:0B18CD]  (ingredient)
+      #0   Skyrim.esm                                 valeur=0  poids=1  4 effets
+      #6   lightingredients.esp                       valeur=0  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=0  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Ice Wraith Teeth   [skyrim.esm:03AD6A]  (ingredient)
+      #0   Skyrim.esm                                 valeur=30  poids=0.25  4 effets
+      #6   lightingredients.esp                       valeur=30  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=30  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Imp Stool   [skyrim.esm:04DA23]  (ingredient)
+      #0   Skyrim.esm                                 valeur=0  poids=0.3  4 effets
+      #6   lightingredients.esp                       valeur=0  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=0  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Jarrin Root   [skyrim.esm:01BCBC]  (ingredient)
+      #0   Skyrim.esm                                 valeur=10  poids=0.5  4 effets
+      #6   lightingredients.esp                       valeur=10  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=10  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Jazbay Grapes   [skyrim.esm:06AC4A]  (ingredient)
+      #0   Skyrim.esm                                 valeur=1  poids=0.2  4 effets
+      #6   lightingredients.esp                       valeur=1  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=1  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Juniper Berries   [skyrim.esm:05076E]  (ingredient)
+      #0   Skyrim.esm                                 valeur=1  poids=0.1  4 effets
+      #6   lightingredients.esp                       valeur=1  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=1  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Large Antlers   [skyrim.esm:06BC0A]  (ingredient)
+      #0   Skyrim.esm                                 valeur=2  poids=0.1  4 effets
+      #6   lightingredients.esp                       valeur=2  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=2  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Lavender   [skyrim.esm:045C28]  (ingredient)
+      #0   Skyrim.esm                                 valeur=1  poids=0.1  4 effets
+      #6   lightingredients.esp                       valeur=1  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=1  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Luna Moth Wing   [skyrim.esm:0727DF]  (ingredient)
+      #0   Skyrim.esm                                 valeur=5  poids=0.1  4 effets
+      #6   lightingredients.esp                       valeur=5  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=5  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Moon Sugar   [skyrim.esm:0D8E3F]  (ingredient)
+      #0   Skyrim.esm                                 valeur=50  poids=0.25  4 effets
+      #6   lightingredients.esp                       valeur=50  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=50  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Mora Tapinella   [skyrim.esm:0EC870]  (ingredient)
+      #0   Skyrim.esm                                 valeur=4  poids=0.25  4 effets
+      #6   lightingredients.esp                       valeur=4  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=4  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Mudcrab Chitin   [skyrim.esm:06BC00]  (ingredient)
+      #0   Skyrim.esm                                 valeur=2  poids=0.25  4 effets
+      #6   lightingredients.esp                       valeur=2  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=2  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Namira's Rot   [skyrim.esm:04DA24]  (ingredient)
+      #0   Skyrim.esm                                 valeur=0  poids=0.25  4 effets
+      #6   lightingredients.esp                       valeur=0  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=0  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Nightshade   [skyrim.esm:02F44C]  (ingredient)
+      #0   Skyrim.esm                                 valeur=8  poids=0.1  4 effets
+      #6   lightingredients.esp                       valeur=8  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=8  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Nirnroot   [skyrim.esm:059B86]  (ingredient)
+      #0   Skyrim.esm                                 valeur=10  poids=0.2  4 effets
+      #6   lightingredients.esp                       valeur=10  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=10  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Nordic Barnacle   [skyrim.esm:07EDF5]  (ingredient)
+      #0   Skyrim.esm                                 valeur=5  poids=0.2  4 effets
+      #6   lightingredients.esp                       valeur=5  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=5  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Orange Dartwing   [skyrim.esm:0BB956]  (ingredient)
+      #0   Skyrim.esm                                 valeur=1  poids=0.1  4 effets
+      #6   lightingredients.esp                       valeur=1  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=1  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Pearl   [skyrim.esm:0854FE]  (ingredient)
+      #0   Skyrim.esm                                 valeur=2  poids=0.1  4 effets
+      #6   lightingredients.esp                       valeur=2  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=2  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Pine Thrush Egg   [skyrim.esm:023D6F]  (ingredient)
+      #0   Skyrim.esm                                 valeur=2  poids=0.5  4 effets
+      #6   lightingredients.esp                       valeur=2  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=2  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Poison Bloom   [dawnguard.esm:0185FB]  (ingredient)
+      #2   Dawnguard.esm                              valeur=5  poids=0.25  4 effets
+   >> #10  de rerum dirennis - dawnguard.esp          valeur=5  poids=0  4 effets
+
+  Powdered Mammoth Tusk   [skyrim.esm:06BC10]  (ingredient)
+      #0   Skyrim.esm                                 valeur=2  poids=0.1  4 effets
+      #6   lightingredients.esp                       valeur=2  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=2  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Purple Mountain Flower   [skyrim.esm:077E1E]  (ingredient)
+      #0   Skyrim.esm                                 valeur=2  poids=0.1  4 effets
+      #6   lightingredients.esp                       valeur=2  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=2  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Red Mountain Flower   [skyrim.esm:077E1D]  (ingredient)
+      #0   Skyrim.esm                                 valeur=2  poids=0.1  4 effets
+      #6   lightingredients.esp                       valeur=2  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=2  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  River Betty   [skyrim.esm:106E1A]  (ingredient)
+      #0   Skyrim.esm                                 valeur=15  poids=0.25  4 effets
+      #6   lightingredients.esp                       valeur=15  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=15  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Rock Warbler Egg   [skyrim.esm:07E8C8]  (ingredient)
+      #0   Skyrim.esm                                 valeur=2  poids=0.5  4 effets
+      #6   lightingredients.esp                       valeur=2  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=2  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Sabre Cat Tooth   [skyrim.esm:06BC04]  (ingredient)
+      #0   Skyrim.esm                                 valeur=2  poids=0.1  4 effets
+      #6   lightingredients.esp                       valeur=2  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=2  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Salt Pile   [skyrim.esm:074A19]  (ingredient)
+      #0   Skyrim.esm                                 valeur=1  poids=0.2  4 effets
+      #6   lightingredients.esp                       valeur=1  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=1  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Salt Pile   [skyrim.esm:034CDF]  (ingredient)
+      #0   Skyrim.esm                                 valeur=2  poids=0.2  4 effets
+      #6   lightingredients.esp                       valeur=2  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=2  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Scaly Pholiota   [skyrim.esm:06F950]  (ingredient)
+      #0   Skyrim.esm                                 valeur=4  poids=0.25  4 effets
+      #6   lightingredients.esp                       valeur=4  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=4  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Silverside Perch   [skyrim.esm:106E1C]  (ingredient)
+      #0   Skyrim.esm                                 valeur=15  poids=0.25  4 effets
+      #6   lightingredients.esp                       valeur=15  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=15  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Skeever Tail   [skyrim.esm:03AD6F]  (ingredient)
+      #0   Skyrim.esm                                 valeur=3  poids=0.2  4 effets
+      #6   lightingredients.esp                       valeur=3  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=3  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Slaughterfish Egg   [skyrim.esm:07E8C5]  (ingredient)
+      #0   Skyrim.esm                                 valeur=3  poids=0.2  4 effets
+      #6   lightingredients.esp                       valeur=3  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=3  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Slaughterfish Scales   [skyrim.esm:03AD70]  (ingredient)
+      #0   Skyrim.esm                                 valeur=3  poids=0.1  4 effets
+      #6   lightingredients.esp                       valeur=3  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=3  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Small Antlers   [skyrim.esm:06BC0B]  (ingredient)
+      #0   Skyrim.esm                                 valeur=2  poids=0.1  4 effets
+      #6   lightingredients.esp                       valeur=2  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=2  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Small Pearl   [skyrim.esm:085500]  (ingredient)
+      #0   Skyrim.esm                                 valeur=2  poids=0.1  4 effets
+      #6   lightingredients.esp                       valeur=2  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=2  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Snowberries   [skyrim.esm:01B3BD]  (ingredient)
+      #0   Skyrim.esm                                 valeur=4  poids=0.1  4 effets
+      #6   lightingredients.esp                       valeur=4  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=4  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Spider Egg   [skyrim.esm:09151B]  (ingredient)
+      #0   Skyrim.esm                                 valeur=5  poids=0.2  4 effets
+      #6   lightingredients.esp                       valeur=5  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=5  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Spriggan Sap   [skyrim.esm:063B5F]  (ingredient)
+      #0   Skyrim.esm                                 valeur=15  poids=0.2  4 effets
+      #6   lightingredients.esp                       valeur=15  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=15  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Swamp Fungal Pod   [skyrim.esm:07E8B7]  (ingredient)
+      #0   Skyrim.esm                                 valeur=5  poids=0.25  4 effets
+      #6   lightingredients.esp                       valeur=5  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=5  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Taproot   [skyrim.esm:03AD71]  (ingredient)
+      #0   Skyrim.esm                                 valeur=15  poids=0.5  4 effets
+      #6   lightingredients.esp                       valeur=15  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=15  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Thistle Branch   [skyrim.esm:0134AA]  (ingredient)
+      #0   Skyrim.esm                                 valeur=1  poids=0.1  4 effets
+      #6   lightingredients.esp                       valeur=1  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=1  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Torchbug Thorax   [skyrim.esm:04DA73]  (ingredient)
+      #0   Skyrim.esm                                 valeur=1  poids=0.1  4 effets
+      #6   lightingredients.esp                       valeur=1  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=1  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Troll Fat   [skyrim.esm:03AD72]  (ingredient)
+      #0   Skyrim.esm                                 valeur=15  poids=1  4 effets
+      #6   lightingredients.esp                       valeur=15  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=15  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Tundra Cotton   [skyrim.esm:03F7F8]  (ingredient)
+      #0   Skyrim.esm                                 valeur=1  poids=0.1  4 effets
+      #6   lightingredients.esp                       valeur=1  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=1  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Vampire Dust   [skyrim.esm:03AD76]  (ingredient)
+      #0   Skyrim.esm                                 valeur=25  poids=0.2  4 effets
+      #6   lightingredients.esp                       valeur=25  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=25  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Void Salts   [skyrim.esm:03AD60]  (ingredient)
+      #0   Skyrim.esm                                 valeur=125  poids=0.2  4 effets
+      #6   lightingredients.esp                       valeur=125  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=125  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Wheat   [skyrim.esm:04B0BA]  (ingredient)
+      #0   Skyrim.esm                                 valeur=5  poids=0.1  4 effets
+      #6   lightingredients.esp                       valeur=5  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=5  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  White Cap   [skyrim.esm:04DA22]  (ingredient)
+      #0   Skyrim.esm                                 valeur=0  poids=0.3  4 effets
+      #6   lightingredients.esp                       valeur=0  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=0  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Wisp Wrappings   [skyrim.esm:06BC0E]  (ingredient)
+      #0   Skyrim.esm                                 valeur=2  poids=0.1  4 effets
+      #6   lightingredients.esp                       valeur=2  poids=0  4 effets
+   >> #11  de rerum dirennis.esp                      valeur=2  poids=0  4 effets
+      !! selon plugins.txt le gagnant serait lightingredients.esp — divergence
+
+  Yellow Mountain Flower   [dawnguard.esm:002A78]  (ingredient)
+      #2   Dawnguard.esm                              valeur=2  poids=0.1  4 effets
+   >> #10  de rerum dirennis - dawnguard.esp          valeur=2  poids=0  4 effets
+
+------------------------------------------------------------------------------
+### COBJ  —  1 records en conflit
+------------------------------------------------------------------------------
+
+  TemperWeaponSkyforgeGreatsword   [skyrim.esm:000E4B]  (recette)
+      #0   Skyrim.esm                                 1 composants
+   >> #13  quest_thebiggertheyare.esp                 1 composants
+
+==============================================================================
+QUI GAGNE — nombre de records remportes par plugin
+==============================================================================
+  de rerum dirennis.esp                        96   (ALCH=2  INGR=94)
+  de rerum dirennis - dawnguard.esp             5   (INGR=5)
+  quest_thebiggertheyare.esp                    1   (COBJ=1)
+
+Total records en conflit : 102

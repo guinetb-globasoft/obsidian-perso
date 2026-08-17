@@ -1,0 +1,800 @@
+{
+ "recettes": [
+  {
+   "plugin": "Skyrim.esm",
+   "station": "CraftingCookpot",
+   "edid": "RecipeFoodElsweyrFondue",
+   "produit": "Elsweyr Fondue",
+   "produit_edid": "FoodElsweyrFondue",
+   "count": 1,
+   "ingredients": [
+    [
+     "Eidar Cheese Wheel",
+     1
+    ],
+    [
+     "Moon Sugar",
+     1
+    ],
+    [
+     "Ale",
+     1
+    ]
+   ]
+  },
+  {
+   "plugin": "Skyrim.esm",
+   "station": "CraftingCookpot",
+   "edid": "RecipeFoodSoupCabbagePotato",
+   "produit": "Cabbage Potato Soup",
+   "produit_edid": "FoodCabbagePotatoSoup",
+   "count": 1,
+   "ingredients": [
+    [
+     "Potato",
+     1
+    ],
+    [
+     "Salt Pile",
+     1
+    ],
+    [
+     "Leek",
+     1
+    ],
+    [
+     "Cabbage",
+     1
+    ]
+   ]
+  },
+  {
+   "plugin": "Skyrim.esm",
+   "station": "CraftingCookpot",
+   "edid": "RecipeFoodSoupVegetable",
+   "produit": "Vegetable Soup",
+   "produit_edid": "FoodVegetableSoup",
+   "count": 1,
+   "ingredients": [
+    [
+     "Cabbage",
+     1
+    ],
+    [
+     "Potato",
+     1
+    ],
+    [
+     "Leek",
+     1
+    ],
+    [
+     "Tomato",
+     1
+    ]
+   ]
+  },
+  {
+   "plugin": "Skyrim.esm",
+   "station": "CraftingCookpot",
+   "edid": "RecipeFoodSoupTomato",
+   "produit": "Tomato Soup",
+   "produit_edid": "FoodTomatoSoup",
+   "count": 1,
+   "ingredients": [
+    [
+     "Tomato",
+     1
+    ],
+    [
+     "Salt Pile",
+     1
+    ],
+    [
+     "Garlic",
+     1
+    ],
+    [
+     "Leek",
+     1
+    ]
+   ]
+  },
+  {
+   "plugin": "Skyrim.esm",
+   "station": "CraftingCookpot",
+   "edid": "RecipeFoodStewVenison",
+   "produit": "Venison Stew",
+   "produit_edid": "FoodVenisonStew",
+   "count": 1,
+   "ingredients": [
+    [
+     "Venison",
+     1
+    ],
+    [
+     "Salt Pile",
+     1
+    ],
+    [
+     "Potato",
+     1
+    ],
+    [
+     "Leek",
+     1
+    ]
+   ]
+  },
+  {
+   "plugin": "Skyrim.esm",
+   "station": "CraftingCookpot",
+   "edid": "RecipeFoodStewHorker",
+   "produit": "Horker Stew",
+   "produit_edid": "FoodHorkerStew",
+   "count": 1,
+   "ingredients": [
+    [
+     "Lavender",
+     1
+    ],
+    [
+     "Tomato",
+     1
+    ],
+    [
+     "Garlic",
+     1
+    ],
+    [
+     "Horker Meat",
+     1
+    ]
+   ]
+  },
+  {
+   "plugin": "Skyrim.esm",
+   "station": "CraftingCookpot",
+   "edid": "RecipeFoodStewBeef",
+   "produit": "Beef Stew",
+   "produit_edid": "FoodBeefStew",
+   "count": 1,
+   "ingredients": [
+    [
+     "Raw Beef",
+     1
+    ],
+    [
+     "Carrot",
+     1
+    ],
+    [
+     "Salt Pile",
+     1
+    ],
+    [
+     "Garlic",
+     1
+    ]
+   ]
+  },
+  {
+   "plugin": "Skyrim.esm",
+   "station": "CraftingCookpot",
+   "edid": "RecipeFoodStewAppleCabbage",
+   "produit": "Apple Cabbage Stew",
+   "produit_edid": "FoodAppleCabbageStew",
+   "count": 1,
+   "ingredients": [
+    [
+     "Salt Pile",
+     1
+    ],
+    [
+     "Red Apple",
+     1
+    ],
+    [
+     "Cabbage",
+     1
+    ]
+   ]
+  },
+  {
+   "plugin": "Skyrim.esm",
+   "station": "CraftingCookpot",
+   "edid": "RecipeFoodVenisonCooked",
+   "produit": "Venison Chop",
+   "produit_edid": "FoodVenisonCooked",
+   "count": 1,
+   "ingredients": [
+    [
+     "Salt Pile",
+     1
+    ],
+    [
+     "Venison",
+     1
+    ]
+   ]
+  },
+  {
+   "plugin": "HearthFires.esm",
+   "station": "CraftingCookpot",
+   "edid": "RecipeFoodSalmonCooked",
+   "produit": "Salmon Steak",
+   "produit_edid": "BYOHFoodSalmonCooked02",
+   "count": 1,
+   "ingredients": [
+    [
+     "Salt Pile",
+     1
+    ],
+    [
+     "Salmon Meat",
+     1
+    ]
+   ]
+  },
+  {
+   "plugin": "Skyrim.esm",
+   "station": "CraftingCookpot",
+   "edid": "RecipeFoodRabbitCooked",
+   "produit": "Rabbit Haunch",
+   "produit_edid": "FoodRabbitCooked",
+   "count": 1,
+   "ingredients": [
+    [
+     "Salt Pile",
+     1
+    ],
+    [
+     "Raw Rabbit Leg",
+     1
+    ]
+   ]
+  },
+  {
+   "plugin": "Skyrim.esm",
+   "station": "CraftingCookpot",
+   "edid": "RecipeFoodPheasantCooked",
+   "produit": "Pheasant Roast",
+   "produit_edid": "FoodPheasantCooked",
+   "count": 1,
+   "ingredients": [
+    [
+     "Pheasant Breast",
+     1
+    ],
+    [
+     "Salt Pile",
+     1
+    ]
+   ]
+  },
+  {
+   "plugin": "Skyrim.esm",
+   "station": "CraftingCookpot",
+   "edid": "RecipeFoodMammothCooked",
+   "produit": "Mammoth Steak",
+   "produit_edid": "FoodMammothMeatCooked",
+   "count": 1,
+   "ingredients": [
+    [
+     "Salt Pile",
+     1
+    ],
+    [
+     "Mammoth Snout",
+     1
+    ]
+   ]
+  },
+  {
+   "plugin": "Skyrim.esm",
+   "station": "CraftingCookpot",
+   "edid": "RecipeFoodHorseCooked",
+   "produit": "Horse Haunch",
+   "produit_edid": "FoodHorseMeatCooked",
+   "count": 1,
+   "ingredients": [
+    [
+     "Salt Pile",
+     1
+    ],
+    [
+     "Horse Meat",
+     1
+    ]
+   ]
+  },
+  {
+   "plugin": "Skyrim.esm",
+   "station": "CraftingCookpot",
+   "edid": "RecipeFoodHorkerCooked",
+   "produit": "Horker Loaf",
+   "produit_edid": "FoodHorkerMeatCooked",
+   "count": 1,
+   "ingredients": [
+    [
+     "Salt Pile",
+     1
+    ],
+    [
+     "Horker Meat",
+     1
+    ]
+   ]
+  },
+  {
+   "plugin": "Skyrim.esm",
+   "station": "CraftingCookpot",
+   "edid": "RecipeFoodGoatCooked",
+   "produit": "Leg of Goat Roast",
+   "produit_edid": "FoodGoatMeatCooked",
+   "count": 1,
+   "ingredients": [
+    [
+     "Salt Pile",
+     1
+    ],
+    [
+     "Leg of Goat",
+     1
+    ]
+   ]
+  },
+  {
+   "plugin": "Skyrim.esm",
+   "station": "CraftingCookpot",
+   "edid": "RecipeFoodBeefCooked",
+   "produit": "Cooked Beef",
+   "produit_edid": "FoodBeefCooked",
+   "count": 1,
+   "ingredients": [
+    [
+     "Salt Pile",
+     1
+    ],
+    [
+     "Raw Beef",
+     1
+    ]
+   ]
+  },
+  {
+   "plugin": "Skyrim.esm",
+   "station": "CraftingCookpot",
+   "edid": "RecipeFoodChickenCooked",
+   "produit": "Grilled Chicken Breast",
+   "produit_edid": "FoodChickenCooked",
+   "count": 1,
+   "ingredients": [
+    [
+     "Salt Pile",
+     1
+    ],
+    [
+     "Chicken Breast",
+     1
+    ]
+   ]
+  },
+  {
+   "plugin": "HearthFires.esm",
+   "station": "BYOHCraftingOven",
+   "edid": "BYOHRecipeFoodGarlicBread",
+   "produit": "Garlic Bread",
+   "produit_edid": "BYOHFoodGarlicBread01",
+   "count": 2,
+   "ingredients": [
+    [
+     "Garlic",
+     1
+    ],
+    [
+     "Butter",
+     1
+    ],
+    [
+     "Bread",
+     1
+    ]
+   ]
+  },
+  {
+   "plugin": "HearthFires.esm",
+   "station": "BYOHCraftingOven",
+   "edid": "BYOHRecipeFoodBraidedBread",
+   "produit": "Braided Bread",
+   "produit_edid": "BYOHFoodBraidedBread01",
+   "count": 1,
+   "ingredients": [
+    [
+     "Salt Pile",
+     1
+    ],
+    [
+     "Sack of Flour",
+     1
+    ]
+   ]
+  },
+  {
+   "plugin": "HearthFires.esm",
+   "station": "BYOHCraftingOven",
+   "edid": "BYOHRecipeFoodLavenderDumplings",
+   "produit": "Lavender Dumpling",
+   "produit_edid": "BYOHFoodLavenderDumpling01",
+   "count": 1,
+   "ingredients": [
+    [
+     "Moon Sugar",
+     1
+    ],
+    [
+     "Sack of Flour",
+     1
+    ],
+    [
+     "Snowberries",
+     2
+    ],
+    [
+     "Lavender",
+     1
+    ]
+   ]
+  },
+  {
+   "plugin": "HearthFires.esm",
+   "station": "BYOHCraftingOven",
+   "edid": "BYOHRecipeFoodChickenDumplings",
+   "produit": "Chicken Dumpling",
+   "produit_edid": "BYOHFoodChickenDumpling01",
+   "count": 1,
+   "ingredients": [
+    [
+     "Salt Pile",
+     1
+    ],
+    [
+     "Sack of Flour",
+     1
+    ],
+    [
+     "Chicken Breast",
+     1
+    ],
+    [
+     "Garlic",
+     1
+    ],
+    [
+     "Leek",
+     1
+    ]
+   ]
+  },
+  {
+   "plugin": "HearthFires.esm",
+   "station": "BYOHCraftingOven",
+   "edid": "BYOHRecipeFoodApplePie",
+   "produit": "Apple Pie",
+   "produit_edid": "FoodPie",
+   "count": 1,
+   "ingredients": [
+    [
+     "Salt Pile",
+     1
+    ],
+    [
+     "Sack of Flour",
+     1
+    ],
+    [
+     "Butter",
+     1
+    ],
+    [
+     "Chicken's Egg",
+     1
+    ],
+    [
+     "Green Apple",
+     2
+    ],
+    [
+     "Red Apple",
+     2
+    ]
+   ]
+  },
+  {
+   "plugin": "HearthFires.esm",
+   "station": "BYOHCraftingOven",
+   "edid": "BYOHRecipeFoodSnowberryCrostata",
+   "produit": "Snowberry Crostata",
+   "produit_edid": "BYOHFoodSnowberryCrostata",
+   "count": 1,
+   "ingredients": [
+    [
+     "Butter",
+     1
+    ],
+    [
+     "Snowberries",
+     2
+    ],
+    [
+     "Sack of Flour",
+     1
+    ]
+   ]
+  },
+  {
+   "plugin": "HearthFires.esm",
+   "station": "BYOHCraftingOven",
+   "edid": "BYOHRecipeFoodJuniperberryCrostata",
+   "produit": "Juniper Berry Crostata",
+   "produit_edid": "BYOHFoodJuniperBerryCrostata",
+   "count": 1,
+   "ingredients": [
+    [
+     "Butter",
+     1
+    ],
+    [
+     "Juniper Berries",
+     3
+    ],
+    [
+     "Sack of Flour",
+     1
+    ]
+   ]
+  },
+  {
+   "plugin": "HearthFires.esm",
+   "station": "BYOHCraftingOven",
+   "edid": "BYOHRecipeFoodSweetRoll",
+   "produit": "Sweet Roll",
+   "produit_edid": "FoodSweetroll",
+   "count": 1,
+   "ingredients": [
+    [
+     "Salt Pile",
+     1
+    ],
+    [
+     "Jug of Milk",
+     1
+    ],
+    [
+     "Sack of Flour",
+     1
+    ],
+    [
+     "Butter",
+     1
+    ],
+    [
+     "Chicken's Egg",
+     1
+    ]
+   ]
+  },
+  {
+   "plugin": "HearthFires.esm",
+   "station": "BYOHCraftingOven",
+   "edid": "BYOHRecipeFoodJazbayCrostata",
+   "produit": "Jazbay Crostata",
+   "produit_edid": "BYOHFoodJazbayCrostata",
+   "count": 1,
+   "ingredients": [
+    [
+     "Butter",
+     1
+    ],
+    [
+     "Jazbay Grapes",
+     2
+    ],
+    [
+     "Sack of Flour",
+     1
+    ]
+   ]
+  },
+  {
+   "plugin": "HearthFires.esm",
+   "station": "BYOHCraftingOven",
+   "edid": "BYOHRecipeFoodAppleDumplings",
+   "produit": "Apple Dumpling",
+   "produit_edid": "BYOHFoodAppleDumpling01",
+   "count": 1,
+   "ingredients": [
+    [
+     "Sack of Flour",
+     1
+    ],
+    [
+     "Green Apple",
+     1
+    ],
+    [
+     "Red Apple",
+     1
+    ]
+   ]
+  },
+  {
+   "plugin": "HearthFires.esm",
+   "station": "BYOHCraftingOven",
+   "edid": "BYOHRecipeFoodPotatoBread",
+   "produit": "Potato Bread",
+   "produit_edid": "BYOHFoodPotatoBread01A",
+   "count": 1,
+   "ingredients": [
+    [
+     "Salt Pile",
+     1
+    ],
+    [
+     "Jug of Milk",
+     1
+    ],
+    [
+     "Sack of Flour",
+     1
+    ],
+    [
+     "Potato",
+     1
+    ],
+    [
+     "Chicken's Egg",
+     1
+    ]
+   ]
+  },
+  {
+   "plugin": "HearthFires.esm",
+   "station": "BYOHCraftingOven",
+   "edid": "BYOHRecipeFoodBread",
+   "produit": "Bread",
+   "produit_edid": "FoodBread01A",
+   "count": 1,
+   "ingredients": [
+    [
+     "Salt Pile",
+     1
+    ],
+    [
+     "Jug of Milk",
+     1
+    ],
+    [
+     "Sack of Flour",
+     1
+    ],
+    [
+     "Chicken's Egg",
+     1
+    ]
+   ]
+  },
+  {
+   "plugin": "HearthFires.esm",
+   "station": "BYOHBuildingInteriorPart171Oven01",
+   "edid": "BYOHHouseInteriorRecipePart171Oven",
+   "produit": "Oven",
+   "produit_edid": "BYOHHouseInteriorPart171Oven",
+   "count": 1,
+   "ingredients": [
+    [
+     "Clay",
+     2
+    ],
+    [
+     "Quarried Stone",
+     3
+    ]
+   ]
+  },
+  {
+   "plugin": "HearthFires.esm",
+   "station": "CraftingCookpot",
+   "edid": "BYOHRecipeFoodMudcrabLegsCooked",
+   "produit": "Steamed Mudcrab Legs",
+   "produit_edid": "BYOHFoodMudcrabLegsCooked",
+   "count": 1,
+   "ingredients": [
+    [
+     "Mudcrab Legs",
+     1
+    ],
+    [
+     "Butter",
+     1
+    ]
+   ]
+  },
+  {
+   "plugin": "HearthFires.esm",
+   "station": "CraftingCookpot",
+   "edid": "BYOHRecipeFoodSoupClamChowder",
+   "produit": "Clam Chowder",
+   "produit_edid": "BYOHFoodClamChowder",
+   "count": 1,
+   "ingredients": [
+    [
+     "Clam Meat",
+     1
+    ],
+    [
+     "Potato",
+     1
+    ],
+    [
+     "Jug of Milk",
+     1
+    ],
+    [
+     "Butter",
+     1
+    ]
+   ]
+  },
+  {
+   "plugin": "HearthFires.esm",
+   "station": "CraftingCookpot",
+   "edid": "RecipeFoodSoupPotato",
+   "produit": "Potato Soup",
+   "produit_edid": "FoodPotatoSoup",
+   "count": 1,
+   "ingredients": [
+    [
+     "Potato",
+     1
+    ],
+    [
+     "Salt Pile",
+     1
+    ]
+   ]
+  }
+ ],
+ "total_cobj": 1274,
+ "ordre": [
+  "Skyrim.esm",
+  "Update.esm",
+  "Dawnguard.esm",
+  "HearthFires.esm",
+  "moredragonloot.esp",
+  "enchanting extraeffect.esp",
+  "lightingredients.esp",
+  "dk_armor_by_hothtrooper44.esp",
+  "more dragons.esp",
+  "thefrontier.esp",
+  "de rerum dirennis - dawnguard.esp",
+  "de rerum dirennis.esp",
+  "quest_seaofghosts.esp",
+  "quest_thebiggertheyare.esp",
+  "quest_nomercy.esp",
+  "quest_andtherealmsofdaedra.esp",
+  "quest_sorcery.esp",
+  "extra encounters - hsr.esp",
+  "adalmatar.esp",
+  "quest_pitfighter.esp",
+  "lighter_mining_smithing_materials.esp",
+  "weir_weightlessgems.esp",
+  "guard dialogue overhaul.esp",
+  "hg.esp",
+  "dragonboneweaponscomplete.esp",
+  "thedomain.esp",
+  "faster vanilla horses.esp",
+  "dragonsoulstoperks.esp",
+  "betterdarkbrotherhood.esp"
+ ]
+}

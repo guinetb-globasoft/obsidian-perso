@@ -1,0 +1,2607 @@
+﻿==============================================================================
+HighResTexturePack01.esp   (66 octets)
+==============================================================================
+  Auteur      : DEFAULT
+  Masters     : (aucun)
+  Type        : ESP
+  Aucun record.
+
+==============================================================================
+HighResTexturePack02.esp   (66 octets)
+==============================================================================
+  Auteur      : DEFAULT
+  Masters     : (aucun)
+  Type        : ESP
+  Aucun record.
+
+==============================================================================
+HighResTexturePack03.esp   (66 octets)
+==============================================================================
+  Auteur      : DEFAULT
+  Masters     : (aucun)
+  Type        : ESP
+  Aucun record.
+
+==============================================================================
+adalmatar.esp   (716 027 octets)
+==============================================================================
+  Auteur      : DEFAULT
+  Masters     : Skyrim.esm, Update.esm
+  Type        : ESP
+  Records     : 5700 dont 106 en surcharge de records existants
+
+  TYPE       TOTAL   SURCHARGES   NOUVEAUX
+  ----------------------------------------
+  REFR        5473           35       5438
+  ACHR          65            2         63
+  NAVM          63           35         28
+  CELL          37           31          6
+  NPC_          14            0         14
+  LIGH           7            0          7
+  PACK           7            0          7
+  BOOK           6            0          6
+  CONT           6            0          6
+  IDLM           6            0          6
+  LCTN           6            1          5
+  RELA           3            0          3
+  ECZN           2            0          2
+  MUSC           2            0          2
+  FACT           1            0          1
+  NAVI           1            1          0
+  WRLD           1            1          0
+
+==============================================================================
+betterdarkbrotherhood.esp   (1 623 331 octets)
+==============================================================================
+  Auteur      : DEFAULT
+  Masters     : Skyrim.esm
+  Type        : ESP
+  Records     : 8121 dont 406 en surcharge de records existants
+
+  TYPE       TOTAL   SURCHARGES   NOUVEAUX
+  ----------------------------------------
+  REFR        6430           87       6343
+  INFO         414            2        412
+  DIAL         246            3        243
+  NAVM         163           89         74
+  NPC_         132          101         31
+  ACHR         128            4        124
+  PACK         125           10        115
+  CELL         109           64         45
+  DLBR          51            0         51
+  QUST          41            0         41
+  LAND          29            4         25
+  SPEL          28            7         21
+  DLVW          23            0         23
+  BOOK          20            0         20
+  SCEN          18            4         14
+  MGEF          16            1         15
+  CONT          16            0         16
+  MISC          13            0         13
+  FLST           9            2          7
+  WEAP           8            5          3
+  WRLD           8            7          1
+  SOUN           7            0          7
+  LCTN           7            5          2
+  OTFT           7            0          7
+  FACT           6            3          3
+  SMBN           6            3          3
+  SMQN           6            2          4
+  ACTI           5            0          5
+  WOOP           5            0          5
+  CLAS           4            0          4
+  IDLM           4            0          4
+  SHOU           4            1          3
+  GLOB           3            0          3
+  ARMO           3            0          3
+  LIGH           3            0          3
+  ALCH           3            0          3
+  RELA           3            0          3
+  KYWD           2            0          2
+  KEYM           2            0          2
+  CSTY           2            0          2
+  EFSH           2            0          2
+  VTYP           2            0          2
+  ENCH           1            0          1
+  FURN           1            0          1
+  SLGM           1            0          1
+  LVLI           1            0          1
+  RFCT           1            0          1
+  NAVI           1            1          0
+  ECZN           1            1          0
+  MESG           1            0          1
+
+  --- detail des records demandes ---
+  [nouveau  ] ALCH 01001303  Argonian Black Rum  (nourriture)
+              EditorID : FoodRum
+              poids=0.5  valeur=420
+              effet 0003EB16 : magnitude=15 duree=0s
+              effet 0007E8DC : magnitude=50 duree=30s
+  [nouveau  ] ALCH 0101CF14  Human Blood  (potion)
+              EditorID : BDBHumanBlood
+              poids=0.5  valeur=1
+              effet 0001CEA6 : magnitude=1 duree=0s
+  [nouveau  ] ALCH 01012DEE  Poisoned Apple  (nourriture)
+              EditorID : BDBFoodApplePoison
+              poids=0.1  valeur=300
+              effet 0010AA4A : magnitude=100 duree=3600s
+
+==============================================================================
+de rerum dirennis - dawnguard.esp   (1 834 octets)
+==============================================================================
+  Auteur      : TheGreyLight
+  Masters     : Skyrim.esm, Update.esm, Dawnguard.esm
+  Type        : ESP
+  Records     : 5 dont 5 en surcharge de records existants
+
+  TYPE       TOTAL   SURCHARGES   NOUVEAUX
+  ----------------------------------------
+  INGR           5            5          0
+
+  --- detail des records demandes ---
+  [SURCHARGE] INGR 02002A78  Yellow Mountain Flower  (ingredient)
+              EditorID : DLC1MountainFlower01Yellow
+              poids=0  valeur=2
+              effet 00090041 : magnitude=4 duree=60s
+              effet 0003EB28 : magnitude=5 duree=60s
+              effet 0003EAF3 : magnitude=4 duree=60s
+              effet 00073F2C : magnitude=100 duree=5s
+  [SURCHARGE] INGR 020185FB  Poison Bloom  (ingredient)
+              EditorID : DLC01PoisonBloom
+              poids=0  valeur=5
+              effet 0003EB42 : magnitude=3 duree=1s
+              effet 00073F25 : magnitude=50 duree=5s
+              effet 0003EB01 : magnitude=4 duree=300s
+              effet 00073F20 : magnitude=4 duree=30s
+  [SURCHARGE] INGR 020059BA  Ancestor Moth Wing  (ingredient)
+              EditorID : DLC01MothWingAncestor
+              poids=0  valeur=2
+              effet 0003A2C6 : magnitude=3 duree=0s
+              effet 0003EB25 : magnitude=5 duree=60s
+              effet 00073F2B : magnitude=100 duree=5s
+              effet 0003EB29 : magnitude=1 duree=30s
+  [SURCHARGE] INGR 0200B097  Gleamblossom  (ingredient)
+              EditorID : DLC01GlowPlant01Ingredient
+              poids=0  valeur=5
+              effet 00039E51 : magnitude=1 duree=60s
+              effet 00073F20 : magnitude=4 duree=30s
+              effet 0003EB06 : magnitude=5 duree=300s
+              effet 00073F30 : magnitude=0 duree=1s
+  [SURCHARGE] INGR 020183B7  Chaurus Hunter Antennae  (ingredient)
+              EditorID : DLC01ChaurusHunterAntennae
+              poids=0  valeur=2
+              effet 0003A2C6 : magnitude=3 duree=0s
+              effet 0003EB25 : magnitude=5 duree=60s
+              effet 00073F2B : magnitude=100 duree=5s
+              effet 0003EB29 : magnitude=1 duree=30s
+
+==============================================================================
+de rerum dirennis.esp   (43 536 octets)
+==============================================================================
+  Auteur      : TheGreyLight
+  Masters     : Skyrim.esm, Update.esm
+  Type        : ESP
+  Records     : 133 dont 114 en surcharge de records existants
+
+  TYPE       TOTAL   SURCHARGES   NOUVEAUX
+  ----------------------------------------
+  INGR          94           94          0
+  PERK          32           15         17
+  AVIF           3            3          0
+  ALCH           2            2          0
+  MGEF           1            0          1
+  SPEL           1            0          1
+
+  --- detail des records demandes ---
+  [SURCHARGE] INGR 0006BC02  Bear Claws  (ingredient)
+              EditorID : BearClaws
+              poids=0  valeur=2
+              effet 0003EB16 : magnitude=4 duree=0s
+              effet 0003EAF3 : magnitude=4 duree=60s
+              effet 0003EB19 : magnitude=4 duree=60s
+              effet 00073F2B : magnitude=100 duree=5s
+  [SURCHARGE] INGR 000A9191  Beehive Husk  (ingredient)
+              EditorID : BeeHiveHusk
+              poids=0  valeur=5
+              effet 00090041 : magnitude=2 duree=60s
+              effet 0003EB1F : magnitude=2 duree=60s
+              effet 0003EB22 : magnitude=2 duree=60s
+              effet 0003EB26 : magnitude=5 duree=60s
+  [SURCHARGE] INGR 000B08C5  Honeycomb  (ingredient)
+              EditorID : BeeHoneyComb
+              poids=0  valeur=5
+              effet 0003EB16 : magnitude=5 duree=0s
+              effet 0003EB1C : magnitude=2 duree=60s
+              effet 0003EB1F : magnitude=2 duree=60s
+              effet 00073F23 : magnitude=2 duree=10s
+  [SURCHARGE] INGR 0007E8C8  Rock Warbler Egg  (ingredient)
+              EditorID : BirdEgg01
+              poids=0  valeur=2
+              effet 0003EB15 : magnitude=5 duree=0s
+              effet 0003EB19 : magnitude=4 duree=60s
+              effet 0003A2C6 : magnitude=3 duree=0s
+              effet 00073F51 : magnitude=2 duree=30s
+  [SURCHARGE] INGR 00023D6F  Pine Thrush Egg  (ingredient)
+              EditorID : BirdEgg02
+              poids=0  valeur=2
+              effet 0003EB16 : magnitude=5 duree=0s
+              effet 0003EB21 : magnitude=2 duree=30s
+              effet 00090042 : magnitude=2 duree=30s
+              effet 0003EAEC : magnitude=3 duree=60s
+  [SURCHARGE] INGR 00023D77  Chicken's Egg  (ingredient)
+              EditorID : BirdEgg03
+              poids=0  valeur=2
+              effet 00039E51 : magnitude=1 duree=60s
+              effet 00073F2B : magnitude=100 duree=5s
+              effet 0003AC2D : magnitude=0 duree=5s
+              effet 0010DE5E : magnitude=1 duree=10s
+  [SURCHARGE] INGR 00034CDD  Bone Meal  (ingredient)
+              EditorID : BoneMeal
+              poids=0  valeur=5
+              effet 0003A2C6 : magnitude=3 duree=0s
+              effet 0003EAEA : magnitude=3 duree=60s
+              effet 0003EB25 : magnitude=5 duree=60s
+              effet 00073F23 : magnitude=2 duree=10s
+  [SURCHARGE] INGR 0003AD61  Briar Heart  (ingredient)
+              EditorID : BriarHeart
+              poids=0  valeur=20
+              effet 0003EB17 : magnitude=5 duree=0s
+              effet 0003EB1C : magnitude=2 duree=60s
+              effet 00073F30 : magnitude=0 duree=1s
+              effet 0003EAF8 : magnitude=4 duree=60s
+  [SURCHARGE] INGR 0006ABCB  Canis Root  (ingredient)
+              EditorID : CanisRoot01
+              poids=0  valeur=5
+              effet 0003A2C6 : magnitude=3 duree=0s
+              effet 0003EB19 : magnitude=4 duree=60s
+              effet 0003EB1B : magnitude=4 duree=60s
+              effet 00073F30 : magnitude=0 duree=1s
+  [SURCHARGE] INGR 00052695  Charred Skeever Hide  (ingredient)
+              EditorID : CharredSkeeverHide
+              poids=0  valeur=1
+              effet 0003EB16 : magnitude=5 duree=0s
+              effet 000AE722 : magnitude=2 duree=0s
+              effet 00090041 : magnitude=4 duree=60s
+              effet 0003EB15 : magnitude=5 duree=0s
+  [SURCHARGE] INGR 0003AD56  Chaurus Eggs  (ingredient)
+              EditorID : ChaurusEggs
+              poids=0  valeur=10
+              effet 00090042 : magnitude=2 duree=30s
+              effet 0003EAF9 : magnitude=4 duree=60s
+              effet 0003A2B6 : magnitude=3 duree=0s
+              effet 0003EB3D : magnitude=0 duree=4s
+  [SURCHARGE] INGR 000B2183  Creep Cluster  (ingredient)
+              EditorID : CreepClusterRoot
+              poids=0  valeur=1
+              effet 0003EB17 : magnitude=5 duree=0s
+              effet 00073F2C : magnitude=100 duree=5s
+              effet 0003EB01 : magnitude=4 duree=300s
+              effet 00073F51 : magnitude=2 duree=30s
+  [SURCHARGE] INGR 000A9195  Bee  (ingredient)
+              EditorID : CritterBeeIngredient
+              poids=0  valeur=3
+              effet 0003EB16 : magnitude=5 duree=0s
+              effet 00073F23 : magnitude=2 duree=10s
+              effet 0003EB08 : magnitude=5 duree=300s
+              effet 00073F2F : magnitude=3 duree=30s
+  [SURCHARGE] INGR 00106E1C  Silverside Perch  (ingredient)
+              EditorID : CritterPondFish01Ingredient
+              poids=0  valeur=15
+              effet 0003EB16 : magnitude=5 duree=0s
+              effet 00073F2C : magnitude=100 duree=5s
+              effet 00073F26 : magnitude=2 duree=10s
+              effet 0003EAEB : magnitude=3 duree=60s
+  [SURCHARGE] INGR 00106E1B  Abecean Longfin  (ingredient)
+              EditorID : CritterPondFish02Ingredient
+              poids=0  valeur=15
+              effet 00073F2E : magnitude=3 duree=30s
+              effet 0003EB22 : magnitude=4 duree=60s
+              effet 00090042 : magnitude=2 duree=30s
+              effet 0003EB28 : magnitude=4 duree=60s
+  [SURCHARGE] INGR 00106E1A  River Betty  (ingredient)
+              EditorID : CritterPondFish03Ingredient
+              poids=0  valeur=15
+              effet 0003EB42 : magnitude=5 duree=0s
+              effet 0003EB24 : magnitude=4 duree=60s
+              effet 00073F25 : magnitude=50 duree=5s
+              effet 0003EB01 : magnitude=4 duree=300s
+  [SURCHARGE] INGR 00106E19  Cyrodilic Spadetail  (ingredient)
+              EditorID : CritterPondFish04Ingredient
+              poids=0  valeur=15
+              effet 0003A2C6 : magnitude=3 duree=0s
+              effet 0003EB28 : magnitude=4 duree=60s
+              effet 00073F20 : magnitude=4 duree=30s
+              effet 00073F26 : magnitude=2 duree=10s
+  [SURCHARGE] INGR 00106E18  Histcarp  (ingredient)
+              EditorID : CritterPondFish05Ingredient
+              poids=0  valeur=6
+              effet 0003EB16 : magnitude=5 duree=0s
+              effet 0003EAF8 : magnitude=4 duree=60s
+              effet 00073F2C : magnitude=100 duree=5s
+              effet 0003AC2D : magnitude=0 duree=5s
+  [SURCHARGE] INGR 0003AD5B  Daedra Heart  (ingredient)
+              EditorID : DaedraHeart
+              poids=0  valeur=250
+              effet 0003EB15 : magnitude=5 duree=0s
+              effet 00073F2C : magnitude=100 duree=5s
+              effet 0003A2B6 : magnitude=3 duree=0s
+              effet 00073F20 : magnitude=4 duree=30s
+  [SURCHARGE] INGR 0001BCBC  Jarrin Root  (ingredient)
+              EditorID : DBJarrinRoot
+              poids=0  valeur=10
+              effet 0003EB42 : magnitude=200 duree=1s
+              effet 0003A2B6 : magnitude=3 duree=0s
+              effet 0003A2C6 : magnitude=3 duree=0s
+              effet 00073F2B : magnitude=100 duree=5s
+  [SURCHARGE] INGR 000516C8  Deathbell  (ingredient)
+              EditorID : deathBell
+              poids=0  valeur=4
+              effet 0003EB42 : magnitude=3 duree=1s
+              effet 00073F23 : magnitude=2 duree=20s
+              effet 00073F25 : magnitude=50 duree=5s
+              effet 00090042 : magnitude=2 duree=30s
+  [SURCHARGE] INGR 000E4F0C  Blue Dartwing  (ingredient)
+              EditorID : DragonflyBlue
+              poids=0  valeur=1
+              effet 0003EAEC : magnitude=3 duree=60s
+              effet 0003EB20 : magnitude=4 duree=60s
+              effet 0003EB15 : magnitude=5 duree=0s
+              effet 00073F20 : magnitude=4 duree=30s
+  [SURCHARGE] INGR 000BB956  Orange Dartwing  (ingredient)
+              EditorID : DragonflyOrange
+              poids=0  valeur=1
+              effet 0003EB16 : magnitude=5 duree=0s
+              effet 00073F27 : magnitude=2 duree=10s
+              effet 0003EB20 : magnitude=4 duree=60s
+              effet 0010AA4A : magnitude=1 duree=10s
+  [SURCHARGE] INGR 000889A2  Dragon's Tongue  (ingredient)
+              EditorID : DragonsTongue
+              poids=0  valeur=5
+              effet 0003EAEA : magnitude=3 duree=60s
+              effet 0003EB23 : magnitude=1 duree=30s
+              effet 0003EB27 : magnitude=1 duree=60s
+              effet 0003EB1A : magnitude=4 duree=60s
+  [SURCHARGE] INGR 000F11C0  Dwarven Oil  (ingredient)
+              EditorID : DwarvenOil
+              poids=0  valeur=15
+              effet 00073F51 : magnitude=2 duree=30s
+              effet 0003EB27 : magnitude=4 duree=60s
+              effet 0003EB07 : magnitude=5 duree=300s
+              effet 0003EB17 : magnitude=5 duree=0s
+  [SURCHARGE] INGR 0003AD63  Ectoplasm  (ingredient)
+              EditorID : Ectoplasm
+              poids=0  valeur=25
+              effet 0003EB17 : magnitude=5 duree=0s
+              effet 0003EB26 : magnitude=4 duree=60s
+              effet 0003EAF8 : magnitude=4 duree=60s
+              effet 0003EB42 : magnitude=2 duree=1s
+  [SURCHARGE] INGR 00034D31  Elves Ear  (ingredient)
+              EditorID : ElvesEar
+              poids=0  valeur=10
+              effet 0003EB17 : magnitude=5 duree=0s
+              effet 0003EB1B : magnitude=4 duree=60s
+              effet 00073F2E : magnitude=2 duree=30s
+              effet 0003EAEA : magnitude=3 duree=30s
+  [SURCHARGE] INGR 0003AD5D  Falmer Ear  (ingredient)
+              EditorID : FalmerEar
+              poids=0  valeur=10
+              effet 0003EB42 : magnitude=2 duree=1s
+              effet 00073F29 : magnitude=4 duree=10s
+              effet 00090041 : magnitude=4 duree=60s
+              effet 0003EB21 : magnitude=2 duree=30s
+  [SURCHARGE] INGR 000705B7  Berit's Ashes  (ingredient)
+              EditorID : FavorThadgeirAshes
+              poids=0  valeur=5
+              effet 0003A2C6 : magnitude=3 duree=0s
+              effet 0003EAEA : magnitude=3 duree=60s
+              effet 0003EB25 : magnitude=5 duree=60s
+              effet 00073F23 : magnitude=2 duree=10s
+  [SURCHARGE] INGR 0004DA73  Torchbug Thorax  (ingredient)
+              EditorID : FireflyThorax
+              poids=0  valeur=1
+              effet 0003EB16 : magnitude=5 duree=0s
+              effet 0010DE5F : magnitude=1 duree=10s
+              effet 00073F51 : magnitude=2 duree=30s
+              effet 0003EAF9 : magnitude=4 duree=60s
+  [SURCHARGE] INGR 0003AD5E  Fire Salts  (ingredient)
+              EditorID : FireSalts
+              poids=0  valeur=50
+              effet 00073F2E : magnitude=3 duree=30s
+              effet 0003EAEA : magnitude=3 duree=60s
+              effet 0003EB17 : magnitude=5 duree=0s
+              effet 0003EB07 : magnitude=5 duree=300s
+  [SURCHARGE] INGR 00034D32  Frost Mirriam  (ingredient)
+              EditorID : FrostMirriam
+              poids=0  valeur=1
+              effet 0003EAEB : magnitude=3 duree=60s
+              effet 0003EB22 : magnitude=4 duree=60s
+              effet 00073F27 : magnitude=2 duree=10s
+              effet 00073F2C : magnitude=100 duree=5s
+  [SURCHARGE] INGR 0003AD5F  Frost Salts  (ingredient)
+              EditorID : FrostSalts
+              poids=0  valeur=100
+              effet 00073F2D : magnitude=3 duree=30s
+              effet 0003EAEB : magnitude=3 duree=60s
+              effet 0003EB17 : magnitude=5 duree=0s
+              effet 0003EB25 : magnitude=5 duree=60s
+  [SURCHARGE] INGR 00034D22  Garlic  (ingredient)
+              EditorID : Garlic
+              poids=0  valeur=1
+              effet 00090041 : magnitude=4 duree=60s
+              effet 0003EAF9 : magnitude=4 duree=60s
+              effet 0003EB07 : magnitude=5 duree=300s
+              effet 0003EB06 : magnitude=5 duree=300s
+  [SURCHARGE] INGR 0007E8C1  Giant Lichen  (ingredient)
+              EditorID : GiantLichen
+              poids=0  valeur=5
+              effet 00073F2F : magnitude=3 duree=30s
+              effet 00073F26 : magnitude=2 duree=10s
+              effet 00090042 : magnitude=2 duree=30s
+              effet 0003EB17 : magnitude=5 duree=0s
+  [SURCHARGE] INGR 0003AD64  Giant's Toe  (ingredient)
+              EditorID : GiantToes
+              poids=0  valeur=20
+              effet 0003A2C6 : magnitude=3 duree=0s
+              effet 0003EAF3 : magnitude=4 duree=300s
+              effet 0003EB01 : magnitude=4 duree=300s
+              effet 00073F2C : magnitude=100 duree=5s
+  [SURCHARGE] INGR 0003AD73  Glow Dust  (ingredient)
+              EditorID : glowDust
+              poids=0  valeur=20
+              effet 0003A2B6 : magnitude=3 duree=0s
+              effet 00073F2B : magnitude=100 duree=5s
+              effet 0003EB26 : magnitude=5 duree=60s
+              effet 0003EAEC : magnitude=3 duree=60s
+  [SURCHARGE] INGR 0007EE01  Glowing Mushroom  (ingredient)
+              EditorID : GlowingMushroom
+              poids=0  valeur=5
+              effet 0003EAEC : magnitude=3 duree=60s
+              effet 0003EB26 : magnitude=5 duree=60s
+              effet 0003EB1D : magnitude=4 duree=30s
+              effet 0003EAF3 : magnitude=4 duree=60s
+  [SURCHARGE] INGR 0006B689  Hagraven Claw  (ingredient)
+              EditorID : HagravenClaw
+              poids=0  valeur=20
+              effet 00039E51 : magnitude=1 duree=60s
+              effet 0010DE5F : magnitude=1 duree=10s
+              effet 0003EB29 : magnitude=1 duree=30s
+              effet 0003EB23 : magnitude=1 duree=30s
+  [SURCHARGE] INGR 0003AD66  Hagraven Feathers  (ingredient)
+              EditorID : HagravenFeathers
+              poids=0  valeur=20
+              effet 0003A2B6 : magnitude=3 duree=0s
+              effet 0003EB25 : magnitude=5 duree=60s
+              effet 00073F29 : magnitude=4 duree=10s
+              effet 00073F2F : magnitude=3 duree=30s
+  [SURCHARGE] INGR 00057F91  Hanging Moss  (ingredient)
+              EditorID : HangingMoss
+              poids=0  valeur=1
+              effet 0003A2B6 : magnitude=3 duree=0s
+              effet 0003EAF3 : magnitude=4 duree=60s
+              effet 00073F2B : magnitude=100 duree=5s
+              effet 0003EB19 : magnitude=4 duree=60s
+  [SURCHARGE] INGR 000E7EBC  Hawk Beak  (ingredient)
+              EditorID : HawkBeak
+              poids=0  valeur=15
+              effet 0003EB16 : magnitude=5 duree=0s
+              effet 0003EAEB : magnitude=3 duree=60s
+              effet 0003EB01 : magnitude=4 duree=300s
+              effet 0003EAEC : magnitude=3 duree=60s
+  [SURCHARGE] INGR 000E7ED0  Hawk Feathers  (ingredient)
+              EditorID : HawkFeathers
+              poids=0  valeur=15
+              effet 000AE722 : magnitude=2 duree=0s
+              effet 0003EB1F : magnitude=2 duree=60s
+              effet 0003EB19 : magnitude=4 duree=60s
+              effet 0003EB22 : magnitude=4 duree=60s
+  [SURCHARGE] INGR 001016B3  Human Flesh  (ingredient)
+              EditorID : HumanFlesh
+              poids=0  valeur=1
+              effet 0003EB42 : magnitude=2 duree=1s
+              effet 00073F30 : magnitude=0 duree=1s
+              effet 0003EB17 : magnitude=5 duree=0s
+              effet 0003EB22 : magnitude=4 duree=60s
+  [SURCHARGE] INGR 000B18CD  Human Heart  (ingredient)
+              EditorID : HumanHeart
+              poids=0  valeur=0
+              effet 0003EB42 : magnitude=2 duree=1s
+              effet 0003A2B6 : magnitude=3 duree=0s
+              effet 00073F2B : magnitude=100 duree=5s
+              effet 00073F29 : magnitude=4 duree=10s
+  [SURCHARGE] INGR 0003AD6A  Ice Wraith Teeth  (ingredient)
+              EditorID : IceWraithTeeth
+              poids=0  valeur=30
+              effet 00073F2E : magnitude=3 duree=30s
+              effet 0003EB1E : magnitude=2 duree=60s
+              effet 0003EB3D : magnitude=0 duree=4s
+              effet 00073F2D : magnitude=3 duree=30s
+  [SURCHARGE] INGR 0006AC4A  Jazbay Grapes  (ingredient)
+              EditorID : JazBay
+              poids=0  valeur=1
+              effet 00073F51 : magnitude=2 duree=30s
+              effet 0003EAF8 : magnitude=4 duree=60s
+              effet 0003EB07 : magnitude=5 duree=300s
+              effet 00073F26 : magnitude=2 duree=10s
+  [SURCHARGE] INGR 0005076E  Juniper Berries  (ingredient)
+              EditorID : JuniperBerries
+              poids=0  valeur=1
+              effet 00073F2D : magnitude=3 duree=30s
+              effet 0003EB1B : magnitude=4 duree=60s
+              effet 0003EB06 : magnitude=5 duree=300s
+              effet 00073F2C : magnitude=100 duree=5s
+  [SURCHARGE] INGR 00045C28  Lavender  (ingredient)
+              EditorID : Lavender
+              poids=0  valeur=1
+              effet 00039E51 : magnitude=1 duree=60s
+              effet 0003EAF9 : magnitude=4 duree=60s
+              effet 00073F27 : magnitude=2 duree=10s
+              effet 0003EB25 : magnitude=4 duree=60s
+  [SURCHARGE] INGR 000D8E3F  Moon Sugar  (ingredient)
+              EditorID : MoonSugar
+              poids=0  valeur=50
+              effet 00073F2D : magnitude=3 duree=30s
+              effet 0003EAEB : magnitude=3 duree=60s
+              effet 0003EB17 : magnitude=5 duree=0s
+              effet 0003EB07 : magnitude=5 duree=300s
+  [SURCHARGE] INGR 000EC870  Mora Tapinella  (ingredient)
+              EditorID : MoraTapinellaBits
+              poids=0  valeur=4
+              effet 0003EB17 : magnitude=5 duree=0s
+              effet 0010AA4A : magnitude=1 duree=10s
+              effet 0003EB08 : magnitude=5 duree=300s
+              effet 0003EB27 : magnitude=4 duree=60s
+  [SURCHARGE] INGR 000727DE  Blue Butterfly Wing  (ingredient)
+              EditorID : MothWingBlue
+              poids=0  valeur=2
+              effet 0003A2C6 : magnitude=3 duree=0s
+              effet 0003EB25 : magnitude=5 duree=60s
+              effet 00073F2B : magnitude=100 duree=5s
+              effet 0003EB29 : magnitude=1 duree=30s
+  [SURCHARGE] INGR 000727DF  Luna Moth Wing  (ingredient)
+              EditorID : MothWingLuna
+              poids=0  valeur=5
+              effet 0003A2B6 : magnitude=3 duree=0s
+              effet 0003EB1F : magnitude=2 duree=60s
+              effet 0003EB06 : magnitude=5 duree=300s
+              effet 0003EB3D : magnitude=0 duree=4s
+  [SURCHARGE] INGR 000727E0  Butterfly Wing  (ingredient)
+              EditorID : MothWingMonarch
+              poids=0  valeur=3
+              effet 0003EB15 : magnitude=5 duree=0s
+              effet 0003EB23 : magnitude=1 duree=30s
+              effet 0010DE5E : magnitude=1 duree=10s
+              effet 0003A2B6 : magnitude=3 duree=0s
+  [SURCHARGE] INGR 00077E1C  Blue Mountain Flower  (ingredient)
+              EditorID : MountainFlower01Blue
+              poids=0  valeur=2
+              effet 0003EB15 : magnitude=5 duree=0s
+              effet 0003EB25 : magnitude=5 duree=60s
+              effet 0003EAF3 : magnitude=4 duree=60s
+              effet 00073F2B : magnitude=100 duree=5s
+  [SURCHARGE] INGR 00077E1E  Purple Mountain Flower  (ingredient)
+              EditorID : MountainFlower01Purple
+              poids=0  valeur=2
+              effet 0003EB16 : magnitude=5 duree=0s
+              effet 0003EB22 : magnitude=4 duree=60s
+              effet 0010DE5F : magnitude=1 duree=10s
+              effet 0003EAEB : magnitude=3 duree=60s
+  [SURCHARGE] INGR 00077E1D  Red Mountain Flower  (ingredient)
+              EditorID : MountainFlower01Red
+              poids=0  valeur=2
+              effet 0003EB17 : magnitude=5 duree=0s
+              effet 00073F27 : magnitude=2 duree=10s
+              effet 0003EAF8 : magnitude=4 duree=60s
+              effet 0003EB42 : magnitude=2 duree=1s
+  [SURCHARGE] INGR 00074A19  Salt Pile  (ingredient)
+              EditorID : MS03BlackBriarSecretIngredient
+              poids=0  valeur=1
+              effet 00073F51 : magnitude=2 duree=30s
+              effet 0003EB28 : magnitude=4 duree=60s
+              effet 00073F25 : magnitude=50 duree=5s
+              effet 0003EB07 : magnitude=5 duree=300s
+  [SURCHARGE] INGR 0006BC00  Mudcrab Chitin  (ingredient)
+              EditorID : MudcrabChitin
+              poids=0  valeur=2
+              effet 0003EB16 : magnitude=5 duree=0s
+              effet 000AE722 : magnitude=5 duree=0s
+              effet 00090041 : magnitude=4 duree=60s
+              effet 0003EAEA : magnitude=3 duree=60s
+  [SURCHARGE] INGR 0004DA20  Bleeding Crown  (ingredient)
+              EditorID : Mushroom02
+              poids=0  valeur=10
+              effet 00073F2D : magnitude=3 duree=30s
+              effet 0003EB1C : magnitude=4 duree=60s
+              effet 00090042 : magnitude=2 duree=30s
+              effet 00039E51 : magnitude=1 duree=60s
+  [SURCHARGE] INGR 0004DA00  Fly Amanita  (ingredient)
+              EditorID : Mushroom01
+              poids=0  valeur=2
+              effet 0003EAEA : magnitude=3 duree=60s
+              effet 0003EB1A : magnitude=4 duree=60s
+              effet 00073F29 : magnitude=4 duree=10s
+              effet 0003EB08 : magnitude=5 duree=300s
+  [SURCHARGE] INGR 0004DA22  White Cap  (ingredient)
+              EditorID : Mushroom03
+              poids=0  valeur=0
+              effet 00073F2E : magnitude=3 duree=30s
+              effet 0003EB1E : magnitude=2 duree=60s
+              effet 0003EB17 : magnitude=5 duree=0s
+              effet 00073F27 : magnitude=2 duree=10s
+  [SURCHARGE] INGR 0004DA23  Imp Stool  (ingredient)
+              EditorID : Mushroom04
+              poids=0  valeur=0
+              effet 0003EB42 : magnitude=2 duree=1s
+              effet 0010AA4A : magnitude=1 duree=10s
+              effet 00073F30 : magnitude=0 duree=1s
+              effet 0003EB15 : magnitude=3 duree=0s
+  [SURCHARGE] INGR 0004DA24  Namira's Rot  (ingredient)
+              EditorID : Mushroom05
+              poids=0  valeur=0
+              effet 0003A2B6 : magnitude=3 duree=0s
+              effet 0003EB21 : magnitude=2 duree=30s
+              effet 00073F20 : magnitude=4 duree=30s
+              effet 0003EB06 : magnitude=5 duree=300s
+  [SURCHARGE] INGR 0004DA25  Blisterwort  (ingredient)
+              EditorID : Mushroom06
+              poids=0  valeur=12
+              effet 0003A2C6 : magnitude=3 duree=0s
+              effet 00073F29 : magnitude=4 duree=10s
+              effet 0003EB15 : magnitude=3 duree=0s
+              effet 0003EB1D : magnitude=4 duree=30s
+  [SURCHARGE] INGR 0002F44C  Nightshade  (ingredient)
+              EditorID : Nightshade
+              poids=0  valeur=8
+              effet 0003EB42 : magnitude=2 duree=1s
+              effet 00073F2B : magnitude=100 duree=5s
+              effet 0010DE5E : magnitude=1 duree=10s
+              effet 0003EB26 : magnitude=4 duree=60s
+  [SURCHARGE] INGR 00059B86  Nirnroot  (ingredient)
+              EditorID : Nirnroot
+              poids=0  valeur=10
+              effet 0003EB42 : magnitude=2 duree=0s
+              effet 0003A2C6 : magnitude=3 duree=0s
+              effet 0003EB3D : magnitude=0 duree=4s
+              effet 00039E51 : magnitude=1 duree=60s
+  [SURCHARGE] INGR 000B701A  Crimson Nirnroot  (ingredient)
+              EditorID : NirnrootRed
+              poids=0  valeur=10
+              effet 0003EB42 : magnitude=6 duree=1s
+              effet 0003A2C6 : magnitude=9 duree=0s
+              effet 0003EB3D : magnitude=0 duree=4s
+              effet 00039E51 : magnitude=1 duree=60s
+  [SURCHARGE] INGR 0007EDF5  Nordic Barnacle  (ingredient)
+              EditorID : NordicBarnacles
+              poids=0  valeur=5
+              effet 0003A2B6 : magnitude=3 duree=0s
+              effet 0003AC2D : magnitude=0 duree=5s
+              effet 0003EB06 : magnitude=5 duree=300s
+              effet 0003EB20 : magnitude=4 duree=60s
+  [SURCHARGE] INGR 000854FE  Pearl  (ingredient)
+              EditorID : Pearl
+              poids=0  valeur=2
+              effet 0003EB16 : magnitude=5 duree=0s
+              effet 0003EB1C : magnitude=4 duree=60s
+              effet 0003EB17 : magnitude=5 duree=0s
+              effet 0003EAEC : magnitude=3 duree=60s
+  [SURCHARGE] INGR 00085500  Small Pearl  (ingredient)
+              EditorID : PearlSmall
+              poids=0  valeur=2
+              effet 0003EB16 : magnitude=5 duree=0s
+              effet 0003EB19 : magnitude=4 duree=60s
+              effet 0003EB28 : magnitude=4 duree=60s
+              effet 0003EAEB : magnitude=3 duree=60s
+  [SURCHARGE] INGR 0006BC10  Powdered Mammoth Tusk  (ingredient)
+              EditorID : PowderedMammothTusk
+              poids=0  valeur=2
+              effet 0003EB16 : magnitude=5 duree=0s
+              effet 0003EB22 : magnitude=4 duree=60s
+              effet 00073F2D : magnitude=3 duree=30s
+              effet 00073F20 : magnitude=4 duree=30s
+  [SURCHARGE] INGR 0006BC07  Eye of Sabre Cat  (ingredient)
+              EditorID : SabrecatEyeball
+              poids=0  valeur=2
+              effet 0003EB16 : magnitude=5 duree=0s
+              effet 00073F26 : magnitude=2 duree=10s
+              effet 0003A2B6 : magnitude=3 duree=0s
+              effet 0003EB15 : magnitude=5 duree=0s
+  [SURCHARGE] INGR 0006BC04  Sabre Cat Tooth  (ingredient)
+              EditorID : SabrecatTooth
+              poids=0  valeur=2
+              effet 0003EB16 : magnitude=5 duree=0s
+              effet 0003EB1E : magnitude=2 duree=60s
+              effet 0003EB1D : magnitude=4 duree=30s
+              effet 00090042 : magnitude=2 duree=30s
+  [SURCHARGE] INGR 00034CDF  Salt Pile  (ingredient)
+              EditorID : SaltPile
+              poids=0  valeur=2
+              effet 00073F51 : magnitude=2 duree=30s
+              effet 0003EB28 : magnitude=4 duree=60s
+              effet 00073F25 : magnitude=50 duree=5s
+              effet 0003EB07 : magnitude=5 duree=300s
+  [SURCHARGE] INGR 0006F950  Scaly Pholiota  (ingredient)
+              EditorID : ScalyPholiotaBits
+              poids=0  valeur=4
+              effet 00073F51 : magnitude=2 duree=30s
+              effet 0003EB27 : magnitude=4 duree=60s
+              effet 0003EB08 : magnitude=5 duree=300s
+              effet 0003EB01 : magnitude=4 duree=300s
+  [SURCHARGE] INGR 0003AD6F  Skeever Tail  (ingredient)
+              EditorID : SkeeverTail
+              poids=0  valeur=3
+              effet 00073F2C : magnitude=100 duree=5s
+              effet 00073F26 : magnitude=2 duree=10s
+              effet 0003EB42 : magnitude=2 duree=1s
+              effet 0003EB1F : magnitude=2 duree=60s
+  [SURCHARGE] INGR 0007E8C5  Slaughterfish Egg  (ingredient)
+              EditorID : SlaughterfishEgg01
+              poids=0  valeur=3
+              effet 00090041 : magnitude=4 duree=60s
+              effet 0003EB20 : magnitude=4 duree=60s
+              effet 0010AA4A : magnitude=1 duree=10s
+              effet 0003EAF9 : magnitude=4 duree=60s
+  [SURCHARGE] INGR 0003AD70  Slaughterfish Scales  (ingredient)
+              EditorID : SlaughterfishScales
+              poids=0  valeur=3
+              effet 0003EAEB : magnitude=3 duree=60s
+              effet 0010AA4A : magnitude=1 duree=10s
+              effet 0003EB1E : magnitude=2 duree=60s
+              effet 0003EB1C : magnitude=4 duree=60s
+  [SURCHARGE] INGR 0001B3BD  Snowberries  (ingredient)
+              EditorID : Snowberry
+              poids=0  valeur=4
+              effet 0003EAEA : magnitude=3 duree=60s
+              effet 0003EB29 : magnitude=1 duree=30s
+              effet 0003EAEB : magnitude=3 duree=60s
+              effet 0003EAEC : magnitude=3 duree=60s
+  [SURCHARGE] INGR 0009151B  Spider Egg  (ingredient)
+              EditorID : SpiderEgg
+              poids=0  valeur=5
+              effet 0003A2C6 : magnitude=3 duree=0s
+              effet 00073F2B : magnitude=100 duree=5s
+              effet 0003EB21 : magnitude=2 duree=30s
+              effet 0003EB1B : magnitude=4 duree=60s
+  [SURCHARGE] INGR 00083E64  Grass Pod  (ingredient)
+              EditorID : SpikyGrass01
+              poids=0  valeur=1
+              effet 00090041 : magnitude=4 duree=60s
+              effet 00073F27 : magnitude=2 duree=10s
+              effet 0003EB24 : magnitude=4 duree=60s
+              effet 0003EB17 : magnitude=5 duree=0s
+  [SURCHARGE] INGR 00063B5F  Spriggan Sap  (ingredient)
+              EditorID : SprigganSap
+              poids=0  valeur=15
+              effet 00073F2B : magnitude=100 duree=5s
+              effet 0003EB29 : magnitude=1 duree=30s
+              effet 0003EB1D : magnitude=4 duree=30s
+              effet 0003EB24 : magnitude=4 duree=60s
+  [SURCHARGE] INGR 0007E8B7  Swamp Fungal Pod  (ingredient)
+              EditorID : SwampFungalPod01
+              poids=0  valeur=5
+              effet 0003EAEC : magnitude=3 duree=60s
+              effet 0010DE5F : magnitude=1 duree=10s
+              effet 00073F30 : magnitude=0 duree=1s
+              effet 0003EB15 : magnitude=5 duree=0s
+  [SURCHARGE] INGR 0003AD71  Taproot  (ingredient)
+              EditorID : Taproot
+              poids=0  valeur=15
+              effet 00073F51 : magnitude=2 duree=30s
+              effet 0003EB27 : magnitude=4 duree=60s
+              effet 0003EB07 : magnitude=5 duree=300s
+              effet 0003EB17 : magnitude=5 duree=0s
+  [SURCHARGE] INGR 000134AA  Thistle Branch  (ingredient)
+              EditorID : Thistle01
+              poids=0  valeur=1
+              effet 0003EAEB : magnitude=3 duree=60s
+              effet 00073F23 : magnitude=2 duree=10s
+              effet 00090041 : magnitude=3 duree=0s
+              effet 0003EB1E : magnitude=2 duree=60s
+  [SURCHARGE] INGR 0003AD72  Troll Fat  (ingredient)
+              EditorID : TrollFat
+              poids=0  valeur=15
+              effet 00090041 : magnitude=4 duree=60s
+              effet 0003EB1A : magnitude=4 duree=60s
+              effet 00073F29 : magnitude=4 duree=10s
+              effet 0003EB42 : magnitude=2 duree=1s
+  [SURCHARGE] INGR 0003F7F8  Tundra Cotton  (ingredient)
+              EditorID : TundraCotton
+              poids=0  valeur=1
+              effet 00039E51 : magnitude=1 duree=60s
+              effet 0003EAF8 : magnitude=4 duree=60s
+              effet 0003EB1C : magnitude=4 duree=60s
+              effet 0003EB23 : magnitude=1 duree=30s
+  [SURCHARGE] INGR 0003AD76  Vampire Dust  (ingredient)
+              EditorID : vampireDust
+              poids=0  valeur=25
+              effet 0003EB3D : magnitude=0 duree=4s
+              effet 0003EB17 : magnitude=5 duree=0s
+              effet 0003EB06 : magnitude=5 duree=300s
+              effet 000AE722 : magnitude=5 duree=0s
+  [SURCHARGE] INGR 0003AD60  Void Salts  (ingredient)
+              EditorID : VoidSalts
+              poids=0  valeur=125
+              effet 00073F2F : magnitude=3 duree=30s
+              effet 00039E51 : magnitude=1 duree=60s
+              effet 0003EB42 : magnitude=2 duree=1s
+              effet 0003EAF8 : magnitude=4 duree=60s
+  [SURCHARGE] INGR 0004B0BA  Wheat  (ingredient)
+              EditorID : Wheat
+              poids=0  valeur=5
+              effet 0003EB15 : magnitude=5 duree=0s
+              effet 0003EAF3 : magnitude=4 duree=60s
+              effet 00073F2C : magnitude=100 duree=5s
+              effet 0010DE5F : magnitude=1 duree=10s
+  [SURCHARGE] INGR 0006BC0E  Wisp Wrappings  (ingredient)
+              EditorID : WispWrappings
+              poids=0  valeur=2
+              effet 0003EB16 : magnitude=5 duree=0s
+              effet 0003EB26 : magnitude=5 duree=60s
+              effet 0003EB01 : magnitude=4 duree=300s
+              effet 00039E51 : magnitude=1 duree=60s
+  [SURCHARGE] INGR 0006BC0B  Small Antlers  (ingredient)
+              EditorID : AntlersSmall
+              poids=0  valeur=2
+              effet 00090042 : magnitude=2 duree=30s
+              effet 0003EB28 : magnitude=4 duree=60s
+              effet 0010DE5E : magnitude=1 duree=10s
+              effet 0003EB42 : magnitude=2 duree=1s
+  [SURCHARGE] INGR 0006BC0A  Large Antlers  (ingredient)
+              EditorID : AntlersLarge
+              poids=0  valeur=2
+              effet 0003EB16 : magnitude=5 duree=0s
+              effet 0003EAF9 : magnitude=4 duree=60s
+              effet 00073F25 : magnitude=5 duree=30s
+              effet 00073F2C : magnitude=100 duree=5s
+  [SURCHARGE] ALCH 0005661F  Unknown Potion  (potion)
+              EditorID : DefaultPotion
+              poids=0  valeur=0
+              effet 0001B9A7 : magnitude=0 duree=0s
+  [SURCHARGE] ALCH 0005629E  DefaultPoison  (poison)
+              poids=0  valeur=3
+              effet 0003EB42 : magnitude=10 duree=1s
+
+==============================================================================
+dk_armor_by_hothtrooper44.esp   (11 572 octets)
+==============================================================================
+  Auteur      : DEFAULT
+  Masters     : Skyrim.esm
+  Type        : ESP
+  Records     : 38 dont 0 en surcharge de records existants
+
+  TYPE       TOTAL   SURCHARGES   NOUVEAUX
+  ----------------------------------------
+  COBJ          18            0         18
+  ARMA          11            0         11
+  ARMO           9            0          9
+
+  --- detail des records demandes ---
+  [nouveau  ] COBJ 01002303  TemperArmorDKGauntD  (recette)
+              composant 0003ADA4 x1
+              composant 0005AD9D x1
+              produit 01002301 x1
+  [nouveau  ] COBJ 01002302  RecipeArmorDKGauntletsD  (recette)
+              composant 000800E4 x2
+              composant 0003ADA3 x1
+              composant 0003ADA4 x1
+              composant 0005AD9D x1
+              produit 01002301 x1
+  [nouveau  ] COBJ 01001D9A  TemperArmorDKGaunt  (recette)
+              composant 0003ADA4 x1
+              composant 0005AD9D x1
+              produit 01000D68 x1
+  [nouveau  ] COBJ 01001D99  TemperArmorDKChest  (recette)
+              composant 0003ADA4 x1
+              composant 0005AD9D x1
+              produit 01000D67 x1
+  [nouveau  ] COBJ 01002869  TemperArmorDKGauntSleek  (recette)
+              composant 0003ADA4 x1
+              composant 0005AD9D x1
+              produit 01002867 x1
+  [nouveau  ] COBJ 01002868  RecipeArmorDKGauntletsSleek  (recette)
+              composant 000800E4 x2
+              composant 0003ADA3 x1
+              composant 0003ADA4 x1
+              composant 0005AD9D x1
+              produit 01002867 x1
+  [nouveau  ] COBJ 01001D98  TemperArmorDKBoots  (recette)
+              composant 0003ADA4 x1
+              composant 0005AD9D x1
+              produit 01000D6A x1
+  [nouveau  ] COBJ 01001D97  TemperArmorDKHelmet  (recette)
+              composant 0003ADA4 x1
+              composant 0005AD9D x1
+              produit 01000D69 x1
+  [nouveau  ] COBJ 01002DD3  TemperArmorDKChestLightalt  (recette)
+              composant 0003ADA4 x1
+              composant 000D4BE7 x1
+              produit 01003337 x1
+  [nouveau  ] COBJ 01002DD2  TemperArmorDKChestLight  (recette)
+              composant 0003ADA4 x1
+              composant 000D4B35 x1
+              produit 01003336 x1
+  [nouveau  ] COBJ 01002DD1  RecipeArmorDKCuirassLightAlt  (recette)
+              composant 000800E4 x2
+              composant 0003ADA3 x1
+              composant 0003ADA4 x2
+              composant 0005AD9D x2
+              composant 000D4BE7 x1
+              produit 01003337 x1
+  [nouveau  ] COBJ 01002DD0  RecipeArmorDKCuirassLight  (recette)
+              composant 000800E4 x2
+              composant 0003ADA3 x1
+              composant 0003ADA4 x2
+              composant 0005AD9D x1
+              composant 000D4B35 x1
+              produit 01003336 x1
+  [nouveau  ] COBJ 01001D92  RecipeArmorDKBoots  (recette)
+              composant 000800E4 x2
+              composant 0003ADA3 x1
+              composant 0003ADA4 x1
+              composant 0005AD9D x2
+              produit 01000D6A x1
+  [nouveau  ] COBJ 01001D93  RecipeArmorDKCuirass  (recette)
+              composant 000800E4 x2
+              composant 0003ADA3 x1
+              composant 0003ADA4 x2
+              composant 0005AD9D x2
+              produit 01000D67 x1
+  [nouveau  ] COBJ 01001D94  RecipeArmorDKGauntlets  (recette)
+              composant 000800E4 x2
+              composant 0003ADA3 x1
+              composant 0003ADA4 x1
+              composant 0005AD9D x1
+              produit 01000D68 x1
+  [nouveau  ] COBJ 01001D95  RecipeArmorDKHelmet  (recette)
+              composant 000800E4 x2
+              composant 0003ADA3 x1
+              composant 0003ADA4 x1
+              composant 0005AD9D x1
+              produit 01000D69 x1
+  [nouveau  ] COBJ 01001D96  RecipeArmorDKShield  (recette)
+              composant 000800E4 x1
+              composant 0003ADA3 x1
+              composant 0003ADA4 x1
+              composant 0005AD9D x2
+              produit 01000D6B x1
+  [nouveau  ] COBJ 01001D9B  TemperArmorDKShield  (recette)
+              composant 0003ADA4 x1
+              composant 0005AD9D x1
+              produit 01000D6B x1
+
+==============================================================================
+dragonboneweaponscomplete.esp   (8 796 octets)
+==============================================================================
+  Auteur      : ktacreations.com
+  Description : Adds craftable Dragon Bone Weapons to Skyrim.  These have original models and textures.
+  Masters     : Skyrim.esm
+  Type        : ESP
+  Records     : 35 dont 0 en surcharge de records existants
+
+  TYPE       TOTAL   SURCHARGES   NOUVEAUX
+  ----------------------------------------
+  COBJ          17            0         17
+  STAT           8            0          8
+  WEAP           8            0          8
+  AMMO           1            0          1
+  PROJ           1            0          1
+
+  --- detail des records demandes ---
+  [nouveau  ] COBJ 01003DE5  TemperWeaponDragonBoneMace  (recette)
+              composant 0005AD9D x1
+              composant 0003ADA4 x1
+              produit 01003DE4 x1
+  [nouveau  ] COBJ 01001830  RecipeWeaponDragonBoneArrows  (recette)
+              composant 0003ADA3 x1
+              composant 0006F993 x1
+              composant 0005AD9D x1
+              produit 0100182F x24
+  [nouveau  ] COBJ 010012CA  RecipeWeaponDragonBoneBattleAxe  (recette)
+              composant 0005AD9D x1
+              composant 000800E4 x3
+              composant 0003ADA4 x3
+              produit 010012C8 x1
+  [nouveau  ] COBJ 01003DE6  RecipeWeaponDragonBoneMace  (recette)
+              composant 0005AD9D x1
+              composant 000800E4 x2
+              composant 0003ADA4 x2
+              produit 01003DE4 x1
+  [nouveau  ] COBJ 01001D8F  TemperWeaponDragonBoneWarhammer  (recette)
+              composant 0005AD9D x1
+              composant 0003ADA4 x1
+              composant 0005ACE5 x1
+              produit 01001D8D x1
+  [nouveau  ] COBJ 010012CB  TemperWeaponDragonBoneBattleAxe  (recette)
+              composant 0005AD9D x1
+              composant 0003ADA4 x1
+              produit 010012C8 x1
+  [nouveau  ] COBJ 01001D91  RecipeWeaponDragonBoneWarAxe  (recette)
+              composant 0005AD9D x1
+              composant 0003ADA4 x2
+              composant 000800E4 x2
+              produit 01001D90 x1
+  [nouveau  ] COBJ 010012C7  TemperWeaponDragonBoneDagger  (recette)
+              composant 0003ADA3 x1
+              composant 0005AD9D x1
+              produit 01003DE2 x1
+  [nouveau  ] COBJ 01001D92  TemperWeaponDragonBoneWarAxe  (recette)
+              composant 0005AD9D x1
+              composant 0003ADA4 x1
+              produit 01001D90 x1
+  [nouveau  ] COBJ 010012C6  RecipeWeaponDragonBoneDagger  (recette)
+              composant 0005AD9D x1
+              composant 0003ADA3 x1
+              composant 0003ADA4 x1
+              composant 000800E4 x1
+              produit 01003DE2 x1
+  [nouveau  ] COBJ 01002DB9  TemperWeaponDragonBoneBow  (recette)
+              composant 0005AD9D x1
+              composant 0003ADA4 x1
+              produit 010022F2 x1
+  [nouveau  ] COBJ 01001D93  TemperWeaponDragoneBoneGreatSword  (recette)
+              composant 0005AD9D x1
+              composant 0003ADA4 x1
+              produit 0100182B x1
+  [nouveau  ] COBJ 0100182C  RecipeWeaponDragonBoneGreatSword  (recette)
+              composant 0005AD9D x1
+              composant 0003ADA4 x4
+              composant 000800E4 x3
+              produit 0100182B x1
+  [nouveau  ] COBJ 01001D8E  RecipeWeaponDragonBoneWarhammer  (recette)
+              composant 0005AD9D x1
+              composant 000800E4 x3
+              composant 0003ADA4 x3
+              composant 0005ACE4 x1
+              produit 01001D8D x1
+  [nouveau  ] COBJ 01000D65  TemperWeaponDragonBoneSword  (recette)
+              composant 0005AD9D x1
+              composant 0003ADA4 x1
+              produit 01000D62 x1
+  [nouveau  ] COBJ 010022F3  RecipeWeaponDragonBoneBow  (recette)
+              composant 0005AD9D x1
+              composant 0003ADA4 x2
+              composant 0003ADA3 x1
+              composant 000800E4 x1
+              produit 010022F2 x1
+  [nouveau  ] COBJ 01000D64  RecipeWeaponDragonBoneSword  (recette)
+              composant 0005AD9D x1
+              composant 000800E4 x2
+              composant 0003ADA4 x2
+              produit 01000D62 x1
+
+==============================================================================
+dragonsoulstoperks.esp   (61 304 octets)
+==============================================================================
+  Auteur      : Jesse Smith
+  Description : A Mod designed to allow the spending of Dragon Souls for Perks.
+
+Does NOT require any script extenders.
+  Masters     : Skyrim.esm
+  Type        : ESP
+  Records     : 142 dont 71 en surcharge de records existants
+
+  TYPE       TOTAL   SURCHARGES   NOUVEAUX
+  ----------------------------------------
+  AVIF          66           66          0
+  MESG          53            0         53
+  REFR           8            1          7
+  ACTI           6            0          6
+  GLOB           3            0          3
+  CELL           3            3          0
+  SOUN           1            0          1
+  WRLD           1            1          0
+  SNDR           1            0          1
+
+==============================================================================
+enchanting extraeffect.esp   (2 233 octets)
+==============================================================================
+  Auteur      : KennyBall
+  Description : Can put 5 enchantments on the same item. must have Master Enchanter perk.  Moved and renamed "Extra effekt" to lev 60 and made a perk "Expert Enchanter" who allows you to put 2 enchantments on the sam
+  Masters     : Skyrim.esm, Update.esm
+  Type        : ESP
+  Records     : 3 dont 2 en surcharge de records existants
+
+  TYPE       TOTAL   SURCHARGES   NOUVEAUX
+  ----------------------------------------
+  PERK           2            1          1
+  AVIF           1            1          0
+
+==============================================================================
+extra encounters - hsr.esp   (503 122 octets)
+==============================================================================
+  Auteur      : SayHelloToMrBullet
+  Description : Release 1.5 (Higher Spawn Rate version)
+  Masters     : Skyrim.esm
+  Type        : ESP
+  Records     : 4004 dont 16 en surcharge de records existants
+
+  TYPE       TOTAL   SURCHARGES   NOUVEAUX
+  ----------------------------------------
+  REFR        3440            0       3440
+  NPC_         165            0        165
+  ACHR         108            0        108
+  EXPL          70            0         70
+  LVLN          62           15         47
+  PACK          30            0         30
+  LVLI          29            0         29
+  NAVM          27            0         27
+  SPEL          16            0         16
+  FACT          15            0         15
+  MGEF          13            0         13
+  BOOK           9            0          9
+  OTFT           7            0          7
+  CONT           4            0          4
+  LVSP           2            0          2
+  SHOU           2            0          2
+  ARMO           1            0          1
+  NAVI           1            1          0
+  CELL           1            0          1
+  QUST           1            0          1
+  ARMA           1            0          1
+
+==============================================================================
+faster vanilla horses.esp   (2 056 octets)
+==============================================================================
+  Auteur      : DEFAULT
+  Masters     : Skyrim.esm
+  Type        : ESP
+  Records     : 6 dont 6 en surcharge de records existants
+
+  TYPE       TOTAL   SURCHARGES   NOUVEAUX
+  ----------------------------------------
+  MOVT           5            5          0
+  RACE           1            1          0
+
+==============================================================================
+guard dialogue overhaul.esp   (357 988 octets)
+==============================================================================
+  Auteur      : Eck
+  Description : Makes Guards' Dialogue more varied, more interesting and more Respectful of the player's accomplishments..
+
+Skill comments threshold tied to Globals.
+
+Missing dialogue/dialogue loop bugs fixed.
+
+Appro
+  Masters     : Skyrim.esm
+  Type        : ESP
+  Records     : 927 dont 315 en surcharge de records existants
+
+  TYPE       TOTAL   SURCHARGES   NOUVEAUX
+  ----------------------------------------
+  INFO         887          297        590
+  DIAL          34           16         18
+  GLOB           4            0          4
+  QUST           2            2          0
+
+==============================================================================
+hg.esp   (1 114 004 octets)
+==============================================================================
+  Auteur      : muppetpuppet
+  Masters     : Skyrim.esm, Update.esm
+  Type        : ESP
+  Records     : 10873 dont 7 en surcharge de records existants
+
+  TYPE       TOTAL   SURCHARGES   NOUVEAUX
+  ----------------------------------------
+  REFR        9866            3       9863
+  ACHR         196            0        196
+  INFO         189            0        189
+  DIAL         186            0        186
+  DLBR          85            0         85
+  STAT          81            0         81
+  NPC_          61            0         61
+  NAVM          22            1         21
+  CELL          18            2         16
+  DLVW          17            0         17
+  ARMO          13            0         13
+  LIGH          13            0         13
+  ARMA          11            0         11
+  MESG          11            0         11
+  RACE           8            0          8
+  CONT           8            0          8
+  FACT           7            0          7
+  QUST           7            0          7
+  IMGS           7            0          7
+  LGTM           6            0          6
+  LVLI           5            0          5
+  MATO           5            0          5
+  KYWD           4            0          4
+  INGR           4            0          4
+  ALCH           4            0          4
+  PACK           4            0          4
+  TXST           3            0          3
+  BOOK           3            0          3
+  TREE           3            0          3
+  VTYP           3            0          3
+  RELA           3            0          3
+  OTFT           3            0          3
+  DOOR           2            0          2
+  KEYM           2            0          2
+  COBJ           2            0          2
+  ASPC           1            0          1
+  MGEF           1            0          1
+  SPEL           1            0          1
+  ACTI           1            0          1
+  MISC           1            0          1
+  MSTT           1            0          1
+  NAVI           1            1          0
+  WATR           1            0          1
+  ECZN           1            0          1
+  LCTN           1            0          1
+  SNDR           1            0          1
+
+  --- detail des records demandes ---
+  [nouveau  ] INGR 0204AE81  Zahilisk Eyeball  (ingredient)
+              EditorID : anvilGuareyeball
+              poids=0.1  valeur=23
+              effet 0003EB16 : magnitude=5 duree=0s
+              effet 00073F26 : magnitude=2 duree=10s
+              effet 0003A2B6 : magnitude=3 duree=0s
+              effet 0003EB15 : magnitude=5 duree=0s
+  [nouveau  ] INGR 0204AE7F  Zahilisk Tooth  (ingredient)
+              EditorID : AnvilGuartooth
+              poids=0.1  valeur=2
+              effet 0003EB16 : magnitude=5 duree=0s
+              effet 0003EB1F : magnitude=6 duree=60s
+              effet 0003EB1D : magnitude=12 duree=30s
+              effet 00090042 : magnitude=2 duree=30s
+  [nouveau  ] INGR 02040966  Rivercrab Chitin  (ingredient)
+              EditorID : Anvil_rivercrabChitin
+              poids=0.25  valeur=2
+              effet 0003EAEA : magnitude=3 duree=60s
+              effet 000AE722 : magnitude=5 duree=0s
+              effet 00090041 : magnitude=4 duree=60s
+              effet 0001CEA6 : magnitude=20 duree=0s
+  [nouveau  ] INGR 02040968  Siligonder Eggs  (ingredient)
+              EditorID : Anvil_siligonder_egg
+              poids=0.2  valeur=10
+              effet 00090042 : magnitude=2 duree=30s
+              effet 0003A2C6 : magnitude=3 duree=0s
+              effet 0003EB42 : magnitude=3 duree=0s
+              effet 00073F30 : magnitude=0 duree=12s
+  [nouveau  ] ALCH 0204096D  Rivercrab meat  (nourriture)
+              EditorID : FoodAnvilRivercrabmeat
+              poids=0.1  valeur=3
+              effet 0002F3BA : magnitude=22 duree=0s
+              effet 000FB98E : magnitude=2 duree=0s
+  [nouveau  ] ALCH 02040962  Poisonbite Venom  (poison)
+              EditorID : Anvil_PoisonbiteVenom
+              poids=0.5  valeur=1249
+              effet 00073F30 : magnitude=0 duree=23s
+  [nouveau  ] ALCH 0204096A  Hyena Meat  (nourriture)
+              EditorID : Food_Anvil_hyenaMeat
+              poids=0.2  valeur=3
+              effet 000F33CB : magnitude=2 duree=0s
+  [nouveau  ] ALCH 0205AA7F  Poisoned Hyena Meat  (poison)
+              EditorID : Food_Anvil_hyenaMeatpoison
+              poids=0.2  valeur=3
+              effet 000F33CB : magnitude=2 duree=0s
+              effet 0010C645 : magnitude=5 duree=40s
+  [nouveau  ] COBJ 0204C9AF  TemperArmorSiligonderAnvil  (recette)
+              composant 02040965 x1
+              produit 020440A8 x1
+  [nouveau  ] COBJ 0204C9AB  RecipeArmorAnvilSiligonderCuirass  (recette)
+              composant 02040965 x4
+              composant 0204AE7F x2
+              composant 0005AD9D x1
+              produit 020440A8 x1
+
+==============================================================================
+improvedskillbooks.esp   (679 578 octets)
+==============================================================================
+  Auteur      : DEFAULT
+  Masters     : Skyrim.esm
+  Type        : ESP
+  Records     : 90 dont 90 en surcharge de records existants
+
+  TYPE       TOTAL   SURCHARGES   NOUVEAUX
+  ----------------------------------------
+  BOOK          90           90          0
+
+==============================================================================
+lighter_mining_smithing_materials.esp   (6 671 octets)
+==============================================================================
+  Auteur      : DEFAULT
+  Masters     : Skyrim.esm
+  Type        : ESP
+  Records     : 29 dont 29 en surcharge de records existants
+
+  TYPE       TOTAL   SURCHARGES   NOUVEAUX
+  ----------------------------------------
+  MISC          27           27          0
+  WEAP           2            2          0
+
+==============================================================================
+lightingredients.esp   (31 880 octets)
+==============================================================================
+  Auteur      : Wojciech Kozlowski
+  Description : Light Ingredients
+
+
+
+Weight of all ingredients is reduced to 0.
+  Masters     : Skyrim.esm
+  Type        : ESP
+  Records     : 94 dont 94 en surcharge de records existants
+
+  TYPE       TOTAL   SURCHARGES   NOUVEAUX
+  ----------------------------------------
+  INGR          94           94          0
+
+  --- detail des records demandes ---
+  [SURCHARGE] INGR 00023D77  Chicken's Egg  (ingredient)
+              EditorID : BirdEgg03
+              poids=0  valeur=2
+              effet 00039E51 : magnitude=1 duree=60s
+              effet 00073F2B : magnitude=100 duree=5s
+              effet 0003AC2D : magnitude=0 duree=5s
+              effet 0010DE5E : magnitude=1 duree=10s
+  [SURCHARGE] INGR 0006ABCB  Canis Root  (ingredient)
+              EditorID : CanisRoot01
+              poids=0  valeur=5
+              effet 0003A2C6 : magnitude=3 duree=0s
+              effet 0003EB19 : magnitude=4 duree=60s
+              effet 0003EB1B : magnitude=4 duree=60s
+              effet 00073F30 : magnitude=0 duree=1s
+  [SURCHARGE] INGR 000B2183  Creep Cluster  (ingredient)
+              EditorID : CreepClusterRoot
+              poids=0  valeur=1
+              effet 0003EB17 : magnitude=5 duree=0s
+              effet 00073F2C : magnitude=100 duree=5s
+              effet 0003EB01 : magnitude=4 duree=300s
+              effet 00073F51 : magnitude=2 duree=30s
+  [SURCHARGE] INGR 0001BCBC  Jarrin Root  (ingredient)
+              EditorID : DBJarrinRoot
+              poids=0  valeur=10
+              effet 0003EB42 : magnitude=200 duree=1s
+              effet 0003A2B6 : magnitude=3 duree=0s
+              effet 0003A2C6 : magnitude=3 duree=0s
+              effet 00073F2B : magnitude=100 duree=5s
+  [SURCHARGE] INGR 000516C8  Deathbell  (ingredient)
+              EditorID : deathBell
+              poids=0  valeur=4
+              effet 0003EB42 : magnitude=3 duree=1s
+              effet 00073F23 : magnitude=2 duree=20s
+              effet 00073F25 : magnitude=50 duree=5s
+              effet 00090042 : magnitude=2 duree=30s
+  [SURCHARGE] INGR 000889A2  Dragon's Tongue  (ingredient)
+              EditorID : DragonsTongue
+              poids=0  valeur=5
+              effet 0003EAEA : magnitude=3 duree=60s
+              effet 0003EB23 : magnitude=1 duree=30s
+              effet 0003EB27 : magnitude=1 duree=60s
+              effet 0003EB1A : magnitude=4 duree=60s
+  [SURCHARGE] INGR 00034D31  Elves Ear  (ingredient)
+              EditorID : ElvesEar
+              poids=0  valeur=10
+              effet 0003EB17 : magnitude=5 duree=0s
+              effet 0003EB1B : magnitude=4 duree=60s
+              effet 00073F2E : magnitude=2 duree=30s
+              effet 0003EAEA : magnitude=3 duree=30s
+  [SURCHARGE] INGR 00034D32  Frost Mirriam  (ingredient)
+              EditorID : FrostMirriam
+              poids=0  valeur=1
+              effet 0003EAEB : magnitude=3 duree=60s
+              effet 0003EB22 : magnitude=4 duree=60s
+              effet 00073F27 : magnitude=2 duree=10s
+              effet 00073F2C : magnitude=100 duree=5s
+  [SURCHARGE] INGR 00034D22  Garlic  (ingredient)
+              EditorID : Garlic
+              poids=0  valeur=1
+              effet 00090041 : magnitude=4 duree=60s
+              effet 0003EAF9 : magnitude=4 duree=60s
+              effet 0003EB07 : magnitude=5 duree=300s
+              effet 0003EB06 : magnitude=5 duree=300s
+  [SURCHARGE] INGR 0007E8C1  Giant Lichen  (ingredient)
+              EditorID : GiantLichen
+              poids=0  valeur=5
+              effet 00073F2F : magnitude=3 duree=30s
+              effet 00073F26 : magnitude=2 duree=10s
+              effet 00090042 : magnitude=2 duree=30s
+              effet 0003EB17 : magnitude=5 duree=0s
+  [SURCHARGE] INGR 0007EE01  Glowing Mushroom  (ingredient)
+              EditorID : GlowingMushroom
+              poids=0  valeur=5
+              effet 0003EAEC : magnitude=3 duree=60s
+              effet 0003EB26 : magnitude=5 duree=60s
+              effet 0003EB1D : magnitude=4 duree=30s
+              effet 0003EAF3 : magnitude=4 duree=60s
+  [SURCHARGE] INGR 00057F91  Hanging Moss  (ingredient)
+              EditorID : HangingMoss
+              poids=0  valeur=1
+              effet 0003A2B6 : magnitude=3 duree=0s
+              effet 0003EAF3 : magnitude=4 duree=60s
+              effet 00073F2B : magnitude=100 duree=5s
+              effet 0003EB19 : magnitude=4 duree=60s
+  [SURCHARGE] INGR 0006AC4A  Jazbay Grapes  (ingredient)
+              EditorID : JazBay
+              poids=0  valeur=1
+              effet 00073F51 : magnitude=2 duree=30s
+              effet 0003EAF8 : magnitude=4 duree=60s
+              effet 0003EB07 : magnitude=5 duree=300s
+              effet 00073F26 : magnitude=2 duree=10s
+  [SURCHARGE] INGR 0005076E  Juniper Berries  (ingredient)
+              EditorID : JuniperBerries
+              poids=0  valeur=1
+              effet 00073F2D : magnitude=3 duree=30s
+              effet 0003EB1B : magnitude=4 duree=60s
+              effet 0003EB06 : magnitude=5 duree=300s
+              effet 00073F2C : magnitude=100 duree=5s
+  [SURCHARGE] INGR 00045C28  Lavender  (ingredient)
+              EditorID : Lavender
+              poids=0  valeur=1
+              effet 00039E51 : magnitude=1 duree=60s
+              effet 0003EAF9 : magnitude=4 duree=60s
+              effet 00073F27 : magnitude=2 duree=10s
+              effet 0003EB25 : magnitude=4 duree=60s
+  [SURCHARGE] INGR 00077E1C  Blue Mountain Flower  (ingredient)
+              EditorID : MountainFlower01Blue
+              poids=0  valeur=2
+              effet 0003EB15 : magnitude=5 duree=0s
+              effet 0003EB25 : magnitude=5 duree=60s
+              effet 0003EAF3 : magnitude=4 duree=60s
+              effet 00073F2B : magnitude=100 duree=5s
+  [SURCHARGE] INGR 00077E1E  Purple Mountain Flower  (ingredient)
+              EditorID : MountainFlower01Purple
+              poids=0  valeur=2
+              effet 0003EB16 : magnitude=5 duree=0s
+              effet 0003EB22 : magnitude=4 duree=60s
+              effet 0010DE5F : magnitude=1 duree=10s
+              effet 0003EAEB : magnitude=3 duree=60s
+  [SURCHARGE] INGR 00077E1D  Red Mountain Flower  (ingredient)
+              EditorID : MountainFlower01Red
+              poids=0  valeur=2
+              effet 0003EB17 : magnitude=5 duree=0s
+              effet 00073F27 : magnitude=2 duree=10s
+              effet 0003EAF8 : magnitude=4 duree=60s
+              effet 0003EB42 : magnitude=2 duree=1s
+  [SURCHARGE] INGR 0004DA00  Fly Amanita  (ingredient)
+              EditorID : Mushroom01
+              poids=0  valeur=2
+              effet 0003EAEA : magnitude=3 duree=60s
+              effet 0003EB1A : magnitude=4 duree=60s
+              effet 00073F29 : magnitude=1 duree=10s
+              effet 0003EB08 : magnitude=5 duree=300s
+  [SURCHARGE] INGR 0004DA20  Bleeding Crown  (ingredient)
+              EditorID : Mushroom02
+              poids=0  valeur=10
+              effet 00073F2D : magnitude=3 duree=30s
+              effet 0003EB1C : magnitude=4 duree=60s
+              effet 00090042 : magnitude=2 duree=30s
+              effet 00039E51 : magnitude=1 duree=60s
+  [SURCHARGE] INGR 0004DA22  White Cap  (ingredient)
+              EditorID : Mushroom03
+              poids=0  valeur=0
+              effet 00073F2E : magnitude=3 duree=30s
+              effet 0003EB1E : magnitude=2 duree=60s
+              effet 0003EB17 : magnitude=5 duree=0s
+              effet 00073F27 : magnitude=2 duree=10s
+  [SURCHARGE] INGR 0004DA23  Imp Stool  (ingredient)
+              EditorID : Mushroom04
+              poids=0  valeur=0
+              effet 0003EB42 : magnitude=2 duree=1s
+              effet 0010AA4A : magnitude=1 duree=10s
+              effet 00073F30 : magnitude=0 duree=1s
+              effet 0003EB15 : magnitude=3 duree=0s
+  [SURCHARGE] INGR 0004DA24  Namira's Rot  (ingredient)
+              EditorID : Mushroom05
+              poids=0  valeur=0
+              effet 0003A2B6 : magnitude=3 duree=0s
+              effet 0003EB21 : magnitude=2 duree=30s
+              effet 00073F20 : magnitude=1 duree=30s
+              effet 0003EB06 : magnitude=5 duree=300s
+  [SURCHARGE] INGR 0004DA25  Blisterwort  (ingredient)
+              EditorID : Mushroom06
+              poids=0  valeur=12
+              effet 0003A2C6 : magnitude=3 duree=0s
+              effet 00073F29 : magnitude=1 duree=10s
+              effet 0003EB15 : magnitude=3 duree=0s
+              effet 0003EB1D : magnitude=4 duree=30s
+  [SURCHARGE] INGR 0002F44C  Nightshade  (ingredient)
+              EditorID : Nightshade
+              poids=0  valeur=8
+              effet 0003EB42 : magnitude=2 duree=1s
+              effet 00073F2B : magnitude=100 duree=5s
+              effet 0010DE5E : magnitude=1 duree=10s
+              effet 0003EB26 : magnitude=4 duree=60s
+  [SURCHARGE] INGR 00059B86  Nirnroot  (ingredient)
+              EditorID : Nirnroot
+              poids=0  valeur=10
+              effet 0003EB42 : magnitude=2 duree=0s
+              effet 0003A2C6 : magnitude=3 duree=0s
+              effet 0003EB3D : magnitude=0 duree=4s
+              effet 00039E51 : magnitude=1 duree=60s
+  [SURCHARGE] INGR 000B701A  Crimson Nirnroot  (ingredient)
+              EditorID : NirnrootRed
+              poids=0  valeur=10
+              effet 0003EB42 : magnitude=6 duree=1s
+              effet 0003A2C6 : magnitude=9 duree=0s
+              effet 0003EB3D : magnitude=0 duree=4s
+              effet 00039E51 : magnitude=1 duree=60s
+  [SURCHARGE] INGR 0007EDF5  Nordic Barnacle  (ingredient)
+              EditorID : NordicBarnacles
+              poids=0  valeur=5
+              effet 0003A2B6 : magnitude=3 duree=0s
+              effet 0003AC2D : magnitude=0 duree=5s
+              effet 0003EB06 : magnitude=5 duree=300s
+              effet 0003EB20 : magnitude=4 duree=60s
+  [SURCHARGE] INGR 0007E8C5  Slaughterfish Egg  (ingredient)
+              EditorID : SlaughterfishEgg01
+              poids=0  valeur=3
+              effet 00090041 : magnitude=4 duree=60s
+              effet 0003EB20 : magnitude=4 duree=60s
+              effet 0010AA4A : magnitude=1 duree=10s
+              effet 0003EAF9 : magnitude=4 duree=60s
+  [SURCHARGE] INGR 0001B3BD  Snowberries  (ingredient)
+              EditorID : Snowberry
+              poids=0  valeur=4
+              effet 0003EAEA : magnitude=3 duree=60s
+              effet 0003EB29 : magnitude=1 duree=30s
+              effet 0003EAEB : magnitude=3 duree=60s
+              effet 0003EAEC : magnitude=3 duree=60s
+  [SURCHARGE] INGR 00083E64  Grass Pod  (ingredient)
+              EditorID : SpikyGrass01
+              poids=0  valeur=1
+              effet 00090041 : magnitude=4 duree=60s
+              effet 00073F27 : magnitude=2 duree=10s
+              effet 0003EB24 : magnitude=4 duree=60s
+              effet 0003EB17 : magnitude=5 duree=0s
+  [SURCHARGE] INGR 0007E8B7  Swamp Fungal Pod  (ingredient)
+              EditorID : SwampFungalPod01
+              poids=0  valeur=5
+              effet 0003EAEC : magnitude=3 duree=60s
+              effet 0010DE5F : magnitude=1 duree=10s
+              effet 00073F30 : magnitude=0 duree=1s
+              effet 0003EB15 : magnitude=5 duree=0s
+  [SURCHARGE] INGR 000134AA  Thistle Branch  (ingredient)
+              EditorID : Thistle01
+              poids=0  valeur=1
+              effet 0003EAEB : magnitude=3 duree=60s
+              effet 00073F23 : magnitude=2 duree=10s
+              effet 00090041 : magnitude=3 duree=0s
+              effet 0003EB1E : magnitude=2 duree=60s
+  [SURCHARGE] INGR 0003F7F8  Tundra Cotton  (ingredient)
+              EditorID : TundraCotton
+              poids=0  valeur=1
+              effet 00039E51 : magnitude=1 duree=60s
+              effet 0003EAF8 : magnitude=4 duree=60s
+              effet 0003EB1C : magnitude=4 duree=60s
+              effet 0003EB23 : magnitude=1 duree=30s
+  [SURCHARGE] INGR 0004B0BA  Wheat  (ingredient)
+              EditorID : Wheat
+              poids=0  valeur=5
+              effet 0003EB15 : magnitude=5 duree=0s
+              effet 0003EAF3 : magnitude=4 duree=60s
+              effet 00073F2C : magnitude=100 duree=5s
+              effet 0010DE5F : magnitude=1 duree=10s
+  [SURCHARGE] INGR 0004DA73  Torchbug Thorax  (ingredient)
+              EditorID : FireflyThorax
+              poids=0  valeur=1
+              effet 0003EB16 : magnitude=5 duree=0s
+              effet 0010DE5F : magnitude=1 duree=10s
+              effet 00073F51 : magnitude=2 duree=30s
+              effet 0003EAF9 : magnitude=4 duree=60s
+  [SURCHARGE] INGR 000A9191  Beehive Husk  (ingredient)
+              EditorID : BeeHiveHusk
+              poids=0  valeur=5
+              effet 00090041 : magnitude=2 duree=60s
+              effet 0003EB1F : magnitude=2 duree=60s
+              effet 0003EB22 : magnitude=2 duree=60s
+              effet 0003EB26 : magnitude=5 duree=60s
+  [SURCHARGE] INGR 000B08C5  Honeycomb  (ingredient)
+              EditorID : BeeHoneyComb
+              poids=0  valeur=5
+              effet 0003EB16 : magnitude=5 duree=0s
+              effet 0003EB1C : magnitude=2 duree=60s
+              effet 0003EB1F : magnitude=2 duree=60s
+              effet 00073F23 : magnitude=2 duree=10s
+  [SURCHARGE] INGR 000A9195  Bee  (ingredient)
+              EditorID : CritterBeeIngredient
+              poids=0  valeur=3
+              effet 0003EB16 : magnitude=5 duree=0s
+              effet 00073F23 : magnitude=2 duree=10s
+              effet 0003EB08 : magnitude=5 duree=300s
+              effet 00073F2F : magnitude=3 duree=30s
+  [SURCHARGE] INGR 000854FE  Pearl  (ingredient)
+              EditorID : Pearl
+              poids=0  valeur=2
+              effet 0003EB16 : magnitude=5 duree=0s
+              effet 0003EB1C : magnitude=4 duree=60s
+              effet 0003EB17 : magnitude=5 duree=0s
+              effet 0003EAEC : magnitude=3 duree=60s
+  [SURCHARGE] INGR 00085500  Small Pearl  (ingredient)
+              EditorID : PearlSmall
+              poids=0  valeur=2
+              effet 0003EB16 : magnitude=5 duree=0s
+              effet 0003EB19 : magnitude=4 duree=60s
+              effet 0003EB28 : magnitude=4 duree=60s
+              effet 0003EAEB : magnitude=3 duree=60s
+  [SURCHARGE] INGR 0006BC0A  Large Antlers  (ingredient)
+              EditorID : AntlersLarge
+              poids=0  valeur=2
+              effet 0003EB16 : magnitude=5 duree=0s
+              effet 0003EAF9 : magnitude=4 duree=60s
+              effet 00073F25 : magnitude=5 duree=30s
+              effet 00073F2C : magnitude=100 duree=5s
+  [SURCHARGE] INGR 0006BC02  Bear Claws  (ingredient)
+              EditorID : BearClaws
+              poids=0  valeur=2
+              effet 0003EB16 : magnitude=4 duree=0s
+              effet 0003EAF3 : magnitude=4 duree=60s
+              effet 0003EB19 : magnitude=4 duree=60s
+              effet 00073F2B : magnitude=100 duree=5s
+  [SURCHARGE] INGR 0006BC0B  Small Antlers  (ingredient)
+              EditorID : AntlersSmall
+              poids=0  valeur=2
+              effet 00090042 : magnitude=2 duree=30s
+              effet 0003EB28 : magnitude=4 duree=60s
+              effet 0010DE5E : magnitude=1 duree=10s
+              effet 0003EB42 : magnitude=2 duree=1s
+  [SURCHARGE] INGR 00034CDD  Bone Meal  (ingredient)
+              EditorID : BoneMeal
+              poids=0  valeur=5
+              effet 0003A2C6 : magnitude=3 duree=0s
+              effet 0003EAEA : magnitude=3 duree=60s
+              effet 0003EB25 : magnitude=5 duree=60s
+              effet 00073F23 : magnitude=2 duree=10s
+  [SURCHARGE] INGR 0003AD61  Briar Heart  (ingredient)
+              EditorID : BriarHeart
+              poids=0  valeur=20
+              effet 0003EB17 : magnitude=5 duree=0s
+              effet 0003EB1C : magnitude=2 duree=60s
+              effet 00073F30 : magnitude=0 duree=1s
+              effet 0003EAF8 : magnitude=4 duree=60s
+  [SURCHARGE] INGR 0003AD5B  Daedra Heart  (ingredient)
+              EditorID : DaedraHeart
+              poids=0  valeur=250
+              effet 0003EB15 : magnitude=5 duree=0s
+              effet 00073F2C : magnitude=100 duree=5s
+              effet 0003A2B6 : magnitude=3 duree=0s
+              effet 00073F20 : magnitude=1 duree=30s
+  [SURCHARGE] INGR 000E4F0C  Blue Dartwing  (ingredient)
+              EditorID : DragonflyBlue
+              poids=0  valeur=1
+              effet 0003EAEC : magnitude=3 duree=60s
+              effet 0003EB20 : magnitude=4 duree=60s
+              effet 0003EB15 : magnitude=5 duree=0s
+              effet 00073F20 : magnitude=1 duree=30s
+  [SURCHARGE] INGR 000BB956  Orange Dartwing  (ingredient)
+              EditorID : DragonflyOrange
+              poids=0  valeur=1
+              effet 0003EB16 : magnitude=5 duree=0s
+              effet 00073F27 : magnitude=2 duree=10s
+              effet 0003EB20 : magnitude=4 duree=60s
+              effet 0010AA4A : magnitude=1 duree=10s
+  [SURCHARGE] INGR 000F11C0  Dwarven Oil  (ingredient)
+              EditorID : DwarvenOil
+              poids=0  valeur=15
+              effet 00073F51 : magnitude=2 duree=30s
+              effet 0003EB27 : magnitude=4 duree=60s
+              effet 0003EB07 : magnitude=5 duree=300s
+              effet 0003EB17 : magnitude=5 duree=0s
+  [SURCHARGE] INGR 0003AD63  Ectoplasm  (ingredient)
+              EditorID : Ectoplasm
+              poids=0  valeur=25
+              effet 0003EB17 : magnitude=5 duree=0s
+              effet 0003EB26 : magnitude=4 duree=60s
+              effet 0003EAF8 : magnitude=4 duree=60s
+              effet 0003EB42 : magnitude=2 duree=1s
+  [SURCHARGE] INGR 0003AD5D  Falmer Ear  (ingredient)
+              EditorID : FalmerEar
+              poids=0  valeur=10
+              effet 0003EB42 : magnitude=2 duree=1s
+              effet 00073F29 : magnitude=1 duree=10s
+              effet 00090041 : magnitude=4 duree=60s
+              effet 0003EB21 : magnitude=2 duree=30s
+  [SURCHARGE] INGR 000705B7  Berit's Ashes  (ingredient)
+              EditorID : FavorThadgeirAshes
+              poids=0  valeur=5
+              effet 0003A2C6 : magnitude=3 duree=0s
+              effet 0003EAEA : magnitude=3 duree=60s
+              effet 0003EB25 : magnitude=5 duree=60s
+              effet 00073F23 : magnitude=2 duree=10s
+  [SURCHARGE] INGR 0003AD5E  Fire Salts  (ingredient)
+              EditorID : FireSalts
+              poids=0  valeur=50
+              effet 00073F2E : magnitude=3 duree=30s
+              effet 0003EAEA : magnitude=3 duree=60s
+              effet 0003EB17 : magnitude=5 duree=0s
+              effet 0003EB07 : magnitude=5 duree=300s
+  [SURCHARGE] INGR 0003AD5F  Frost Salts  (ingredient)
+              EditorID : FrostSalts
+              poids=0  valeur=100
+              effet 00073F2D : magnitude=3 duree=30s
+              effet 0003EAEB : magnitude=3 duree=60s
+              effet 0003EB17 : magnitude=5 duree=0s
+              effet 0003EB25 : magnitude=5 duree=60s
+  [SURCHARGE] INGR 0003AD64  Giant's Toe  (ingredient)
+              EditorID : GiantToes
+              poids=0  valeur=20
+              effet 0003A2C6 : magnitude=3 duree=0s
+              effet 0003EAF3 : magnitude=4 duree=300s
+              effet 0003EB01 : magnitude=4 duree=300s
+              effet 00073F2C : magnitude=100 duree=5s
+  [SURCHARGE] INGR 0003AD73  Glow Dust  (ingredient)
+              EditorID : glowDust
+              poids=0  valeur=20
+              effet 0003A2B6 : magnitude=3 duree=0s
+              effet 00073F2B : magnitude=100 duree=5s
+              effet 0003EB26 : magnitude=5 duree=60s
+              effet 0003EAEC : magnitude=3 duree=60s
+  [SURCHARGE] INGR 0006B689  Hagraven Claw  (ingredient)
+              EditorID : HagravenClaw
+              poids=0  valeur=20
+              effet 00039E51 : magnitude=1 duree=60s
+              effet 0010DE5F : magnitude=1 duree=10s
+              effet 0003EB29 : magnitude=1 duree=30s
+              effet 0003EB23 : magnitude=1 duree=30s
+  [SURCHARGE] INGR 0003AD66  Hagraven Feathers  (ingredient)
+              EditorID : HagravenFeathers
+              poids=0  valeur=20
+              effet 0003A2B6 : magnitude=3 duree=0s
+              effet 0003EB25 : magnitude=5 duree=60s
+              effet 00073F29 : magnitude=1 duree=10s
+              effet 00073F2F : magnitude=3 duree=30s
+  [SURCHARGE] INGR 000E7EBC  Hawk Beak  (ingredient)
+              EditorID : HawkBeak
+              poids=0  valeur=15
+              effet 0003EB16 : magnitude=5 duree=0s
+              effet 0003EAEB : magnitude=3 duree=60s
+              effet 0003EB01 : magnitude=4 duree=300s
+              effet 0003EAEC : magnitude=3 duree=60s
+  [SURCHARGE] INGR 000E7ED0  Hawk Feathers  (ingredient)
+              EditorID : HawkFeathers
+              poids=0  valeur=15
+              effet 000AE722 : magnitude=2 duree=0s
+              effet 0003EB1F : magnitude=2 duree=60s
+              effet 0003EB19 : magnitude=4 duree=60s
+              effet 0003EB22 : magnitude=4 duree=60s
+  [SURCHARGE] INGR 001016B3  Human Flesh  (ingredient)
+              EditorID : HumanFlesh
+              poids=0  valeur=1
+              effet 0003EB42 : magnitude=2 duree=1s
+              effet 00073F30 : magnitude=0 duree=1s
+              effet 0003EB17 : magnitude=5 duree=0s
+              effet 0003EB22 : magnitude=4 duree=60s
+  [SURCHARGE] INGR 000B18CD  Human Heart  (ingredient)
+              EditorID : HumanHeart
+              poids=0  valeur=0
+              effet 0003EB42 : magnitude=2 duree=1s
+              effet 0003A2B6 : magnitude=3 duree=0s
+              effet 00073F2B : magnitude=100 duree=5s
+              effet 00073F29 : magnitude=1 duree=10s
+  [SURCHARGE] INGR 0003AD6A  Ice Wraith Teeth  (ingredient)
+              EditorID : IceWraithTeeth
+              poids=0  valeur=30
+              effet 00073F2E : magnitude=3 duree=30s
+              effet 0003EB1E : magnitude=2 duree=60s
+              effet 0003EB3D : magnitude=0 duree=4s
+              effet 00073F2D : magnitude=3 duree=30s
+  [SURCHARGE] INGR 000D8E3F  Moon Sugar  (ingredient)
+              EditorID : MoonSugar
+              poids=0  valeur=50
+              effet 00073F2D : magnitude=3 duree=30s
+              effet 0003EAEB : magnitude=3 duree=60s
+              effet 0003EB17 : magnitude=5 duree=0s
+              effet 0003EB07 : magnitude=5 duree=300s
+  [SURCHARGE] INGR 000EC870  Mora Tapinella  (ingredient)
+              EditorID : MoraTapinellaBits
+              poids=0  valeur=4
+              effet 0003EB17 : magnitude=5 duree=0s
+              effet 0010AA4A : magnitude=1 duree=10s
+              effet 0003EB08 : magnitude=5 duree=300s
+              effet 0003EB27 : magnitude=4 duree=60s
+  [SURCHARGE] INGR 000727DE  Blue Butterfly Wing  (ingredient)
+              EditorID : MothWingBlue
+              poids=0  valeur=2
+              effet 0003A2C6 : magnitude=3 duree=0s
+              effet 0003EB25 : magnitude=5 duree=60s
+              effet 00073F2B : magnitude=100 duree=5s
+              effet 0003EB29 : magnitude=1 duree=30s
+  [SURCHARGE] INGR 000727DF  Luna Moth Wing  (ingredient)
+              EditorID : MothWingLuna
+              poids=0  valeur=5
+              effet 0003A2B6 : magnitude=3 duree=0s
+              effet 0003EB1F : magnitude=2 duree=60s
+              effet 0003EB06 : magnitude=5 duree=300s
+              effet 0003EB3D : magnitude=0 duree=4s
+  [SURCHARGE] INGR 000727E0  Butterfly Wing  (ingredient)
+              EditorID : MothWingMonarch
+              poids=0  valeur=3
+              effet 0003EB15 : magnitude=5 duree=0s
+              effet 0003EB23 : magnitude=1 duree=30s
+              effet 0010DE5E : magnitude=1 duree=10s
+              effet 0003A2B6 : magnitude=3 duree=0s
+  [SURCHARGE] INGR 00074A19  Salt Pile  (ingredient)
+              EditorID : MS03BlackBriarSecretIngredient
+              poids=0  valeur=1
+              effet 00073F51 : magnitude=2 duree=30s
+              effet 0003EB28 : magnitude=4 duree=60s
+              effet 00073F25 : magnitude=50 duree=5s
+              effet 0003EB07 : magnitude=5 duree=300s
+  [SURCHARGE] INGR 0006BC00  Mudcrab Chitin  (ingredient)
+              EditorID : MudcrabChitin
+              poids=0  valeur=2
+              effet 0003EB16 : magnitude=5 duree=0s
+              effet 000AE722 : magnitude=5 duree=0s
+              effet 00090041 : magnitude=4 duree=60s
+              effet 0003EAEA : magnitude=3 duree=60s
+  [SURCHARGE] INGR 0006BC10  Powdered Mammoth Tusk  (ingredient)
+              EditorID : PowderedMammothTusk
+              poids=0  valeur=2
+              effet 0003EB16 : magnitude=5 duree=0s
+              effet 0003EB22 : magnitude=4 duree=60s
+              effet 00073F2D : magnitude=3 duree=30s
+              effet 00073F20 : magnitude=1 duree=30s
+  [SURCHARGE] INGR 0006BC07  Eye of Sabre Cat  (ingredient)
+              EditorID : SabrecatEyeball
+              poids=0  valeur=2
+              effet 0003EB16 : magnitude=5 duree=0s
+              effet 00073F26 : magnitude=2 duree=10s
+              effet 0003A2B6 : magnitude=3 duree=0s
+              effet 0003EB15 : magnitude=5 duree=0s
+  [SURCHARGE] INGR 00034CDF  Salt Pile  (ingredient)
+              EditorID : SaltPile
+              poids=0  valeur=2
+              effet 00073F51 : magnitude=2 duree=30s
+              effet 0003EB28 : magnitude=4 duree=60s
+              effet 00073F25 : magnitude=50 duree=5s
+              effet 0003EB07 : magnitude=5 duree=300s
+  [SURCHARGE] INGR 0006BC04  Sabre Cat Tooth  (ingredient)
+              EditorID : SabrecatTooth
+              poids=0  valeur=2
+              effet 0003EB16 : magnitude=5 duree=0s
+              effet 0003EB1E : magnitude=2 duree=60s
+              effet 0003EB1D : magnitude=4 duree=30s
+              effet 00090042 : magnitude=2 duree=30s
+  [SURCHARGE] INGR 0006F950  Scaly Pholiota  (ingredient)
+              EditorID : ScalyPholiotaBits
+              poids=0  valeur=4
+              effet 00073F51 : magnitude=2 duree=30s
+              effet 0003EB27 : magnitude=4 duree=60s
+              effet 0003EB08 : magnitude=5 duree=300s
+              effet 0003EB01 : magnitude=4 duree=300s
+  [SURCHARGE] INGR 0003AD6F  Skeever Tail  (ingredient)
+              EditorID : SkeeverTail
+              poids=0  valeur=3
+              effet 00073F2C : magnitude=100 duree=5s
+              effet 00073F26 : magnitude=2 duree=10s
+              effet 0003EB42 : magnitude=2 duree=1s
+              effet 0003EB1F : magnitude=2 duree=60s
+  [SURCHARGE] INGR 0003AD70  Slaughterfish Scales  (ingredient)
+              EditorID : SlaughterfishScales
+              poids=0  valeur=3
+              effet 0003EAEB : magnitude=3 duree=60s
+              effet 0010AA4A : magnitude=1 duree=10s
+              effet 0003EB1E : magnitude=2 duree=60s
+              effet 0003EB1C : magnitude=4 duree=60s
+  [SURCHARGE] INGR 0009151B  Spider Egg  (ingredient)
+              EditorID : SpiderEgg
+              poids=0  valeur=5
+              effet 0003A2C6 : magnitude=3 duree=0s
+              effet 00073F2B : magnitude=100 duree=5s
+              effet 0003EB21 : magnitude=2 duree=30s
+              effet 0003EB1B : magnitude=4 duree=60s
+  [SURCHARGE] INGR 00063B5F  Spriggan Sap  (ingredient)
+              EditorID : SprigganSap
+              poids=0  valeur=15
+              effet 00073F2B : magnitude=100 duree=5s
+              effet 0003EB29 : magnitude=1 duree=30s
+              effet 0003EB1D : magnitude=4 duree=30s
+              effet 0003EB24 : magnitude=4 duree=60s
+  [SURCHARGE] INGR 0003AD71  Taproot  (ingredient)
+              EditorID : Taproot
+              poids=0  valeur=15
+              effet 00073F51 : magnitude=2 duree=30s
+              effet 0003EB27 : magnitude=4 duree=60s
+              effet 0003EB07 : magnitude=5 duree=300s
+              effet 0003EB17 : magnitude=5 duree=0s
+  [SURCHARGE] INGR 0003AD72  Troll Fat  (ingredient)
+              EditorID : TrollFat
+              poids=0  valeur=15
+              effet 00090041 : magnitude=4 duree=60s
+              effet 0003EB1A : magnitude=4 duree=60s
+              effet 00073F29 : magnitude=1 duree=10s
+              effet 0003EB42 : magnitude=2 duree=1s
+  [SURCHARGE] INGR 0003AD76  Vampire Dust  (ingredient)
+              EditorID : vampireDust
+              poids=0  valeur=25
+              effet 0003EB3D : magnitude=0 duree=4s
+              effet 0003EB17 : magnitude=5 duree=0s
+              effet 0003EB06 : magnitude=5 duree=300s
+              effet 000AE722 : magnitude=5 duree=0s
+  [SURCHARGE] INGR 0003AD60  Void Salts  (ingredient)
+              EditorID : VoidSalts
+              poids=0  valeur=125
+              effet 00073F2F : magnitude=3 duree=30s
+              effet 00039E51 : magnitude=1 duree=60s
+              effet 0003EB42 : magnitude=2 duree=1s
+              effet 0003EAF8 : magnitude=4 duree=60s
+  [SURCHARGE] INGR 0006BC0E  Wisp Wrappings  (ingredient)
+              EditorID : WispWrappings
+              poids=0  valeur=2
+              effet 0003EB16 : magnitude=5 duree=0s
+              effet 0003EB26 : magnitude=5 duree=60s
+              effet 0003EB01 : magnitude=4 duree=300s
+              effet 00039E51 : magnitude=1 duree=60s
+  [SURCHARGE] INGR 00052695  Charred Skeever Hide  (ingredient)
+              EditorID : CharredSkeeverHide
+              poids=0  valeur=1
+              effet 0003EB16 : magnitude=5 duree=0s
+              effet 000AE722 : magnitude=2 duree=0s
+              effet 00090041 : magnitude=4 duree=60s
+              effet 0003EB15 : magnitude=5 duree=0s
+  [SURCHARGE] INGR 00106E1C  Silverside Perch  (ingredient)
+              EditorID : CritterPondFish01Ingredient
+              poids=0  valeur=15
+              effet 0003EB16 : magnitude=5 duree=0s
+              effet 00073F2C : magnitude=100 duree=5s
+              effet 00073F26 : magnitude=2 duree=10s
+              effet 0003EAEB : magnitude=3 duree=60s
+  [SURCHARGE] INGR 00106E1B  Abecean Longfin  (ingredient)
+              EditorID : CritterPondFish02Ingredient
+              poids=0  valeur=15
+              effet 00073F2E : magnitude=3 duree=30s
+              effet 0003EB22 : magnitude=4 duree=60s
+              effet 00090042 : magnitude=2 duree=30s
+              effet 0003EB28 : magnitude=4 duree=60s
+  [SURCHARGE] INGR 00106E1A  River Betty  (ingredient)
+              EditorID : CritterPondFish03Ingredient
+              poids=0  valeur=15
+              effet 0003EB42 : magnitude=5 duree=0s
+              effet 0003EB24 : magnitude=4 duree=60s
+              effet 00073F25 : magnitude=50 duree=5s
+              effet 0003EB01 : magnitude=4 duree=300s
+  [SURCHARGE] INGR 00106E19  Cyrodilic Spadetail  (ingredient)
+              EditorID : CritterPondFish04Ingredient
+              poids=0  valeur=15
+              effet 0003A2C6 : magnitude=3 duree=0s
+              effet 0003EB28 : magnitude=4 duree=60s
+              effet 00073F20 : magnitude=1 duree=30s
+              effet 00073F26 : magnitude=2 duree=10s
+  [SURCHARGE] INGR 00106E18  Histcarp  (ingredient)
+              EditorID : CritterPondFish05Ingredient
+              poids=0  valeur=6
+              effet 0003EB16 : magnitude=5 duree=0s
+              effet 0003EAF8 : magnitude=4 duree=60s
+              effet 00073F2C : magnitude=100 duree=5s
+              effet 0003AC2D : magnitude=0 duree=5s
+  [SURCHARGE] INGR 0003AD56  Chaurus Eggs  (ingredient)
+              EditorID : ChaurusEggs
+              poids=0  valeur=10
+              effet 00090042 : magnitude=2 duree=30s
+              effet 0003EAF9 : magnitude=4 duree=60s
+              effet 0003A2B6 : magnitude=3 duree=0s
+              effet 0003EB3D : magnitude=0 duree=4s
+  [SURCHARGE] INGR 0007E8C8  Rock Warbler Egg  (ingredient)
+              EditorID : BirdEgg01
+              poids=0  valeur=2
+              effet 0003EB15 : magnitude=5 duree=0s
+              effet 0003EB19 : magnitude=4 duree=60s
+              effet 0003A2C6 : magnitude=3 duree=0s
+              effet 00073F51 : magnitude=2 duree=30s
+  [SURCHARGE] INGR 00023D6F  Pine Thrush Egg  (ingredient)
+              EditorID : BirdEgg02
+              poids=0  valeur=2
+              effet 0003EB16 : magnitude=5 duree=0s
+              effet 0003EB21 : magnitude=2 duree=30s
+              effet 00090042 : magnitude=2 duree=30s
+              effet 0003EAEC : magnitude=3 duree=60s
+
+==============================================================================
+lockpickvision.esp   (66 octets)
+==============================================================================
+  Auteur      : DEFAULT
+  Masters     : (aucun)
+  Type        : ESP
+  Aucun record.
+
+==============================================================================
+more dragons.esp   (246 octets)
+==============================================================================
+  Auteur      : Domcoppinger
+  Masters     : Skyrim.esm
+  Type        : ESP
+  Records     : 2 dont 2 en surcharge de records existants
+
+  TYPE       TOTAL   SURCHARGES   NOUVEAUX
+  ----------------------------------------
+  GLOB           2            2          0
+
+==============================================================================
+moredragonloot.esp   (1 208 octets)
+==============================================================================
+  Auteur      : DEFAULT
+  Masters     : Skyrim.esm, Update.esm
+  Type        : ESP
+  Records     : 4 dont 2 en surcharge de records existants
+
+  TYPE       TOTAL   SURCHARGES   NOUVEAUX
+  ----------------------------------------
+  LVLI           3            1          2
+  WRLD           1            1          0
+
+==============================================================================
+quest_andtherealmsofdaedra.esp   (491 000 octets)
+==============================================================================
+  Auteur      : ThirteenOranges
+  Masters     : Skyrim.esm, Update.esm
+  Type        : ESP
+  Records     : 2752 dont 36 en surcharge de records existants
+
+  TYPE       TOTAL   SURCHARGES   NOUVEAUX
+  ----------------------------------------
+  REFR        2455            6       2449
+  CELL          67           13         54
+  LAND          43            0         43
+  ACHR          41            1         40
+  BOOK          31            0         31
+  NPC_          29            0         29
+  NAVM          21            7         14
+  LVLI           8            7          1
+  ACTI           7            0          7
+  MGEF           6            0          6
+  SPEL           5            0          5
+  PERK           5            0          5
+  IMGS           4            0          4
+  LVLN           3            0          3
+  WTHR           3            0          3
+  WRLD           3            1          2
+  ECZN           3            0          3
+  LCTN           3            0          3
+  MESG           3            0          3
+  WEAP           2            0          2
+  CLMT           2            0          2
+  FACT           1            0          1
+  SOUN           1            0          1
+  ENCH           1            0          1
+  CONT           1            0          1
+  LIGH           1            0          1
+  COBJ           1            0          1
+  NAVI           1            1          0
+  QUST           1            0          1
+
+  --- detail des records demandes ---
+  [nouveau  ] COBJ 0200FEDB  tos_TemperWeaponBosmeriBow  (recette)
+              composant 0006F993 x1
+              produit 0200EE19 x1
+
+==============================================================================
+quest_nomercy.esp   (383 050 octets)
+==============================================================================
+  Auteur      : ThirteenOranges
+  Description : A messager has been sent from a small chapel of Stendarr to the Vigilant at Stendarr's Beacon, seeking aid against an unknown evil. Investigate what has happened at Stendarr's Chapel and explore the d
+  Masters     : Skyrim.esm, Update.esm
+  Type        : ESP
+  Records     : 1625 dont 101 en surcharge de records existants
+
+  TYPE       TOTAL   SURCHARGES   NOUVEAUX
+  ----------------------------------------
+  REFR        1489           56       1433
+  ACHR          29            1         28
+  CELL          25           20          5
+  NAVM          24           13         11
+  NPC_          13            0         13
+  LAND           9            9          0
+  BOOK           6            0          6
+  MISC           6            0          6
+  LIGH           4            0          4
+  WEAP           2            0          2
+  COBJ           2            0          2
+  PERK           2            0          2
+  OTFT           2            0          2
+  MGEF           1            0          1
+  SPEL           1            0          1
+  ACTI           1            0          1
+  ARMO           1            0          1
+  CONT           1            0          1
+  KEYM           1            0          1
+  NAVI           1            1          0
+  WRLD           1            1          0
+  QUST           1            0          1
+  ECZN           1            0          1
+  LCTN           1            0          1
+  MESG           1            0          1
+
+  --- detail des records demandes ---
+  [nouveau  ] COBJ 020090E4  tos_TemperWeaponBlessedStendarrBlade  (recette)
+              composant 0005ACE3 x1
+              produit 02005EDF x1
+  [nouveau  ] COBJ 020090E5  tos_TemperWeaponBlessedStendarrDagger  (recette)
+              composant 0005ACE3 x1
+              produit 02006A8E x1
+
+==============================================================================
+quest_pitfighter.esp   (703 430 octets)
+==============================================================================
+  Auteur      : DEFAULT
+  Masters     : Skyrim.esm, Update.esm
+  Type        : ESP
+  Records     : 3924 dont 42 en surcharge de records existants
+
+  TYPE       TOTAL   SURCHARGES   NOUVEAUX
+  ----------------------------------------
+  REFR        2975           12       2963
+  ACHR         153            0        153
+  CELL         100           14         86
+  INFO          90            0         90
+  NPC_          87            0         87
+  DIAL          60            0         60
+  LAND          49            4         45
+  NAVM          45            7         38
+  PACK          36            0         36
+  MESG          32            0         32
+  LVLI          30            0         30
+  STAT          24            0         24
+  DLBR          22            0         22
+  WEAP          20            0         20
+  QUST          17            1         16
+  LSCR          16            0         16
+  TXST          15            0         15
+  COBJ          15            0         15
+  DLVW          15            0         15
+  OTFT          15            0         15
+  GLOB          14            0         14
+  LCRT          13            0         13
+  LVLN          12            0         12
+  ACTI           7            0          7
+  VTYP           7            0          7
+  LCTN           7            0          7
+  WRLD           6            2          4
+  ECZN           6            0          6
+  KYWD           5            0          5
+  FACT           5            0          5
+  ARMO           5            0          5
+  BOOK           3            0          3
+  ARMA           3            0          3
+  SMQN           3            0          3
+  CONT           2            0          2
+  MSTT           2            0          2
+  SMBN           2            0          2
+  MGEF           1            0          1
+  ENCH           1            0          1
+  KEYM           1            0          1
+  NAVI           1            1          0
+  FLST           1            1          0
+  MUSC           1            0          1
+
+  --- detail des records demandes ---
+  [nouveau  ] COBJ 02028C95  tos_TemperPaladinArmor  (recette)
+              composant 0005ACE4 x1
+              produit 0201A281 x1
+  [nouveau  ] COBJ 02028C92  tos_TemperKhajiitClub  (recette)
+              composant 0006F993 x1
+              produit 02023950 x1
+  [nouveau  ] COBJ 02028C93  tos_TemperArgonianShield  (recette)
+              composant 0005ACE5 x1
+              produit 020244BB x1
+  [nouveau  ] COBJ 0202C37E  tos_TemperCavalryHammer  (recette)
+              composant 0005ACE5 x1
+              produit 0202C37D x1
+  [nouveau  ] COBJ 0202C37F  tos_TemperChitinDagger  (recette)
+              composant 0006BC00 x1
+              produit 0202C37C x1
+  [nouveau  ] COBJ 02028C94  tos_TemperPaladinShield  (recette)
+              composant 0005ACE4 x1
+              produit 0201A27E x1
+  [nouveau  ] COBJ 02028C8D  tos_TemperOrcishHatchet01  (recette)
+              composant 0005AD99 x1
+              produit 02023951 x1
+  [nouveau  ] COBJ 02028C8B  tos_TemperAdamantiumSword  (recette)
+              composant 0005AD9D x1
+              produit 020228C6 x1
+  [nouveau  ] COBJ 02028C91  tos_TemperAncientAxe  (recette)
+              composant 0005ACE5 x1
+              produit 0202394F x1
+  [nouveau  ] COBJ 02028C90  tos_TemperRedguardDagger  (recette)
+              composant 0005ACE5 x1
+              produit 02023953 x1
+  [nouveau  ] COBJ 02028C8E  tos_TemperOrcishHatchet02  (recette)
+              composant 0005AD99 x1
+              produit 02023952 x1
+  [nouveau  ] COBJ 02028C8F  tos_TemperRedguardSword  (recette)
+              composant 0005ACE5 x1
+              produit 02023954 x1
+  [nouveau  ] COBJ 0202F4EC  tos_TemperWoodElfMachete  (recette)
+              composant 0005ACE5 x1
+              produit 0202D415 x1
+  [nouveau  ] COBJ 0202F4ED  tos_TemperAldmeriSword  (recette)
+              composant 0005AD9E x1
+              produit 020228D5 x1
+  [nouveau  ] COBJ 0202F4EB  tos_TemperChitinDaggerFire  (recette)
+              composant 0006BC00 x1
+              produit 0202DF07 x1
+
+==============================================================================
+quest_seaofghosts.esp   (2 722 049 octets)
+==============================================================================
+  Auteur      : ThirteenOranges
+  Masters     : Skyrim.esm, Update.esm
+  Type        : ESP
+  Records     : 11501 dont 79 en surcharge de records existants
+
+  TYPE       TOTAL   SURCHARGES   NOUVEAUX
+  ----------------------------------------
+  REFR        9216           11       9205
+  CELL         663           31        632
+  LAND         545            0        545
+  NAVM         464           26        438
+  ACHR         156            1        155
+  NPC_          49            0         49
+  PACK          35            0         35
+  ACTI          32            0         32
+  INFO          28            0         28
+  BOOK          27            0         27
+  DIAL          24            0         24
+  PERK          19            0         19
+  MGEF          18            0         18
+  MESG          17            0         17
+  DLBR          16            0         16
+  LIGH          14            0         14
+  LCTN          13            2         11
+  GLOB          12            0         12
+  WRLD          12            2         10
+  QUST          11            0         11
+  COBJ          10            0         10
+  OTFT          10            0         10
+  SCRL           9            1          8
+  ARMO           9            0          9
+  ECZN           9            0          9
+  DLVW           9            0          9
+  SPEL           8            1          7
+  MISC           7            0          7
+  WEAP           7            0          7
+  LVLN           7            0          7
+  VTYP           5            0          5
+  STAT           4            0          4
+  ALCH           4            0          4
+  CLMT           4            1          3
+  RELA           4            0          4
+  TXST           3            0          3
+  FACT           2            0          2
+  SOUN           2            0          2
+  CONT           2            0          2
+  KEYM           2            0          2
+  SMQN           2            1          1
+  ENCH           1            0          1
+  DOOR           1            0          1
+  LVLI           1            0          1
+  WTHR           1            0          1
+  NAVI           1            1          0
+  IMAD           1            0          1
+  FLST           1            0          1
+  AVIF           1            1          0
+  ARMA           1            0          1
+  SMBN           1            0          1
+  SNDR           1            0          1
+
+  --- detail des records demandes ---
+  [nouveau  ] ALCH 02045D71  Padomaic Flower Draught  (potion)
+              EditorID : tos_PadomaicFlowerEssence01
+              poids=0.5  valeur=30
+              effet 02045D6D : magnitude=0 duree=0s
+  [nouveau  ] ALCH 0200FF9D  Sujamma  (nourriture)
+              EditorID : tos_Sujamma
+              poids=0.5  valeur=100
+              effet 0003A2B6 : magnitude=75 duree=600s
+              effet 0003EB01 : magnitude=50 duree=600s
+  [nouveau  ] ALCH 02045D73  Padomaic Flower Draught  (medicament)
+              EditorID : tos_PadomaicFlowerEssence02
+              poids=0.5  valeur=30
+              effet 02045D79 : magnitude=0 duree=0s
+  [nouveau  ] ALCH 02045D75  Padomaic Flower Draught  (potion)
+              EditorID : tos_PadomaicFlowerEssence03
+              poids=0.5  valeur=30
+              effet 02045D7E : magnitude=0 duree=0s
+  [nouveau  ] COBJ 02016A99  tos_TemperArmorBladesBoots  (recette)
+              composant 0005ACE5 x1
+              produit 0200F42B x1
+  [nouveau  ] COBJ 02027B16  tos_TemperWeaponSeafarer  (recette)
+              composant 0005ACE4 x1
+              produit 02016A9D x1
+  [nouveau  ] COBJ 02016A97  tos_TemperWeaponDragonStrength  (recette)
+              composant 0005AD9D x1
+              produit 0200FFB7 x1
+  [nouveau  ] COBJ 02016A98  tos_TemperWeaponDragonSpeed  (recette)
+              composant 0005AD9D x1
+              produit 0200FFB6 x1
+  [nouveau  ] COBJ 02027B15  tos_TemperWeaponProspector  (recette)
+              composant 0005ACE4 x1
+              produit 020223BA x1
+  [nouveau  ] COBJ 02016A95  tos_TemperWeaponMerBlight  (recette)
+              composant 0005ACE4 x1
+              produit 0200FFB8 x1
+  [nouveau  ] COBJ 02016A9C  tos_TemperArmorBladesHelmet  (recette)
+              composant 0005ACE5 x1
+              produit 0200F42E x1
+  [nouveau  ] COBJ 02016A96  tos_TemperWeaponCrabSlayer  (recette)
+              composant 0005ACE4 x1
+              produit 02012CDD x1
+  [nouveau  ] COBJ 02016A9B  tos_TemperArmorBladesGauntlets  (recette)
+              composant 0005ACE5 x1
+              produit 0200F42D x1
+  [nouveau  ] COBJ 02016A9A  tos_TemperArmorBladesCuirass  (recette)
+              composant 0005ACE5 x1
+              produit 0200F42C x1
+
+==============================================================================
+quest_sorcery.esp   (1 464 063 octets)
+==============================================================================
+  Auteur      : DEFAULT
+  Masters     : Skyrim.esm, Update.esm
+  Type        : ESP
+  Records     : 6676 dont 39 en surcharge de records existants
+
+  TYPE       TOTAL   SURCHARGES   NOUVEAUX
+  ----------------------------------------
+  REFR        5687            5       5682
+  NAVM         290           16        274
+  CELL         224           13        211
+  LAND         139            2        137
+  ACHR          87            0         87
+  INFO          32            0         32
+  NPC_          30            0         30
+  DIAL          28            0         28
+  BOOK          19            0         19
+  PACK          15            0         15
+  LIGH          12            0         12
+  DLBR          12            0         12
+  ECZN           9            0          9
+  LCTN           9            0          9
+  WRLD           8            2          6
+  ACTI           7            0          7
+  LVLI           7            0          7
+  STAT           6            0          6
+  CLMT           6            0          6
+  IMGS           6            0          6
+  QUST           4            0          4
+  MGEF           3            0          3
+  ARMO           3            0          3
+  WEAP           3            0          3
+  WTHR           3            0          3
+  DLVW           3            0          3
+  GLOB           2            0          2
+  SPEL           2            0          2
+  CONT           2            0          2
+  IMAD           2            0          2
+  VTYP           2            0          2
+  MESG           2            0          2
+  ENCH           1            0          1
+  DOOR           1            0          1
+  MISC           1            0          1
+  AMMO           1            0          1
+  KEYM           1            0          1
+  IDLM           1            0          1
+  REGN           1            0          1
+  NAVI           1            1          0
+  PERK           1            0          1
+  SMBN           1            0          1
+  SMQN           1            0          1
+  RELA           1            0          1
+
+==============================================================================
+quest_thebiggertheyare.esp   (531 304 octets)
+==============================================================================
+  Auteur      : ThirteenOranges
+  Description : A great hero of the companions lies dead before he could defeat his greatest quest, the slaying of the great giant, Barlok'Gosh. Take up the arms of Holfir Giant Slayer and travel dangerous roads and 
+  Masters     : Skyrim.esm, Update.esm
+  Type        : ESP
+  Records     : 1006 dont 136 en surcharge de records existants
+
+  TYPE       TOTAL   SURCHARGES   NOUVEAUX
+  ----------------------------------------
+  REFR         832           39        793
+  CELL          64           46         18
+  LAND          36           36          0
+  ACHR          16            3         13
+  NAVM          16            5         11
+  NPC_           8            0          8
+  CONT           4            1          3
+  COBJ           4            1          3
+  MGEF           3            0          3
+  PERK           3            0          3
+  LCTN           3            1          2
+  WEAP           2            0          2
+  LVLI           2            2          0
+  WRLD           2            1          1
+  ECZN           2            0          2
+  OTFT           2            0          2
+  KYWD           1            0          1
+  ENCH           1            0          1
+  ARMO           1            0          1
+  BOOK           1            0          1
+  ALCH           1            0          1
+  NAVI           1            1          0
+  QUST           1            0          1
+
+  --- detail des records demandes ---
+  [nouveau  ] ALCH 02003394  Giant's Bane  (poison)
+              EditorID : tos_GiantPoison
+              poids=0.5  valeur=512
+              effet 02003396 : magnitude=10 duree=10s
+              effet 02003396 : magnitude=100 duree=10s
+  [nouveau  ] COBJ 02003950  tos_TemperArmorGiantsCuirass  (recette)
+              composant 0005ACE5 x1
+              produit 0200394E x1
+  [nouveau  ] COBJ 02003952  tos_TemperWeaponGiantsBow  (recette)
+              composant 0005ACE5 x1
+              produit 020033B6 x1
+  [nouveau  ] COBJ 02003951  tos_TemperWeaponGiantsGreatsword  (recette)
+              composant 0005ACE5 x1
+              produit 02001D19 x1
+  [SURCHARGE] COBJ 00000E4B  TemperWeaponSkyforgeGreatsword  (recette)
+              composant 0005ACE5 x1
+              produit 000A3115 x1
+
+==============================================================================
+shenkthieveryoverhaul.esp   (1 063 701 octets)
+==============================================================================
+  Auteur      : Enos Shenk
+  Description : Overhauls thievery
+  Masters     : Skyrim.esm, Update.esm
+  Type        : ESP
+  Records     : 9779 dont 407 en surcharge de records existants
+
+  TYPE       TOTAL   SURCHARGES   NOUVEAUX
+  ----------------------------------------
+  REFR        9019          221       8798
+  NPC_         214            0        214
+  CELL         157          146         11
+  ACHR         142            0        142
+  PACK          68            0         68
+  KEYM          30            0         30
+  FACT          28           25          3
+  LVLN          19            0         19
+  FLST          12            6          6
+  NAVM           9            0          9
+  BOOK           8            0          8
+  CONT           8            0          8
+  ECZN           7            0          7
+  LCTN           7            0          7
+  WRLD           6            6          0
+  ENCH           5            0          5
+  PROJ           5            0          5
+  MGEF           4            0          4
+  AMMO           4            0          4
+  KYWD           3            0          3
+  ACTI           3            1          2
+  ARMO           3            0          3
+  LVLI           3            0          3
+  EXPL           3            0          3
+  WEAP           2            0          2
+  DIAL           2            1          1
+  QUST           2            0          2
+  SPEL           1            0          1
+  IDLM           1            0          1
+  NAVI           1            1          0
+  INFO           1            0          1
+  CSTY           1            0          1
+  SCEN           1            0          1
+
+==============================================================================
+silencers vestments.esp   (5 995 octets)
+==============================================================================
+  Auteur      : decrepithawk
+  Description : Assassin styled armor, light armor version.
+  Masters     : Skyrim.esm
+  Type        : ESP
+  Records     : 22 dont 0 en surcharge de records existants
+
+  TYPE       TOTAL   SURCHARGES   NOUVEAUX
+  ----------------------------------------
+  COBJ          10            0         10
+  ARMA           6            0          6
+  ARMO           5            0          5
+  OTFT           1            0          1
+
+  --- detail des records demandes ---
+  [nouveau  ] COBJ 01000D6F  RecipeDHBrotherhoodBoots  (recette)
+              composant 000800E4 x2
+              composant 000DB5D2 x2
+              composant 0005ADA1 x2
+              produit 01000D69 x1
+  [nouveau  ] COBJ 01000D70  RecipeDHBrotherhoodRobe  (recette)
+              composant 000800E4 x3
+              composant 000DB5D2 x3
+              composant 0005ADA1 x4
+              produit 01000D6B x1
+  [nouveau  ] COBJ 01000D71  RecipeDHBrotherhoodGloves  (recette)
+              composant 000800E4 x2
+              composant 000DB5D2 x2
+              composant 0005ADA1 x1
+              produit 01000D6A x1
+  [nouveau  ] COBJ 01000D72  RecipeDHBrotherhoodHood  (recette)
+              composant 000800E4 x1
+              composant 000DB5D2 x2
+              composant 0005ADA1 x2
+              produit 01000D6D x1
+  [nouveau  ] COBJ 01000D73  RecipeDHBrotherhoodMask  (recette)
+              composant 000800E4 x1
+              composant 0005ADA1 x2
+              produit 01000D6C x1
+  [nouveau  ] COBJ 01000D7A  TemperDHBrotherhoodRobe  (recette)
+              composant 0005ADA1 x1
+              produit 01000D6B x1
+  [nouveau  ] COBJ 01000D75  TemperDHBrotherhoodBoots  (recette)
+              composant 0005ADA1 x1
+              produit 01000D69 x1
+  [nouveau  ] COBJ 01000D76  TemperDHBrotherhoodGloves  (recette)
+              composant 0005ADA1 x1
+              produit 01000D6A x1
+  [nouveau  ] COBJ 01000D77  TemperDHBrotherhoodHood  (recette)
+              composant 0005ADA1 x1
+              produit 01000D6D x1
+  [nouveau  ] COBJ 01000D79  TemperDHBrotherhoodMask  (recette)
+              composant 0005ADA1 x1
+              produit 01000D6C x1
+
+==============================================================================
+thedomain.esp   (1 074 765 octets)
+==============================================================================
+  Auteur      : DEFAULT
+  Masters     : Skyrim.esm, Update.esm
+  Type        : ESP
+  Records     : 10734 dont 113 en surcharge de records existants
+
+  TYPE       TOTAL   SURCHARGES   NOUVEAUX
+  ----------------------------------------
+  REFR       10448           64      10384
+  ACHR         111            3        108
+  NPC_          50            0         50
+  NAVM          43           25         18
+  CELL          26           19          7
+  BOOK          15            0         15
+  LIGH          11            0         11
+  ARMO          10            0         10
+  KEYM           6            0          6
+  MUSC           4            0          4
+  CONT           2            0          2
+  ECZN           2            0          2
+  LCTN           2            0          2
+  ACTI           1            0          1
+  WEAP           1            0          1
+  NAVI           1            1          0
+  WRLD           1            1          0
+
+==============================================================================
+thefrontier.esp   (652 468 octets)
+==============================================================================
+  Auteur      : DEFAULT
+  Masters     : Skyrim.esm, Update.esm
+  Type        : ESP
+  Records     : 5149 dont 155 en surcharge de records existants
+
+  TYPE       TOTAL   SURCHARGES   NOUVEAUX
+  ----------------------------------------
+  REFR        4972          101       4871
+  NAVM          50           25         25
+  ACHR          45            0         45
+  CELL          27           26          1
+  NPC_          18            0         18
+  PACK           8            1          7
+  BOOK           7            0          7
+  LIGH           5            0          5
+  LCTN           4            0          4
+  ASPC           2            0          2
+  CONT           2            0          2
+  RELA           2            0          2
+  FACT           1            0          1
+  KEYM           1            0          1
+  NAVI           1            1          0
+  WRLD           1            1          0
+  PGRE           1            0          1
+  MUSC           1            0          1
+  OTFT           1            0          1
+
+==============================================================================
+weir_weightlessgems.esp   (5 748 octets)
+==============================================================================
+  Auteur      : Weir
+  Masters     : Skyrim.esm
+  Type        : ESP
+  Records     : 24 dont 24 en surcharge de records existants
+
+  TYPE       TOTAL   SURCHARGES   NOUVEAUX
+  ----------------------------------------
+  MISC          12           12          0
+  SLGM          12           12          0
+
