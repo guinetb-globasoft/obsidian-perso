@@ -1,7 +1,7 @@
 ---
 titre: Périmètre ERP réel — le référentiel décrit un SI d'avant le lot 4
 statut: corrections à porter
-date: 2026-08-13
+date: 2026-08-18
 source: connaissance terrain (Benoît Guinet), contre les 3 sources documentaires
 tags: [ifs, perimetre, lot4, referentiel, obsolescence]
 ---
@@ -22,10 +22,10 @@ Aucune contradiction interne ne signale l'erreur. C'est ce qui la rend dangereus
 qui recoupe les trois sources en sort **conforté dans le faux**. Seule la connaissance terrain
 permet de la détecter.
 
-> C'est le même mécanisme que pour les flux (cf. [[04-Reconciliation-Talend-PROD]]) : le
+> C'est le même mécanisme que pour les flux (cf. [[01-Referentiel/02-Reconciliation-Talend-PROD]]) : le
 > référentiel n'est pas incohérent, il est **en retard**. Sa fraîcheur n'est mesurée nulle part.
 
-## La vérité au 13/08/2026
+## La vérité au 18/08/2026
 
 - **Lots 1 et 4 en service.** Finance (compta générale et analytique, facturation, paiements,
   immobilisations, projet, taxe) **et** Achats (commandes, réceptions, workflow facture

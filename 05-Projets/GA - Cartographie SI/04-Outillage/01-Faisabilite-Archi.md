@@ -1,7 +1,7 @@
 ---
 titre: Faisabilité Archi / ArchiMate
 statut: analysé
-date: 2026-08-13
+date: 2026-08-18
 tags: [archi, archimate, jarchi, outillage, coarchi]
 ---
 
@@ -18,7 +18,7 @@ tags: [archi, archimate, jarchi, outillage, coarchi]
 | Working tree | **propre** — aucun travail local non commité |
 | Remote | `https://github.com/Globasoft/GA-Archi.git` (branche `master`) |
 | Date de tous les fichiers du modèle | 01/07/2024 (= date du checkout) |
-| Dernière modif de l'inventaire Excel | **13/08/2026** |
+| Dernière modif de l'inventaire Excel | **18/08/2026** |
 | **Écart** | **≈ 25 mois** |
 
 ⚠️ **Limite de la vérification** : `git ls-remote` échoue faute d'authentification non

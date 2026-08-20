@@ -1,8 +1,8 @@
 ---
 titre: Réconciliation référentiel ↔ Talend PROD
 statut: analysé — corrections à porter dans l'Excel
-date: 2026-08-13
-source: 03-Talend-PROD-inventaire.csv (31 tâches, relevé du 13/08/2026)
+date: 2026-08-18
+source: Talend-PROD-inventaire.csv (31 tâches, relevé du 18/08/2026)
 tags: [talend, tmc, referentiel, reconciliation, verite-terrain]
 ---
 
@@ -130,7 +130,7 @@ traiter comme un incident.
 **Ne jamais publier « 600 exécutions ».** La bonne mesure est la **cadence lue dans le cron**,
 qui est exacte et parlante : « toutes les 5 minutes, 7h-20h, du lundi au vendredi ».
 
-## Erreur de modélisation corrigée le 13/08 — le troisième état manquant
+## Erreur de modélisation corrigée le 18/08 — le troisième état manquant
 
 Les artefacts ne connaissaient que **deux états** : « en place » et « en cours de mise en
 place ». Il en manquait un : **« ressaisie manuelle, rien d'engagé »**.

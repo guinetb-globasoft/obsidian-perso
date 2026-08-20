@@ -1,7 +1,7 @@
 ---
 titre: Brief pour l'IA connectée à Talend — vérité terrain PROD
 statut: à envoyer
-date: 2026-08-13
+date: 2026-08-18
 tags: [talend, tmc, referentiel, verification, brief]
 ---
 

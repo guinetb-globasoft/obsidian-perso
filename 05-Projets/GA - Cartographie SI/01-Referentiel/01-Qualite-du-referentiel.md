@@ -1,7 +1,7 @@
 ---
 titre: Qualité du référentiel applicatif
 statut: analysé
-date: 2026-08-13
+date: 2026-08-18
 tags: [referentiel, qualite-donnees, inventaire, cartographie]
 ---
 

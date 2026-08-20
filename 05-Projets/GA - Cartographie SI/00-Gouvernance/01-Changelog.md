@@ -5,7 +5,7 @@ tags: [changelog]
 
 # Changelog
 
-## 2026-08-13 — Ouverture du projet et v1 des cartographies
+## 2026-08-18 — Ouverture du projet et v1 des cartographies
 
 **Demande** de Gildvin HIÉLARD : compléter `Présentation du SI vMASTER.pptx` avec deux
 cartographies (strate fonctionnelle, strate applicative), ERP IFS au centre. Question

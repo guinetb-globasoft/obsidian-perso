@@ -1,7 +1,7 @@
 ---
 titre: Taxonomie des domaines fonctionnels GA
 statut: proposé
-date: 2026-08-13
+date: 2026-08-18
 tags: [taxonomie, domaines-fonctionnels, urbanisation, archimate]
 ---
 
@@ -61,7 +61,7 @@ répond à la demande « IFS au centre, satellites autour regroupés par domaine
   (calcul, CAO, rendu), pas un système d'information intégré. Conséquence de carto : ce domaine
   doit être **représenté en volume mais pas détaillé** — sinon il écrase visuellement la carte.
 - **Finance & Juridique = 19 apps** mais **concentre l'essentiel des flux** (voir
-  [[03-Cartographies/02-Vue-applicative-Finance]]). Densité de flux ≠ nombre d'apps :
+  [[03-Cartographies/01-Les-deux-vues-produites]]). Densité de flux ≠ nombre d'apps :
   c'est exactement pourquoi il faut **deux vues** et pas une.
 - Le **socle (24 apps)** est le second poste. Il est invisible du métier mais porte tout.
 

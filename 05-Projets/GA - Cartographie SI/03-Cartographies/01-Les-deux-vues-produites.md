@@ -1,11 +1,11 @@
 ---
 titre: Les deux cartographies produites
 statut: livré (v1, à valider)
-date: 2026-08-13
+date: 2026-08-18
 tags: [cartographie, livrable, artefact, pptx]
 ---
 
-# Les deux vues produites — v1 du 13/08/2026
+# Les deux vues produites — v1 du 18/08/2026
 
 ## Format retenu : artefact web, pas slide
 
@@ -74,7 +74,7 @@ comme sombre.
 
 ## La vue processus : la facture fournisseur de bout en bout
 
-Troisième page, demandée le 13/08. Là où les deux premières répondent à « de quoi le SI
+Troisième page, demandée le 18/08. Là où les deux premières répondent à « de quoi le SI
 est-il fait » et « qui parle à qui », celle-ci répond à **« par où passe une facture »** —
 c'est une lecture par le processus, pas par l'application.
 

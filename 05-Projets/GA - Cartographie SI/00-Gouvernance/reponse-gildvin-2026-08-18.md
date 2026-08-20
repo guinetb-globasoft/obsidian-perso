@@ -1,5 +1,5 @@
 ---
-titre: Réponse à Gildvin — 13/08/2026
+titre: Réponse à Gildvin — 18/08/2026
 statut: brouillon à envoyer
 tags: [communication, gildvin]
 ---

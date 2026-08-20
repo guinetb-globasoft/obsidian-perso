@@ -1,14 +1,14 @@
 ---
 projet: Cartographie du SI Groupe GA
 statut: en-cours
-date_creation: 2026-08-13
+date_creation: 2026-08-18
 demandeur: Gildvin HIÉLARD (DDSI)
 tags: [cartographie, urbanisation, archimate, archi, togaf, si, ga, readme]
 ---
 
 # Cartographie du SI Groupe GA
 
-> **Porte d'entrée du projet.** Commande de Gildvin HIÉLARD du 13/08/2026.
+> **Porte d'entrée du projet.** Commande de Gildvin HIÉLARD du 18/08/2026.
 
 ## Demande
 
@@ -51,11 +51,13 @@ par un non-informaticien.
 | `02-Taxonomie/` | **Structurer** le sens | Domaines fonctionnels et affectation des 150 apps |
 | `03-Cartographies/` | **Représenter** | Spécification des deux vues produites |
 | `04-Outillage/` | **Industrialiser** | Faisabilité Archi, chaîne de génération |
+| `05-Briefs/` | **Déléguer** | Les briefs donnés aux autres agents, et ce qu'ils ont renvoyé |
 
 ## Par où commencer
 
 1. [[01-Referentiel/01-Qualite-du-referentiel]] — ce que vaut la donnée d'entrée (**à lire avant tout**)
 2. [[02-Taxonomie/01-Domaines-fonctionnels]] — les 12 domaines retenus et pourquoi
-3. [[03-Cartographies/01-Vue-fonctionnelle]] / [[03-Cartographies/02-Vue-applicative-Finance]]
+3. [[03-Cartographies/01-Les-deux-vues-produites]] / [[03-Cartographies/01-Les-deux-vues-produites]]
 4. [[04-Outillage/01-Faisabilite-Archi]] — réponse à la question de Gildvin
-5. [[00-Gouvernance/01-Changelog]] — le fil des avancées
+5. [[05-Briefs/README]] — les briefs donnés aux autres agents et leurs retours
+6. [[00-Gouvernance/01-Changelog]] — le fil des avancées
