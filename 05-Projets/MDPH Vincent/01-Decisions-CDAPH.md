@@ -28,8 +28,10 @@ Un accusé de réception de la demande était arrivé le 15/04/2026 (`AR15042026
 | 30/06/2023 | Dépôt de la demande initiale |
 | 12/03/2024 | Décision CDAPH — AEEH de base seule, complément refusé |
 | Nov. 2024 | Nouveau dossier envoyé à la MDPH via Sylvie DREVET (CHU) |
-| — | **Droit AEEH 01/12/2024 → 30/11/2026** (décision jamais reçue en PDF) |
+| — | **Droit AEEH 01/12/2024 → 30/11/2026** (décision jamais reçue en PDF) — comportait un complément |
+| Janv. 2026 | Fin de la **PAJE allocation de base** (3 ans de Noah) — le complément d'AEEH, lui, n'a pas bougé |
 | 18/03/2026 | Dépôt de la demande de révision (MDPH en ligne) |
+| 21/05/2026 | Saisine du Pôle Ressources Handicap 31 sur la perte de droits |
 | 15/04/2026 | Accusé de réception de la demande |
 | 11/08/2026 | Décision CDAPH |
 | 13/08/2026 | Date des courriers de notification |
@@ -54,6 +56,28 @@ Motif de l'attribution en 2026, cité mot pour mot :
 Ce n'est donc pas la gravité du handicap qui a bougé — le taux est identique — mais la situation d'aide de la famille.
 
 La notification précise que cette attribution « vient en remplacement du droit […] qui était valable du 01/12/2024 au 30/11/2026 ». C'est la trace de la décision intermédiaire manquante.
+
+### Le droit intermédiaire : complément de 3e catégorie
+
+Ce droit comportait un **complément de 3e catégorie**, versé sans interruption de janvier 2025 à aujourd'hui. L'attestation de paiement CAF d'août 2024 à juillet 2026 l'établit :
+
+| Période | AEEH versée | dont base | dont complément |
+|---|---|---|---|
+| Août → déc. 2024 | 149,26 € | 149,26 € | aucun |
+| Janv. → mars 2025 | 578,38 € | 149,26 € | 429,12 € |
+| Avril → déc. 2025 | 588,22 € | 151,80 € | 436,42 € |
+| Janv. → mars 2026 | 588,22 € | 151,80 € | 436,42 € |
+| Avril → juil. 2026 | 592,92 € | 153,01 € | **439,91 €** |
+
+Le relevé de compte de juillet 2026 détaille explicitement le virement du 06/07/2026 : 153,01 € + 439,91 €, soit le barème 2026 du complément de 3e catégorie.
+
+La date de démarrage confirme l'enchaînement voulu par les soignants : la prise en charge PCO s'arrête le 30/11/2024, le complément prend le relais le **01/12/2024**, au lendemain. Voir [[04-Aides-connexes]].
+
+### La fausse piste de janvier 2026
+
+Un mail du 21/05/2026 au Pôle Ressources Handicap 31 évoquait « des droits retirés depuis janvier sans aucune communication de la CAF ». Vérification faite, il ne s'agissait **pas** du complément d'AEEH mais de la **PAJE allocation de base** : 196,60 €/mois, qui prend fin aux 3 ans de Noah, né le 27/02/2023.
+
+Les virements le confirment au centime : 935,87 € jusqu'au 05/01/2026, puis 739,27 € — soit exactement 196,60 € de moins. Rien à contester de ce côté, c'est une fin de droit programmée.
 
 ## AESH — reconduite, mais périscolaire affaibli
 

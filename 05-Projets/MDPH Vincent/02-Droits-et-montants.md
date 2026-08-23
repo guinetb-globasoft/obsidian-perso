@@ -32,7 +32,17 @@ La majoration parent isolé (349,06 € en catégorie 5) ne s'applique pas — e
 
 ### Rappel dû
 
-Le droit court depuis le **01/04/2026**. Le complément n'ayant jamais été versé auparavant, la CAF doit un rappel d'environ **871 € par mois écoulé** — soit de l'ordre de **4 350 €** pour avril à août 2026, et davantage si le versement intervient après la paie de septembre. La base était déjà versée au titre du droit précédent, elle n'entre pas dans le rappel.
+La 3e catégorie est déjà versée (439,91 €/mois). Le rappel porte donc sur le **différentiel** : 871,26 − 439,91 = **431,35 € par mois** à compter du 01/04/2026.
+
+| Période | Mois | Rappel |
+|---|---|---|
+| Avril → juillet 2026 | 4 | 1 725,40 € |
+| Avril → août 2026 | 5 | 2 156,75 € |
+| Avril → septembre 2026 | 6 | 2 588,10 € |
+
+Le virement du 05/08/2026 était encore à l'ancien taux (745,17 €). Chaque mois de retard ajoute 431,35 € au rappel sans rien faire perdre — le rattrapage remonte de toute façon au 01/04/2026.
+
+Nouveau montant mensuel une fois la bascule faite : **1 024,27 €** contre 592,92 € aujourd'hui.
 
 ## Comment se définit la catégorie 5
 
@@ -53,17 +63,29 @@ La MDPH a explicitement retenu la première branche. La catégorie 4 se limite �
 
 La CAF ne vérifie que les conditions administratives : enfant à charge, résidence en France, absence de prise en charge intégrale en internat par l'assurance maladie.
 
-## ⚠️ Le non-cumul avec un revenu de remplacement
+## ⚠️ La 5e catégorie ne correspond pas à la situation
 
-Point critique, issu de la question écrite n°8852 à l'Assemblée nationale.
+Kwanchanok travaille à **80 %** (121,33 h/mois, contrat Guinet Group depuis le 01/03/2024) et Benoît a une activité non salariée depuis le 12/02/2024. Aucun des deux parents n'est sans activité professionnelle — et le profil CAF le dit déjà.
 
-L'instruction CNAF **IT 2024-233** pose que **le complément attribué pour compenser la réduction ou la cessation d'activité n'est pas cumulable avec un revenu de remplacement** — chômage, pension d'invalidité. L'instruction **IT-2025-149** de juillet 2025 a assoupli la règle pour les indemnités journalières maladie, mais l'ARE reste bloquante.
+La grille de l'article R541-2, lue à partir d'une réduction d'activité de 20 % (soit un 80 %) :
 
-Conséquence concrète : si le parent qui a cessé son activité perçoit des allocations chômage, la CAF peut refuser le complément et ne verser que la base. C'est précisément l'objet du contrôle des « conditions administratives » annoncé dans la notification. L'instruction oblige alors la CAF à informer la famille et à saisir la MDPH pour réviser la décision, ce qui aboutit en général à un reclassement dans une catégorie fondée sur les seules dépenses.
+| Catégorie | Voie d'accès | Montant |
+|---|---|---|
+| 2e | Réduction ≥ 20 % seule | 310,80 € |
+| **3e** — versée | Réduction ≥ 20 % **+ dépenses** | 439,91 € |
+| **4e** — atteignable | Réduction ≥ 20 % **+ dépenses** (seuil supérieur) | 681,71 € |
+| 5e — notifiée | **Cessation totale** ou tierce personne **rémunérée** à temps plein, + dépenses | 871,26 € |
+| 6e | Idem 5e + contraintes permanentes de surveillance et de soins | 1 298,44 € |
 
-**À vérifier avant le premier versement.** Un complément versé puis requalifié se solde par un indu à rembourser, rappel de cinq mois compris.
+Deux conséquences.
 
-Autre corollaire : toute reprise d'activité du parent concerné doit être signalée à la CAF. Le complément n'est pas non plus cumulable avec l'AJPP.
+**La 3e catégorie est solidement fondée** sur la branche « réduction 20 % + dépenses ». Une révision ne devrait pas la remettre en cause.
+
+**La 5e est indéfendable en l'état** : aucun montant de dépenses n'y donne accès avec un parent à 80 %. Deux explications possibles — soit la MDPH a retenu la branche « tierce personne à temps plein » au titre de la présence de la grand-mère au domicile et le courrier a imprimé la mauvaise phrase de motivation, soit il y a une erreur d'appréciation.
+
+**Conduite à tenir** : faire préciser le fondement par la MDPH, **par écrit**, avant tout versement. Un complément payé puis requalifié se rembourse. Si la décision est corrigée à la baisse, viser la **4e catégorie** par RAPO avec un état des dépenses — pas la 5e.
+
+Les seuils de dépenses ne figurent pas dans R541-2 : ils sont fixés par arrêté, en pourcentage de la BMAF (environ 478 € en 2026). Grille à demander à la MDPH.
 
 ## Ce qui reste hors d'atteinte
 

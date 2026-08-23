@@ -20,9 +20,11 @@ created: 2026-08-17
 
 ## Priorité 1 — sécuriser le complément
 
-- [ ] **Vérifier la condition de cessation d'activité.** Le complément suppose qu'un parent n'exerce aucune activité professionnelle et n'est pas cumulable avec un revenu de remplacement (voir [[02-Droits-et-montants]]). Si la situation réelle ne correspond pas, clarifier avec la MDPH **avant** que la CAF ne verse, pour éviter un indu.
-- [ ] **Contrôler le compte CAF vers mi-septembre.** La transmission MDPH → CAF est automatique et le versement intervient sous 2 à 4 semaines. Si rien n'apparaît, déposer la notification via « Mes démarches » sur caf.fr — le blocage technique de transmission est le grief le plus courant.
-- [ ] Vérifier que le **rappel depuis avril 2026** est bien inclus.
+- [ ] **Faire préciser le fondement de la 5e catégorie par la MDPH, par écrit.** Question à poser : « a-t-elle été retenue au titre de la présence à temps plein de la grand-mère au domicile ? » Si oui, la décision tient. Sinon, viser la 4e par RAPO avec un état des dépenses — pas la 5e, indéfendable avec un parent à 80 %.
+- [ ] **Ne pas plaider contre son propre dossier au guichet CAF.** Demander où en est le traitement, répondre exactement si la situation professionnelle est abordée, rien de plus.
+- [ ] **Contrôler le versement du 5 septembre 2026.** 745,17 € = rien n'a bougé ; 1 176,52 € = la 5e est appliquée ; montant ponctuel élevé = régularisation.
+- [ ] Vérifier que le **rappel** est calculé en différentiel : 431,35 €/mois depuis le 01/04/2026.
+- [ ] Commencer l'**état annuel des dépenses restant à charge** (psychomotricité, ergothérapie, psychologue, matériel, transports) — après Sécurité sociale et mutuelle, factures acquittées avec n° RPPS ou ADELI. C'est ce qui emporte la 4e catégorie.
 
 ## Priorité 2 — la rentrée
 
@@ -47,9 +49,10 @@ Rappel d'usage : la carte se pose à l'avant du véhicule côté passager, recto
 Détail dans [[04-Aides-connexes]].
 
 - [ ] Vérifier auprès de la CAF l'affiliation à l'**assurance vieillesse des aidants** pour le parent sans activité.
-- [ ] Appeler la **PCO TND 31** : le forfait d'intervention précoce est-il épuisé ?
 - [ ] Si emploi à domicile : demander l'**exonération de cotisations patronales** depuis l'espace CESU (non automatique).
-- [ ] Étudier une demande de **PCH 3e élément seul** (surcoûts de transport), cumulable avec le complément.
+- [ ] Étudier une demande de **PCH 3e élément seul** (surcoûts de transport), cumulable avec le complément — jusqu'à 24 000 € sur 10 ans si l'orientation IME aboutit. Voir [[07-PCH]].
+- [ ] Se renseigner sur l'**AJPP** sans déposer : formulaire, pièces, montant du complément pour frais. Arbitrage chiffré dans [[06-Scenarios-activite-Kwanchanok]].
+- [ ] Faire trancher par la CAF : le non-cumul AJPP / complément s'apprécie-t-il **mois par mois** ou sur toute la durée du congé ?
 - [ ] Solliciter le **Fonds départemental de compensation** si un projet d'aide technique se présente.
 - [ ] Exploiter le **CMG majoré** avant les 6 ans de Vincent.
 - [ ] Vérifier qu'une **ALD** est ouverte auprès de la CPAM.

@@ -30,23 +30,9 @@ Depuis la réforme de septembre 2023, le critère a été étendu aux enfants au
 
 Le parent sans activité peut être affilié gratuitement à l'assurance vieillesse, ce qui **valide des trimestres de retraite** pendant toute la période d'inactivité. Sans complément, ces trimestres étaient perdus. Pas de plafond de ressources. L'affiliation passe par la CAF et est en principe automatique, mais mérite une vérification explicite.
 
-## PCH — l'option complète est un mauvais calcul, le cumul partiel non
+## PCH
 
-Le droit d'option est exclusif : AEEH de base + complément 5 (871,26 €), **ou** AEEH de base + PCH.
-
-Pourquoi ne pas basculer : le dédommagement d'aidant familial est d'environ **7,39 €/h** depuis le 01/06/2026 quand l'aidant a cessé son activité (plafond 1 269,83 €/mois). Pour seulement égaler 871 €, il faudrait faire reconnaître ~118 h par mois, soit près de 4 h de surcroît d'aide quotidien. Or la notification elle-même écrit que l'autonomie de Vincent est « **conservée pour les actes élémentaires de la vie quotidienne** » — la phrase qui justifie le taux 50-79 % est aussi celle qu'une équipe pluridisciplinaire opposera à une demande de PCH aide humaine.
-
-**En revanche le 3e élément est cumulable.** Le complément d'AEEH n'est pas cumulable avec la PCH *à l'exception* du 3e élément — aménagement du logement, aménagement du véhicule, surcoûts liés aux transports — à condition qu'il ne couvre pas des frais de même nature que ceux retenus pour le complément.
-
-Combinaison possible : **AEEH de base + complément 5 + PCH 3e élément**.
-
-Plafonds indicatifs à confirmer auprès de la MDPH : ~10 000 € sur 10 ans pour le logement, ~5 000 € sur 5 ans pour le véhicule et les surcoûts de transport. La piste la plus plausible ici : les trajets réguliers vers le CATTP, et davantage encore si l'orientation IME aboutit sur un établissement éloigné.
-
-⚠️ Demander **le 3e élément seul**. Une demande de PCH générale déclencherait l'arbitrage complet, avec 15 jours pour choisir à compter de la notification (l'AEEH s'applique par défaut sans réponse).
-
-Sur les ressources : le taux de prise en charge tombe à 80 % au-delà de 31 162,62 € annuels, mais l'assiette **exclut les revenus d'activité professionnelle**. En pratique, 100 %.
-
-Critère fonctionnel d'éligibilité : une difficulté **absolue** pour au moins 1 des 20 activités du référentiel, ou **grave** pour au moins 2. Pour un enfant, seul le *surcroît* d'aide par rapport à un enfant du même âge est compté.
+Traitée dans une note dédiée : [[07-PCH]]. En résumé — l'option complète est un mauvais calcul, mais le **3e élément** (aménagement du logement, du véhicule, surcoûts de transport) est cumulable avec le complément et vaut la demande, en particulier si l'orientation IME aboutit.
 
 ## CMG majoré — fenêtre qui se referme
 
@@ -62,9 +48,70 @@ Circuit : un médecin (généraliste, pédiatre, PMI, médecin scolaire) adresse
 
 Montants (version mars 2025, revalorisés par l'arrêté de mai 2026) : 120 € pour un bilan simple, 300 € pour un bilan neuropsychologique complet, 1 500 € pour un minimum de 35 séances de 45 minutes, 512 € pour 12 séances supplémentaires.
 
-⚠️ **Durée : un an, renouvelable une fois — 24 mois maximum par enfant**, indépendamment de l'âge. L'extension de 7 à 12 ans (circulaire du 23/09/2021) élargit la population éligible mais **ne recrée pas de droit**. Or les échanges d'avril 2024 avec la PCO TND 31 mentionnent « un renouvellement de parcours » : si c'était le second, le forfait de Vincent est épuisé. **À vérifier par un appel à la PCO avant de bâtir quoi que ce soit dessus.**
+⚠️ **Le forfait de Vincent est épuisé.** Durée : un an, renouvelable une fois, indépendamment de l'âge — l'extension de 7 à 12 ans (circulaire du 23/09/2021) élargit la population éligible mais ne recrée pas de droit. Chronologie établie par les échanges avec la PCO TND 31 :
+
+| Date | Étape |
+|---|---|
+| 19/01/2023 | Dossier déposé à la PCO |
+| 27/03/2023 | Passage en commission — parcours validé |
+| 30/05/2023 | Premier rendez-vous avec Adèle FRAGA, psychomotricienne, 1×/semaine |
+| 16/04/2024 | « La prise en charge PCO s'arrêtera fin avril » — 12 mois écoulés |
+| 16/04/2024 | Renouvellement accordé, **6 mois à compter du 30/05/2024** |
+| 30/11/2024 | **Sortie du dispositif** |
+
+La coordinatrice écrivait le 18/04/2024 : « AEEH est l'allocation versée pour financer les soins en psychomotricité […] nous avons prévu de prolonger la prise en charge PCO jusqu'au 30/11/2024 afin d'être sûr que vous perceviez l'AEEH pour financer les soins au moment de la sortie du dispositif PCO. » Le complément d'AEEH démarre le 01/12/2024 — le relais était organisé au jour près.
 
 Si le forfait est fermé : les **CAMSP et CMPP** prennent en charge intégralement, sans avance ni facturation et sans limite de durée. Et c'est aussi ce que le complément catégorie 5 est censé financer — la MDPH a reconnu « un montant de dépenses mensuelles à prendre en compte », c'est-à-dire les restes à charge en libéral.
+
+## Mutuelle santé — le contrat qui couvre Vincent
+
+Vincent est couvert par le **contrat collectif santé de GUINET GROUP** (Siren 983391079, Malakoff Humanis, CCN Bureaux d'études IDCC 1486) via l'affiliation de Kwanchanok, catégorie « PERS DIF ART 2.1 - 2.2 _ APEC », **affiliée depuis le 01/03/2024** à deux niveaux cumulés :
+
+- **BASE OBL SALARIE + ENFANT**
+- **OPTION 3 OBL SALARIE + ENFANT** (OP3 SAL+ENF RG)
+
+Le contrat individuel de Benoît (PRO SANTE +) ne le couvre pas. Documents dans `Papiers_importants/Travail/GUINET Group/Sante/`.
+
+### Psychomotricité et ergothérapie
+
+Ligne **Médecine additionnelle**, plafond commun regroupant ostéopathe, podologue, tabacologue, **psychomotricien**, chiropracteur, diététique, psychologue et acupuncture :
+
+| Niveau | Garantie |
+|---|---|
+| Base seule | 30 €/acte, limité à 2 par an — soit 60 € |
+| **Base + Option 3** ← situation réelle | **50 €/acte, limité à 5 par an — soit 250 €/an** |
+
+Les colonnes « option » du tableau s'expriment déduction faite du contrat de base (« 50 €/acte - contrat de base »), le total pris en charge est donc bien de 50 € par séance, cinq fois par an.
+
+250 €/an couvrent environ cinq séances de psychomotricité, sous réserve que l'enveloppe ne soit pas consommée par les autres disciplines de la liste.
+
+### Psychologue — la ligne à ne pas rater
+
+Distincte de la médecine additionnelle : **« Psychologue remboursé SS »**, prise en charge du ticket modérateur pour **1 entretien d'évaluation + 11 séances d'accompagnement par an**. Avec un psychologue conventionné (dispositif « Mon soutien psy »), le reste à charge est nul sur douze séances annuelles.
+
+### Règle commune
+
+La facture doit porter le **numéro RPPS ou ADELI** du praticien, sinon le remboursement est refusé.
+
+Rien à arbitrer côté santé : l'Option 3 est déjà souscrite, c'est le niveau haut du contrat.
+
+## Prévoyance Guinet Group — la rente d'éducation
+
+Contrat collectif Malakoff Humanis / OCIRP souscrit par **GUINET GROUP SAS**, garanties au 01/03/2024, catégorie « personnel ne relevant pas des art. 4, 4 bis et 36 », **régime conventionnel de base** (contrat n° 3553736). Documents dans `Papiers_importants/Travail/GUINET Group/Prevoyance/`.
+
+Ce contrat ne rembourse aucun soin — c'est de la prévoyance : décès, PTIA, rente d'éducation, rente de conjoint, incapacité, invalidité. Un point mérite malgré tout l'attention.
+
+**La rente d'éducation OCIRP** est versée à chaque enfant à charge si Benoît décède ou est reconnu en invalidité absolue définitive : 12 % du salaire de référence jusqu'au 18e anniversaire, 15 % du 18e au 26e, avec un plancher exprimé en pourcentage du PASS.
+
+Et surtout, elle est servie **sans limitation de durée** :
+
+> « en cas d'invalidité reconnue avant le 21e anniversaire, équivalente à l'invalidité de 2e ou 3e catégorie de la Sécurité sociale justifiée par un avis médical, ou tant qu'ils bénéficient de l'allocation Adulte Handicapé et qu'ils sont titulaires de la carte d'invalide civil »
+
+Avec un taux à 50-79 % et sans CMI invalidité, Vincent ne remplit pas cette condition aujourd'hui. C'est un argument de plus, à très long terme, pour faire réévaluer le taux le moment venu.
+
+**Point d'arbitrage employeur** : le régime conventionnel seul ne prévoit **aucune majoration du capital décès par personne à charge**. Les formules « Pack renforcé » ajoutent 85 % TA/TB par personne à charge. Avec un enfant en situation de handicap, l'écart mérite d'être chiffré — c'est Benoît qui décide du niveau de couverture en tant que dirigeant.
+
+**Action sociale** : accessible au 3932 ou via l'espace TOUTm sur malakoffhumanis.com. C'est le canal des aides ponctuelles, dont l'offre CESU Handicap reçue en janvier 2026.
 
 ## Divers
 
