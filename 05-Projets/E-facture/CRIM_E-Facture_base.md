@@ -1,6 +1,6 @@
 # CRIM E-Facture — Base de travail
 
-*Source : Redmine POP + GLPI. Généré le 20/08/2026.*
+*Source : Redmine POP + GLPI. Généré le 27/08/2026.*
 
 ## Légende
 
@@ -143,7 +143,7 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 | 25 | Lobby pour valider les factures préliminaires  | Validé RSI — RSI (Justine Navarro) | 1 | - | - | - | 10/07 | 09/07 (-1j) | 16/07 | 10/07 (-3j) |
 | 1 | Mise à disposition des factures au format UBL  | Livré — Globasoft | - | - | - | 01/06 | 22/06 | 22/06 | 15/07 | 03/08 (+13j) |
 | 8 | Fiche « Client », rendre obligatoire la saisie | Livré — Concret | 1 | - | - | - | 10/07 | 28/07 (+11j) | 10/07 | 31/07 (+14j) |
-| 10 | Integrer l'editique Armony de la facture comme | En cours — Globasoft | - | - | 17 | 16/07 | 08/07 | 08/07 | 30/07 | 03/08 (+2j) |
+| 10 | Integrer l'editique Armony de la facture comme | En cours — Globasoft | - | - | 24 | 16/07 | 08/07 | 08/07 | 30/07 | 03/08 (+2j) |
 | 33 | Modification du template facture FACTORY pour  | Prêt — ISIA | - | - | - | 27/07 | - | - | - | - |
 
 ### ⏱️ Durées du cycle *(jours ouvrés)*
@@ -212,7 +212,7 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 
 | # | Description | Statut | A/R RSI | Retard spec | Retard dev | Créé GLPI | Spec initiale | Livr. spec | Dev initiale | Livr. dev |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2 | Mise à disposition des factures éligibles à la | En spécification — Justine Navarro | - | 20 | - | 20/07 | 08/07 | 31/07 (+15j) | 28/08 | 28/08 |
+| 2 | Mise à disposition des factures éligibles à la | En spécification — Justine Navarro | - | 27 | - | 20/07 | 08/07 | 31/07 (+15j) | 28/08 | 28/08 |
 
 ### ⏱️ Durées du cycle *(jours ouvrés)*
 
