@@ -56,13 +56,13 @@
 |---|---|---|---|---|---|---|---|---|---|---|
 | 14 | Ajuster la mise à disposition du référentiel f | Validé — — | - | - | - | 17/04 | - | - | 04/07 | 04/07 |
 | 16 | Mise a disposition des factures fournisseurs e | Validé — — | 5 | - | - | 19/06 | 07/07 | 07/07 | 20/07 | 26/06 (-14j) |
+| 22 | Interdire le rejet technique de la facture fou | Validé — — | 1 | - | - | - | 08/07 | 08/07 | 17/07 | 27/07 (+6j) |
 | 24 | Gestion des lisibles factures fournisseurs dan | Validé — — | 0 | - | - | 06/07 | 07/07 | 07/07 | 20/07 | 15/07 (-3j) |
 | 26 | Personnaliser le bon de commande (Edition Armo | Validé — — | 1 | - | - | 09/07 | 08/07 | 08/07 | 16/07 | 24/07 (+6j) |
 | 28 | Mise à disposition des factures fournisseurs " | Validé — — | - | - | - | 22/06 | 07/07 | 07/07 | 20/07 | 27/07 (+5j) |
 | 29 | Gestion des lisibles factures fournisseurs dan | Validé — — | 3 | - | - | 09/07 | 07/07 | 07/07 | 20/07 | 27/07 (+5j) |
 | 30 | Changer l'encodage du fichier .csv ref fournis | Validé — — | - | - | - | - | - | - | 04/07 | 04/07 |
 | 31 | Changer l'encodage du fichier .csv ref fournis | Validé — — | - | - | - | - | - | - | 01/07 | 01/07 |
-| 22 | Interdire le rejet technique de la facture fou | Livré — GA | 1 | - | - | - | 08/07 | 08/07 | 17/07 | 27/07 (+6j) |
 
 ### ⏱️ Durées du cycle *(jours ouvrés)*
 
@@ -92,7 +92,7 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 |---|---|---|---|---|
 | 14 | Validé | 1,5 j | 3,75 j | +2,25 j (+150 %) |
 | 16 | Validé | 1,5 j | 6 j | +4,5 j (+300 %) |
-| 22 | Livré | 0,5 j | 0,02 j | -0,48 j (-96 %) |
+| 22 | Validé | 0,5 j | 0,02 j | -0,48 j (-96 %) |
 | 24 | Validé | 6 j | 7,75 j | +1,75 j (+29 %) |
 | 26 | Validé | 4 j | - | - |
 | 28 | Validé | 1 j | 7 j | +6 j (+600 %) |
@@ -139,11 +139,11 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 | # | Description | Statut | A/R RSI | Retard spec | Retard dev | Créé GLPI | Spec initiale | Livr. spec | Dev initiale | Livr. dev |
 |---|---|---|---|---|---|---|---|---|---|---|
 | 9 | Integrer l'editique Armony de la facture comme | A recetter — Métier (recette) | - | - | - | 16/07 | 08/07 | 08/07 | 17/07 | 30/07 (+9j) |
+| 10 | Integrer l'editique Armony de la facture comme | A recetter — Métier (recette) | - | - | - | 16/07 | 08/07 | 08/07 | 30/07 | 03/08 (+2j) |
+| 25 | Lobby pour valider les factures préliminaires  | A recetter — Métier (recette) | 1 | - | - | - | 10/07 | 09/07 (-1j) | 16/07 | 10/07 (-3j) |
 | 27 | Récupérer les PJ additionnelles (hors lisible  | A recetter — Métier (recette) | - | - | - | 17/07 | - | - | 20/07 | 23/07 (+3j) |
-| 25 | Lobby pour valider les factures préliminaires  | Validé RSI — RSI (Justine Navarro) | 1 | - | - | - | 10/07 | 09/07 (-1j) | 16/07 | 10/07 (-3j) |
 | 1 | Mise à disposition des factures au format UBL  | Livré — Globasoft | - | - | - | 01/06 | 22/06 | 22/06 | 15/07 | 03/08 (+13j) |
 | 8 | Fiche « Client », rendre obligatoire la saisie | Livré — Concret | 1 | - | - | - | 10/07 | 28/07 (+11j) | 10/07 | 31/07 (+14j) |
-| 10 | Integrer l'editique Armony de la facture comme | En cours — Globasoft | - | - | 24 | 16/07 | 08/07 | 08/07 | 30/07 | 03/08 (+2j) |
 | 33 | Modification du template facture FACTORY pour  | Prêt — ISIA | - | - | - | 27/07 | - | - | - | - |
 
 ### ⏱️ Durées du cycle *(jours ouvrés)*
@@ -154,13 +154,13 @@ De l'ouverture du ticket à la validation RSI. **D1 mesure la qualification inte
 |---|---|---|---|---|---|---|---|---|---|---|
 | 1 | 01/06 | 01/06 | 22/06 | 03/08 | - | 0 | 15 | 28 | - | - |
 | 9 | 16/07 | 17/07 | - | 30/07 | 20/08 | 1 | - | - | 15 | 24 |
-| 10 | 16/07 | 17/07 | - | - | - | 1 | - | - | - | - |
+| 10 | 16/07 | 17/07 | - | 03/08 | 27/08 | 1 | - | - | 18 | 29 |
 | 27 | 17/07 | 17/07 | 17/07 | 23/07 | 20/08 | 0 | 0 | 4 | 20 | 24 |
 | 33 | 27/07 | - | - | - | - | - | - | - | - | - |
 
 - **#1** (GLPI 25365) — **D1** création ticket 01/06 → arrivée presta 01/06 = **0 j** *(qualification interne)* · **D2** arrivée presta 01/06 → prise en compte 22/06 = **15 j** · **D3** prise en compte 22/06 → livraison dev 03/08 = **28 j**
 - **#9** (GLPI 26668) — **D1** création ticket 16/07 → arrivée presta 17/07 = **1 j** *(qualification interne)* · **D4** livraison dev 30/07 → Validé RSI 20/08 = **15 j** · **Cycle presta (escalade→RSI) 24 j** — ⚠️ pas de message de prise en compte dans le fil GLPI
-- **#10** (GLPI 26669) — **D1** création ticket 16/07 → arrivée presta 17/07 = **1 j** *(qualification interne)* — ⚠️ pas de message de prise en compte dans le fil GLPI
+- **#10** (GLPI 26669) — **D1** création ticket 16/07 → arrivée presta 17/07 = **1 j** *(qualification interne)* · **D4** livraison dev 03/08 → Validé RSI 27/08 = **18 j** · **Cycle presta (escalade→RSI) 29 j** — ⚠️ pas de message de prise en compte dans le fil GLPI
 - **#27** (GLPI 26675) — **D1** création ticket 17/07 → arrivée presta 17/07 = **0 j** *(qualification interne)* · **D2** arrivée presta 17/07 → prise en compte 17/07 = **0 j** · **D3** prise en compte 17/07 → livraison dev 23/07 = **4 j** · **D4** livraison dev 23/07 → Validé RSI 20/08 = **20 j** · **Cycle presta (escalade→RSI) 24 j**
 - **#33** (GLPI 26882) — cycle non encore mesurable — ⚠️ pas de message de prise en compte dans le fil GLPI
 
@@ -173,9 +173,9 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 | 1 | Livré | 22,5 j | 15 j | -7,5 j (-33 %) |
 | 8 | Livré | 1 j | 1,313 j | +0,313 j (+31 %) |
 | 9 | A recetter | 3 j | 1,75 j | -1,25 j (-42 %) |
-| 10 | En cours | 3 j | 0 j | -3 j (-100 %) |
+| 10 | A recetter | 3 j | 0 j | -3 j (-100 %) |
 | 12 | En spécification | 3 j | - | - |
-| 25 | Validé RSI | 1 j | - | - |
+| 25 | A recetter | 1 j | - | - |
 | 27 | A recetter | 3 j | 3,5 j | +0,5 j (+17 %) |
 | 33 | Prêt | 4 j | - | - |
 | **Total lot** | | **40,5 j** | **21,56 j** | |
@@ -212,7 +212,7 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 
 | # | Description | Statut | A/R RSI | Retard spec | Retard dev | Créé GLPI | Spec initiale | Livr. spec | Dev initiale | Livr. dev |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2 | Mise à disposition des factures éligibles à la | En spécification — Justine Navarro | - | 27 | - | 20/07 | 08/07 | 31/07 (+15j) | 28/08 | 28/08 |
+| 2 | Mise à disposition des factures éligibles à la | Livré — Globasoft | - | - | - | 20/07 | 08/07 | 31/07 (+15j) | 28/08 | 26/08 (-2j) |
 
 ### ⏱️ Durées du cycle *(jours ouvrés)*
 
@@ -220,9 +220,9 @@ De l'ouverture du ticket à la validation RSI. **D1 mesure la qualification inte
 
 | # | Créé ticket | Arrivée presta | Prise en compte | Livr. dev | Validé RSI | D1 créa→presta | D2 presta→prise | D3 prise→dev | D4 dev→RSI | Total |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2 | 20/07 | 20/07 | 20/07 | - | - | 0 | 0 | - | - | - |
+| 2 | 20/07 | 20/07 | 20/07 | 26/08 | - | 0 | 0 | 27 | - | - |
 
-- **#2** (GLPI 26716) — **D1** création ticket 20/07 → arrivée presta 20/07 = **0 j** *(qualification interne)* · **D2** arrivée presta 20/07 → prise en compte 20/07 = **0 j**
+- **#2** (GLPI 26716) — **D1** création ticket 20/07 → arrivée presta 20/07 = **0 j** *(qualification interne)* · **D2** arrivée presta 20/07 → prise en compte 20/07 = **0 j** · **D3** prise en compte 20/07 → livraison dev 26/08 = **27 j**
 
 ### 💰 Charges *(jours)*
 
@@ -230,7 +230,7 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 
 | # | Statut | Chiffrage init. | Consommé | Écart |
 |---|---|---|---|---|
-| 2 | En spécification | 22,5 j | 0 j | -22,5 j (-100 %) |
+| 2 | Livré | 22,5 j | 0 j | -22,5 j (-100 %) |
 | **Total lot** | | **22,5 j** | **0 j** | |
 
 - **#2** — chiffré **22,5 j**, consommé **0 j** → **-22,5 j (-100 %)** *(sous le budget)*.
@@ -257,7 +257,7 @@ Chiffrage initial (1er chiffrage dev, heures Redmine ÷ 8) face au temps passé 
 | 9 | L2 | A recetter | 3 j | 1,75 j | -1,25 j (-42 %) |
 | 14 | L1 | Validé | 1,5 j | 3,75 j | +2,25 j (+150 %) |
 | 16 | L1 | Validé | 1,5 j | 6 j | +4,5 j (+300 %) |
-| 22 | L1 | Livré | 0,5 j | 0,02 j | -0,48 j (-96 %) |
+| 22 | L1 | Validé | 0,5 j | 0,02 j | -0,48 j (-96 %) |
 | 24 | L1 | Validé | 6 j | 7,75 j | +1,75 j (+29 %) |
 | 27 | L2 | A recetter | 3 j | 3,5 j | +0,5 j (+17 %) |
 | 28 | L1 | Validé | 1 j | 7 j | +6 j (+600 %) |
