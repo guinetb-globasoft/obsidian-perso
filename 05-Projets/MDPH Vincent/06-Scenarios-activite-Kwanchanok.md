@@ -26,6 +26,49 @@ Bulletins classés dans `Papiers_importants/Fiches_de_paye/Kwang/2026_GUINET_GRO
 
 Point remarquable : l'**AJPP est de 66,64 €/jour**, soit 8,22 € de plus que son net journalier. Chaque jour de congé indemnisé lui rapporte davantage qu'un jour travaillé.
 
+## Conditions d'obtention de l'AJPP
+
+### Côté enfant
+
+- Moins de 20 ans, à charge au sens des prestations familiales.
+- **Maladie, handicap ou accident d'une particulière gravité** rendant indispensables une **présence soutenue et des soins contraignants**.
+- Attesté par un **certificat médical détaillé**, sous pli confidentiel, rédigé par le médecin qui suit l'enfant et précisant la **durée prévisible du traitement**.
+
+### Côté parent
+
+- Cesser temporairement son activité pour s'occuper de l'enfant.
+- Statuts éligibles : salarié du privé, agent public, travailleur indépendant, demandeur d'emploi indemnisé, stagiaire de la formation professionnelle rémunérée.
+- Résidence en France.
+
+### Le vrai filtre
+
+Le **service du contrôle médical de l'Assurance Maladie** rend un avis sur le certificat. Sans avis favorable, la CAF ne verse rien, quelle que soit la réalité de la situation. C'est l'étape qui décide, pas le dépôt du dossier.
+
+### Durée
+
+- **310 jours ouvrés maximum sur 3 ans**, par enfant et par pathologie.
+- **22 jours par mois maximum**, fractionnables en demi-journées.
+- La durée initiale est celle fixée par le certificat médical (article L544-2 du code de la sécurité sociale), avec réexamen périodique.
+- Au terme des 310 jours ou des 3 ans : renouvellement possible pour une nouvelle période de 3 ans, en cas de rechute, de récidive ou de nouvelle pathologie.
+
+### Côté employeur — le congé de présence parentale
+
+Articles L1225-62 et suivants du code du travail.
+
+- Informer l'employeur **au moins 10 jours avant le début** du congé.
+- Puis **48 heures avant chaque journée ou demi-journée** prise.
+- Le contrat est **suspendu, pas rompu** : statut, ancienneté, mutuelle et prévoyance continuent.
+
+### Formalités
+
+- Formulaire **Cerfa n° 12666** accompagné du certificat médical, à déposer à la CAF (ou MSA).
+- Déclaration mensuelle des jours pris ; versement **à terme échu**.
+- L'AJPP n'est **pas soumise à condition de ressources**. Le complément mensuel pour frais l'est.
+
+### Non-cumul
+
+L'AJPP n'est pas cumulable avec : les **compléments et majoration de l'AEEH** perçus pour le même enfant, la **PCH liée à un besoin d'aide humaine**, les indemnités journalières maladie ou maternité, l'ARE, l'AAH. L'**AEEH de base est conservée**.
+
 ## Hypothèses de calcul
 
 - 21,67 jours ouvrés mensuels à temps plein (260/12)

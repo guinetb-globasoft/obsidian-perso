@@ -85,7 +85,17 @@ Deux conséquences.
 
 **Conduite à tenir** : faire préciser le fondement par la MDPH, **par écrit**, avant tout versement. Un complément payé puis requalifié se rembourse. Si la décision est corrigée à la baisse, viser la **4e catégorie** par RAPO avec un état des dépenses — pas la 5e.
 
-Les seuils de dépenses ne figurent pas dans R541-2 : ils sont fixés par arrêté, en pourcentage de la BMAF (environ 478 € en 2026). Grille à demander à la MDPH.
+Les seuils de dépenses ne figurent pas dans R541-2 : ils sont fixés par l'arrêté du 29 mars 2002, en pourcentage de la BMAF. Barème 2026 relevé sur service-public.gouv.fr (fiche F14809) le 29/10/2026 :
+
+| Catégorie | Voie d'accès | Dépenses minimales / mois |
+|---|---|---|
+| 3e | Réduction d'activité ≥ 20 % + dépenses | 282,11 € |
+| 4e | Réduction ≥ 20 % + dépenses | **523,92 €** |
+| 4e | Réduction ≥ 50 % (ou tierce personne ≥ 20 h/sem.) + dépenses | 394,82 € |
+| 4e | Dépenses seules | 834,72 € |
+| 5e | Cessation totale **ou** tierce personne rémunérée à temps plein + dépenses | 342,55 € |
+
+Avec 959,17 €/mois de reste à charge (état du 29/10/2026), la 4e est atteinte par deux voies : 80 % + dépenses, et dépenses seules. La 5e ne l'est par aucune sans cessation d'activité ni tierce personne à temps plein — c'est pourtant ce que Benoit a demandé le 29/10, sur la foi de l'échange avec la MDPH (voir [[00-Index]]).
 
 ## Ce qui reste hors d'atteinte
 

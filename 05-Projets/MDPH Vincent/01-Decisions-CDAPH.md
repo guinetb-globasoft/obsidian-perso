@@ -36,6 +36,10 @@ Un accusé de réception de la demande était arrivé le 15/04/2026 (`AR15042026
 | 11/08/2026 | Décision CDAPH |
 | 13/08/2026 | Date des courriers de notification |
 | 17/08/2026 | Réception des trois notifications par mail |
+| 24/08/2026 | RDV CAF : la 5e ne sera pas versée avec ce motif ; la 3e continue |
+| 08/09/2026 | Dossier CN1UpJm5HzC_y transmis sur MDPH en ligne avec les bilans demandés |
+| 03/10/2026 | Demande de modification du dossier CN1UpJm5HzC_y sur MDPH en ligne |
+| 29/10/2026 | Appel avec la correspondante W. BARROSO, puis **envoi de la demande de modification** (maintien de la 5e sans la condition d'inactivité) avec le dossier complet — voir [[00-Index]] |
 
 ## AEEH — le changement majeur
 

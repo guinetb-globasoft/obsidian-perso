@@ -11,6 +11,7 @@ created: 2026-08-17
 
 | Objet | Coordonnées |
 |---|---|
+| **Correspondante dossier (depuis oct. 2026)** | **Widad BARROSO** — widad.barroso.mdph@cd31.fr |
 | Standard | 05.34.33.11.00 |
 | Général | mdph@cd31.fr |
 | Recours (RAPO) | rapo.mdph@cd31.fr |
