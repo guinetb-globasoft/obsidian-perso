@@ -15,6 +15,12 @@ tenu_par: Claude (assistant juridique), mis à jour à chaque séance
 > Trace, **en dehors du pacte**, de ce qui a été discuté et décidé, avec la raison et l'endroit où c'est appliqué. Une ligne par décision.
 > Statuts : ✅ décidé · 🟡 proposé, non contesté · ⏳ en suspens · ❌ écarté.
 
+## Séance du 29/10/2026
+
+| # | Sujet | Décision | Pourquoi / ce qu'a dit Benoît | Appliqué dans |
+|---|---|---|---|---|
+| 79 | Louison dans Odoo Globasoft | ✅ **Fiche salarié créée** (`hr.employee` 11, liée à son utilisateur 23, type « employee » par défaut, statut non arrêté). Louison devient **manager de l'alternant Julian Brunellière** et approuve ses congés ; Benoît reste tuteur et maître d'apprentissage. ⚠️ Visible par tous les utilisateurs d'Odoo Globasoft, dont Mahdi | « Julian son manager c'est Louison pas moi. Je suis le tuteur par contre » | Odoo globasoft, fiches `hr.employee` 10 et 11 |
+
 ## Séance du 27/10/2026
 
 | # | Sujet | Décision | Pourquoi / ce qu'a dit Benoît | Appliqué dans |
