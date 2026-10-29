@@ -281,3 +281,20 @@ Décomposition côté GG :
 - **Catégorisation partenaire** des lignes bancaires faite (~855 lignes, 26 partenaires créés). Restent ~106 sans tiers : transferts internes « CARTE FACTURETTES CB », 7 lignes déjà lettrées (verrouillées), achats one-off 2024. ⚠️ Modifier le tiers d'une ligne **lettrée** échoue (« écriture validée ») → un lot batch contenant une ligne lettrée est rejeté en entier ; isoler les lettrées (filtrer `is_reconciled`).
 - **Compte 706000 « Prestations de services »** : Guinet Group n'en avait pas. Compte créé (id **3189**) mais **bloqué au code 706999** : le code 706000 est verrouillé sur tout l'arbre de branches {company 1 + branches « Globasoft branche » (2) + « Le Petit Cerf Branche » (3)}, et la société fantôme **« Globasoft branche » (company 2) est inaccessible à l'utilisateur API** → impossible de libérer 706000 par RPC. À régler en nettoyant les sociétés fantômes ou via l'UI admin. Utilisé sur la facture client `INV/2026/00001` (mgmt fees 2 000 € présidence + 300 € TMA, move id 6501).
 - Compte client de **GLOBASOFT** (partner 500) recâblé sur **411100** (id 3149) / fournisseur **401100** (id 825).
+
+
+
+
+---
+
+## UpOne (Hexeko SRL, Groupe Up) — procédure factures (05/10/2026)
+
+> Titres-restaurant, chèques culture et chèques cadeau des salariés. Skill associé : `compta-groupe` (fiche Guinet Group).
+
+- **Réception** : mail `guinetb@guinet-group.com`, expéditeur `no-reply@up-one-mail.up.coop`, sujet « Votre facture UPONE-xxxxx », PJ `Invoice_UPONE-xxxxx.pdf`. Facture émise et échue le même jour ; accusé « Réception de votre paiement pour la facture… » le lendemain.
+- **Paiement** : virement BP Guinet Group libellé `EUROVIR UPONE-xxxxx`. **La banque décide de la société** : GG en général, mais certaines factures sont à Le Petit Cerf (ex. UPONE-98872, 240 €, co7).
+- **Odoo (`guinet` co1)** : tiers « Hexeko SRL (UpOne) » (id 15), journal Vendor Bills, **une ligne sur 648000** « Autres charges de personnels », **sans taxe** (la TVA belge ne porte que sur 1–1,50 € de frais, non déductible), libellé « UpOne titres-restaurant | chèques culture | chèques cadeau UPONE-xxxxx », `ref` = n° de facture, date = date d'émission, PJ = le PDF, lettrage sur la ligne EUROVIR.
+- **Drive** `guinet` > `2026_factures_fourn` : `AAAA-MM-JJ UpOne UPONE-xxxxx (TR|Culture|Cadeau).pdf` (Déjeuner = TR ; Culture = Culture ; Fête des mères / Rentrée scolaire avec frais « Cadeau » = Cadeau).
+- **Contrôle** : comparer mails UpOne ↔ factures Odoo (`ref` UPONE-%) ↔ Drive. PJ Odoo récupérables en binaire par XML-RPC (`.env` du serveur MCP).
+- **Rattrapage du 05/10/2026** : 9 PDF déposés au Drive (108732, 115126, 115170, 132530, 132531, 137820, 138827, 138831, 138833) ; 6 factures saisies (132530 208,40 · 132531 401,50 · 137820 1 001,50 · 138827 208,40 · 138831 201,50 · 138833 401,50) ; 3 virements lettrés (31/08 ×2, 30/09). Les 3 factures du 04/10 (811,40 €) restent à payer.
+- **À confirmer avec l'expert-comptable** : traitement des chèques **cadeau** (avantage en nature / limites d'exonération) — provisoirement comme culture, sur 648000.

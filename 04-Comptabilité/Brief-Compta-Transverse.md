@@ -170,6 +170,18 @@ Authentification : OAuth2, compte `guinetb@guinet-group.com` — partagé entre 
 
 `racine`, `"2025"`, `"2026"`, `2025_factures_clients`, `2025_factures_fourn`, `2025_releves_bancaires`, `2025_notes_de_frais`, `2025_declarations`, `2026_factures_clients`, `2026_factures_fourn`, `2026_releves_bancaires`, `2026_notes_de_frais`, `2026_declarations`, `juridique`, `social_2025`, `social_2026`, `social`.
 
+### Commandes clients (bons de commande) — convention
+
+Pour chaque bon de commande client reçu (ex. GA/ESN : service Achats-IT via Docusign, sujet « <Client>_Globasoft cde C10xxxx ») :
+
+1. **Odoo** : sur la `sale.order`, renseigner `client_order_ref` = n° de commande, et passer l'état à **`sale`** (commande, jamais laissé en devis `draft`/`sent`).
+2. **PJ Odoo systématique** : attacher le PDF du bon de commande à la `sale.order` (`attach_file_to_record`).
+3. **Drive** : classer le PDF dans le dossier **« Commandes clients »** (sous `2026`) du drive de la société, nommé `<client>_<réf>.pdf` (ex. `GA_Globasoft cde C105427.pdf`). ESN/`globasoft` : dossier id `1j05_D9W8jIczpkrbmo7wGlbBv0MqZ8Aa`.
+
+⚠️ Le corps d'un bon de commande GA peut citer un n° erroné (copier-coller) : le n° qui fait foi = **titre + enveloppe Docusign**.
+
+État GA/ESN 2026 : C102602→S00023, C103798→S00024, C103489→S00026, C103601→S00027, C104261→S00028, C104258→S00029, C105427→S00031 (tous en commande, PDF joint + classé).
+
 ---
 
 ## Notes Obsidian liées
@@ -178,3 +190,18 @@ Authentification : OAuth2, compte `guinetb@guinet-group.com` — partagé entre 
 - Fiche Guinet Digital Group : [[Brief-Comptable-Odoo]]
 - Fiche Le Petit Cerf : [[Brief-Compta-LePetitCerf]]
 - Plan de comptes perso : `04-Comptabilite/Plan-Comptes-Perso-Odoo-v2.md` (instance `perso`, hors périmètre)
+
+
+
+
+---
+
+## Tickets / notes de frais scannés — qui a payé ? (04/10/2026)
+
+Règle d'or : **la banque qui a payé décide de la société**, pas l'habitude ni le nom du commerçant. Avant de classer un scan « CB7328 » (GDG), comparer montant et date aux lignes bancaires de **toutes** les sociétés (ESN Revolut incluse). Les libellés bancaires diffèrent du ticket (ex. « Le Cactus » = Madame Baudruche, « HUITRES ET CIE » = Osmoz, « YU CHAN 311 » = Chef Chuan).
+
+- Ticket payé par l'ESN : nommer `(Repas CB0681)`, Drive `globasoft` > `2026_notes_de_frais`, facture ESN (voir [[Brief-Compta-Globasoft]]).
+- Ticket carte 7328 : Drive `digital` > `2026_notes_de_frais`, `(… CB7328)`, **comptabilisé seulement quand le relevé CB BP du mois est importé** (BNK2 GDG). Le n° de carte imprimé sur le ticket (Indigo, Carrefour) fait foi ; sinon, par élimination en attendant le relevé.
+- Lot du 04/10/2026 : 15 scans = 2 à l'ESN (Baudruche 18/09, Barbaque 22/09, saisis et lettrés ; + le ticket Baudruche du 19/08 rattrapé, soit 3 factures ESN) et **13 GDG** en attente du relevé CB de septembre (dont 2 tickets d'octobre avec carte 7328 imprimée : Indigo, Carrefour).
+
+Voir aussi : fournisseur récurrent UpOne (Guinet Group) dans [[Brief-Compta-GuinetGroup]].

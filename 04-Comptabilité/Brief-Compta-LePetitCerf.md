@@ -129,3 +129,26 @@ Le compte **45500200 « Retrait pour usage personnel (GUINET GROUP SARL) »** (i
 4. Garder 45500100 (id 3127) pour Benoit Guinet personne physique — c'est le bon usage
 
 > Priorité : Moyenne. À faire avant clôture 2025 LPC pour cohérence avec consolidation groupe.
+
+
+
+
+---
+
+## Clôture mensuelle — modèle sept. 2026 (05/10/2026)
+
+- **Facture VP Conseil** (mail Pennylane `vp-conseil@invoicing.pennylane.com`) : une ligne **62260000** HT 285 € (« expertise comptable + juridique annuel ») + TVA **20 % S** (tax 105, 445640), PJ, lettrage sur le prélèvement SEPA du 22. Septembre : F-2026-09659, 342 €.
+- **Frais bancaires du mois = une seule facture** « Frais BP 01/MM-31/MM/AAAA », tiers Banque Populaire Occitane, ligne **62700000** sans TVA : Rythméo (28,04) + commissions facturette CB + frais impayé / intervention / arrêté de compte. Chaque ligne bancaire est lettrée en partiel sur ce 401. Septembre : 45,47 € (28,04 + 4,00 + 11,90 + 0,88 + 0,65).
+- **Virement de Guinet Group** → 451000 « Group » (30/09 : 1 000 €, comme le 21/08). **« CARTE FACTURETTES CB »** → 580002 (CB BP différé), à solder quand le détail CB est importé.
+- **TVA** : déclaration mensuelle déposée par VP Conseil sur Pennylane (août 2026 : crédit de 549 €). Odoo n'enregistre plus d'OD de déclaration depuis nov. 2025.
+- **Reste à faire (05/10)** : détail CB de septembre (ElevenLabs 10/09, Ecardify 12/09, total 32,12 €) — relevé CB BP de septembre pas encore dans le Drive ; 31 lignes CB déc. 2025 → mai 2026 encore en 471000 ; 12 anciennes factures VP Conseil (janv.–juin, `F-26…`) non lettrées ; risque de doublon Qudo (paiement CB 473,09 € de juin ventilé en 607100 **et** facture Glamsten QUD62652 saisie).
+
+
+
+## Clôture septembre 2026 et rattrapage (09/10/2026)
+
+- **Septembre clôturé** : banque BP rapprochée ligne à ligne avec l'extrait du 02/10 (solde Odoo = 1 200,65 €), détail CB saisi (ElevenLabs 20,02 € + Ecardify 12,10 € = 32,12 €), 580002 soldé.
+- **Prélèvement VP Conseil du 22/09 (342 €) rejeté** pour provision insuffisante : la ligne importée par la synchro BP a été supprimée, la facture F-2026-09659 est de nouveau due. 5 rejets VP Conseil depuis déc. 2025 → dette LPC = **1 506 € TTC** (mars → sept. 2026), à régler par virement.
+- **Lettrages faits** : VP Conseil (974,40 € de prélèvements lettrés FIFO), 4 doublons facture + CB corrigés (568,02 €), 30 lignes du 471 ventilées. Reste en 471 : achat CB « Le Petit Cerf » sur la propre boutique (33,99 €, 21/01/2026).
+- **En attente** : paiement de Qudo QUD73874 (526,17 €, 21/09) introuvable ; Up France 208 €, Digidom 40,80 €, BP 23,80 € (2025) sans paiement trouvé ; Eleven Labs juillet (11 $, écart de change 0,99 €).
+- **Drive** : 12 documents BP manquants ajoutés (zip « Comptes (3).zip ») ; bulletin Homme Clé Plus LPC (contrat 124PH060619, 26/06/2025) rangé dans juridique > Contrats banque et assurances.
