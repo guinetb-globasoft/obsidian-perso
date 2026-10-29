@@ -12,6 +12,8 @@ created: 2026-08-06
 
 > Note vivante : mise à jour en place à chaque nouvelle vague de candidatures, jamais dupliquée.
 
+> **Issue (octobre 2026) : poste pourvu par Julian BRUNELLIERE** (n° 3 du groupe 1, Euridis), en contrat d'apprentissage depuis le 12/10/2026. Dossier d'embauche : [[Embauche Julian Brunellière]].
+
 ## Critères de classement retenus
 
 1. **Expérience réelle sur un poste équivalent** — critère dominant. Un poste de business developer, commercial BtoB, technico-commercial, chargé de clientèle ou responsable de développement commercial, avec prospection, portefeuille et négociation. La vente en boutique et l'accueil client ne comptent pas comme équivalents.
